@@ -2,7 +2,7 @@
 
 | Campo | Valor |
 |---|---|
-| Versão | 1.4 |
+| Versão | 1.5 |
 | Data | 07/11/2026 |
 | Status | ✅ Aprovado em 07/11/2026 |
 
@@ -16,6 +16,7 @@
 | 1.2 | Complementos técnicos do plano de desenvolvimento (seção 8.7): apelido único vinculado a cookie, tabelas `QuestionReport` e `RateLimit`, nota em décimos, campo `reviewed` no seed, fuso do ranking, versões fixadas, região da Vercel via `vercel.json` |
 | 1.3 | Detalhes da Fase 2: o cookie guarda até 10 apelidos por navegador (computador compartilhado); começar uma partida encerra a anterior que estiver em andamento |
 | 1.4 | Nova função: **salvar o jogo e continuar depois** (seção 2.2). Só entre perguntas, válido por 24 h, um jogo salvo por apelido, entra no ranking; os 15 min passam a contar só o tempo de jogo ativo |
+| 1.5 | Identidade visual (seção 10.1): logo "Quiz online" em todas as páginas e Tema Azul / Minimalista |
 
 ---
 
@@ -288,6 +289,19 @@ Quiz_Web/
 - **Desempenho:** troca de pergunta em menos de 300 ms.
 - **Acessibilidade:** navegação por teclado (teclas 1–4 / A–D), contraste adequado, leitores de tela.
 - **Idioma:** português do Brasil.
+
+### 10.1 Identidade visual
+- **Logo:** "Quiz online" (arquivo original em `logo/logo.jpg`). Aparece no topo de todas as páginas; também é o ícone da aba e do atalho no celular.
+- **Tema Azul / Minimalista** (o azul transmite confiança e foco):
+
+| Elemento | Cor |
+|---|---|
+| Fundo da página | Azul gelo `#F0F4F8` |
+| Cartão do quiz | Branco `#FFFFFF` |
+| Texto | Azul-marinho escuro `#1E293B` |
+| Destaques e botões | Azul primário `#0284C7` |
+
+- As cores ficam como variáveis em `src/app/globals.css`. O tema escuro (S6) será definido na Fase 4.
 - **Anti-fraude:** correção e controle do tempo no servidor, limite de requisições por IP, sessão expira após 15 min de jogo ativo (jogo salvo: 24 h), uma resposta por pergunta, RLS no Supabase.
 - **Privacidade:** apenas apelido é armazenado; filtro de palavrões nos apelidos (LGPD — sem dados pessoais).
 

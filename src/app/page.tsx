@@ -1,3 +1,4 @@
+import { PageShell } from "@/components/layout/page-shell";
 import { SavedGames, type SavedGameView } from "@/components/home/saved-games";
 import { StartForm } from "@/components/home/start-form";
 import { readOwnedPlayerIds } from "@/server/http";
@@ -24,11 +25,16 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ s
   }
 
   return (
-    <main className="mx-auto w-full max-w-xl px-4 py-10 sm:py-16">
-      <header className="mb-8 text-center">
-        <h1 className="text-4xl font-extrabold tracking-tight">Quiz Web</h1>
-        <p className="mt-2 text-muted-foreground">Teste seus conhecimentos gerais e entre no ranking.</p>
-      </header>
+    <PageShell
+      logoSize="large"
+      linkHome={false}
+      intro={
+        <>
+          <h1 className="sr-only">Quiz online</h1>
+          <p className="text-muted-foreground">Teste seus conhecimentos gerais e entre no ranking.</p>
+        </>
+      }
+    >
       {unavailable ? (
         <p className="rounded-lg bg-destructive/10 p-4 text-center text-destructive" role="alert">
           O quiz está indisponível no momento. Tente novamente em alguns minutos.
@@ -39,6 +45,6 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ s
           <StartForm categories={categories} />
         </>
       )}
-    </main>
+    </PageShell>
   );
 }

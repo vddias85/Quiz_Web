@@ -1,9 +1,9 @@
 # CLAUDE.md — Quiz Web
 
-Quiz web de conhecimentos gerais. **A fonte da verdade é o [PRD.md](PRD.md) (v1.4, aprovado).** Leia-o antes de qualquer implementação e não contrarie decisões dele sem perguntar ao usuário.
+Quiz web de conhecimentos gerais. **A fonte da verdade é o [PRD.md](PRD.md) (v1.5, aprovado).** Leia-o antes de qualquer implementação e não contrarie decisões dele sem perguntar ao usuário.
 
 ## Status atual
-- PRD aprovado (v1.4). Fase 0 concluída (Supabase dev/prod em São Paulo, GitHub, Vercel).
+- PRD aprovado (v1.5). Fase 0 concluída (Supabase dev/prod em São Paulo, GitHub, Vercel).
 - **Fase 1 concluída (07/11/2026):** Next.js 15 + shadcn, Prisma 6 (schema + migrações com CHECKs e RLS sem políticas), 200 perguntas no Supabase **dev** (todas revisadas pelo usuário em 07/11/2026, `reviewed: true`), `prod-guard`, Vitest, `vercel.json` (gru1). O prod segue vazio, sem migrações.
 - O npm 11 exige aprovar scripts de instalação (`allowScripts` no `package.json`); ao atualizar Prisma/esbuild, rode `npm install-scripts approve <pkg>`.
 - O Prisma CLI não lê `.env.local` sozinho: use sempre os scripts `npm run db:*` (usam `dotenv-cli`).
@@ -11,6 +11,7 @@ Quiz web de conhecimentos gerais. **A fonte da verdade é o [PRD.md](PRD.md) (v1
 - Decisões do plano: apelido único (case-insensitive) vinculado a cookie assinado; projeto movido para `C:\Projetos\Jornada de Dados\Quiz_Web` (fora do OneDrive). Registradas no PRD v1.2 (§8.7).
 - **Fase 2 concluída (07/11/2026):** módulos puros (`scoring`, `draw`, `timing`, `nickname`, `auth`, `rate-limit`), serviço `src/server/quiz.ts`, 6 rotas da API, telas inicial, quiz e resultado (versão inicial). 86 testes de unidade + 18 de integração (`npm run test:integration`, banco dev).
 - **Salvar e continuar depois (PRD v1.4, §2.2) implementado** em 07/11/2026: status `SAVED`, rotas `save`/`resume`, aviso na tela inicial.
+- **Logo e Tema Azul (PRD v1.5, §10.1)** aplicados em 07/11/2026: `PageShell` com logo em todas as páginas, cores em `globals.css`, ícones gerados de `logo/logo.jpg`.
 - Próximo: **Fase 3** (resultado completo com posição no ranking, revisão e página de ranking). Só comece cada fase quando o usuário pedir.
 - A Vercel ainda não tem variáveis de ambiente (vêm na Fase 5): lá a página inicial mostra "indisponível".
 

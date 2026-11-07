@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { buttonVariants } from "@/components/ui/button";
+import { PageShell } from "@/components/layout/page-shell";
 import { LevelBadge } from "@/components/quiz/level-badge";
 import { formatDuration } from "@/lib/format";
 import { formatScore } from "@/lib/scoring";
@@ -26,7 +27,8 @@ export default async function ResultPage({ params }: { params: Promise<{ id: str
   }
 
   return (
-    <main className="mx-auto w-full max-w-xl space-y-8 px-4 py-10">
+    <PageShell>
+      <div className="space-y-8">
       <header className="space-y-2 text-center">
         <p className="text-sm text-muted-foreground">
           {result.mode === "MIXED"
@@ -76,6 +78,7 @@ export default async function ResultPage({ params }: { params: Promise<{ id: str
           Jogar novamente
         </Link>
       </div>
-    </main>
+      </div>
+    </PageShell>
   );
 }
