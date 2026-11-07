@@ -12,7 +12,8 @@ Quiz web de conhecimentos gerais. **A fonte da verdade é o [PRD.md](PRD.md) (v1
 - **Fase 2 concluída (07/11/2026):** módulos puros (`scoring`, `draw`, `timing`, `nickname`, `auth`, `rate-limit`), serviço `src/server/quiz.ts`, 6 rotas da API, telas inicial, quiz e resultado (versão inicial). 86 testes de unidade + 18 de integração (`npm run test:integration`, banco dev).
 - **Salvar e continuar depois (PRD v1.4, §2.2) implementado** em 07/11/2026: status `SAVED`, rotas `save`/`resume`, aviso na tela inicial.
 - **Logo e Tema Azul (PRD v1.5/v1.6, §10.1)** aplicados em 07/11/2026: `PageShell` com logo "Quiz Web" em todas as páginas, cores em `globals.css`, ícones gerados de `logo/logo.jpg` com `npm run logo:build`. Botões em `#0369A1` (`primary`, contraste AA); destaques sem texto em `#0284C7` (`highlight`).
-- Próximo: **Fase 3** (resultado completo com posição no ranking, revisão e página de ranking). Só comece cada fase quando o usuário pedir.
+- **Fase 3 concluída (07/11/2026):** períodos do ranking em `src/lib/ranking.ts` (puro, fuso de São Paulo) e consulta SQL em `src/server/ranking.ts` (`DISTINCT ON` + `ROW_NUMBER`, Top 50 + apelidos do navegador fora dele); `GET /api/ranking`; páginas `/ranking` (filtros na URL: `?categoria=<slug>&periodo=hoje|semana|mes`), `/resultado/[id]` (posição em Sempre e Hoje) e `/revisao/[id]` (com "Reportar pergunta"). 100 testes de unidade + 27 de integração.
+- Próximo: **Fase 4** (acabamento: tema escuro, animações, sons, acessibilidade, Playwright). Só comece cada fase quando o usuário pedir.
 - A Vercel ainda não tem variáveis de ambiente (vêm na Fase 5): lá a página inicial mostra "indisponível".
 
 ## Regras de negócio (não negociáveis sem aprovação)

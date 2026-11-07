@@ -14,6 +14,7 @@ export const RATE_LIMITS = {
   result: { limit: 60, windowMs: 60_000 },
   saveResume: { limit: 20, windowMs: 60_000 },
   report: { limit: 5, windowMs: 10 * 60_000 },
+  ranking: { limit: 60, windowMs: 60_000 },
 } satisfies Record<string, RateLimitRule>;
 
 const CLEANUP_PROBABILITY = 0.01;

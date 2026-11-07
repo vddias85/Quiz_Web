@@ -61,7 +61,7 @@ export function ReportForm({
           <label key={r.code} className="flex cursor-pointer items-center gap-2 text-sm">
             <input
               type="radio"
-              name="report-reason"
+              name={`report-reason-${position}`}
               value={r.code}
               checked={reason === r.code}
               onChange={() => setReason(r.code)}

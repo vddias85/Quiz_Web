@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { PageShell } from "@/components/layout/page-shell";
 import { SavedGames, type SavedGameView } from "@/components/home/saved-games";
 import { StartForm } from "@/components/home/start-form";
@@ -43,6 +44,11 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ s
         <>
           <SavedGames games={savedGames} justSaved={salvo === "1"} />
           <StartForm categories={categories} />
+          <p className="mt-6 text-center">
+            <Link href="/ranking" className="text-sm font-medium text-primary underline-offset-4 hover:underline">
+              <span aria-hidden>🏆 </span>Ver ranking
+            </Link>
+          </p>
         </>
       )}
     </PageShell>

@@ -521,7 +521,7 @@ export async function getSessionResult(sessionId: string, ownedIds: readonly str
       correctCount: true,
       totalTimeMs: true,
       finishedAt: true,
-      category: { select: { id: true, name: true, icon: true } },
+      category: { select: { id: true, slug: true, name: true, icon: true } },
       player: { select: { nickname: true } },
       items: {
         orderBy: { position: "asc" },
