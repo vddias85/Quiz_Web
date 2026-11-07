@@ -17,7 +17,16 @@ import {
   scoreTenths,
   type Level,
 } from "@/lib/scoring";
-import { answerTimeMs, isSessionExpired, isTimedOut, QUESTION_TIME_MS, remainingMs } from "@/lib/timing";
+import {
+  activeMs,
+  answerTimeMs,
+  isSavedGameExpired,
+  isSessionExpired,
+  isTimedOut,
+  QUESTION_TIME_MS,
+  remainingMs,
+  SAVED_GAME_TTL_MS,
+} from "@/lib/timing";
 import { ApiError, notFound } from "./errors";
 
 const RECENT_SESSIONS = 3;
@@ -86,10 +95,24 @@ export async function createSession(params: {
   playerId: string;
   mode: Mode;
   categoryId?: number;
+  discardSaved?: boolean; // descarta o jogo salvo do jogador, se houver
   rng?: Rng;
+  now?: Date;
 }): Promise<{ sessionId: string }> {
   const { playerId, mode, rng } = params;
+  const now = params.now ?? new Date();
   const categoryId = mode === "CATEGORY" ? params.categoryId : undefined;
+
+  // Um jogo salvo por apelido: começar outro exige descartá-lo de forma explícita.
+  if (!params.discardSaved) {
+    const saved = await prisma.session.findFirst({
+      where: { playerId, status: "SAVED", savedAt: { gte: new Date(now.getTime() - SAVED_GAME_TTL_MS) } },
+      select: { id: true },
+    });
+    if (saved) {
+      throw new ApiError(409, "has_saved_game", "Você tem um jogo salvo com este apelido.");
+    }
+  }
 
   if (mode === "CATEGORY") {
     if (!categoryId) throw new ApiError(400, "invalid_category", "Escolha uma categoria.");
@@ -132,13 +155,18 @@ export async function createSession(params: {
   }
 
   const session = await prisma.$transaction(async (tx) => {
-    // Uma sessão em andamento por jogador: as anteriores deixam de valer.
-    await tx.session.updateMany({ where: { playerId, status: "IN_PROGRESS" }, data: { status: "EXPIRED" } });
+    // Uma partida aberta por jogador: a anterior (em andamento ou salva) deixa de valer.
+    await tx.session.updateMany({
+      where: { playerId, status: { in: ["IN_PROGRESS", "SAVED"] } },
+      data: { status: "EXPIRED" },
+    });
     return tx.session.create({
       data: {
         playerId,
         mode,
         categoryId: categoryId ?? null,
+        startedAt: now,
+        activeSince: now,
         items: {
           create: drawn.map((d) => ({ position: d.position, questionId: d.questionId, optionOrder: d.optionOrder })),
         },
@@ -157,14 +185,31 @@ async function loadOwnedSession(sessionId: string, ownedIds: readonly string[]) 
   if (ownedIds.length === 0) throw notFound();
   const session = await prisma.session.findFirst({
     where: { id: sessionId, playerId: { in: [...ownedIds] } },
-    select: { id: true, status: true, startedAt: true, playerId: true },
+    select: { id: true, status: true, playerId: true, activeSince: true, activeMsBefore: true, savedAt: true },
   });
   if (!session) throw notFound(); // não revela se a sessão existe para outro jogador
   return session;
 }
 
 async function expireSession(sessionId: string) {
-  await prisma.session.updateMany({ where: { id: sessionId, status: "IN_PROGRESS" }, data: { status: "EXPIRED" } });
+  await prisma.session.updateMany({
+    where: { id: sessionId, status: { in: ["IN_PROGRESS", "SAVED"] } },
+    data: { status: "EXPIRED" },
+  });
+}
+
+type OwnedSession = Awaited<ReturnType<typeof loadOwnedSession>>;
+
+/** Atualiza o status se o prazo venceu: 15 min de jogo ativo ou 24 h de jogo salvo. */
+async function checkExpiry(session: OwnedSession, now: Date): Promise<OwnedSession["status"]> {
+  const expired =
+    (session.status === "IN_PROGRESS" && isSessionExpired(session, now)) ||
+    (session.status === "SAVED" && (!session.savedAt || isSavedGameExpired(session.savedAt, now)));
+  if (expired) {
+    await expireSession(session.id);
+    return "EXPIRED";
+  }
+  return session.status;
 }
 
 /** Fecha a sessão: calcula nota, acertos e tempo total. Idempotente. */
@@ -198,7 +243,7 @@ export type CurrentQuestionDto =
       options: { id: string; text: string }[];
       remainingMs: number;
     }
-  | { status: "finished" | "expired" };
+  | { status: "finished" | "expired" | "saved" };
 
 /**
  * Entrega a pergunta atual. O `shownAt` é gravado só na primeira entrega, então
@@ -210,12 +255,10 @@ export async function getCurrentQuestion(
   now = new Date(),
 ): Promise<CurrentQuestionDto> {
   const session = await loadOwnedSession(sessionId, ownedIds);
-  if (session.status === "FINISHED") return { status: "finished" };
-  if (session.status === "EXPIRED") return { status: "expired" };
-  if (isSessionExpired(session.startedAt, now)) {
-    await expireSession(sessionId);
-    return { status: "expired" };
-  }
+  const status = await checkExpiry(session, now);
+  if (status === "FINISHED") return { status: "finished" };
+  if (status === "EXPIRED") return { status: "expired" };
+  if (status === "SAVED") return { status: "saved" }; // é preciso retomar antes
 
   for (let guard = 0; guard <= QUESTIONS_PER_SESSION; guard++) {
     const item = await prisma.sessionItem.findFirst({
@@ -242,14 +285,18 @@ export async function getCurrentQuestion(
 
     let shownAt = item.shownAt;
     if (!shownAt) {
+      // Só exibe se a partida continua em andamento (não foi salva nesse meio-tempo).
       const marked = await prisma.sessionItem.updateMany({
-        where: { id: item.id, shownAt: null },
+        where: { id: item.id, shownAt: null, session: { status: "IN_PROGRESS" } },
         data: { shownAt: now },
       });
-      shownAt =
-        marked.count === 1
-          ? now
-          : (await prisma.sessionItem.findUniqueOrThrow({ where: { id: item.id }, select: { shownAt: true } })).shownAt!;
+      if (marked.count === 1) {
+        shownAt = now;
+      } else {
+        const fresh = await prisma.sessionItem.findUniqueOrThrow({ where: { id: item.id }, select: { shownAt: true } });
+        if (!fresh.shownAt) return { status: "saved" };
+        shownAt = fresh.shownAt;
+      }
     }
 
     // Tempo esgotado sem resposta (ex.: o jogador fechou a aba): conta como erro e avança.
@@ -295,12 +342,15 @@ export async function submitAnswer(
   now = new Date(),
 ): Promise<AnswerResultDto> {
   const session = await loadOwnedSession(sessionId, ownedIds);
-  if (session.status === "FINISHED") {
+  const status = await checkExpiry(session, now);
+  if (status === "FINISHED") {
     throw new ApiError(409, "session_finished", "Esta sessão já terminou.");
   }
-  if (session.status === "EXPIRED" || isSessionExpired(session.startedAt, now)) {
-    await expireSession(sessionId);
+  if (status === "EXPIRED") {
     throw new ApiError(410, "session_expired", "Esta sessão expirou. Comece uma nova partida.");
+  }
+  if (status === "SAVED") {
+    throw new ApiError(409, "session_saved", "Este jogo está salvo. Continue a partida para responder.");
   }
 
   const item = await prisma.sessionItem.findUnique({
@@ -352,6 +402,105 @@ export async function submitAnswer(
     explanation: item.question.explanation,
     finished,
   };
+}
+
+// ---------------------------------------------------------------------------
+// Salvar e continuar depois (PRD §2.2)
+// ---------------------------------------------------------------------------
+
+/**
+ * Salva a partida. Só é permitido ENTRE perguntas: depois de responder e antes de a próxima
+ * ser exibida. Assim nenhuma pergunta fica vista e sem resposta, e salvar não vira um "pular".
+ */
+export async function saveSession(sessionId: string, ownedIds: readonly string[], now = new Date()): Promise<void> {
+  const session = await loadOwnedSession(sessionId, ownedIds);
+  const status = await checkExpiry(session, now);
+  if (status === "SAVED") return; // idempotente
+  if (status === "FINISHED") throw new ApiError(409, "session_finished", "Esta sessão já terminou.");
+  if (status === "EXPIRED") {
+    throw new ApiError(410, "session_expired", "Esta sessão expirou. Comece uma nova partida.");
+  }
+
+  const saved = await prisma.session.updateMany({
+    where: {
+      id: sessionId,
+      status: "IN_PROGRESS",
+      // nenhuma pergunta exibida e ainda sem resposta
+      items: { none: { answeredAt: null, shownAt: { not: null } } },
+    },
+    data: { status: "SAVED", savedAt: now, activeMsBefore: activeMs(session, now) },
+  });
+  if (saved.count === 0) {
+    const open = await prisma.sessionItem.count({ where: { sessionId, answeredAt: null, shownAt: { not: null } } });
+    if (open > 0) {
+      throw new ApiError(409, "question_open", "Responda a pergunta atual antes de salvar.");
+    }
+    throw new ApiError(409, "conflict", "Não foi possível salvar agora. Tente de novo.");
+  }
+}
+
+/** Retoma um jogo salvo. A próxima pergunta é inédita e o cronômetro começa do zero. */
+export async function resumeSession(sessionId: string, ownedIds: readonly string[], now = new Date()): Promise<void> {
+  const session = await loadOwnedSession(sessionId, ownedIds);
+  const status = await checkExpiry(session, now);
+  if (status === "IN_PROGRESS") return; // já retomado
+  if (status === "FINISHED") throw new ApiError(409, "session_finished", "Esta sessão já terminou.");
+  if (status === "EXPIRED") {
+    throw new ApiError(410, "session_expired", "Este jogo salvo expirou (validade de 24 horas).");
+  }
+
+  await prisma.$transaction([
+    // Uma partida aberta por jogador.
+    prisma.session.updateMany({
+      where: { playerId: session.playerId, status: "IN_PROGRESS", id: { not: sessionId } },
+      data: { status: "EXPIRED" },
+    }),
+    prisma.session.updateMany({
+      where: { id: sessionId, status: "SAVED" },
+      data: { status: "IN_PROGRESS", activeSince: now, savedAt: null },
+    }),
+  ]);
+}
+
+export interface SavedGameDto {
+  sessionId: string;
+  nickname: string;
+  mode: Mode;
+  category: { name: string; icon: string } | null;
+  answered: number;
+  savedAt: string;
+  expiresAt: string;
+}
+
+/** Jogos salvos dos apelidos deste navegador (no máximo um por apelido). */
+export async function listSavedGames(ownedIds: readonly string[], now = new Date()): Promise<SavedGameDto[]> {
+  if (ownedIds.length === 0) return [];
+  const cutoff = new Date(now.getTime() - SAVED_GAME_TTL_MS);
+  await prisma.session.updateMany({
+    where: { playerId: { in: [...ownedIds] }, status: "SAVED", savedAt: { lt: cutoff } },
+    data: { status: "EXPIRED" },
+  });
+  const sessions = await prisma.session.findMany({
+    where: { playerId: { in: [...ownedIds] }, status: "SAVED" },
+    orderBy: { savedAt: "desc" },
+    select: {
+      id: true,
+      mode: true,
+      savedAt: true,
+      player: { select: { nickname: true } },
+      category: { select: { name: true, icon: true } },
+      _count: { select: { items: { where: { answeredAt: { not: null } } } } },
+    },
+  });
+  return sessions.map((s) => ({
+    sessionId: s.id,
+    nickname: s.player.nickname,
+    mode: s.mode,
+    category: s.category,
+    answered: s._count.items,
+    savedAt: s.savedAt!.toISOString(),
+    expiresAt: new Date(s.savedAt!.getTime() + SAVED_GAME_TTL_MS).toISOString(),
+  }));
 }
 
 // ---------------------------------------------------------------------------

@@ -9,6 +9,7 @@ const Body = z.object({
   nickname: z.string().max(100),
   mode: z.enum(["MIXED", "CATEGORY"]),
   categoryId: z.number().int().positive().optional(),
+  discardSaved: z.boolean().optional(),
 });
 
 export async function POST(req: Request) {
@@ -16,7 +17,12 @@ export async function POST(req: Request) {
     await enforceRateLimit(req, "sessions", RATE_LIMITS.createSession);
     const body = await parseBody(req, Body);
     const { player, ownedIds } = await resolvePlayer(body.nickname, await readOwnedPlayerIds());
-    const { sessionId } = await createSession({ playerId: player.id, mode: body.mode, categoryId: body.categoryId });
+    const { sessionId } = await createSession({
+      playerId: player.id,
+      mode: body.mode,
+      categoryId: body.categoryId,
+      discardSaved: body.discardSaved,
+    });
     await writeOwnedPlayerIds(ownedIds);
     return json({ sessionId, nickname: player.nickname }, { status: 201 });
   });

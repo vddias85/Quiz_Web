@@ -34,7 +34,7 @@ async function request<T>(url: string, init?: RequestInit): Promise<T> {
 }
 
 export const api = {
-  startSession: (body: { nickname: string; mode: "MIXED" | "CATEGORY"; categoryId?: number }) =>
+  startSession: (body: { nickname: string; mode: "MIXED" | "CATEGORY"; categoryId?: number; discardSaved?: boolean }) =>
     request<{ sessionId: string; nickname: string }>("/api/sessions", { method: "POST", body: JSON.stringify(body) }),
 
   current: (sessionId: string) => request<CurrentQuestionDto>(`/api/sessions/${sessionId}/current`),
@@ -44,6 +44,10 @@ export const api = {
       method: "POST",
       body: JSON.stringify({ position, optionId }),
     }),
+
+  save: (sessionId: string) => request<{ ok: true }>(`/api/sessions/${sessionId}/save`, { method: "POST" }),
+
+  resume: (sessionId: string) => request<{ ok: true }>(`/api/sessions/${sessionId}/resume`, { method: "POST" }),
 
   report: (body: { sessionId: string; position: number; reason: ReportReasonCode; text?: string }) =>
     request<{ ok: true }>("/api/reports", { method: "POST", body: JSON.stringify(body) }),

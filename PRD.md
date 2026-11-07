@@ -2,7 +2,7 @@
 
 | Campo | Valor |
 |---|---|
-| Versão | 1.3 |
+| Versão | 1.4 |
 | Data | 07/11/2026 |
 | Status | ✅ Aprovado em 07/11/2026 |
 
@@ -15,6 +15,7 @@
 | 1.1 | Pontuação trocada para ponderada por nível (0,3 / 0,4 / 0,6 / 0,7) |
 | 1.2 | Complementos técnicos do plano de desenvolvimento (seção 8.7): apelido único vinculado a cookie, tabelas `QuestionReport` e `RateLimit`, nota em décimos, campo `reviewed` no seed, fuso do ranking, versões fixadas, região da Vercel via `vercel.json` |
 | 1.3 | Detalhes da Fase 2: o cookie guarda até 10 apelidos por navegador (computador compartilhado); começar uma partida encerra a anterior que estiver em andamento |
+| 1.4 | Nova função: **salvar o jogo e continuar depois** (seção 2.2). Só entre perguntas, válido por 24 h, um jogo salvo por apelido, entra no ranking; os 15 min passam a contar só o tempo de jogo ativo |
 
 ---
 
@@ -62,6 +63,15 @@ Resultado
 - Se o tempo acabar sem resposta, a pergunta conta como **erro** (0 ponto) e o quiz avança.
 - O tempo é controlado também pelo **servidor**: uma resposta que chega depois de 30 s (com 2 s de tolerância para a internet) é considerada tempo esgotado, mesmo que o navegador seja manipulado.
 - Duração máxima de uma sessão: 20 × 30 s = 10 minutos.
+
+### 2.2 Salvar e continuar depois
+- O botão **"Salvar e sair"** aparece **só entre perguntas**: depois do feedback de uma resposta e antes de a próxima pergunta ser exibida. Com uma pergunta na tela, é preciso responder (ou deixar o tempo acabar) antes de salvar.
+- Assim, nenhuma pergunta fica vista e sem resposta. Ao voltar, o jogador recebe a **próxima pergunta, inédita**, com o cronômetro zerado (30 s). Salvar não funciona como "pular" (que continua na v2).
+- O jogo salvo vale por **24 horas**. Depois disso, expira e não entra no ranking.
+- **Um jogo salvo por apelido.** A tela inicial mostra o jogo salvo com o botão "Continuar". Começar uma partida nova com o mesmo apelido pede confirmação e descarta o jogo salvo.
+- A partida retomada **entra no ranking normalmente**. O tempo total soma só o tempo gasto nas perguntas.
+- O limite de 15 minutos por sessão conta só o **tempo de jogo ativo**: o período em que o jogo ficou salvo não conta.
+- O jogo salvo fica vinculado ao navegador (cookie do apelido); não dá para continuar em outro aparelho.
 
 ---
 
@@ -278,7 +288,7 @@ Quiz_Web/
 - **Desempenho:** troca de pergunta em menos de 300 ms.
 - **Acessibilidade:** navegação por teclado (teclas 1–4 / A–D), contraste adequado, leitores de tela.
 - **Idioma:** português do Brasil.
-- **Anti-fraude:** correção e controle do tempo no servidor, limite de requisições por IP, sessão expira em 15 min, uma resposta por pergunta, RLS no Supabase.
+- **Anti-fraude:** correção e controle do tempo no servidor, limite de requisições por IP, sessão expira após 15 min de jogo ativo (jogo salvo: 24 h), uma resposta por pergunta, RLS no Supabase.
 - **Privacidade:** apenas apelido é armazenado; filtro de palavrões nos apelidos (LGPD — sem dados pessoais).
 
 ---
@@ -337,6 +347,7 @@ Decididas na v1.0:
 - [ ] Feedback com explicação após cada resposta e revisão completa ao final.
 - [ ] Tema claro/escuro, animações leves e sons opcionais (desligados por padrão).
 - [ ] Botão “reportar pergunta” grava o aviso no banco.
+- [ ] Jogo pode ser salvo entre perguntas e retomado em até 24 h, voltando numa pergunta inédita.
 - [ ] Publicado na Vercel usando o banco Supabase de produção.
 
 ---

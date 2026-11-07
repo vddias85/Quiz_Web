@@ -20,6 +20,8 @@ export function StartForm({ categories }: { categories: CategoryDto[] }) {
   const [categoryId, setCategoryId] = useState<number | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
+  // O apelido tem um jogo salvo: pede confirmação antes de descartá-lo.
+  const [savedConflict, setSavedConflict] = useState(false);
 
   // Lembra o último apelido usado neste navegador (conveniência; o servidor confere pelo cookie).
   useEffect(() => {
@@ -29,9 +31,10 @@ export function StartForm({ categories }: { categories: CategoryDto[] }) {
     } catch {}
   }, []);
 
-  async function start(e: React.FormEvent) {
-    e.preventDefault();
+  async function start(e?: React.FormEvent, discardSaved = false) {
+    e?.preventDefault();
     setError(null);
+    setSavedConflict(false);
     if (mode === "CATEGORY" && !categoryId) {
       setError("Escolha uma categoria.");
       return;
@@ -42,13 +45,15 @@ export function StartForm({ categories }: { categories: CategoryDto[] }) {
         nickname: nickname.trim(),
         mode,
         categoryId: mode === "CATEGORY" ? categoryId! : undefined,
+        discardSaved,
       });
       try {
         localStorage.setItem(NICKNAME_STORAGE_KEY, saved);
       } catch {}
       router.push(`/quiz/${sessionId}`);
     } catch (err) {
-      setError(err instanceof ClientApiError ? err.message : "Não foi possível começar. Tente de novo.");
+      if (err instanceof ClientApiError && err.code === "has_saved_game") setSavedConflict(true);
+      else setError(err instanceof ClientApiError ? err.message : "Não foi possível começar. Tente de novo.");
       setSubmitting(false);
     }
   }
@@ -124,6 +129,23 @@ export function StartForm({ categories }: { categories: CategoryDto[] }) {
         <p className="rounded-lg bg-destructive/10 px-3 py-2 text-sm text-destructive" role="alert">
           {error}
         </p>
+      )}
+
+      {savedConflict && (
+        <div className="space-y-3 rounded-xl border-2 border-amber-400 bg-amber-50 p-4 text-sm dark:bg-amber-950/40" role="alert">
+          <p>
+            <strong>Você tem um jogo salvo com este apelido.</strong> Para retomá-lo, use o botão
+            &quot;Continuar&quot; no alto da página. Começar um jogo novo descarta o salvo.
+          </p>
+          <div className="flex flex-wrap gap-2">
+            <Button type="button" variant="destructive" onClick={() => void start(undefined, true)}>
+              Descartar e começar novo
+            </Button>
+            <Button type="button" variant="ghost" onClick={() => setSavedConflict(false)}>
+              Cancelar
+            </Button>
+          </div>
+        </div>
       )}
 
       <Button type="submit" size="lg" disabled={submitting} className="h-12 w-full text-base">

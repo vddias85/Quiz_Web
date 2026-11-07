@@ -18,6 +18,7 @@ enum Mode {
 
 enum SessionStatus {
   IN_PROGRESS
+  SAVED // salvo entre perguntas para continuar depois (vale por 24 h)
   FINISHED
   EXPIRED
 }
@@ -82,23 +83,28 @@ model Player {
 }
 
 model Session {
-  id           String           @id @default(cuid())
-  playerId     String
-  player       Player           @relation(fields: [playerId], references: [id])
-  mode         Mode
-  categoryId   Int?
-  category     Category?        @relation(fields: [categoryId], references: [id])
-  status       SessionStatus    @default(IN_PROGRESS)
-  startedAt    DateTime         @default(now())
-  finishedAt   DateTime?
-  scoreTenths  Int? // 0–100; exibido como scoreTenths / 10 (CHECK no SQL)
-  correctCount Int?
-  totalTimeMs  Int?
-  items        SessionItem[]
-  reports      QuestionReport[]
+  id             String           @id @default(cuid())
+  playerId       String
+  player         Player           @relation(fields: [playerId], references: [id])
+  mode           Mode
+  categoryId     Int?
+  category       Category?        @relation(fields: [categoryId], references: [id])
+  status         SessionStatus    @default(IN_PROGRESS)
+  startedAt      DateTime         @default(now())
+  // Tempo de jogo ativo (limite de 15 min): soma dos trechos já jogados + trecho atual.
+  activeSince    DateTime         @default(now()) // início do trecho atual (início ou retomada)
+  activeMsBefore Int              @default(0) // ms jogados antes de salvar
+  savedAt        DateTime? // quando foi salvo (status SAVED); expira em 24 h
+  finishedAt     DateTime?
+  scoreTenths    Int? // 0–100; exibido como scoreTenths / 10 (CHECK no SQL)
+  correctCount   Int?
+  totalTimeMs    Int?
+  items          SessionItem[]
+  reports        QuestionReport[]
 
   @@index([mode, categoryId, status, finishedAt]) // ranking
   @@index([playerId, startedAt]) // últimas sessões do jogador (evitar repetição)
+  @@index([playerId, status]) // jogo salvo do jogador
 }
 
 model SessionItem {

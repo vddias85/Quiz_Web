@@ -12,6 +12,7 @@ export const RATE_LIMITS = {
   current: { limit: 120, windowMs: 60_000 },
   answer: { limit: 60, windowMs: 60_000 },
   result: { limit: 60, windowMs: 60_000 },
+  saveResume: { limit: 20, windowMs: 60_000 },
   report: { limit: 5, windowMs: 10 * 60_000 },
 } satisfies Record<string, RateLimitRule>;
 

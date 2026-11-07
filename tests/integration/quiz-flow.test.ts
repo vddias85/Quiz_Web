@@ -9,8 +9,11 @@ import {
   getCurrentQuestion,
   getSessionResult,
   listPlayableCategories,
+  listSavedGames,
   reportQuestion,
   resolvePlayer,
+  resumeSession,
+  saveSession,
   submitAnswer,
   type CurrentQuestionDto,
 } from "@/server/quiz";
@@ -277,5 +280,93 @@ describe("reportar pergunta e limite de requisições", () => {
     expect(await consumeRateLimit(key, rule, now)).toBe(true);
     expect(await consumeRateLimit(key, rule, now)).toBe(true);
     expect(await consumeRateLimit(key, rule, now)).toBe(false);
+  });
+});
+
+describe("salvar e continuar depois", () => {
+  const MIN = 60_000;
+  const HOUR = 60 * MIN;
+
+  /** Cria a partida em `base` e responde a 1ª pergunta. */
+  async function startAndAnswerFirst(base: Date) {
+    const { player, ownedIds } = await newPlayer();
+    const { sessionId } = await createSession({ playerId: player.id, mode: "MIXED", now: base });
+    const q = inProgress(await getCurrentQuestion(sessionId, ownedIds, at(base, 1_000)));
+    await submitAnswer(sessionId, ownedIds, { position: 1, optionId: q.options[0].id }, at(base, 5_000));
+    return { player, ownedIds, sessionId };
+  }
+
+  it("só salva entre perguntas, nunca com uma pergunta aberta na tela", async () => {
+    const base = new Date();
+    const { player, ownedIds } = await newPlayer();
+    const { sessionId } = await createSession({ playerId: player.id, mode: "MIXED", now: base });
+    const q = inProgress(await getCurrentQuestion(sessionId, ownedIds, at(base, 1_000)));
+    await expectApiError(saveSession(sessionId, ownedIds, at(base, 2_000)), 409, "question_open");
+
+    await submitAnswer(sessionId, ownedIds, { position: 1, optionId: q.options[0].id }, at(base, 3_000));
+    await saveSession(sessionId, ownedIds, at(base, 4_000));
+    const s = await prisma.session.findUniqueOrThrow({ where: { id: sessionId } });
+    expect(s).toMatchObject({ status: "SAVED", activeMsBefore: 4_000 });
+
+    // Salvo: não entrega pergunta nem aceita resposta.
+    expect(await getCurrentQuestion(sessionId, ownedIds, at(base, 5_000))).toEqual({ status: "saved" });
+    await expectApiError(
+      submitAnswer(sessionId, ownedIds, { position: 2, optionId: null }, at(base, 5_000)),
+      409,
+      "session_saved",
+    );
+    const saved = await listSavedGames(ownedIds, at(base, 6_000));
+    expect(saved).toHaveLength(1);
+    expect(saved[0]).toMatchObject({ sessionId, answered: 1, nickname: player.nickname });
+  });
+
+  it("ao retomar, a próxima pergunta é inédita, com 30 s, e o período salvo não conta nos 15 min", async () => {
+    const base = new Date();
+    const { ownedIds, sessionId } = await startAndAnswerFirst(base);
+    await saveSession(sessionId, ownedIds, at(base, 10 * MIN)); // 10 min de jogo ativo
+
+    const back = at(base, 5 * HOUR);
+    await resumeSession(sessionId, ownedIds, back);
+    const item2Before = await prisma.sessionItem.findUniqueOrThrow({ where: { sessionId_position: { sessionId, position: 2 } } });
+    expect(item2Before.shownAt).toBeNull(); // a pergunta 2 nunca foi vista antes de salvar
+
+    const q2 = inProgress(await getCurrentQuestion(sessionId, ownedIds, back));
+    expect(q2.position).toBe(2);
+    expect(q2.remainingMs).toBe(30_000);
+    const r = await submitAnswer(sessionId, ownedIds, { position: 2, optionId: q2.options[0].id }, at(back, 5_000));
+    expect(r.timedOut).toBe(false);
+
+    // 10 min antes + 4 min agora = 14 min: continua valendo.
+    expect((await getCurrentQuestion(sessionId, ownedIds, at(back, 4 * MIN))).status).toBe("in_progress");
+    // 10 + 6 = 16 min de jogo ativo: expira.
+    expect(await getCurrentQuestion(sessionId, ownedIds, at(back, 6 * MIN))).toEqual({ status: "expired" });
+  });
+
+  it("jogo salvo expira depois de 24 horas", async () => {
+    const base = new Date();
+    const { ownedIds, sessionId } = await startAndAnswerFirst(base);
+    await saveSession(sessionId, ownedIds, at(base, 10_000));
+    const late = at(base, 25 * HOUR);
+    expect(await listSavedGames(ownedIds, late)).toHaveLength(0);
+    await expectApiError(resumeSession(sessionId, ownedIds, late), 410, "session_expired");
+  });
+
+  it("começar outro jogo exige descartar o salvo", async () => {
+    const base = new Date();
+    const { player, ownedIds, sessionId } = await startAndAnswerFirst(base);
+    await saveSession(sessionId, ownedIds, at(base, 10_000));
+    await expectApiError(createSession({ playerId: player.id, mode: "MIXED", now: at(base, 20_000) }), 409, "has_saved_game");
+    await createSession({ playerId: player.id, mode: "MIXED", discardSaved: true, now: at(base, 30_000) });
+    const old = await prisma.session.findUniqueOrThrow({ where: { id: sessionId } });
+    expect(old.status).toBe("EXPIRED");
+  });
+
+  it("outro navegador não retoma nem salva a partida", async () => {
+    const base = new Date();
+    const { ownedIds, sessionId } = await startAndAnswerFirst(base);
+    const intruder = await newPlayer();
+    await expectApiError(saveSession(sessionId, intruder.ownedIds, at(base, 10_000)), 404, "not_found");
+    await saveSession(sessionId, ownedIds, at(base, 10_000));
+    await expectApiError(resumeSession(sessionId, intruder.ownedIds, at(base, 20_000)), 404, "not_found");
   });
 });

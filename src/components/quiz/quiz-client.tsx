@@ -20,6 +20,7 @@ type Phase =
   | { kind: "question"; question: Question; submitting: boolean }
   | { kind: "feedback"; question: Question; result: AnswerResultDto }
   | { kind: "expired" }
+  | { kind: "saved" }
   | { kind: "error"; message: string };
 
 const KEY_TO_INDEX: Record<string, number> = { "1": 0, "2": 1, "3": 2, "4": 3, a: 0, b: 1, c: 2, d: 3 };
@@ -28,6 +29,8 @@ export function QuizClient({ sessionId }: { sessionId: string }) {
   const router = useRouter();
   const [phase, setPhase] = useState<Phase>({ kind: "loading" });
   const [reporting, setReporting] = useState(false);
+  const [saving, setSaving] = useState(false);
+  const [saveError, setSaveError] = useState<string | null>(null);
   const nextButton = useRef<HTMLButtonElement>(null);
 
   const goToResult = useCallback(() => router.replace(`/resultado/${sessionId}`), [router, sessionId]);
@@ -35,11 +38,12 @@ export function QuizClient({ sessionId }: { sessionId: string }) {
   const load = useCallback(async () => {
     setPhase({ kind: "loading" });
     setReporting(false);
+    setSaveError(null);
     try {
       const current = await api.current(sessionId);
-      if (current.status !== "in_progress") {
-        return current.status === "finished" ? goToResult() : setPhase({ kind: "expired" });
-      }
+      if (current.status === "finished") return goToResult();
+      if (current.status === "saved") return setPhase({ kind: "saved" });
+      if (current.status !== "in_progress") return setPhase({ kind: "expired" });
       setPhase({ kind: "question", question: current, submitting: false });
     } catch (err) {
       setPhase({ kind: "error", message: err instanceof ClientApiError ? err.message : "Erro inesperado." });
@@ -66,6 +70,30 @@ export function QuizClient({ sessionId }: { sessionId: string }) {
     },
     [phase, sessionId, load],
   );
+
+  // Salvar só entre perguntas: o botão aparece no feedback, antes de a próxima ser exibida.
+  const saveAndExit = useCallback(async () => {
+    setSaving(true);
+    setSaveError(null);
+    try {
+      await api.save(sessionId);
+      router.push("/?salvo=1");
+    } catch (err) {
+      setSaveError(err instanceof ClientApiError ? err.message : "Não foi possível salvar.");
+      setSaving(false);
+    }
+  }, [router, sessionId]);
+
+  const resume = useCallback(async () => {
+    setPhase({ kind: "loading" });
+    try {
+      await api.resume(sessionId);
+      await load();
+    } catch (err) {
+      if (err instanceof ClientApiError && err.status === 410) return setPhase({ kind: "expired" });
+      setPhase({ kind: "error", message: err instanceof ClientApiError ? err.message : "Erro inesperado." });
+    }
+  }, [sessionId, load]);
 
   const next = useCallback(() => {
     if (phase.kind !== "feedback") return;
@@ -104,6 +132,18 @@ export function QuizClient({ sessionId }: { sessionId: string }) {
   if (phase.kind === "expired") {
     return (
       <Message title="Sessão expirada" text="Esta partida passou do tempo limite de 15 minutos e não vale para o ranking." />
+    );
+  }
+
+  if (phase.kind === "saved") {
+    return (
+      <Message
+        title="💾 Jogo salvo"
+        text="Esta partida está salva. Ao continuar, você recebe a próxima pergunta com o cronômetro zerado."
+        playAgainLabel="Voltar ao início"
+      >
+        <Button onClick={() => void resume()}>Continuar agora</Button>
+      </Message>
     );
   }
 
@@ -169,12 +209,23 @@ export function QuizClient({ sessionId }: { sessionId: string }) {
             <Button ref={nextButton} size="lg" className="h-11 px-5 text-base" onClick={next}>
               {feedback.finished ? "Ver resultado" : "Próxima pergunta"}
             </Button>
+            {!feedback.finished && (
+              <Button variant="outline" disabled={saving} onClick={() => void saveAndExit()}>
+                {saving ? "Salvando…" : "💾 Salvar e sair"}
+              </Button>
+            )}
             {!reporting && (
               <Button variant="ghost" onClick={() => setReporting(true)}>
                 🚩 Reportar pergunta
               </Button>
             )}
           </div>
+
+          {saveError && (
+            <p className="text-sm text-destructive" role="alert">
+              {saveError}
+            </p>
+          )}
 
           {reporting && (
             <ReportForm sessionId={sessionId} position={question.position} onClose={() => setReporting(false)} />
@@ -191,15 +242,25 @@ export function QuizClient({ sessionId }: { sessionId: string }) {
   );
 }
 
-function Message({ title, text, children }: { title: string; text: string; children?: React.ReactNode }) {
+function Message({
+  title,
+  text,
+  children,
+  playAgainLabel = "Jogar de novo",
+}: {
+  title: string;
+  text: string;
+  children?: React.ReactNode;
+  playAgainLabel?: string;
+}) {
   return (
     <div className="space-y-4 py-16 text-center">
       <h1 className="text-2xl font-bold">{title}</h1>
       <p className="text-muted-foreground">{text}</p>
       <div className="flex justify-center gap-3">
         {children}
-        <Link href="/" className={buttonVariants()}>
-          Jogar de novo
+        <Link href="/" className={buttonVariants({ variant: children ? "outline" : "default" })}>
+          {playAgainLabel}
         </Link>
       </div>
     </div>

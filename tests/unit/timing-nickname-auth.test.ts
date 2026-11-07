@@ -1,5 +1,12 @@
 import { describe, expect, it } from "vitest";
-import { answerTimeMs, isSessionExpired, isTimedOut, remainingMs } from "@/lib/timing";
+import {
+  activeMs,
+  answerTimeMs,
+  isSavedGameExpired,
+  isSessionExpired,
+  isTimedOut,
+  remainingMs,
+} from "@/lib/timing";
 import { containsProfanity, nicknameKey, validateNickname } from "@/lib/nickname";
 import { decodePlayerCookie, encodePlayerCookie, withPlayer } from "@/lib/auth";
 
@@ -22,9 +29,21 @@ describe("timing", () => {
     expect(answerTimeMs(t0, after(31_500))).toBe(30_000);
     expect(answerTimeMs(t0, after(-50))).toBe(0);
   });
-  it("sessão expira depois de 15 minutos", () => {
-    expect(isSessionExpired(t0, after(15 * 60_000))).toBe(false);
-    expect(isSessionExpired(t0, after(15 * 60_000 + 1))).toBe(true);
+  it("sessão expira depois de 15 minutos de jogo ativo", () => {
+    const fresh = { activeSince: t0, activeMsBefore: 0 };
+    expect(isSessionExpired(fresh, after(15 * 60_000))).toBe(false);
+    expect(isSessionExpired(fresh, after(15 * 60_000 + 1))).toBe(true);
+  });
+  it("o tempo em que o jogo ficou salvo não conta", () => {
+    // Jogou 10 min, salvou; retomou em t0 e jogou mais 4 min → 14 min ativos.
+    const resumed = { activeSince: t0, activeMsBefore: 10 * 60_000 };
+    expect(activeMs(resumed, after(4 * 60_000))).toBe(14 * 60_000);
+    expect(isSessionExpired(resumed, after(5 * 60_000))).toBe(false);
+    expect(isSessionExpired(resumed, after(5 * 60_000 + 1))).toBe(true);
+  });
+  it("jogo salvo vale por 24 horas", () => {
+    expect(isSavedGameExpired(t0, after(24 * 60 * 60_000))).toBe(false);
+    expect(isSavedGameExpired(t0, after(24 * 60 * 60_000 + 1))).toBe(true);
   });
 });
 
