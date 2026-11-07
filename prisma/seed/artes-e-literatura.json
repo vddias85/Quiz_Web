@@ -1,0 +1,282 @@
+[
+  {
+    "key": "artes-e-literatura-001",
+    "level": 1,
+    "statement": "Quem pintou a \"Mona Lisa\"?",
+    "options": [
+      "Michelangelo",
+      "Leonardo da Vinci",
+      "Rafael",
+      "Van Gogh"
+    ],
+    "correctIndex": 1,
+    "explanation": "Leonardo pintou a Mona Lisa no início do século XVI; o quadro está no Museu do Louvre, em Paris.",
+    "reviewed": false
+  },
+  {
+    "key": "artes-e-literatura-002",
+    "level": 1,
+    "statement": "Quem escreveu \"Dom Casmurro\"?",
+    "options": [
+      "Machado de Assis",
+      "José de Alencar",
+      "Jorge Amado",
+      "Graciliano Ramos"
+    ],
+    "correctIndex": 0,
+    "explanation": "O romance de 1899 é narrado por Bentinho, que desconfia de Capitu.",
+    "reviewed": false
+  },
+  {
+    "key": "artes-e-literatura-003",
+    "level": 1,
+    "statement": "Quem escreveu \"Romeu e Julieta\"?",
+    "options": [
+      "Charles Dickens",
+      "Miguel de Cervantes",
+      "William Shakespeare",
+      "Victor Hugo"
+    ],
+    "correctIndex": 2,
+    "explanation": "A tragédia de Shakespeare se passa em Verona, na Itália.",
+    "reviewed": false
+  },
+  {
+    "key": "artes-e-literatura-004",
+    "level": 1,
+    "statement": "Qual autor criou o \"Sítio do Picapau Amarelo\"?",
+    "options": [
+      "Monteiro Lobato",
+      "Ziraldo",
+      "Ruth Rocha",
+      "Ana Maria Machado"
+    ],
+    "correctIndex": 0,
+    "explanation": "Monteiro Lobato criou Emília, Narizinho e Pedrinho; o primeiro livro saiu em 1920.",
+    "reviewed": false
+  },
+  {
+    "key": "artes-e-literatura-005",
+    "level": 1,
+    "statement": "Qual pintor holandês pintou \"A Noite Estrelada\"?",
+    "options": [
+      "Rembrandt",
+      "Vincent van Gogh",
+      "Vermeer",
+      "Claude Monet"
+    ],
+    "correctIndex": 1,
+    "explanation": "Van Gogh pintou o quadro em 1889, quando estava internado em Saint-Rémy, na França.",
+    "reviewed": false
+  },
+  {
+    "key": "artes-e-literatura-006",
+    "level": 2,
+    "statement": "Quem escreveu \"Dom Quixote\"?",
+    "options": [
+      "Miguel de Cervantes",
+      "Lope de Vega",
+      "Luís de Camões",
+      "Dante Alighieri"
+    ],
+    "correctIndex": 0,
+    "explanation": "A primeira parte do romance de Cervantes foi publicada em 1605.",
+    "reviewed": false
+  },
+  {
+    "key": "artes-e-literatura-007",
+    "level": 2,
+    "statement": "Qual artista brasileira pintou \"Abaporu\" (1928)?",
+    "options": [
+      "Anita Malfatti",
+      "Tarsila do Amaral",
+      "Lygia Clark",
+      "Djanira"
+    ],
+    "correctIndex": 1,
+    "explanation": "O quadro inspirou o Movimento Antropofágico de Oswald de Andrade.",
+    "reviewed": false
+  },
+  {
+    "key": "artes-e-literatura-008",
+    "level": 2,
+    "statement": "Quem pintou o teto da Capela Sistina, no Vaticano?",
+    "options": [
+      "Leonardo da Vinci",
+      "Michelangelo",
+      "Rafael",
+      "Botticelli"
+    ],
+    "correctIndex": 1,
+    "explanation": "Michelangelo trabalhou no teto de 1508 a 1512; a cena mais famosa é \"A Criação de Adão\".",
+    "reviewed": false
+  },
+  {
+    "key": "artes-e-literatura-009",
+    "level": 2,
+    "statement": "Quem escreveu \"Os Lusíadas\"?",
+    "options": [
+      "Fernando Pessoa",
+      "Luís de Camões",
+      "Eça de Queirós",
+      "Gil Vicente"
+    ],
+    "correctIndex": 1,
+    "explanation": "O poema épico de 1572 narra a viagem de Vasco da Gama às Índias.",
+    "reviewed": false
+  },
+  {
+    "key": "artes-e-literatura-010",
+    "level": 2,
+    "statement": "Qual escritor brasileiro criou Macunaíma, o \"herói sem nenhum caráter\"?",
+    "options": [
+      "Mário de Andrade",
+      "Oswald de Andrade",
+      "Guimarães Rosa",
+      "Jorge Amado"
+    ],
+    "correctIndex": 0,
+    "explanation": "Macunaíma (1928) é uma das obras mais importantes do Modernismo brasileiro.",
+    "reviewed": false
+  },
+  {
+    "key": "artes-e-literatura-011",
+    "level": 3,
+    "statement": "Qual escritora brasileira escreveu \"A Hora da Estrela\"?",
+    "options": [
+      "Clarice Lispector",
+      "Rachel de Queiroz",
+      "Cecília Meireles",
+      "Lygia Fagundes Telles"
+    ],
+    "correctIndex": 0,
+    "explanation": "Publicado em 1977, o romance conta a história de Macabéa, uma nordestina no Rio de Janeiro.",
+    "reviewed": false
+  },
+  {
+    "key": "artes-e-literatura-012",
+    "level": 3,
+    "statement": "Salvador Dalí foi um dos principais nomes de qual movimento artístico?",
+    "options": [
+      "Cubismo",
+      "Surrealismo",
+      "Impressionismo",
+      "Expressionismo"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"A Persistência da Memória\", com os relógios derretidos, é sua obra mais famosa.",
+    "reviewed": false
+  },
+  {
+    "key": "artes-e-literatura-013",
+    "level": 3,
+    "statement": "Em que ano aconteceu a Semana de Arte Moderna, em São Paulo?",
+    "options": [
+      "1922",
+      "1930",
+      "1910",
+      "1945"
+    ],
+    "correctIndex": 0,
+    "explanation": "A Semana, no Theatro Municipal, coincidiu com o centenário da Independência.",
+    "reviewed": false
+  },
+  {
+    "key": "artes-e-literatura-014",
+    "level": 3,
+    "statement": "Quem escreveu \"Grande Sertão: Veredas\"?",
+    "options": [
+      "Graciliano Ramos",
+      "João Guimarães Rosa",
+      "Euclides da Cunha",
+      "José Lins do Rego"
+    ],
+    "correctIndex": 1,
+    "explanation": "O romance de 1956 é narrado pelo jagunço Riobaldo.",
+    "reviewed": false
+  },
+  {
+    "key": "artes-e-literatura-015",
+    "level": 3,
+    "statement": "Qual pintor espanhol pintou \"Guernica\"?",
+    "options": [
+      "Salvador Dalí",
+      "Pablo Picasso",
+      "Joan Miró",
+      "Francisco de Goya"
+    ],
+    "correctIndex": 1,
+    "explanation": "Picasso pintou Guernica em 1937, em resposta ao bombardeio da cidade basca na Guerra Civil Espanhola.",
+    "reviewed": false
+  },
+  {
+    "key": "artes-e-literatura-016",
+    "level": 4,
+    "statement": "Qual escultor barroco esculpiu os Doze Profetas de Congonhas, em Minas Gerais?",
+    "options": [
+      "Aleijadinho",
+      "Mestre Valentim",
+      "Victor Brecheret",
+      "Frans Krajcberg"
+    ],
+    "correctIndex": 0,
+    "explanation": "Antônio Francisco Lisboa, o Aleijadinho, esculpiu os profetas em pedra-sabão no início do século XIX.",
+    "reviewed": false
+  },
+  {
+    "key": "artes-e-literatura-017",
+    "level": 4,
+    "statement": "Qual escritor português recebeu o Prêmio Nobel de Literatura em 1998?",
+    "options": [
+      "José Saramago",
+      "Fernando Pessoa",
+      "António Lobo Antunes",
+      "Eça de Queirós"
+    ],
+    "correctIndex": 0,
+    "explanation": "Saramago é o único autor de língua portuguesa a receber o Nobel de Literatura.",
+    "reviewed": false
+  },
+  {
+    "key": "artes-e-literatura-018",
+    "level": 4,
+    "statement": "Quem escreveu \"Cem Anos de Solidão\"?",
+    "options": [
+      "Jorge Luis Borges",
+      "Gabriel García Márquez",
+      "Mario Vargas Llosa",
+      "Julio Cortázar"
+    ],
+    "correctIndex": 1,
+    "explanation": "O romance colombiano de 1967 se passa na cidade fictícia de Macondo.",
+    "reviewed": false
+  },
+  {
+    "key": "artes-e-literatura-019",
+    "level": 4,
+    "statement": "Qual pintor francês deu nome ao Impressionismo com a obra \"Impressão, Nascer do Sol\"?",
+    "options": [
+      "Claude Monet",
+      "Édouard Manet",
+      "Pierre-Auguste Renoir",
+      "Edgar Degas"
+    ],
+    "correctIndex": 0,
+    "explanation": "Um crítico usou o título do quadro de Monet, de 1872, para batizar o movimento, em tom de ironia.",
+    "reviewed": false
+  },
+  {
+    "key": "artes-e-literatura-020",
+    "level": 4,
+    "statement": "Qual poeta brasileiro escreveu \"No meio do caminho tinha uma pedra\"?",
+    "options": [
+      "Carlos Drummond de Andrade",
+      "Manuel Bandeira",
+      "Vinicius de Moraes",
+      "João Cabral de Melo Neto"
+    ],
+    "correctIndex": 0,
+    "explanation": "O poema \"No Meio do Caminho\" foi publicado em 1928 e causou polêmica na época.",
+    "reviewed": false
+  }
+]

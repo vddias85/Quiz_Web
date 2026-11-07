@@ -1,0 +1,282 @@
+[
+  {
+    "key": "cinema-e-tv-001",
+    "level": 1,
+    "statement": "Em qual filme da Disney a personagem Elsa canta \"Livre Estou\" (\"Let It Go\")?",
+    "options": [
+      "Frozen",
+      "Moana",
+      "Enrolados",
+      "Valente"
+    ],
+    "correctIndex": 0,
+    "explanation": "Frozen (2013) venceu o Oscar de Melhor Animação e o de Melhor Canção Original.",
+    "reviewed": false
+  },
+  {
+    "key": "cinema-e-tv-002",
+    "level": 1,
+    "statement": "Qual é o nome do bruxo protagonista da saga escrita por J. K. Rowling?",
+    "options": [
+      "Frodo Bolseiro",
+      "Harry Potter",
+      "Percy Jackson",
+      "Gandalf"
+    ],
+    "correctIndex": 1,
+    "explanation": "A saga tem sete livros e oito filmes, lançados entre 2001 e 2011.",
+    "reviewed": false
+  },
+  {
+    "key": "cinema-e-tv-003",
+    "level": 1,
+    "statement": "Em qual filme um navio afunda após bater em um iceberg, com Leonardo DiCaprio e Kate Winslet no elenco?",
+    "options": [
+      "Poseidon",
+      "Náufrago",
+      "Titanic",
+      "Pearl Harbor"
+    ],
+    "correctIndex": 2,
+    "explanation": "Titanic (1997), de James Cameron, venceu 11 Oscars.",
+    "reviewed": false
+  },
+  {
+    "key": "cinema-e-tv-004",
+    "level": 1,
+    "statement": "Qual personagem de \"Toy Story\" diz \"Ao infinito e além!\"?",
+    "options": [
+      "Woody",
+      "Buzz Lightyear",
+      "Rex",
+      "Relâmpago McQueen"
+    ],
+    "correctIndex": 1,
+    "explanation": "Buzz Lightyear é o patrulheiro espacial de brinquedo da Pixar.",
+    "reviewed": false
+  },
+  {
+    "key": "cinema-e-tv-005",
+    "level": 1,
+    "statement": "Qual é o nome do ogro verde da famosa animação da DreamWorks de 2001?",
+    "options": [
+      "Hulk",
+      "Grinch",
+      "Shrek",
+      "Gru"
+    ],
+    "correctIndex": 2,
+    "explanation": "Shrek venceu o primeiro Oscar de Melhor Animação, em 2002.",
+    "reviewed": false
+  },
+  {
+    "key": "cinema-e-tv-006",
+    "level": 2,
+    "statement": "Quem dirigiu \"Jurassic Park\" (1993)?",
+    "options": [
+      "James Cameron",
+      "Steven Spielberg",
+      "George Lucas",
+      "Ridley Scott"
+    ],
+    "correctIndex": 1,
+    "explanation": "Spielberg adaptou o livro de Michael Crichton.",
+    "reviewed": false
+  },
+  {
+    "key": "cinema-e-tv-007",
+    "level": 2,
+    "statement": "Qual série se passa na cidade fictícia de Hawkins, nos anos 1980?",
+    "options": [
+      "Dark",
+      "Stranger Things",
+      "Twin Peaks",
+      "Riverdale"
+    ],
+    "correctIndex": 1,
+    "explanation": "Stranger Things estreou na Netflix em 2016.",
+    "reviewed": false
+  },
+  {
+    "key": "cinema-e-tv-008",
+    "level": 2,
+    "statement": "Qual filme brasileiro de 2002 se passa numa comunidade do Rio de Janeiro e recebeu 4 indicações ao Oscar?",
+    "options": [
+      "Central do Brasil",
+      "Cidade de Deus",
+      "Tropa de Elite",
+      "Carandiru"
+    ],
+    "correctIndex": 1,
+    "explanation": "Cidade de Deus, de Fernando Meirelles, foi indicado a Direção, Roteiro Adaptado, Fotografia e Montagem.",
+    "reviewed": false
+  },
+  {
+    "key": "cinema-e-tv-009",
+    "level": 2,
+    "statement": "Em \"O Senhor dos Anéis\", qual hobbit leva o Um Anel até a Montanha da Perdição?",
+    "options": [
+      "Frodo",
+      "Sam",
+      "Bilbo",
+      "Pippin"
+    ],
+    "correctIndex": 0,
+    "explanation": "Frodo recebe o anel do tio Bilbo e parte em missão para destruí-lo, acompanhado por Sam.",
+    "reviewed": false
+  },
+  {
+    "key": "cinema-e-tv-010",
+    "level": 2,
+    "statement": "Qual série da HBO é baseada nos livros \"As Crônicas de Gelo e Fogo\"?",
+    "options": [
+      "Game of Thrones",
+      "The Witcher",
+      "Vikings",
+      "House of Cards"
+    ],
+    "correctIndex": 0,
+    "explanation": "Os livros são de George R. R. Martin; a série foi exibida de 2011 a 2019.",
+    "reviewed": false
+  },
+  {
+    "key": "cinema-e-tv-011",
+    "level": 3,
+    "statement": "Qual foi o primeiro longa-metragem de animação dos estúdios Disney, lançado em 1937?",
+    "options": [
+      "Branca de Neve e os Sete Anões",
+      "Pinóquio",
+      "Fantasia",
+      "Cinderela"
+    ],
+    "correctIndex": 0,
+    "explanation": "Branca de Neve foi o primeiro longa animado produzido em Hollywood.",
+    "reviewed": false
+  },
+  {
+    "key": "cinema-e-tv-012",
+    "level": 3,
+    "statement": "Quem dirigiu \"Pulp Fiction\" (1994)?",
+    "options": [
+      "Martin Scorsese",
+      "Quentin Tarantino",
+      "David Fincher",
+      "Joel Coen"
+    ],
+    "correctIndex": 1,
+    "explanation": "Pulp Fiction venceu a Palma de Ouro em Cannes e o Oscar de Melhor Roteiro Original.",
+    "reviewed": false
+  },
+  {
+    "key": "cinema-e-tv-013",
+    "level": 3,
+    "statement": "Qual atriz brasileira foi indicada ao Oscar de Melhor Atriz por \"Central do Brasil\"?",
+    "options": [
+      "Fernanda Montenegro",
+      "Sônia Braga",
+      "Fernanda Torres",
+      "Glória Pires"
+    ],
+    "correctIndex": 0,
+    "explanation": "Fernanda Montenegro foi a primeira atriz brasileira indicada nessa categoria, em 1999.",
+    "reviewed": false
+  },
+  {
+    "key": "cinema-e-tv-014",
+    "level": 3,
+    "statement": "Qual filme deu ao Brasil o primeiro Oscar de Melhor Filme Internacional, em 2025?",
+    "options": [
+      "Ainda Estou Aqui",
+      "Central do Brasil",
+      "Cidade de Deus",
+      "O Pagador de Promessas"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dirigido por Walter Salles, o filme conta a história de Eunice Paiva.",
+    "reviewed": false
+  },
+  {
+    "key": "cinema-e-tv-015",
+    "level": 3,
+    "statement": "Em qual cidade acontece o festival de cinema que entrega a Palma de Ouro?",
+    "options": [
+      "Veneza",
+      "Berlim",
+      "Cannes",
+      "Toronto"
+    ],
+    "correctIndex": 2,
+    "explanation": "O Festival de Cannes, na França, acontece todo ano em maio.",
+    "reviewed": false
+  },
+  {
+    "key": "cinema-e-tv-016",
+    "level": 4,
+    "statement": "Qual filme venceu o primeiro Oscar de Melhor Filme, na cerimônia de 1929?",
+    "options": [
+      "Asas",
+      "Aurora",
+      "O Cantor de Jazz",
+      "Ben-Hur"
+    ],
+    "correctIndex": 0,
+    "explanation": "Asas (Wings, 1927) é um drama sobre pilotos da Primeira Guerra Mundial.",
+    "reviewed": false
+  },
+  {
+    "key": "cinema-e-tv-017",
+    "level": 4,
+    "statement": "Quem dirigiu \"O Pagador de Promessas\", vencedor da Palma de Ouro em 1962?",
+    "options": [
+      "Anselmo Duarte",
+      "Glauber Rocha",
+      "Nelson Pereira dos Santos",
+      "Cacá Diegues"
+    ],
+    "correctIndex": 0,
+    "explanation": "Até hoje é o único longa brasileiro a vencer a Palma de Ouro.",
+    "reviewed": false
+  },
+  {
+    "key": "cinema-e-tv-018",
+    "level": 4,
+    "statement": "Qual filme de 1941, dirigido e estrelado por Orson Welles, é apontado como um dos maiores de todos os tempos?",
+    "options": [
+      "Casablanca",
+      "Cidadão Kane",
+      "Um Corpo que Cai",
+      "A Marca da Maldade"
+    ],
+    "correctIndex": 1,
+    "explanation": "Cidadão Kane inovou na fotografia e na narrativa, contada em flashbacks.",
+    "reviewed": false
+  },
+  {
+    "key": "cinema-e-tv-019",
+    "level": 4,
+    "statement": "Qual foi o primeiro filme não falado em inglês a vencer o Oscar de Melhor Filme?",
+    "options": [
+      "Roma",
+      "Parasita",
+      "A Vida é Bela",
+      "O Tigre e o Dragão"
+    ],
+    "correctIndex": 1,
+    "explanation": "O sul-coreano Parasita, de Bong Joon-ho, venceu em 2020.",
+    "reviewed": false
+  },
+  {
+    "key": "cinema-e-tv-020",
+    "level": 4,
+    "statement": "Quem compôs a trilha sonora de \"Star Wars\" (1977)?",
+    "options": [
+      "Hans Zimmer",
+      "John Williams",
+      "Ennio Morricone",
+      "Howard Shore"
+    ],
+    "correctIndex": 1,
+    "explanation": "John Williams também compôs as trilhas de Tubarão, E.T. e Jurassic Park.",
+    "reviewed": false
+  }
+]

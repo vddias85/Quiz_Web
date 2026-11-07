@@ -1,0 +1,282 @@
+[
+  {
+    "key": "brasil-001",
+    "level": 1,
+    "statement": "Qual é a capital do Brasil?",
+    "options": [
+      "Rio de Janeiro",
+      "São Paulo",
+      "Brasília",
+      "Salvador"
+    ],
+    "correctIndex": 2,
+    "explanation": "Brasília é a capital desde 1960.",
+    "reviewed": false
+  },
+  {
+    "key": "brasil-002",
+    "level": 1,
+    "statement": "Quais são as cores da bandeira do Brasil?",
+    "options": [
+      "Verde, amarelo, azul e branco",
+      "Verde, vermelho e branco",
+      "Azul, branco e vermelho",
+      "Verde, amarelo e preto"
+    ],
+    "correctIndex": 0,
+    "explanation": "A bandeira tem retângulo verde, losango amarelo e círculo azul com uma faixa branca e estrelas.",
+    "reviewed": false
+  },
+  {
+    "key": "brasil-003",
+    "level": 1,
+    "statement": "Qual prato típico brasileiro é feito com feijão-preto e carnes de porco?",
+    "options": [
+      "Feijoada",
+      "Moqueca",
+      "Acarajé",
+      "Vatapá"
+    ],
+    "correctIndex": 0,
+    "explanation": "A feijoada costuma ser servida com arroz, couve, farofa e laranja.",
+    "reviewed": false
+  },
+  {
+    "key": "brasil-004",
+    "level": 1,
+    "statement": "Qual personagem do folclore brasileiro tem uma perna só e usa gorro vermelho?",
+    "options": [
+      "Curupira",
+      "Saci-Pererê",
+      "Boitatá",
+      "Iara"
+    ],
+    "correctIndex": 1,
+    "explanation": "O Saci adora fazer travessuras. O Curupira tem os pés virados para trás.",
+    "reviewed": false
+  },
+  {
+    "key": "brasil-005",
+    "level": 1,
+    "statement": "Qual é o maior estado brasileiro em área?",
+    "options": [
+      "Pará",
+      "Amazonas",
+      "Mato Grosso",
+      "Minas Gerais"
+    ],
+    "correctIndex": 1,
+    "explanation": "O Amazonas tem cerca de 1,56 milhão de km², quase um quinto do território nacional.",
+    "reviewed": false
+  },
+  {
+    "key": "brasil-006",
+    "level": 2,
+    "statement": "Qual cidade é famosa pelo Festival Folclórico com os bois Garantido e Caprichoso?",
+    "options": [
+      "Parintins",
+      "Manaus",
+      "Belém",
+      "São Luís"
+    ],
+    "correctIndex": 0,
+    "explanation": "O festival acontece no fim de junho em Parintins, no Amazonas.",
+    "reviewed": false
+  },
+  {
+    "key": "brasil-007",
+    "level": 2,
+    "statement": "Em que ano Brasília foi inaugurada?",
+    "options": [
+      "1950",
+      "1960",
+      "1964",
+      "1970"
+    ],
+    "correctIndex": 1,
+    "explanation": "Brasília foi inaugurada em 21 de abril de 1960, no governo de Juscelino Kubitschek.",
+    "reviewed": false
+  },
+  {
+    "key": "brasil-008",
+    "level": 2,
+    "statement": "Qual é o nome da sereia das lendas dos rios da Amazônia?",
+    "options": [
+      "Iara",
+      "Cuca",
+      "Mula sem cabeça",
+      "Boitatá"
+    ],
+    "correctIndex": 0,
+    "explanation": "Segundo a lenda, a Iara atrai os pescadores com seu canto.",
+    "reviewed": false
+  },
+  {
+    "key": "brasil-009",
+    "level": 2,
+    "statement": "Quantos estados tem o Brasil, sem contar o Distrito Federal?",
+    "options": [
+      "24",
+      "25",
+      "26",
+      "27"
+    ],
+    "correctIndex": 2,
+    "explanation": "São 26 estados e o Distrito Federal, totalizando 27 unidades federativas.",
+    "reviewed": false
+  },
+  {
+    "key": "brasil-010",
+    "level": 2,
+    "statement": "Qual quitute baiano é feito com massa de feijão-fradinho frita no azeite de dendê?",
+    "options": [
+      "Acarajé",
+      "Tapioca",
+      "Coxinha",
+      "Pamonha"
+    ],
+    "correctIndex": 0,
+    "explanation": "O ofício das baianas de acarajé é patrimônio imaterial registrado pelo Iphan.",
+    "reviewed": false
+  },
+  {
+    "key": "brasil-011",
+    "level": 3,
+    "statement": "Quem foi o primeiro presidente do Brasil?",
+    "options": [
+      "Deodoro da Fonseca",
+      "Floriano Peixoto",
+      "Getúlio Vargas",
+      "Prudente de Morais"
+    ],
+    "correctIndex": 0,
+    "explanation": "O marechal Deodoro proclamou a República em 1889 e governou até 1891.",
+    "reviewed": false
+  },
+  {
+    "key": "brasil-012",
+    "level": 3,
+    "statement": "Qual lei, assinada em 1888, aboliu a escravidão no Brasil?",
+    "options": [
+      "Lei Áurea",
+      "Lei do Ventre Livre",
+      "Lei dos Sexagenários",
+      "Lei Eusébio de Queirós"
+    ],
+    "correctIndex": 0,
+    "explanation": "A princesa Isabel assinou a Lei Áurea em 13 de maio de 1888.",
+    "reviewed": false
+  },
+  {
+    "key": "brasil-013",
+    "level": 3,
+    "statement": "Qual arquiteto projetou os principais prédios de Brasília?",
+    "options": [
+      "Lúcio Costa",
+      "Oscar Niemeyer",
+      "Roberto Burle Marx",
+      "Lina Bo Bardi"
+    ],
+    "correctIndex": 1,
+    "explanation": "Niemeyer projetou o Congresso, o Palácio da Alvorada e a Catedral. Lúcio Costa fez o plano urbanístico da cidade.",
+    "reviewed": false
+  },
+  {
+    "key": "brasil-014",
+    "level": 3,
+    "statement": "Qual é o maior bioma brasileiro em extensão?",
+    "options": [
+      "Cerrado",
+      "Amazônia",
+      "Mata Atlântica",
+      "Caatinga"
+    ],
+    "correctIndex": 1,
+    "explanation": "A Amazônia ocupa cerca de 49% do território nacional; o Cerrado é o segundo maior.",
+    "reviewed": false
+  },
+  {
+    "key": "brasil-015",
+    "level": 3,
+    "statement": "Em qual estado fica a Chapada Diamantina?",
+    "options": [
+      "Bahia",
+      "Minas Gerais",
+      "Goiás",
+      "Mato Grosso"
+    ],
+    "correctIndex": 0,
+    "explanation": "A Chapada Diamantina fica no centro da Bahia e é famosa por cachoeiras e grutas.",
+    "reviewed": false
+  },
+  {
+    "key": "brasil-016",
+    "level": 4,
+    "statement": "Em que ano foi promulgada a primeira Constituição republicana do Brasil?",
+    "options": [
+      "1824",
+      "1889",
+      "1891",
+      "1934"
+    ],
+    "correctIndex": 2,
+    "explanation": "A Constituição de 1891 criou o sistema federativo. A de 1824 era do Império.",
+    "reviewed": false
+  },
+  {
+    "key": "brasil-017",
+    "level": 4,
+    "statement": "Qual conflito, liderado por Antônio Conselheiro no sertão da Bahia, terminou em 1897?",
+    "options": [
+      "Guerra de Canudos",
+      "Revolta da Vacina",
+      "Guerra do Contestado",
+      "Revolta da Chibata"
+    ],
+    "correctIndex": 0,
+    "explanation": "Canudos foi retratada por Euclides da Cunha no livro \"Os Sertões\".",
+    "reviewed": false
+  },
+  {
+    "key": "brasil-018",
+    "level": 4,
+    "statement": "Qual é o ponto extremo mais ao norte do território brasileiro?",
+    "options": [
+      "Monte Caburaí",
+      "Foz do rio Oiapoque",
+      "Pico da Neblina",
+      "Arroio Chuí"
+    ],
+    "correctIndex": 0,
+    "explanation": "O Monte Caburaí, em Roraima, fica mais ao norte que o Oiapoque. A expressão \"do Oiapoque ao Chuí\" é anterior a essa medição.",
+    "reviewed": false
+  },
+  {
+    "key": "brasil-019",
+    "level": 4,
+    "statement": "Quem foi o primeiro presidente da Academia Brasileira de Letras?",
+    "options": [
+      "Machado de Assis",
+      "Rui Barbosa",
+      "Joaquim Nabuco",
+      "Olavo Bilac"
+    ],
+    "correctIndex": 0,
+    "explanation": "Machado de Assis presidiu a ABL desde a fundação, em 1897, até morrer, em 1908.",
+    "reviewed": false
+  },
+  {
+    "key": "brasil-020",
+    "level": 4,
+    "statement": "Qual cidade foi a capital do Brasil entre 1763 e 1960?",
+    "options": [
+      "Salvador",
+      "Rio de Janeiro",
+      "São Paulo",
+      "Petrópolis"
+    ],
+    "correctIndex": 1,
+    "explanation": "A capital foi transferida de Salvador para o Rio em 1763 e do Rio para Brasília em 1960.",
+    "reviewed": false
+  }
+]

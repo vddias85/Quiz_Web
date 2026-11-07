@@ -1,0 +1,282 @@
+[
+  {
+    "key": "historia-001",
+    "level": 1,
+    "statement": "Em que ano o Brasil declarou sua independência de Portugal?",
+    "options": [
+      "1500",
+      "1822",
+      "1889",
+      "1888"
+    ],
+    "correctIndex": 1,
+    "explanation": "Dom Pedro proclamou a independência em 7 de setembro de 1822.",
+    "reviewed": false
+  },
+  {
+    "key": "historia-002",
+    "level": 1,
+    "statement": "Quem foi o primeiro presidente dos Estados Unidos?",
+    "options": [
+      "Abraham Lincoln",
+      "Thomas Jefferson",
+      "George Washington",
+      "John Adams"
+    ],
+    "correctIndex": 2,
+    "explanation": "George Washington governou de 1789 a 1797.",
+    "reviewed": false
+  },
+  {
+    "key": "historia-003",
+    "level": 1,
+    "statement": "Qual civilização construiu as pirâmides de Gizé?",
+    "options": [
+      "Romana",
+      "Egípcia",
+      "Grega",
+      "Maia"
+    ],
+    "correctIndex": 1,
+    "explanation": "As pirâmides de Gizé foram construídas pelos antigos egípcios há cerca de 4.500 anos.",
+    "reviewed": false
+  },
+  {
+    "key": "historia-004",
+    "level": 1,
+    "statement": "Em que ano terminou a Segunda Guerra Mundial?",
+    "options": [
+      "1918",
+      "1939",
+      "1945",
+      "1950"
+    ],
+    "correctIndex": 2,
+    "explanation": "A guerra terminou em 1945, com a rendição da Alemanha em maio e do Japão em setembro.",
+    "reviewed": false
+  },
+  {
+    "key": "historia-005",
+    "level": 1,
+    "statement": "Qual navegador português chegou ao Brasil em 1500?",
+    "options": [
+      "Vasco da Gama",
+      "Pedro Álvares Cabral",
+      "Bartolomeu Dias",
+      "Fernão de Magalhães"
+    ],
+    "correctIndex": 1,
+    "explanation": "A esquadra de Pedro Álvares Cabral chegou ao litoral da Bahia em abril de 1500.",
+    "reviewed": false
+  },
+  {
+    "key": "historia-006",
+    "level": 2,
+    "statement": "Qual muro, derrubado em 1989, simbolizou o fim da Guerra Fria?",
+    "options": [
+      "Muro de Berlim",
+      "Muralha da China",
+      "Muralha de Adriano",
+      "Muro das Lamentações"
+    ],
+    "correctIndex": 0,
+    "explanation": "O Muro de Berlim dividia a cidade em lado ocidental e oriental desde 1961.",
+    "reviewed": false
+  },
+  {
+    "key": "historia-007",
+    "level": 2,
+    "statement": "Qual imperador francês foi derrotado na Batalha de Waterloo, em 1815?",
+    "options": [
+      "Luís XIV",
+      "Napoleão Bonaparte",
+      "Carlos Magno",
+      "Napoleão III"
+    ],
+    "correctIndex": 1,
+    "explanation": "Depois de Waterloo, Napoleão foi exilado na ilha de Santa Helena.",
+    "reviewed": false
+  },
+  {
+    "key": "historia-008",
+    "level": 2,
+    "statement": "Em que ano caiu o Império Romano do Ocidente?",
+    "options": [
+      "476",
+      "1453",
+      "800",
+      "27 a.C."
+    ],
+    "correctIndex": 0,
+    "explanation": "Em 476, o último imperador do Ocidente, Rômulo Augusto, foi deposto. 1453 é a queda do Império do Oriente.",
+    "reviewed": false
+  },
+  {
+    "key": "historia-009",
+    "level": 2,
+    "statement": "Qual revolução começou em 1789 com a Queda da Bastilha?",
+    "options": [
+      "Revolução Russa",
+      "Revolução Industrial",
+      "Revolução Francesa",
+      "Revolução Gloriosa"
+    ],
+    "correctIndex": 2,
+    "explanation": "A Revolução Francesa derrubou o absolutismo e espalhou os ideais de liberdade, igualdade e fraternidade.",
+    "reviewed": false
+  },
+  {
+    "key": "historia-010",
+    "level": 2,
+    "statement": "Quem liderou a independência da Índia com a resistência não violenta?",
+    "options": [
+      "Jawaharlal Nehru",
+      "Mahatma Gandhi",
+      "Indira Gandhi",
+      "Muhammad Ali Jinnah"
+    ],
+    "correctIndex": 1,
+    "explanation": "Gandhi liderou campanhas de desobediência civil contra o domínio britânico; a Índia ficou independente em 1947.",
+    "reviewed": false
+  },
+  {
+    "key": "historia-011",
+    "level": 3,
+    "statement": "Qual tratado de 1494 dividiu as terras recém-descobertas entre Portugal e Espanha?",
+    "options": [
+      "Tratado de Tordesilhas",
+      "Tratado de Madri",
+      "Tratado de Versalhes",
+      "Tratado de Utrecht"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tordesilhas traçou uma linha imaginária a 370 léguas de Cabo Verde.",
+    "reviewed": false
+  },
+  {
+    "key": "historia-012",
+    "level": 3,
+    "statement": "Qual cidade foi a primeira capital do Brasil?",
+    "options": [
+      "Rio de Janeiro",
+      "Salvador",
+      "São Vicente",
+      "Olinda"
+    ],
+    "correctIndex": 1,
+    "explanation": "Salvador foi fundada em 1549 como sede do Governo-Geral e foi capital até 1763.",
+    "reviewed": false
+  },
+  {
+    "key": "historia-013",
+    "level": 3,
+    "statement": "Em que ano o ser humano pisou na Lua pela primeira vez?",
+    "options": [
+      "1965",
+      "1969",
+      "1972",
+      "1961"
+    ],
+    "correctIndex": 1,
+    "explanation": "Neil Armstrong e Buzz Aldrin pousaram com a Apollo 11 em julho de 1969.",
+    "reviewed": false
+  },
+  {
+    "key": "historia-014",
+    "level": 3,
+    "statement": "Durante qual dinastia chinesa foi construída a maior parte da Grande Muralha que existe hoje?",
+    "options": [
+      "Ming",
+      "Han",
+      "Qin",
+      "Qing"
+    ],
+    "correctIndex": 0,
+    "explanation": "Houve muralhas desde a dinastia Qin, mas os trechos mais conhecidos são da dinastia Ming (1368–1644).",
+    "reviewed": false
+  },
+  {
+    "key": "historia-015",
+    "level": 3,
+    "statement": "Qual evento é considerado o estopim da Primeira Guerra Mundial?",
+    "options": [
+      "A invasão da Polônia",
+      "O assassinato do arquiduque Francisco Ferdinando",
+      "O afundamento do Lusitania",
+      "A Revolução Russa"
+    ],
+    "correctIndex": 1,
+    "explanation": "O herdeiro do trono austro-húngaro foi morto em Sarajevo em junho de 1914. A invasão da Polônia iniciou a Segunda Guerra.",
+    "reviewed": false
+  },
+  {
+    "key": "historia-016",
+    "level": 4,
+    "statement": "Qual acontecimento de 1453 marcou o fim do Império Bizantino?",
+    "options": [
+      "A tomada de Constantinopla pelos otomanos",
+      "A Batalha de Lepanto",
+      "A Batalha de Poitiers",
+      "A Batalha de Manzikert"
+    ],
+    "correctIndex": 0,
+    "explanation": "O sultão Maomé II conquistou Constantinopla, que depois passou a se chamar Istambul.",
+    "reviewed": false
+  },
+  {
+    "key": "historia-017",
+    "level": 4,
+    "statement": "Qual faraó teve o túmulo quase intacto descoberto por Howard Carter em 1922?",
+    "options": [
+      "Ramsés II",
+      "Tutancâmon",
+      "Quéops",
+      "Akhenaton"
+    ],
+    "correctIndex": 1,
+    "explanation": "O túmulo de Tutancâmon, no Vale dos Reis, guardava milhares de objetos, como a famosa máscara de ouro.",
+    "reviewed": false
+  },
+  {
+    "key": "historia-018",
+    "level": 4,
+    "statement": "Qual imperador romano criou a tetrarquia, dividindo o governo entre quatro governantes?",
+    "options": [
+      "Diocleciano",
+      "Constantino",
+      "Augusto",
+      "Trajano"
+    ],
+    "correctIndex": 0,
+    "explanation": "Diocleciano criou a tetrarquia em 293 para administrar melhor o vasto império.",
+    "reviewed": false
+  },
+  {
+    "key": "historia-019",
+    "level": 4,
+    "statement": "Em que ano o rei João da Inglaterra aceitou a Magna Carta?",
+    "options": [
+      "1066",
+      "1215",
+      "1348",
+      "1492"
+    ],
+    "correctIndex": 1,
+    "explanation": "A Magna Carta, de 1215, limitou o poder do rei e é um marco do direito constitucional.",
+    "reviewed": false
+  },
+  {
+    "key": "historia-020",
+    "level": 4,
+    "statement": "Qual povo fundou Tenochtitlán, onde hoje fica a Cidade do México?",
+    "options": [
+      "Maias",
+      "Astecas (mexicas)",
+      "Olmecas",
+      "Incas"
+    ],
+    "correctIndex": 1,
+    "explanation": "Os mexicas fundaram Tenochtitlán por volta de 1325, sobre uma ilha no lago Texcoco.",
+    "reviewed": false
+  }
+]

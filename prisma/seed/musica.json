@@ -1,0 +1,282 @@
+[
+  {
+    "key": "musica-001",
+    "level": 1,
+    "statement": "Quantas cordas tem um violão tradicional?",
+    "options": [
+      "4",
+      "6",
+      "7",
+      "12"
+    ],
+    "correctIndex": 1,
+    "explanation": "O violão padrão tem 6 cordas; existe também o violão de 7 cordas, muito usado no choro.",
+    "reviewed": false
+  },
+  {
+    "key": "musica-002",
+    "level": 1,
+    "statement": "Qual cantor ficou conhecido como \"Rei do Pop\"?",
+    "options": [
+      "Elvis Presley",
+      "Michael Jackson",
+      "Prince",
+      "Freddie Mercury"
+    ],
+    "correctIndex": 1,
+    "explanation": "Michael Jackson lançou Thriller (1982), um dos álbuns mais vendidos da história. Elvis é o \"Rei do Rock\".",
+    "reviewed": false
+  },
+  {
+    "key": "musica-003",
+    "level": 1,
+    "statement": "Qual banda britânica tinha John Lennon e Paul McCartney?",
+    "options": [
+      "Rolling Stones",
+      "The Beatles",
+      "Queen",
+      "The Who"
+    ],
+    "correctIndex": 1,
+    "explanation": "Os Beatles surgiram em Liverpool e se separaram em 1970.",
+    "reviewed": false
+  },
+  {
+    "key": "musica-004",
+    "level": 1,
+    "statement": "Qual destes instrumentos tem teclas brancas e pretas?",
+    "options": [
+      "Piano",
+      "Violino",
+      "Flauta",
+      "Trompete"
+    ],
+    "correctIndex": 0,
+    "explanation": "As teclas pretas do piano tocam os sustenidos e bemóis.",
+    "reviewed": false
+  },
+  {
+    "key": "musica-005",
+    "level": 1,
+    "statement": "Qual cantor brasileiro é chamado de \"o Rei\"?",
+    "options": [
+      "Roberto Carlos",
+      "Caetano Veloso",
+      "Gilberto Gil",
+      "Chico Buarque"
+    ],
+    "correctIndex": 0,
+    "explanation": "Roberto Carlos ganhou o apelido na época da Jovem Guarda, nos anos 1960.",
+    "reviewed": false
+  },
+  {
+    "key": "musica-006",
+    "level": 2,
+    "statement": "Qual gênero musical surgiu no Rio de Janeiro no fim dos anos 1950, com João Gilberto e Tom Jobim?",
+    "options": [
+      "Samba-enredo",
+      "Bossa nova",
+      "Tropicália",
+      "Forró"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"Chega de Saudade\" (1958), na voz de João Gilberto, é considerada o marco inicial da bossa nova.",
+    "reviewed": false
+  },
+  {
+    "key": "musica-007",
+    "level": 2,
+    "statement": "Quem compôs a Nona Sinfonia, que termina com a \"Ode à Alegria\"?",
+    "options": [
+      "Mozart",
+      "Beethoven",
+      "Bach",
+      "Chopin"
+    ],
+    "correctIndex": 1,
+    "explanation": "Beethoven compôs a Nona já praticamente surdo; ela estreou em 1824.",
+    "reviewed": false
+  },
+  {
+    "key": "musica-008",
+    "level": 2,
+    "statement": "Quem era o vocalista da banda Queen?",
+    "options": [
+      "Freddie Mercury",
+      "Brian May",
+      "Mick Jagger",
+      "Bono"
+    ],
+    "correctIndex": 0,
+    "explanation": "Freddie Mercury compôs \"Bohemian Rhapsody\". Brian May era o guitarrista.",
+    "reviewed": false
+  },
+  {
+    "key": "musica-009",
+    "level": 2,
+    "statement": "Qual cantora lançou o álbum \"1989\"?",
+    "options": [
+      "Adele",
+      "Taylor Swift",
+      "Beyoncé",
+      "Lady Gaga"
+    ],
+    "correctIndex": 1,
+    "explanation": "O título é o ano de nascimento de Taylor Swift. O álbum saiu em 2014.",
+    "reviewed": false
+  },
+  {
+    "key": "musica-010",
+    "level": 2,
+    "statement": "Qual instrumento de percussão, de som grave, marca o tempo na bateria de uma escola de samba?",
+    "options": [
+      "Surdo",
+      "Cuíca",
+      "Tamborim",
+      "Agogô"
+    ],
+    "correctIndex": 0,
+    "explanation": "O surdo é o \"coração\" da bateria e sustenta o ritmo do samba.",
+    "reviewed": false
+  },
+  {
+    "key": "musica-011",
+    "level": 3,
+    "statement": "Qual compositor brasileiro escreveu as \"Bachianas Brasileiras\"?",
+    "options": [
+      "Heitor Villa-Lobos",
+      "Carlos Gomes",
+      "Tom Jobim",
+      "Pixinguinha"
+    ],
+    "correctIndex": 0,
+    "explanation": "Villa-Lobos uniu a música de Bach a elementos da música brasileira em nove suítes.",
+    "reviewed": false
+  },
+  {
+    "key": "musica-012",
+    "level": 3,
+    "statement": "Quantas teclas tem um piano moderno padrão?",
+    "options": [
+      "76",
+      "88",
+      "92",
+      "100"
+    ],
+    "correctIndex": 1,
+    "explanation": "São 52 teclas brancas e 36 pretas.",
+    "reviewed": false
+  },
+  {
+    "key": "musica-013",
+    "level": 3,
+    "statement": "Qual movimento musical do fim dos anos 1960 teve Caetano Veloso e Gilberto Gil entre seus líderes?",
+    "options": [
+      "Bossa nova",
+      "Jovem Guarda",
+      "Tropicália",
+      "Clube da Esquina"
+    ],
+    "correctIndex": 2,
+    "explanation": "A Tropicália misturou MPB, rock e vanguarda; o disco-manifesto é de 1968.",
+    "reviewed": false
+  },
+  {
+    "key": "musica-014",
+    "level": 3,
+    "statement": "Qual compositor austríaco escreveu a ópera \"A Flauta Mágica\"?",
+    "options": [
+      "Mozart",
+      "Haydn",
+      "Schubert",
+      "Johann Strauss"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mozart estreou A Flauta Mágica em Viena em 1791, poucos meses antes de morrer.",
+    "reviewed": false
+  },
+  {
+    "key": "musica-015",
+    "level": 3,
+    "statement": "Qual álbum dos Beatles, de 1967, traz a canção \"Lucy in the Sky with Diamonds\"?",
+    "options": [
+      "Abbey Road",
+      "Revolver",
+      "Sgt. Pepper's Lonely Hearts Club Band",
+      "Let It Be"
+    ],
+    "correctIndex": 2,
+    "explanation": "Sgt. Pepper's é considerado um dos primeiros álbuns conceituais do rock.",
+    "reviewed": false
+  },
+  {
+    "key": "musica-016",
+    "level": 4,
+    "statement": "Qual compositor brasileiro escreveu a ópera \"Il Guarany\" (1870)?",
+    "options": [
+      "Carlos Gomes",
+      "Heitor Villa-Lobos",
+      "Alberto Nepomuceno",
+      "Francisco Mignone"
+    ],
+    "correctIndex": 0,
+    "explanation": "Baseada no romance de José de Alencar, a ópera estreou no Teatro alla Scala, em Milão.",
+    "reviewed": false
+  },
+  {
+    "key": "musica-017",
+    "level": 4,
+    "statement": "Quem compôs o choro \"Carinhoso\"?",
+    "options": [
+      "Pixinguinha",
+      "Jacob do Bandolim",
+      "Ernesto Nazareth",
+      "Waldir Azevedo"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pixinguinha compôs a melodia por volta de 1917; a letra de João de Barro veio em 1937.",
+    "reviewed": false
+  },
+  {
+    "key": "musica-018",
+    "level": 4,
+    "statement": "Quantas sinfonias completas Beethoven compôs?",
+    "options": [
+      "5",
+      "7",
+      "9",
+      "12"
+    ],
+    "correctIndex": 2,
+    "explanation": "Beethoven completou nove sinfonias; a Nona é a mais famosa.",
+    "reviewed": false
+  },
+  {
+    "key": "musica-019",
+    "level": 4,
+    "statement": "Qual banda lançou o álbum \"The Dark Side of the Moon\" (1973)?",
+    "options": [
+      "Led Zeppelin",
+      "Pink Floyd",
+      "Genesis",
+      "Yes"
+    ],
+    "correctIndex": 1,
+    "explanation": "O álbum ficou mais de 900 semanas na parada da Billboard.",
+    "reviewed": false
+  },
+  {
+    "key": "musica-020",
+    "level": 4,
+    "statement": "Qual cantora da MPB tinha o apelido de \"Pimentinha\"?",
+    "options": [
+      "Gal Costa",
+      "Elis Regina",
+      "Maria Bethânia",
+      "Nara Leão"
+    ],
+    "correctIndex": 1,
+    "explanation": "O apelido teria sido dado por Vinicius de Moraes, por causa do temperamento forte de Elis.",
+    "reviewed": false
+  }
+]

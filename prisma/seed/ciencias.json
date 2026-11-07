@@ -1,0 +1,282 @@
+[
+  {
+    "key": "ciencias-001",
+    "level": 1,
+    "statement": "Qual é a fórmula química da água?",
+    "options": [
+      "H₂O",
+      "CO₂",
+      "O₂",
+      "NaCl"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cada molécula de água tem dois átomos de hidrogênio e um de oxigênio.",
+    "reviewed": false
+  },
+  {
+    "key": "ciencias-002",
+    "level": 1,
+    "statement": "Qual planeta é conhecido como Planeta Vermelho?",
+    "options": [
+      "Vênus",
+      "Júpiter",
+      "Marte",
+      "Saturno"
+    ],
+    "correctIndex": 2,
+    "explanation": "A cor de Marte vem do óxido de ferro (ferrugem) em sua superfície.",
+    "reviewed": false
+  },
+  {
+    "key": "ciencias-003",
+    "level": 1,
+    "statement": "Qual órgão bombeia o sangue pelo corpo humano?",
+    "options": [
+      "Pulmão",
+      "Fígado",
+      "Coração",
+      "Rim"
+    ],
+    "correctIndex": 2,
+    "explanation": "O coração é um músculo que bate, em média, de 60 a 100 vezes por minuto em repouso.",
+    "reviewed": false
+  },
+  {
+    "key": "ciencias-004",
+    "level": 1,
+    "statement": "Qual gás as plantas absorvem do ar para fazer fotossíntese?",
+    "options": [
+      "Oxigênio",
+      "Gás carbônico",
+      "Nitrogênio",
+      "Hélio"
+    ],
+    "correctIndex": 1,
+    "explanation": "Na fotossíntese, as plantas usam gás carbônico, água e luz para produzir glicose e liberar oxigênio.",
+    "reviewed": false
+  },
+  {
+    "key": "ciencias-005",
+    "level": 1,
+    "statement": "Qual é a estrela mais próxima da Terra?",
+    "options": [
+      "Sol",
+      "Próxima Centauri",
+      "Sirius",
+      "Alfa Centauri A"
+    ],
+    "correctIndex": 0,
+    "explanation": "O Sol está a cerca de 150 milhões de km. Depois dele, a mais próxima é Próxima Centauri.",
+    "reviewed": false
+  },
+  {
+    "key": "ciencias-006",
+    "level": 2,
+    "statement": "Qual é o maior órgão do corpo humano?",
+    "options": [
+      "Fígado",
+      "Pele",
+      "Intestino",
+      "Cérebro"
+    ],
+    "correctIndex": 1,
+    "explanation": "A pele de um adulto cobre cerca de 2 m². O fígado é o maior órgão interno.",
+    "reviewed": false
+  },
+  {
+    "key": "ciencias-007",
+    "level": 2,
+    "statement": "Qual é o símbolo químico do ouro?",
+    "options": [
+      "Ag",
+      "Au",
+      "Go",
+      "Or"
+    ],
+    "correctIndex": 1,
+    "explanation": "Au vem do latim aurum. Ag é o símbolo da prata.",
+    "reviewed": false
+  },
+  {
+    "key": "ciencias-008",
+    "level": 2,
+    "statement": "Quantos ossos tem o corpo humano adulto?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "256"
+    ],
+    "correctIndex": 1,
+    "explanation": "Um bebê nasce com cerca de 300 ossos; vários se fundem durante o crescimento.",
+    "reviewed": false
+  },
+  {
+    "key": "ciencias-009",
+    "level": 2,
+    "statement": "Qual é o maior planeta do Sistema Solar?",
+    "options": [
+      "Saturno",
+      "Júpiter",
+      "Netuno",
+      "Urano"
+    ],
+    "correctIndex": 1,
+    "explanation": "Júpiter tem mais do que o dobro da massa de todos os outros planetas juntos.",
+    "reviewed": false
+  },
+  {
+    "key": "ciencias-010",
+    "level": 2,
+    "statement": "Qual cientista formulou as três leis do movimento?",
+    "options": [
+      "Albert Einstein",
+      "Galileu Galilei",
+      "Isaac Newton",
+      "Nicolau Copérnico"
+    ],
+    "correctIndex": 2,
+    "explanation": "Newton publicou as leis do movimento em 1687, na obra Principia.",
+    "reviewed": false
+  },
+  {
+    "key": "ciencias-011",
+    "level": 3,
+    "statement": "Qual é a velocidade aproximada da luz no vácuo?",
+    "options": [
+      "300 mil km/s",
+      "30 mil km/s",
+      "3 milhões de km/s",
+      "340 m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "A luz viaja a cerca de 299.792 km/s. 340 m/s é a velocidade do som no ar.",
+    "reviewed": false
+  },
+  {
+    "key": "ciencias-012",
+    "level": 3,
+    "statement": "Qual organela celular é responsável pela respiração celular?",
+    "options": [
+      "Ribossomo",
+      "Mitocôndria",
+      "Complexo de Golgi",
+      "Lisossomo"
+    ],
+    "correctIndex": 1,
+    "explanation": "A mitocôndria produz ATP, a principal fonte de energia da célula.",
+    "reviewed": false
+  },
+  {
+    "key": "ciencias-013",
+    "level": 3,
+    "statement": "Qual é o elemento químico mais abundante no universo?",
+    "options": [
+      "Oxigênio",
+      "Hélio",
+      "Hidrogênio",
+      "Carbono"
+    ],
+    "correctIndex": 2,
+    "explanation": "O hidrogênio corresponde a cerca de 74% da massa de matéria comum do universo.",
+    "reviewed": false
+  },
+  {
+    "key": "ciencias-014",
+    "level": 3,
+    "statement": "Qual é o pH da água pura a 25 °C?",
+    "options": [
+      "5",
+      "7",
+      "9",
+      "14"
+    ],
+    "correctIndex": 1,
+    "explanation": "pH 7 é neutro: abaixo disso a solução é ácida e acima é básica.",
+    "reviewed": false
+  },
+  {
+    "key": "ciencias-015",
+    "level": 3,
+    "statement": "Quem descobriu a penicilina, em 1928?",
+    "options": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Marie Curie",
+      "Robert Koch"
+    ],
+    "correctIndex": 1,
+    "explanation": "Fleming percebeu que um fungo do gênero Penicillium impedia o crescimento de bactérias.",
+    "reviewed": false
+  },
+  {
+    "key": "ciencias-016",
+    "level": 4,
+    "statement": "Qual é o número atômico do carbono?",
+    "options": [
+      "6",
+      "8",
+      "12",
+      "14"
+    ],
+    "correctIndex": 0,
+    "explanation": "O carbono tem 6 prótons. 12 é a massa do isótopo mais comum, o carbono-12.",
+    "reviewed": false
+  },
+  {
+    "key": "ciencias-017",
+    "level": 4,
+    "statement": "Qual partícula subatômica foi descoberta por J. J. Thomson em 1897?",
+    "options": [
+      "Próton",
+      "Nêutron",
+      "Elétron",
+      "Pósitron"
+    ],
+    "correctIndex": 2,
+    "explanation": "Thomson identificou o elétron estudando raios catódicos.",
+    "reviewed": false
+  },
+  {
+    "key": "ciencias-018",
+    "level": 4,
+    "statement": "Qual cientista propôs, em 1913, um modelo atômico com elétrons em órbitas de energia definida?",
+    "options": [
+      "Ernest Rutherford",
+      "Niels Bohr",
+      "John Dalton",
+      "Erwin Schrödinger"
+    ],
+    "correctIndex": 1,
+    "explanation": "O modelo de Bohr explicou as linhas do espectro do hidrogênio.",
+    "reviewed": false
+  },
+  {
+    "key": "ciencias-019",
+    "level": 4,
+    "statement": "Qual é o valor aproximado da constante de Avogadro?",
+    "options": [
+      "6,02 × 10²³ por mol",
+      "3,00 × 10⁸ por mol",
+      "9,81 por mol",
+      "1,60 × 10⁻¹⁹ por mol"
+    ],
+    "correctIndex": 0,
+    "explanation": "Um mol de qualquer substância tem cerca de 6,02 × 10²³ partículas.",
+    "reviewed": false
+  },
+  {
+    "key": "ciencias-020",
+    "level": 4,
+    "statement": "Qual cientista ganhou o Prêmio Nobel em duas ciências diferentes?",
+    "options": [
+      "Marie Curie",
+      "Rosalind Franklin",
+      "Lise Meitner",
+      "Dorothy Hodgkin"
+    ],
+    "correctIndex": 0,
+    "explanation": "Marie Curie ganhou o Nobel de Física em 1903 e o de Química em 1911.",
+    "reviewed": false
+  }
+]

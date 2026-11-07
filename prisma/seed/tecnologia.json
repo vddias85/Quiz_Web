@@ -1,0 +1,282 @@
+[
+  {
+    "key": "tecnologia-001",
+    "level": 1,
+    "statement": "Qual empresa fabrica o iPhone?",
+    "options": [
+      "Samsung",
+      "Apple",
+      "Google",
+      "Motorola"
+    ],
+    "correctIndex": 1,
+    "explanation": "A Apple lançou o primeiro iPhone em 2007.",
+    "reviewed": false
+  },
+  {
+    "key": "tecnologia-002",
+    "level": 1,
+    "statement": "Qual sistema operacional para computadores é desenvolvido pela Microsoft?",
+    "options": [
+      "macOS",
+      "Windows",
+      "Linux",
+      "Android"
+    ],
+    "correctIndex": 1,
+    "explanation": "A primeira versão do Windows foi lançada em 1985.",
+    "reviewed": false
+  },
+  {
+    "key": "tecnologia-003",
+    "level": 1,
+    "statement": "Qual dispositivo é usado para mover o cursor na tela do computador?",
+    "options": [
+      "Teclado",
+      "Mouse",
+      "Monitor",
+      "Impressora"
+    ],
+    "correctIndex": 1,
+    "explanation": "O mouse foi demonstrado publicamente por Douglas Engelbart em 1968.",
+    "reviewed": false
+  },
+  {
+    "key": "tecnologia-004",
+    "level": 1,
+    "statement": "Qual rede social, que tinha um pássaro azul como símbolo, passou a se chamar X em 2023?",
+    "options": [
+      "Facebook",
+      "Twitter",
+      "Instagram",
+      "LinkedIn"
+    ],
+    "correctIndex": 1,
+    "explanation": "O nome mudou depois que Elon Musk comprou a empresa, em 2022.",
+    "reviewed": false
+  },
+  {
+    "key": "tecnologia-005",
+    "level": 1,
+    "statement": "Qual empresa desenvolve o sistema operacional Android?",
+    "options": [
+      "Apple",
+      "Google",
+      "Microsoft",
+      "Samsung"
+    ],
+    "correctIndex": 1,
+    "explanation": "O Google comprou a Android Inc. em 2005; o primeiro celular com Android saiu em 2008.",
+    "reviewed": false
+  },
+  {
+    "key": "tecnologia-006",
+    "level": 2,
+    "statement": "O que significa a sigla CPU?",
+    "options": [
+      "Unidade Central de Processamento",
+      "Unidade Pessoal do Computador",
+      "Central de Programas Úteis",
+      "Unidade de Controle de Energia"
+    ],
+    "correctIndex": 0,
+    "explanation": "CPU vem do inglês Central Processing Unit: é o processador, que executa as instruções dos programas.",
+    "reviewed": false
+  },
+  {
+    "key": "tecnologia-007",
+    "level": 2,
+    "statement": "Quantos bits formam um byte?",
+    "options": [
+      "4",
+      "8",
+      "16",
+      "32"
+    ],
+    "correctIndex": 1,
+    "explanation": "Um byte tem 8 bits e pode representar 256 valores diferentes.",
+    "reviewed": false
+  },
+  {
+    "key": "tecnologia-008",
+    "level": 2,
+    "statement": "Quem fundou a Microsoft junto com Paul Allen?",
+    "options": [
+      "Steve Jobs",
+      "Bill Gates",
+      "Mark Zuckerberg",
+      "Larry Page"
+    ],
+    "correctIndex": 1,
+    "explanation": "Gates e Allen fundaram a Microsoft em 1975.",
+    "reviewed": false
+  },
+  {
+    "key": "tecnologia-009",
+    "level": 2,
+    "statement": "Qual linguagem é usada para estruturar o conteúdo das páginas da web?",
+    "options": [
+      "HTML",
+      "Python",
+      "SQL",
+      "C++"
+    ],
+    "correctIndex": 0,
+    "explanation": "O HTML define títulos, parágrafos e links. O visual fica com o CSS e a interatividade com o JavaScript.",
+    "reviewed": false
+  },
+  {
+    "key": "tecnologia-010",
+    "level": 2,
+    "statement": "Na escala de armazenamento, qual unidade vem logo depois do megabyte?",
+    "options": [
+      "Gigabyte",
+      "Terabyte",
+      "Kilobyte",
+      "Petabyte"
+    ],
+    "correctIndex": 0,
+    "explanation": "A ordem é kilobyte, megabyte, gigabyte, terabyte e petabyte.",
+    "reviewed": false
+  },
+  {
+    "key": "tecnologia-011",
+    "level": 3,
+    "statement": "Quem é considerado o criador da World Wide Web?",
+    "options": [
+      "Tim Berners-Lee",
+      "Vint Cerf",
+      "Bill Gates",
+      "Linus Torvalds"
+    ],
+    "correctIndex": 0,
+    "explanation": "Berners-Lee criou a Web em 1989, no CERN. Vint Cerf é um dos criadores do protocolo TCP/IP, a base da internet.",
+    "reviewed": false
+  },
+  {
+    "key": "tecnologia-012",
+    "level": 3,
+    "statement": "Qual matemático britânico descreveu a \"máquina\" teórica que é a base da computação moderna?",
+    "options": [
+      "Alan Turing",
+      "John von Neumann",
+      "Charles Babbage",
+      "Claude Shannon"
+    ],
+    "correctIndex": 0,
+    "explanation": "A Máquina de Turing foi descrita em 1936. Turing também ajudou a decifrar a máquina Enigma na Segunda Guerra.",
+    "reviewed": false
+  },
+  {
+    "key": "tecnologia-013",
+    "level": 3,
+    "statement": "Qual núcleo de sistema operacional de código aberto Linus Torvalds criou em 1991?",
+    "options": [
+      "Unix",
+      "Linux",
+      "FreeBSD",
+      "MS-DOS"
+    ],
+    "correctIndex": 1,
+    "explanation": "O Linux roda hoje na maioria dos servidores do mundo e é a base do Android.",
+    "reviewed": false
+  },
+  {
+    "key": "tecnologia-014",
+    "level": 3,
+    "statement": "Em que ano foi lançado o primeiro iPhone?",
+    "options": [
+      "2005",
+      "2007",
+      "2009",
+      "2010"
+    ],
+    "correctIndex": 1,
+    "explanation": "Steve Jobs apresentou o iPhone em janeiro de 2007.",
+    "reviewed": false
+  },
+  {
+    "key": "tecnologia-015",
+    "level": 3,
+    "statement": "Quanto vale o número binário 1010 em decimal?",
+    "options": [
+      "8",
+      "10",
+      "12",
+      "5"
+    ],
+    "correctIndex": 1,
+    "explanation": "1010 = 1×8 + 0×4 + 1×2 + 0×1 = 10.",
+    "reviewed": false
+  },
+  {
+    "key": "tecnologia-016",
+    "level": 4,
+    "statement": "Quem é considerada a primeira programadora da história, pelo trabalho com a Máquina Analítica de Babbage?",
+    "options": [
+      "Grace Hopper",
+      "Ada Lovelace",
+      "Hedy Lamarr",
+      "Margaret Hamilton"
+    ],
+    "correctIndex": 1,
+    "explanation": "Em 1843, Ada Lovelace publicou um algoritmo para calcular os números de Bernoulli.",
+    "reviewed": false
+  },
+  {
+    "key": "tecnologia-017",
+    "level": 4,
+    "statement": "Qual foi o primeiro computador eletrônico digital de uso geral, concluído nos EUA em 1945?",
+    "options": [
+      "UNIVAC",
+      "ENIAC",
+      "Colossus",
+      "Harvard Mark I"
+    ],
+    "correctIndex": 1,
+    "explanation": "O ENIAC pesava cerca de 27 toneladas. O Colossus, britânico, era anterior, mas foi feito para uma tarefa específica.",
+    "reviewed": false
+  },
+  {
+    "key": "tecnologia-018",
+    "level": 4,
+    "statement": "Qual protocolo traduz nomes de domínio, como exemplo.com, em endereços IP?",
+    "options": [
+      "HTTP",
+      "FTP",
+      "DNS",
+      "SMTP"
+    ],
+    "correctIndex": 2,
+    "explanation": "O DNS (Domain Name System) funciona como a \"lista telefônica\" da internet.",
+    "reviewed": false
+  },
+  {
+    "key": "tecnologia-019",
+    "level": 4,
+    "statement": "Qual empresa criou a linguagem de programação Java, em 1995?",
+    "options": [
+      "Microsoft",
+      "IBM",
+      "Sun Microsystems",
+      "Oracle"
+    ],
+    "correctIndex": 2,
+    "explanation": "O Java foi criado por James Gosling na Sun, que a Oracle comprou em 2010.",
+    "reviewed": false
+  },
+  {
+    "key": "tecnologia-020",
+    "level": 4,
+    "statement": "Quantos bits tem um endereço IPv4?",
+    "options": [
+      "16",
+      "32",
+      "64",
+      "128"
+    ],
+    "correctIndex": 1,
+    "explanation": "O IPv4 permite cerca de 4,3 bilhões de endereços. O IPv6 usa 128 bits.",
+    "reviewed": false
+  }
+]

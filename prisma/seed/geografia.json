@@ -1,0 +1,282 @@
+[
+  {
+    "key": "geografia-001",
+    "level": 1,
+    "statement": "Qual é a capital da Argentina?",
+    "options": [
+      "Buenos Aires",
+      "Santiago",
+      "Montevidéu",
+      "Lima"
+    ],
+    "correctIndex": 0,
+    "explanation": "Buenos Aires é a capital e a maior cidade da Argentina.",
+    "reviewed": false
+  },
+  {
+    "key": "geografia-002",
+    "level": 1,
+    "statement": "Qual é o maior oceano do planeta?",
+    "options": [
+      "Atlântico",
+      "Índico",
+      "Pacífico",
+      "Ártico"
+    ],
+    "correctIndex": 2,
+    "explanation": "O Pacífico cobre cerca de um terço da superfície da Terra.",
+    "reviewed": false
+  },
+  {
+    "key": "geografia-003",
+    "level": 1,
+    "statement": "Em qual continente fica a maior parte do território do Egito?",
+    "options": [
+      "Ásia",
+      "África",
+      "Europa",
+      "Oceania"
+    ],
+    "correctIndex": 1,
+    "explanation": "O Egito fica no nordeste da África; só a península do Sinai está na Ásia.",
+    "reviewed": false
+  },
+  {
+    "key": "geografia-004",
+    "level": 1,
+    "statement": "Qual é o país mais populoso da América do Sul?",
+    "options": [
+      "Argentina",
+      "Colômbia",
+      "Peru",
+      "Brasil"
+    ],
+    "correctIndex": 3,
+    "explanation": "O Brasil tem mais de 200 milhões de habitantes, cerca de metade da população sul-americana.",
+    "reviewed": false
+  },
+  {
+    "key": "geografia-005",
+    "level": 1,
+    "statement": "Qual é a capital da França?",
+    "options": [
+      "Lyon",
+      "Paris",
+      "Marselha",
+      "Bruxelas"
+    ],
+    "correctIndex": 1,
+    "explanation": "Paris é a capital francesa. Bruxelas é a capital da Bélgica.",
+    "reviewed": false
+  },
+  {
+    "key": "geografia-006",
+    "level": 2,
+    "statement": "Qual é o maior rio cujo curso fica inteiramente em território brasileiro?",
+    "options": [
+      "Rio São Francisco",
+      "Rio Paraná",
+      "Rio Tocantins",
+      "Rio Amazonas"
+    ],
+    "correctIndex": 0,
+    "explanation": "O São Francisco nasce em Minas Gerais e deságua entre Alagoas e Sergipe. O Amazonas nasce no Peru e o Paraná segue para a Argentina.",
+    "reviewed": false
+  },
+  {
+    "key": "geografia-007",
+    "level": 2,
+    "statement": "Qual é a capital da Austrália?",
+    "options": [
+      "Sydney",
+      "Melbourne",
+      "Camberra",
+      "Perth"
+    ],
+    "correctIndex": 2,
+    "explanation": "Camberra foi planejada para ser a capital, como meio-termo entre Sydney e Melbourne.",
+    "reviewed": false
+  },
+  {
+    "key": "geografia-008",
+    "level": 2,
+    "statement": "Qual é o menor país do mundo em área?",
+    "options": [
+      "Mônaco",
+      "Vaticano",
+      "San Marino",
+      "Liechtenstein"
+    ],
+    "correctIndex": 1,
+    "explanation": "O Vaticano tem cerca de 0,44 km² e fica dentro de Roma.",
+    "reviewed": false
+  },
+  {
+    "key": "geografia-009",
+    "level": 2,
+    "statement": "Qual cordilheira é usada como limite convencional entre a Europa e a Ásia?",
+    "options": [
+      "Alpes",
+      "Pirineus",
+      "Montes Urais",
+      "Cárpatos"
+    ],
+    "correctIndex": 2,
+    "explanation": "Os Montes Urais atravessam a Rússia de norte a sul e marcam a divisão convencional entre os continentes.",
+    "reviewed": false
+  },
+  {
+    "key": "geografia-010",
+    "level": 2,
+    "statement": "Qual é o maior deserto quente do mundo?",
+    "options": [
+      "Gobi",
+      "Saara",
+      "Kalahari",
+      "Atacama"
+    ],
+    "correctIndex": 1,
+    "explanation": "O Saara ocupa boa parte do norte da África. Os desertos polares são maiores, mas são frios.",
+    "reviewed": false
+  },
+  {
+    "key": "geografia-011",
+    "level": 3,
+    "statement": "Qual é a capital da Turquia?",
+    "options": [
+      "Istambul",
+      "Ancara",
+      "Esmirna",
+      "Antália"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ancara é a capital desde 1923. Istambul é a maior cidade do país.",
+    "reviewed": false
+  },
+  {
+    "key": "geografia-012",
+    "level": 3,
+    "statement": "Qual é o lago mais profundo do mundo?",
+    "options": [
+      "Lago Baikal",
+      "Lago Tanganica",
+      "Lago Superior",
+      "Mar Cáspio"
+    ],
+    "correctIndex": 0,
+    "explanation": "O Baikal, na Sibéria, passa de 1.600 metros de profundidade.",
+    "reviewed": false
+  },
+  {
+    "key": "geografia-013",
+    "level": 3,
+    "statement": "Em qual país fica a maior parte do deserto do Atacama?",
+    "options": [
+      "Peru",
+      "Bolívia",
+      "Chile",
+      "Argentina"
+    ],
+    "correctIndex": 2,
+    "explanation": "O Atacama fica no norte do Chile e é um dos lugares mais secos do planeta.",
+    "reviewed": false
+  },
+  {
+    "key": "geografia-014",
+    "level": 3,
+    "statement": "Qual país tem o maior número de fusos horários, contando seus territórios ultramarinos?",
+    "options": [
+      "Rússia",
+      "Estados Unidos",
+      "França",
+      "China"
+    ],
+    "correctIndex": 2,
+    "explanation": "Com territórios espalhados pelo mundo, a França usa 12 fusos horários.",
+    "reviewed": false
+  },
+  {
+    "key": "geografia-015",
+    "level": 3,
+    "statement": "Qual é o ponto mais alto do Brasil?",
+    "options": [
+      "Pico da Bandeira",
+      "Pico da Neblina",
+      "Pico 31 de Março",
+      "Monte Roraima"
+    ],
+    "correctIndex": 1,
+    "explanation": "O Pico da Neblina, no Amazonas, tem cerca de 2.995 metros.",
+    "reviewed": false
+  },
+  {
+    "key": "geografia-016",
+    "level": 4,
+    "statement": "Qual é a capital do Cazaquistão?",
+    "options": [
+      "Almaty",
+      "Astana",
+      "Bishkek",
+      "Tashkent"
+    ],
+    "correctIndex": 1,
+    "explanation": "Astana é a capital desde 1997; antes era Almaty. Bishkek e Tashkent são capitais do Quirguistão e do Uzbequistão.",
+    "reviewed": false
+  },
+  {
+    "key": "geografia-017",
+    "level": 4,
+    "statement": "Qual é o maior país sem saída para o mar?",
+    "options": [
+      "Mongólia",
+      "Cazaquistão",
+      "Chade",
+      "Bolívia"
+    ],
+    "correctIndex": 1,
+    "explanation": "O Cazaquistão tem cerca de 2,7 milhões de km². O Mar Cáspio, em sua fronteira, é um lago fechado.",
+    "reviewed": false
+  },
+  {
+    "key": "geografia-018",
+    "level": 4,
+    "statement": "Qual rio atravessa o maior número de países?",
+    "options": [
+      "Danúbio",
+      "Nilo",
+      "Reno",
+      "Amazonas"
+    ],
+    "correctIndex": 0,
+    "explanation": "O Danúbio passa por 10 países, da Alemanha até o Mar Negro.",
+    "reviewed": false
+  },
+  {
+    "key": "geografia-019",
+    "level": 4,
+    "statement": "Qual é a capital da Mongólia?",
+    "options": [
+      "Ulan Bator",
+      "Astana",
+      "Timphu",
+      "Katmandu"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ulan Bator concentra quase metade da população da Mongólia. Timphu e Katmandu são capitais do Butão e do Nepal.",
+    "reviewed": false
+  },
+  {
+    "key": "geografia-020",
+    "level": 4,
+    "statement": "Qual país africano tem o maior número de pirâmides?",
+    "options": [
+      "Egito",
+      "Sudão",
+      "Etiópia",
+      "Líbia"
+    ],
+    "correctIndex": 1,
+    "explanation": "O Sudão, antiga Núbia, tem mais de 200 pirâmides, mais do que o Egito, embora menores.",
+    "reviewed": false
+  }
+]

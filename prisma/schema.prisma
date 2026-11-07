@@ -1,0 +1,148 @@
+// Modelo de dados do Quiz Web — PRD §8.3 + complementos da v1.2 (§8.7).
+// Regras que o Prisma não expressa (CHECKs, índice parcial, RLS) ficam nas migrações SQL.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL") // pooler, porta 6543
+  directUrl = env("DIRECT_URL") // conexão direta, porta 5432 (migrações)
+}
+
+enum Mode {
+  MIXED
+  CATEGORY
+}
+
+enum SessionStatus {
+  IN_PROGRESS
+  FINISHED
+  EXPIRED
+}
+
+enum ReportReason {
+  WRONG_ANSWER // resposta marcada como correta está errada
+  AMBIGUOUS // mais de uma alternativa pode estar certa
+  TYPO // erro de digitação ou português
+  OUTDATED // informação desatualizada
+  OTHER
+}
+
+model Category {
+  id        Int        @id @default(autoincrement())
+  slug      String     @unique
+  name      String
+  icon      String
+  sortOrder Int        @default(0)
+  questions Question[]
+  sessions  Session[]
+}
+
+model Question {
+  id          String           @id @default(cuid())
+  // Chave estável vinda do seed (ex.: "geografia-001"); permite upsert idempotente.
+  key         String           @unique
+  categoryId  Int
+  category    Category         @relation(fields: [categoryId], references: [id])
+  level       Int // 1 fácil, 2 médio, 3 difícil, 4 avançado (CHECK no SQL)
+  statement   String
+  explanation String?
+  active      Boolean          @default(true)
+  reviewed    Boolean          @default(false)
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+  options     Option[]
+  items       SessionItem[]
+  reports     QuestionReport[]
+
+  @@index([categoryId, level, active])
+}
+
+model Option {
+  id         String   @id @default(cuid())
+  questionId String
+  question   Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  position   Int // ordem original no seed (0–3); a ordem exibida fica em SessionItem.optionOrder
+  text       String
+  isCorrect  Boolean  @default(false)
+
+  // Índice parcial "só 1 correta por pergunta" fica na migração SQL.
+  @@unique([questionId, position])
+}
+
+model Player {
+  id          String           @id @default(cuid())
+  nickname    String // como o jogador digitou
+  nicknameKey String           @unique // minúsculas e sem acento: garante apelido único
+  createdAt   DateTime         @default(now())
+  sessions    Session[]
+  reports     QuestionReport[]
+}
+
+model Session {
+  id           String           @id @default(cuid())
+  playerId     String
+  player       Player           @relation(fields: [playerId], references: [id])
+  mode         Mode
+  categoryId   Int?
+  category     Category?        @relation(fields: [categoryId], references: [id])
+  status       SessionStatus    @default(IN_PROGRESS)
+  startedAt    DateTime         @default(now())
+  finishedAt   DateTime?
+  scoreTenths  Int? // 0–100; exibido como scoreTenths / 10 (CHECK no SQL)
+  correctCount Int?
+  totalTimeMs  Int?
+  items        SessionItem[]
+  reports      QuestionReport[]
+
+  @@index([mode, categoryId, status, finishedAt]) // ranking
+  @@index([playerId, startedAt]) // últimas sessões do jogador (evitar repetição)
+}
+
+model SessionItem {
+  id             String    @id @default(cuid())
+  sessionId      String
+  session        Session   @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  questionId     String
+  question       Question  @relation(fields: [questionId], references: [id])
+  position       Int // 1–20 (CHECK no SQL)
+  optionOrder    String[] // ids das alternativas na ordem exibida
+  shownAt        DateTime? // gravado na 1ª entrega; base do limite de 30 s
+  chosenOptionId String?
+  isCorrect      Boolean?
+  timedOut       Boolean   @default(false)
+  answeredAt     DateTime?
+  timeMs         Int? // limitado a 30 000
+
+  @@unique([sessionId, position])
+  @@index([questionId])
+}
+
+model QuestionReport {
+  id         String       @id @default(cuid())
+  questionId String
+  question   Question     @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  playerId   String?
+  player     Player?      @relation(fields: [playerId], references: [id], onDelete: SetNull)
+  sessionId  String?
+  session    Session?     @relation(fields: [sessionId], references: [id], onDelete: SetNull)
+  reason     ReportReason
+  text       String? // até 500 caracteres (CHECK no SQL)
+  resolved   Boolean      @default(false)
+  createdAt  DateTime     @default(now())
+
+  @@index([questionId])
+  @@index([resolved, createdAt])
+}
+
+// Limite de requisições por IP e rota, em janela fixa.
+model RateLimit {
+  key         String // ex.: "answer:203.0.113.7"
+  windowStart DateTime
+  count       Int      @default(1)
+
+  @@id([key, windowStart])
+  @@index([windowStart]) // limpeza das janelas antigas
+}

@@ -1,0 +1,282 @@
+[
+  {
+    "key": "matematica-e-logica-001",
+    "level": 1,
+    "statement": "Quanto é 7 × 8?",
+    "options": [
+      "54",
+      "56",
+      "58",
+      "64"
+    ],
+    "correctIndex": 1,
+    "explanation": "7 × 8 = 56.",
+    "reviewed": false
+  },
+  {
+    "key": "matematica-e-logica-002",
+    "level": 1,
+    "statement": "Quantos lados tem um hexágono?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correctIndex": 1,
+    "explanation": "O prefixo \"hexa\" significa seis. Os favos de mel têm forma hexagonal.",
+    "reviewed": false
+  },
+  {
+    "key": "matematica-e-logica-003",
+    "level": 1,
+    "statement": "Qual é a metade de 150?",
+    "options": [
+      "50",
+      "75",
+      "70",
+      "80"
+    ],
+    "correctIndex": 1,
+    "explanation": "150 ÷ 2 = 75.",
+    "reviewed": false
+  },
+  {
+    "key": "matematica-e-logica-004",
+    "level": 1,
+    "statement": "Quanto é 15% de 200?",
+    "options": [
+      "15",
+      "20",
+      "30",
+      "35"
+    ],
+    "correctIndex": 2,
+    "explanation": "10% de 200 é 20 e 5% é 10; somando, 15% dá 30.",
+    "reviewed": false
+  },
+  {
+    "key": "matematica-e-logica-005",
+    "level": 1,
+    "statement": "Qual é o próximo número da sequência 2, 4, 8, 16, …?",
+    "options": [
+      "18",
+      "24",
+      "32",
+      "30"
+    ],
+    "correctIndex": 2,
+    "explanation": "Cada número é o dobro do anterior: 16 × 2 = 32.",
+    "reviewed": false
+  },
+  {
+    "key": "matematica-e-logica-006",
+    "level": 2,
+    "statement": "Qual é a raiz quadrada de 144?",
+    "options": [
+      "11",
+      "12",
+      "13",
+      "14"
+    ],
+    "correctIndex": 1,
+    "explanation": "12 × 12 = 144.",
+    "reviewed": false
+  },
+  {
+    "key": "matematica-e-logica-007",
+    "level": 2,
+    "statement": "Quanto vale a soma dos ângulos internos de um triângulo?",
+    "options": [
+      "90°",
+      "180°",
+      "270°",
+      "360°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Em qualquer triângulo plano, os três ângulos internos somam 180°.",
+    "reviewed": false
+  },
+  {
+    "key": "matematica-e-logica-008",
+    "level": 2,
+    "statement": "Qual é o menor número primo?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correctIndex": 2,
+    "explanation": "O 2 é o menor primo e o único primo par. O 1 não é considerado primo.",
+    "reviewed": false
+  },
+  {
+    "key": "matematica-e-logica-009",
+    "level": 2,
+    "statement": "Um produto custa R$ 80,00 e recebe 25% de desconto. Quanto passa a custar?",
+    "options": [
+      "R$ 55,00",
+      "R$ 60,00",
+      "R$ 64,00",
+      "R$ 65,00"
+    ],
+    "correctIndex": 1,
+    "explanation": "25% de 80 é 20; 80 − 20 = 60.",
+    "reviewed": false
+  },
+  {
+    "key": "matematica-e-logica-010",
+    "level": 2,
+    "statement": "Quanto é 2 elevado a 10?",
+    "options": [
+      "512",
+      "1.000",
+      "1.024",
+      "2.048"
+    ],
+    "correctIndex": 2,
+    "explanation": "2¹⁰ = 1.024, um número muito comum na computação.",
+    "reviewed": false
+  },
+  {
+    "key": "matematica-e-logica-011",
+    "level": 3,
+    "statement": "Qual é o valor de π arredondado para duas casas decimais?",
+    "options": [
+      "3,12",
+      "3,14",
+      "3,16",
+      "3,41"
+    ],
+    "correctIndex": 1,
+    "explanation": "π ≈ 3,14159… É a razão entre o comprimento de uma circunferência e o seu diâmetro.",
+    "reviewed": false
+  },
+  {
+    "key": "matematica-e-logica-012",
+    "level": 3,
+    "statement": "Qual é o próximo número da sequência de Fibonacci 1, 1, 2, 3, 5, 8, 13, …?",
+    "options": [
+      "18",
+      "20",
+      "21",
+      "26"
+    ],
+    "correctIndex": 2,
+    "explanation": "Cada termo é a soma dos dois anteriores: 8 + 13 = 21.",
+    "reviewed": false
+  },
+  {
+    "key": "matematica-e-logica-013",
+    "level": 3,
+    "statement": "Um trem percorre 240 km em 3 horas. Qual é a sua velocidade média?",
+    "options": [
+      "60 km/h",
+      "70 km/h",
+      "80 km/h",
+      "90 km/h"
+    ],
+    "correctIndex": 2,
+    "explanation": "Velocidade média = distância ÷ tempo = 240 ÷ 3 = 80 km/h.",
+    "reviewed": false
+  },
+  {
+    "key": "matematica-e-logica-014",
+    "level": 3,
+    "statement": "Quantas diagonais tem um pentágono convexo?",
+    "options": [
+      "5",
+      "6",
+      "10",
+      "3"
+    ],
+    "correctIndex": 0,
+    "explanation": "Um polígono de n lados tem n × (n − 3) ÷ 2 diagonais: 5 × 2 ÷ 2 = 5.",
+    "reviewed": false
+  },
+  {
+    "key": "matematica-e-logica-015",
+    "level": 3,
+    "statement": "Se 3x + 5 = 20, quanto vale x?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correctIndex": 2,
+    "explanation": "3x = 20 − 5 = 15, então x = 15 ÷ 3 = 5.",
+    "reviewed": false
+  },
+  {
+    "key": "matematica-e-logica-016",
+    "level": 4,
+    "statement": "Qual é a soma de todos os números inteiros de 1 a 100?",
+    "options": [
+      "4.950",
+      "5.000",
+      "5.050",
+      "5.100"
+    ],
+    "correctIndex": 2,
+    "explanation": "Formando pares (1 + 100, 2 + 99, …), temos 50 pares de soma 101: 50 × 101 = 5.050.",
+    "reviewed": false
+  },
+  {
+    "key": "matematica-e-logica-017",
+    "level": 4,
+    "statement": "Quantos números primos existem entre 1 e 20?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "correctIndex": 2,
+    "explanation": "São eles: 2, 3, 5, 7, 11, 13, 17 e 19.",
+    "reviewed": false
+  },
+  {
+    "key": "matematica-e-logica-018",
+    "level": 4,
+    "statement": "De quantas maneiras diferentes 4 pessoas podem se sentar em 4 cadeiras enfileiradas?",
+    "options": [
+      "12",
+      "16",
+      "24",
+      "256"
+    ],
+    "correctIndex": 2,
+    "explanation": "É uma permutação: 4! = 4 × 3 × 2 × 1 = 24.",
+    "reviewed": false
+  },
+  {
+    "key": "matematica-e-logica-019",
+    "level": 4,
+    "statement": "Ao lançar dois dados comuns, qual é a probabilidade de a soma ser 7?",
+    "options": [
+      "1/6",
+      "1/12",
+      "1/36",
+      "7/36"
+    ],
+    "correctIndex": 0,
+    "explanation": "Há 6 combinações que somam 7 entre 36 possíveis: 6/36 = 1/6.",
+    "reviewed": false
+  },
+  {
+    "key": "matematica-e-logica-020",
+    "level": 4,
+    "statement": "Às 3h15, qual é o menor ângulo entre os ponteiros das horas e dos minutos?",
+    "options": [
+      "0°",
+      "7,5°",
+      "15°",
+      "22,5°"
+    ],
+    "correctIndex": 1,
+    "explanation": "O ponteiro dos minutos está no 3 (90°), mas o das horas já andou um quarto do caminho até o 4: 90° + 7,5° = 97,5°. A diferença é 7,5°.",
+    "reviewed": false
+  }
+]

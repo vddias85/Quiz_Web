@@ -1,0 +1,282 @@
+[
+  {
+    "key": "esportes-001",
+    "level": 1,
+    "statement": "Quantos jogadores cada time tem em campo numa partida de futebol?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "correctIndex": 2,
+    "explanation": "São 11 jogadores por equipe, contando o goleiro.",
+    "reviewed": false
+  },
+  {
+    "key": "esportes-002",
+    "level": 1,
+    "statement": "Quantas Copas do Mundo masculinas de futebol o Brasil ganhou?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correctIndex": 2,
+    "explanation": "O Brasil venceu em 1958, 1962, 1970, 1994 e 2002.",
+    "reviewed": false
+  },
+  {
+    "key": "esportes-003",
+    "level": 1,
+    "statement": "Em qual esporte se usam raquete e peteca?",
+    "options": [
+      "Tênis",
+      "Badminton",
+      "Squash",
+      "Tênis de mesa"
+    ],
+    "correctIndex": 1,
+    "explanation": "No badminton, a peteca (volante) é feita de penas ou de material sintético.",
+    "reviewed": false
+  },
+  {
+    "key": "esportes-004",
+    "level": 1,
+    "statement": "Qual piloto brasileiro, tricampeão de Fórmula 1, morreu em 1994?",
+    "options": [
+      "Nelson Piquet",
+      "Ayrton Senna",
+      "Emerson Fittipaldi",
+      "Rubens Barrichello"
+    ],
+    "correctIndex": 1,
+    "explanation": "Senna morreu no GP de San Marino, em Ímola. Piquet também foi tricampeão, mas está vivo.",
+    "reviewed": false
+  },
+  {
+    "key": "esportes-005",
+    "level": 1,
+    "statement": "Quantos anéis tem o símbolo olímpico?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correctIndex": 1,
+    "explanation": "Os cinco anéis entrelaçados representam a união dos continentes.",
+    "reviewed": false
+  },
+  {
+    "key": "esportes-006",
+    "level": 2,
+    "statement": "Qual jogador brasileiro é conhecido como \"Rei do Futebol\"?",
+    "options": [
+      "Zico",
+      "Pelé",
+      "Garrincha",
+      "Romário"
+    ],
+    "correctIndex": 1,
+    "explanation": "Pelé venceu três Copas do Mundo (1958, 1962 e 1970).",
+    "reviewed": false
+  },
+  {
+    "key": "esportes-007",
+    "level": 2,
+    "statement": "Quantos pontos vale uma cesta feita de fora da linha de três no basquete?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 2,
+    "explanation": "Cestas de dentro do garrafão ou da área valem 2; lances livres valem 1.",
+    "reviewed": false
+  },
+  {
+    "key": "esportes-008",
+    "level": 2,
+    "statement": "Em qual país foram disputados os primeiros Jogos Olímpicos da era moderna, em 1896?",
+    "options": [
+      "França",
+      "Grécia",
+      "Inglaterra",
+      "Estados Unidos"
+    ],
+    "correctIndex": 1,
+    "explanation": "Atenas sediou os primeiros Jogos modernos, em homenagem à origem grega das Olimpíadas.",
+    "reviewed": false
+  },
+  {
+    "key": "esportes-009",
+    "level": 2,
+    "statement": "No vôlei de quadra, quantos sets uma equipe precisa vencer para ganhar a partida?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correctIndex": 1,
+    "explanation": "As partidas são em melhor de cinco sets; vence quem fizer três.",
+    "reviewed": false
+  },
+  {
+    "key": "esportes-010",
+    "level": 2,
+    "statement": "Qual cidade sediou os Jogos Olímpicos de 2016?",
+    "options": [
+      "Londres",
+      "Rio de Janeiro",
+      "Tóquio",
+      "Pequim"
+    ],
+    "correctIndex": 1,
+    "explanation": "Foram os primeiros Jogos Olímpicos realizados na América do Sul.",
+    "reviewed": false
+  },
+  {
+    "key": "esportes-011",
+    "level": 3,
+    "statement": "Qual é a distância oficial de uma maratona?",
+    "options": [
+      "40 km",
+      "42,195 km",
+      "21,097 km",
+      "45 km"
+    ],
+    "correctIndex": 1,
+    "explanation": "A distância foi padronizada a partir dos Jogos de Londres de 1908. 21,097 km é a meia maratona.",
+    "reviewed": false
+  },
+  {
+    "key": "esportes-012",
+    "level": 3,
+    "statement": "Qual seleção venceu a Copa do Mundo de 2014, disputada no Brasil?",
+    "options": [
+      "Argentina",
+      "Alemanha",
+      "Holanda",
+      "Espanha"
+    ],
+    "correctIndex": 1,
+    "explanation": "A Alemanha venceu a Argentina por 1 a 0 na final, no Maracanã.",
+    "reviewed": false
+  },
+  {
+    "key": "esportes-013",
+    "level": 3,
+    "statement": "Qual tenista brasileiro chegou a número 1 do ranking mundial da ATP?",
+    "options": [
+      "Gustavo Kuerten",
+      "Fernando Meligeni",
+      "Thomaz Bellucci",
+      "João Fonseca"
+    ],
+    "correctIndex": 0,
+    "explanation": "Guga foi tricampeão de Roland Garros e terminou o ano 2000 como número 1.",
+    "reviewed": false
+  },
+  {
+    "key": "esportes-014",
+    "level": 3,
+    "statement": "No xadrez, qual peça se move apenas na diagonal?",
+    "options": [
+      "Torre",
+      "Bispo",
+      "Cavalo",
+      "Rei"
+    ],
+    "correctIndex": 1,
+    "explanation": "Cada bispo fica sempre nas casas da mesma cor em que começou.",
+    "reviewed": false
+  },
+  {
+    "key": "esportes-015",
+    "level": 3,
+    "statement": "Em qual país foi disputada a primeira Copa do Mundo de futebol, em 1930?",
+    "options": [
+      "Brasil",
+      "Uruguai",
+      "Itália",
+      "França"
+    ],
+    "correctIndex": 1,
+    "explanation": "O Uruguai sediou e venceu a primeira Copa, derrotando a Argentina na final.",
+    "reviewed": false
+  },
+  {
+    "key": "esportes-016",
+    "level": 4,
+    "statement": "Qual ginasta é a maior medalhista olímpica da história do Brasil?",
+    "options": [
+      "Daiane dos Santos",
+      "Rebeca Andrade",
+      "Flávia Saraiva",
+      "Jade Barbosa"
+    ],
+    "correctIndex": 1,
+    "explanation": "Rebeca Andrade somou seis medalhas olímpicas em Tóquio 2020 e Paris 2024.",
+    "reviewed": false
+  },
+  {
+    "key": "esportes-017",
+    "level": 4,
+    "statement": "Qual foi o placar da final da Copa do Mundo de 1970, Brasil × Itália?",
+    "options": [
+      "4 × 1",
+      "3 × 0",
+      "2 × 1",
+      "3 × 1"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pelé, Gérson, Jairzinho e Carlos Alberto marcaram para o Brasil, no Estádio Azteca.",
+    "reviewed": false
+  },
+  {
+    "key": "esportes-018",
+    "level": 4,
+    "statement": "Em que ano o Brasil sediou uma Copa do Mundo pela primeira vez?",
+    "options": [
+      "1938",
+      "1950",
+      "1962",
+      "1970"
+    ],
+    "correctIndex": 1,
+    "explanation": "Em 1950 o Uruguai venceu o Brasil no Maracanã, no episódio conhecido como Maracanaço.",
+    "reviewed": false
+  },
+  {
+    "key": "esportes-019",
+    "level": 4,
+    "statement": "Qual piloto brasileiro foi o primeiro campeão mundial de Fórmula 1?",
+    "options": [
+      "Emerson Fittipaldi",
+      "Nelson Piquet",
+      "Ayrton Senna",
+      "José Carlos Pace"
+    ],
+    "correctIndex": 0,
+    "explanation": "Emerson Fittipaldi foi campeão em 1972 e em 1974.",
+    "reviewed": false
+  },
+  {
+    "key": "esportes-020",
+    "level": 4,
+    "statement": "No golfe, como se chama completar um buraco com dois golpes abaixo do par?",
+    "options": [
+      "Birdie",
+      "Eagle",
+      "Bogey",
+      "Albatross"
+    ],
+    "correctIndex": 1,
+    "explanation": "Birdie é um golpe abaixo do par; albatross, três abaixo; bogey, um acima.",
+    "reviewed": false
+  }
+]
