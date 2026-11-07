@@ -20,7 +20,8 @@
     "db:studio": "npm run db:check && dotenv -e .env.local -- prisma studio",
     "db:verify": "dotenv -e .env.local -- tsx scripts/verify-db.ts",
     "test:integration": "vitest run -c vitest.integration.config.mts",
-    "logo:build": "node scripts/generate-logo-assets.mjs"
+    "logo:build": "node scripts/generate-logo-assets.mjs",
+    "test:e2e": "npm run db:check && playwright test"
   },
   "dependencies": {
     "@base-ui/react": "^1.9.0",
@@ -37,6 +38,7 @@
     "zod": "^4.6.7"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
     "@eslint/eslintrc": "^3",
     "@playwright/test": "^1.65.0",
     "@tailwindcss/postcss": "^4",

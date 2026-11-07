@@ -2,7 +2,7 @@
 
 | Campo | Valor |
 |---|---|
-| Versão | 1.6 |
+| Versão | 1.7 |
 | Data | 07/11/2026 |
 | Status | ✅ Aprovado em 07/11/2026 |
 
@@ -17,6 +17,7 @@
 | 1.3 | Detalhes da Fase 2: o cookie guarda até 10 apelidos por navegador (computador compartilhado); começar uma partida encerra a anterior que estiver em andamento |
 | 1.4 | Nova função: **salvar o jogo e continuar depois** (seção 2.2). Só entre perguntas, válido por 24 h, um jogo salvo por apelido, entra no ranking; os 15 min passam a contar só o tempo de jogo ativo |
 | 1.5 | Identidade visual (seção 10.1): logo "Quiz online" em todas as páginas e Tema Azul / Minimalista |
+| 1.7 | Tema escuro (paleta azul-marinho, segue o sistema até o jogador escolher), sons sintetizados e animações leves que respeitam "reduzir movimento" (seção 10.1) |
 | 1.6 | Novo logo "Quiz Web". Contraste (WCAG AA): botões passam a usar `#0369A1` (5,9:1 com texto branco); `#0284C7` (4,1:1) fica só nos destaques sem texto |
 
 ---
@@ -305,7 +306,21 @@ Quiz_Web/
 
 - **Contraste:** texto branco sobre `#0284C7` dá só 4,1:1, abaixo dos 4,5:1 do WCAG AA; por isso os botões usam `#0369A1` (5,9:1).
 
-- As cores ficam como variáveis em `src/app/globals.css`. O tema escuro (S6) será definido na Fase 4.
+- As cores ficam como variáveis em `src/app/globals.css`.
+- **Tema escuro (S6):** segue o tema do sistema até o jogador escolher pelo botão ☀️/🌙 no topo; a escolha fica salva no navegador.
+
+| Elemento (escuro) | Cor |
+|---|---|
+| Fundo da página | Azul-marinho `#0B1220` |
+| Cartão do quiz | `#121B2E` |
+| Texto | `#E2E8F0` |
+| Destaques (sem texto) | `#38BDF8` |
+| Links | `#7DD3FC` |
+| Fundo dos botões | `#0369A1` (o mesmo do tema claro; texto branco 5,9:1) |
+
+- **Sons (S11):** desligados por padrão; botão 🔇/🔊 no topo, com a escolha salva no navegador. Sons curtos para acerto, erro, tempo esgotado, fim da partida e tique nos últimos 5 s.
+- **Animações (S11):** entrada suave da pergunta, destaque na resposta certa e tremida na errada. Quem ativa "reduzir movimento" no sistema não vê animações.
+- **Acessibilidade:** checagem automática WCAG AA (axe) nos dois temas nos testes E2E; o leitor de tela anuncia o resultado de cada resposta e o tempo restante aos 10 s e aos 5 s.
 - **Anti-fraude:** correção e controle do tempo no servidor, limite de requisições por IP, sessão expira após 15 min de jogo ativo (jogo salvo: 24 h), uma resposta por pergunta, RLS no Supabase.
 - **Privacidade:** apenas apelido é armazenado; filtro de palavrões nos apelidos (LGPD — sem dados pessoais).
 
@@ -363,7 +378,7 @@ Decididas na v1.0:
 - [ ] Resultado aparece no ranking correspondente, com filtros de período.
 - [ ] Funciona em celular e desktop.
 - [ ] Feedback com explicação após cada resposta e revisão completa ao final.
-- [ ] Tema claro/escuro, animações leves e sons opcionais (desligados por padrão).
+- [x] Tema claro/escuro, animações leves e sons opcionais (desligados por padrão).
 - [ ] Botão “reportar pergunta” grava o aviso no banco.
 - [ ] Jogo pode ser salvo entre perguntas e retomado em até 24 h, voltando numa pergunta inédita.
 - [ ] Publicado na Vercel usando o banco Supabase de produção.

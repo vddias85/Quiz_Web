@@ -98,6 +98,7 @@ O PRD v1.1 está aprovado e ainda não há código; a pasta tem só `PRD.md` e `
 2. Rodar `prisma migrate deploy` contra prod. Eu passo o comando e você roda localmente com as variáveis de prod. Depois, o seed só com perguntas revisadas.
 3. Deploy, smoke test manual e conferência do RLS: com a chave anon, uma consulta via REST precisa retornar vazio ou negar acesso.
 4. Rotina de backup: script `scripts/backup.ps1` com `pg_dump` (você executa).
+5. Proteção contra conexões presas pelo pooler: definir `idle_in_transaction_session_timeout` (ex.: 60 s) no banco de prod. Na Fase 4 uma conexão ficou `idle in transaction` após o servidor ser encerrado no meio de uma requisição.
 
 ## Fase 6 — Conteúdo
 - Ampliar até 15 perguntas por nível por categoria (600 no total), em lotes por categoria.

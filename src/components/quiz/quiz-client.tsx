@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { api, ClientApiError } from "@/lib/api-client";
+import { playSound } from "@/lib/sound";
 import type { Level } from "@/lib/scoring";
 import type { AnswerResultDto, CurrentQuestionDto } from "@/server/quiz";
 import { LevelBadge } from "./level-badge";
@@ -61,6 +62,8 @@ export function QuizClient({ sessionId }: { sessionId: string }) {
       setPhase({ kind: "question", question, submitting: true });
       try {
         const result = await api.answer(sessionId, question.position, optionId);
+        playSound(result.correct ? "correct" : result.timedOut ? "timeout" : "wrong");
+        if (result.finished) window.setTimeout(() => playSound("finish"), 450);
         setPhase({ kind: "feedback", question, result });
       } catch (err) {
         if (err instanceof ClientApiError && err.status === 410) return setPhase({ kind: "expired" });
@@ -160,8 +163,16 @@ export function QuizClient({ sessionId }: { sessionId: string }) {
   const { question } = phase;
   const feedback = phase.kind === "feedback" ? phase.result : null;
 
+  const feedbackText = feedback
+    ? `${feedback.correct ? "Resposta certa!" : feedback.timedOut ? "Tempo esgotado." : "Resposta errada."} ${feedback.explanation ?? ""}`
+    : "";
+
   return (
     <div className="space-y-6">
+      {/* Região sempre presente: leitores de tela anunciam o resultado de cada resposta. */}
+      <p className="sr-only" aria-live="polite">
+        {feedbackText}
+      </p>
       <header className="space-y-3">
         <div className="flex flex-wrap items-center justify-between gap-2">
           <LevelBadge level={question.level as Level} />
@@ -183,6 +194,7 @@ export function QuizClient({ sessionId }: { sessionId: string }) {
       </header>
 
       <QuestionCard
+        key={question.position}
         statement={question.statement}
         options={question.options}
         disabled={phase.kind === "question" && phase.submitting}
@@ -191,7 +203,7 @@ export function QuizClient({ sessionId }: { sessionId: string }) {
       />
 
       {feedback && (
-        <section className="space-y-4" aria-live="polite">
+        <section className="animate-enter space-y-4">
           <div
             className={
               feedback.correct

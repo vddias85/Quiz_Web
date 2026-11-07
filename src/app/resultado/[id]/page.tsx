@@ -47,7 +47,7 @@ export default async function ResultPage({ params }: { params: Promise<{ id: str
             · {result.nickname}
           </p>
           <h1 className="text-lg font-medium">Sua nota</h1>
-          <p className="text-7xl font-extrabold tabular-nums">{result.score}</p>
+          <p className="animate-pop text-7xl font-extrabold tabular-nums">{result.score}</p>
           <p className="text-muted-foreground">
             {result.correctCount} de 20 acertos · {formatDuration(result.totalTimeMs)}
           </p>

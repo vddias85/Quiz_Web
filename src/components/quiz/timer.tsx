@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { playSound } from "@/lib/sound";
 import { cn } from "@/lib/utils";
 
 const TOTAL_MS = 30_000;
@@ -43,6 +44,14 @@ export function Timer({
   const seconds = Math.ceil(left / 1000);
   const warning = left <= WARNING_MS;
 
+  // Tique nos últimos 5 segundos (só com os sons ligados).
+  useEffect(() => {
+    if (running && seconds > 0 && seconds <= 5) playSound("tick");
+  }, [seconds, running]);
+
+  // Para leitores de tela: avisos só aos 10 s e aos 5 s (anunciar todo segundo seria cansativo).
+  const announcement = seconds > 10 ? "" : seconds > 5 ? "Restam 10 segundos" : seconds > 0 ? "Restam 5 segundos" : "";
+
   return (
     <div className="flex items-center gap-3" role="timer" aria-label={`${seconds} segundos restantes`}>
       <div className="h-2 flex-1 overflow-hidden rounded-full bg-muted">
@@ -58,6 +67,9 @@ export function Timer({
         )}
       >
         {seconds}s
+      </span>
+      <span className="sr-only" aria-live="assertive">
+        {announcement}
       </span>
     </div>
   );

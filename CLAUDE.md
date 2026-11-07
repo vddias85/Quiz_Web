@@ -1,9 +1,9 @@
 # CLAUDE.md — Quiz Web
 
-Quiz web de conhecimentos gerais. **A fonte da verdade é o [PRD.md](PRD.md) (v1.6, aprovado).** Leia-o antes de qualquer implementação e não contrarie decisões dele sem perguntar ao usuário.
+Quiz web de conhecimentos gerais. **A fonte da verdade é o [PRD.md](PRD.md) (v1.7, aprovado).** Leia-o antes de qualquer implementação e não contrarie decisões dele sem perguntar ao usuário.
 
 ## Status atual
-- PRD aprovado (v1.6). Fase 0 concluída (Supabase dev/prod em São Paulo, GitHub, Vercel).
+- PRD aprovado (v1.7). Fase 0 concluída (Supabase dev/prod em São Paulo, GitHub, Vercel).
 - **Fase 1 concluída (07/11/2026):** Next.js 15 + shadcn, Prisma 6 (schema + migrações com CHECKs e RLS sem políticas), 200 perguntas no Supabase **dev** (todas revisadas pelo usuário em 07/11/2026, `reviewed: true`), `prod-guard`, Vitest, `vercel.json` (gru1). O prod segue vazio, sem migrações.
 - O npm 11 exige aprovar scripts de instalação (`allowScripts` no `package.json`); ao atualizar Prisma/esbuild, rode `npm install-scripts approve <pkg>`.
 - O Prisma CLI não lê `.env.local` sozinho: use sempre os scripts `npm run db:*` (usam `dotenv-cli`).
@@ -13,7 +13,9 @@ Quiz web de conhecimentos gerais. **A fonte da verdade é o [PRD.md](PRD.md) (v1
 - **Salvar e continuar depois (PRD v1.4, §2.2) implementado** em 07/11/2026: status `SAVED`, rotas `save`/`resume`, aviso na tela inicial.
 - **Logo e Tema Azul (PRD v1.5/v1.6, §10.1)** aplicados em 07/11/2026: `PageShell` com logo "Quiz Web" em todas as páginas, cores em `globals.css`, ícones gerados de `logo/logo.jpg` com `npm run logo:build`. Botões em `#0369A1` (`primary`, contraste AA); destaques sem texto em `#0284C7` (`highlight`).
 - **Fase 3 concluída (07/11/2026):** períodos do ranking em `src/lib/ranking.ts` (puro, fuso de São Paulo) e consulta SQL em `src/server/ranking.ts` (`DISTINCT ON` + `ROW_NUMBER`, Top 50 + apelidos do navegador fora dele); `GET /api/ranking`; páginas `/ranking` (filtros na URL: `?categoria=<slug>&periodo=hoje|semana|mes`), `/resultado/[id]` (posição em Sempre e Hoje) e `/revisao/[id]` (com "Reportar pergunta"). 100 testes de unidade + 27 de integração.
-- Próximo: **Fase 4** (acabamento: tema escuro, animações, sons, acessibilidade, Playwright). Só comece cada fase quando o usuário pedir.
+- **Fase 4 concluída (07/11/2026):** tema escuro com `next-themes` (paleta no `.dark` de `globals.css`; token `link` para texto azul), sons em `src/lib/sound.ts` (Web Audio, desligados por padrão), animações `animate-enter/pop/shake` (desligadas com "reduzir movimento"), botões de tema e som no `PageShell`, foco no enunciado e anúncios para leitores de tela. **Playwright** em `tests/e2e/` (`npm run test:e2e`, sobe `next dev` na porta 3200, banco dev): 11 testes, inclusive axe WCAG AA nos dois temas e celular (Pixel 7). Apelidos de teste usam o prefixo `e2e_` e são apagados no início e no fim.
+- Se a limpeza do E2E ou do banco dev travar: procure conexões `idle in transaction` em `pg_stat_activity` (o pooler pode deixá-las quando o servidor é encerrado no meio de uma requisição).
+- Próximo: **Fase 5** (publicação). Só comece cada fase quando o usuário pedir.
 - A Vercel ainda não tem variáveis de ambiente (vêm na Fase 5): lá a página inicial mostra "indisponível".
 
 ## Regras de negócio (não negociáveis sem aprovação)

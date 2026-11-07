@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useRef } from "react";
 import { cn } from "@/lib/utils";
 
 const LETTERS = ["A", "B", "C", "D"];
@@ -28,9 +29,18 @@ export function QuestionCard({
   disabled?: boolean;
   onChoose: (optionId: string) => void;
 }) {
+  // O componente é recriado a cada pergunta (key = posição): o foco vai para o enunciado,
+  // para que o leitor de tela leia a nova pergunta.
+  const heading = useRef<HTMLHeadingElement>(null);
+  useEffect(() => {
+    heading.current?.focus({ preventScroll: true });
+  }, []);
+
   return (
-    <div className="space-y-5">
-      <h2 className="text-xl font-semibold leading-snug sm:text-2xl">{statement}</h2>
+    <div className="animate-enter space-y-5">
+      <h2 ref={heading} tabIndex={-1} className="text-xl leading-snug font-semibold outline-none sm:text-2xl">
+        {statement}
+      </h2>
       <ul className="grid gap-3" aria-label="Alternativas">
         {options.map((option, index) => {
           const isCorrect = reveal?.correctOptionId === option.id;
@@ -47,8 +57,8 @@ export function QuestionCard({
                   "focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50",
                   !reveal && "border-border bg-card hover:border-highlight/40 hover:bg-muted disabled:opacity-60",
                   reveal && !isCorrect && !isWrongChoice && "border-border bg-card opacity-60",
-                  isCorrect && "border-emerald-500 bg-emerald-50 dark:bg-emerald-950/50",
-                  isWrongChoice && "border-red-500 bg-red-50 dark:bg-red-950/50",
+                  isCorrect && "animate-pop border-emerald-500 bg-emerald-50 dark:bg-emerald-950/50",
+                  isWrongChoice && "animate-shake border-red-500 bg-red-50 dark:bg-red-950/50",
                 )}
               >
                 <span
