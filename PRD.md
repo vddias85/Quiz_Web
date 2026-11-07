@@ -2,7 +2,7 @@
 
 | Campo | Valor |
 |---|---|
-| Versão | 1.2 |
+| Versão | 1.3 |
 | Data | 07/11/2026 |
 | Status | ✅ Aprovado em 07/11/2026 |
 
@@ -14,6 +14,7 @@
 | 1.0 | Aprovação final: sugestões definidas, pontuação fixa de 0,5, 10 categorias e stack Next.js + Prisma confirmadas |
 | 1.1 | Pontuação trocada para ponderada por nível (0,3 / 0,4 / 0,6 / 0,7) |
 | 1.2 | Complementos técnicos do plano de desenvolvimento (seção 8.7): apelido único vinculado a cookie, tabelas `QuestionReport` e `RateLimit`, nota em décimos, campo `reviewed` no seed, fuso do ranking, versões fixadas, região da Vercel via `vercel.json` |
+| 1.3 | Detalhes da Fase 2: o cookie guarda até 10 apelidos por navegador (computador compartilhado); começar uma partida encerra a anterior que estiver em andamento |
 
 ---
 
@@ -248,7 +249,8 @@ Quiz_Web/
 
 ### 8.7 Complementos técnicos (v1.2)
 
-- **Apelido único**, sem diferenciar maiúsculas, minúsculas e acentos (`Player.nicknameKey`). O apelido fica vinculado a um cookie assinado (`qw_player`, HMAC-SHA256 com `SESSION_SECRET`). Outro navegador que tente usar o mesmo apelido recebe o aviso "apelido em uso".
+- **Apelido único**, sem diferenciar maiúsculas, minúsculas e acentos (`Player.nicknameKey`). O apelido fica vinculado a um cookie assinado (`qw_player`, HMAC-SHA256 com `SESSION_SECRET`). Outro navegador que tente usar o mesmo apelido recebe o aviso "apelido em uso". O cookie guarda até 10 apelidos, para que várias pessoas possam jogar no mesmo computador.
+- **Uma partida por vez:** começar uma nova partida encerra (como expirada) a anterior que estiver em andamento.
 - **`QuestionReport`**: grava os avisos do botão "reportar pergunta" (S13): pergunta, jogador, motivo, texto opcional e data.
 - **`RateLimit`**: limite de requisições por IP e rota, guardado no banco. Memória local não funciona em serverless.
 - **Nota em décimos**: `Session.scoreTenths` (inteiro de 0 a 100); a divisão por 10 acontece só na exibição.

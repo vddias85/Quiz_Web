@@ -11,7 +11,7 @@
     ],
     "correctIndex": 0,
     "explanation": "Cada molécula de água tem dois átomos de hidrogênio e um de oxigênio.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "ciencias-002",
@@ -25,7 +25,7 @@
     ],
     "correctIndex": 2,
     "explanation": "A cor de Marte vem do óxido de ferro (ferrugem) em sua superfície.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "ciencias-003",
@@ -39,7 +39,7 @@
     ],
     "correctIndex": 2,
     "explanation": "O coração é um músculo que bate, em média, de 60 a 100 vezes por minuto em repouso.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "ciencias-004",
@@ -53,7 +53,7 @@
     ],
     "correctIndex": 1,
     "explanation": "Na fotossíntese, as plantas usam gás carbônico, água e luz para produzir glicose e liberar oxigênio.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "ciencias-005",
@@ -67,7 +67,7 @@
     ],
     "correctIndex": 0,
     "explanation": "O Sol está a cerca de 150 milhões de km. Depois dele, a mais próxima é Próxima Centauri.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "ciencias-006",
@@ -81,7 +81,7 @@
     ],
     "correctIndex": 1,
     "explanation": "A pele de um adulto cobre cerca de 2 m². O fígado é o maior órgão interno.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "ciencias-007",
@@ -95,7 +95,7 @@
     ],
     "correctIndex": 1,
     "explanation": "Au vem do latim aurum. Ag é o símbolo da prata.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "ciencias-008",
@@ -109,7 +109,7 @@
     ],
     "correctIndex": 1,
     "explanation": "Um bebê nasce com cerca de 300 ossos; vários se fundem durante o crescimento.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "ciencias-009",
@@ -123,7 +123,7 @@
     ],
     "correctIndex": 1,
     "explanation": "Júpiter tem mais do que o dobro da massa de todos os outros planetas juntos.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "ciencias-010",
@@ -137,7 +137,7 @@
     ],
     "correctIndex": 2,
     "explanation": "Newton publicou as leis do movimento em 1687, na obra Principia.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "ciencias-011",
@@ -151,7 +151,7 @@
     ],
     "correctIndex": 0,
     "explanation": "A luz viaja a cerca de 299.792 km/s. 340 m/s é a velocidade do som no ar.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "ciencias-012",
@@ -165,7 +165,7 @@
     ],
     "correctIndex": 1,
     "explanation": "A mitocôndria produz ATP, a principal fonte de energia da célula.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "ciencias-013",
@@ -179,7 +179,7 @@
     ],
     "correctIndex": 2,
     "explanation": "O hidrogênio corresponde a cerca de 74% da massa de matéria comum do universo.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "ciencias-014",
@@ -193,7 +193,7 @@
     ],
     "correctIndex": 1,
     "explanation": "pH 7 é neutro: abaixo disso a solução é ácida e acima é básica.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "ciencias-015",
@@ -207,7 +207,7 @@
     ],
     "correctIndex": 1,
     "explanation": "Fleming percebeu que um fungo do gênero Penicillium impedia o crescimento de bactérias.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "ciencias-016",
@@ -221,7 +221,7 @@
     ],
     "correctIndex": 0,
     "explanation": "O carbono tem 6 prótons. 12 é a massa do isótopo mais comum, o carbono-12.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "ciencias-017",
@@ -235,7 +235,7 @@
     ],
     "correctIndex": 2,
     "explanation": "Thomson identificou o elétron estudando raios catódicos.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "ciencias-018",
@@ -249,7 +249,7 @@
     ],
     "correctIndex": 1,
     "explanation": "O modelo de Bohr explicou as linhas do espectro do hidrogênio.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "ciencias-019",
@@ -263,7 +263,7 @@
     ],
     "correctIndex": 0,
     "explanation": "Um mol de qualquer substância tem cerca de 6,02 × 10²³ partículas.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "ciencias-020",
@@ -277,6 +277,6 @@
     ],
     "correctIndex": 0,
     "explanation": "Marie Curie ganhou o Nobel de Física em 1903 e o de Química em 1911.",
-    "reviewed": false
+    "reviewed": true
   }
 ]

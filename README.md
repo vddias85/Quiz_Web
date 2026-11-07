@@ -22,6 +22,7 @@ Os scripts `db:*` leem o `.env.local` e se recusam a rodar contra o projeto de p
 |---|---|
 | `npm run dev` | Servidor de desenvolvimento |
 | `npm test` | Testes de unidade (Vitest) |
+| `npm run test:integration` | Testes de integração contra o banco **dev** (recusa o prod) |
 | `npm run db:migrate` | Aplica as migrações no banco do `.env.local` |
 | `npm run db:seed` | Carrega só as perguntas revisadas |
 | `npm run db:seed:dev` | Carrega também as perguntas não revisadas (só dev) |

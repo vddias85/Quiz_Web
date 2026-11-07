@@ -11,7 +11,7 @@
     ],
     "correctIndex": 1,
     "explanation": "7 × 8 = 56.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "matematica-e-logica-002",
@@ -25,7 +25,7 @@
     ],
     "correctIndex": 1,
     "explanation": "O prefixo \"hexa\" significa seis. Os favos de mel têm forma hexagonal.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "matematica-e-logica-003",
@@ -39,7 +39,7 @@
     ],
     "correctIndex": 1,
     "explanation": "150 ÷ 2 = 75.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "matematica-e-logica-004",
@@ -53,7 +53,7 @@
     ],
     "correctIndex": 2,
     "explanation": "10% de 200 é 20 e 5% é 10; somando, 15% dá 30.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "matematica-e-logica-005",
@@ -67,7 +67,7 @@
     ],
     "correctIndex": 2,
     "explanation": "Cada número é o dobro do anterior: 16 × 2 = 32.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "matematica-e-logica-006",
@@ -81,7 +81,7 @@
     ],
     "correctIndex": 1,
     "explanation": "12 × 12 = 144.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "matematica-e-logica-007",
@@ -95,7 +95,7 @@
     ],
     "correctIndex": 1,
     "explanation": "Em qualquer triângulo plano, os três ângulos internos somam 180°.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "matematica-e-logica-008",
@@ -109,7 +109,7 @@
     ],
     "correctIndex": 2,
     "explanation": "O 2 é o menor primo e o único primo par. O 1 não é considerado primo.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "matematica-e-logica-009",
@@ -123,7 +123,7 @@
     ],
     "correctIndex": 1,
     "explanation": "25% de 80 é 20; 80 − 20 = 60.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "matematica-e-logica-010",
@@ -137,7 +137,7 @@
     ],
     "correctIndex": 2,
     "explanation": "2¹⁰ = 1.024, um número muito comum na computação.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "matematica-e-logica-011",
@@ -151,7 +151,7 @@
     ],
     "correctIndex": 1,
     "explanation": "π ≈ 3,14159… É a razão entre o comprimento de uma circunferência e o seu diâmetro.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "matematica-e-logica-012",
@@ -165,7 +165,7 @@
     ],
     "correctIndex": 2,
     "explanation": "Cada termo é a soma dos dois anteriores: 8 + 13 = 21.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "matematica-e-logica-013",
@@ -179,7 +179,7 @@
     ],
     "correctIndex": 2,
     "explanation": "Velocidade média = distância ÷ tempo = 240 ÷ 3 = 80 km/h.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "matematica-e-logica-014",
@@ -193,7 +193,7 @@
     ],
     "correctIndex": 0,
     "explanation": "Um polígono de n lados tem n × (n − 3) ÷ 2 diagonais: 5 × 2 ÷ 2 = 5.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "matematica-e-logica-015",
@@ -207,7 +207,7 @@
     ],
     "correctIndex": 2,
     "explanation": "3x = 20 − 5 = 15, então x = 15 ÷ 3 = 5.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "matematica-e-logica-016",
@@ -221,7 +221,7 @@
     ],
     "correctIndex": 2,
     "explanation": "Formando pares (1 + 100, 2 + 99, …), temos 50 pares de soma 101: 50 × 101 = 5.050.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "matematica-e-logica-017",
@@ -235,7 +235,7 @@
     ],
     "correctIndex": 2,
     "explanation": "São eles: 2, 3, 5, 7, 11, 13, 17 e 19.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "matematica-e-logica-018",
@@ -249,7 +249,7 @@
     ],
     "correctIndex": 2,
     "explanation": "É uma permutação: 4! = 4 × 3 × 2 × 1 = 24.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "matematica-e-logica-019",
@@ -263,7 +263,7 @@
     ],
     "correctIndex": 0,
     "explanation": "Há 6 combinações que somam 7 entre 36 possíveis: 6/36 = 1/6.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "matematica-e-logica-020",
@@ -277,6 +277,6 @@
     ],
     "correctIndex": 1,
     "explanation": "O ponteiro dos minutos está no 3 (90°), mas o das horas já andou um quarto do caminho até o 4: 90° + 7,5° = 97,5°. A diferença é 7,5°.",
-    "reviewed": false
+    "reviewed": true
   }
 ]

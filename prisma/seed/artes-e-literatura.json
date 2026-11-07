@@ -11,7 +11,7 @@
     ],
     "correctIndex": 1,
     "explanation": "Leonardo pintou a Mona Lisa no início do século XVI; o quadro está no Museu do Louvre, em Paris.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "artes-e-literatura-002",
@@ -25,7 +25,7 @@
     ],
     "correctIndex": 0,
     "explanation": "O romance de 1899 é narrado por Bentinho, que desconfia de Capitu.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "artes-e-literatura-003",
@@ -39,7 +39,7 @@
     ],
     "correctIndex": 2,
     "explanation": "A tragédia de Shakespeare se passa em Verona, na Itália.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "artes-e-literatura-004",
@@ -53,7 +53,7 @@
     ],
     "correctIndex": 0,
     "explanation": "Monteiro Lobato criou Emília, Narizinho e Pedrinho; o primeiro livro saiu em 1920.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "artes-e-literatura-005",
@@ -67,7 +67,7 @@
     ],
     "correctIndex": 1,
     "explanation": "Van Gogh pintou o quadro em 1889, quando estava internado em Saint-Rémy, na França.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "artes-e-literatura-006",
@@ -81,7 +81,7 @@
     ],
     "correctIndex": 0,
     "explanation": "A primeira parte do romance de Cervantes foi publicada em 1605.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "artes-e-literatura-007",
@@ -95,7 +95,7 @@
     ],
     "correctIndex": 1,
     "explanation": "O quadro inspirou o Movimento Antropofágico de Oswald de Andrade.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "artes-e-literatura-008",
@@ -109,7 +109,7 @@
     ],
     "correctIndex": 1,
     "explanation": "Michelangelo trabalhou no teto de 1508 a 1512; a cena mais famosa é \"A Criação de Adão\".",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "artes-e-literatura-009",
@@ -123,7 +123,7 @@
     ],
     "correctIndex": 1,
     "explanation": "O poema épico de 1572 narra a viagem de Vasco da Gama às Índias.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "artes-e-literatura-010",
@@ -137,7 +137,7 @@
     ],
     "correctIndex": 0,
     "explanation": "Macunaíma (1928) é uma das obras mais importantes do Modernismo brasileiro.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "artes-e-literatura-011",
@@ -151,7 +151,7 @@
     ],
     "correctIndex": 0,
     "explanation": "Publicado em 1977, o romance conta a história de Macabéa, uma nordestina no Rio de Janeiro.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "artes-e-literatura-012",
@@ -165,7 +165,7 @@
     ],
     "correctIndex": 1,
     "explanation": "\"A Persistência da Memória\", com os relógios derretidos, é sua obra mais famosa.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "artes-e-literatura-013",
@@ -179,7 +179,7 @@
     ],
     "correctIndex": 0,
     "explanation": "A Semana, no Theatro Municipal, coincidiu com o centenário da Independência.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "artes-e-literatura-014",
@@ -193,7 +193,7 @@
     ],
     "correctIndex": 1,
     "explanation": "O romance de 1956 é narrado pelo jagunço Riobaldo.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "artes-e-literatura-015",
@@ -207,7 +207,7 @@
     ],
     "correctIndex": 1,
     "explanation": "Picasso pintou Guernica em 1937, em resposta ao bombardeio da cidade basca na Guerra Civil Espanhola.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "artes-e-literatura-016",
@@ -221,7 +221,7 @@
     ],
     "correctIndex": 0,
     "explanation": "Antônio Francisco Lisboa, o Aleijadinho, esculpiu os profetas em pedra-sabão no início do século XIX.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "artes-e-literatura-017",
@@ -235,7 +235,7 @@
     ],
     "correctIndex": 0,
     "explanation": "Saramago é o único autor de língua portuguesa a receber o Nobel de Literatura.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "artes-e-literatura-018",
@@ -249,7 +249,7 @@
     ],
     "correctIndex": 1,
     "explanation": "O romance colombiano de 1967 se passa na cidade fictícia de Macondo.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "artes-e-literatura-019",
@@ -263,7 +263,7 @@
     ],
     "correctIndex": 0,
     "explanation": "Um crítico usou o título do quadro de Monet, de 1872, para batizar o movimento, em tom de ironia.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "artes-e-literatura-020",
@@ -277,6 +277,6 @@
     ],
     "correctIndex": 0,
     "explanation": "O poema \"No Meio do Caminho\" foi publicado em 1928 e causou polêmica na época.",
-    "reviewed": false
+    "reviewed": true
   }
 ]

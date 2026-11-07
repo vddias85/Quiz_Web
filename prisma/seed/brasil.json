@@ -11,7 +11,7 @@
     ],
     "correctIndex": 2,
     "explanation": "Brasília é a capital desde 1960.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "brasil-002",
@@ -25,7 +25,7 @@
     ],
     "correctIndex": 0,
     "explanation": "A bandeira tem retângulo verde, losango amarelo e círculo azul com uma faixa branca e estrelas.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "brasil-003",
@@ -39,7 +39,7 @@
     ],
     "correctIndex": 0,
     "explanation": "A feijoada costuma ser servida com arroz, couve, farofa e laranja.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "brasil-004",
@@ -53,7 +53,7 @@
     ],
     "correctIndex": 1,
     "explanation": "O Saci adora fazer travessuras. O Curupira tem os pés virados para trás.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "brasil-005",
@@ -67,7 +67,7 @@
     ],
     "correctIndex": 1,
     "explanation": "O Amazonas tem cerca de 1,56 milhão de km², quase um quinto do território nacional.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "brasil-006",
@@ -81,7 +81,7 @@
     ],
     "correctIndex": 0,
     "explanation": "O festival acontece no fim de junho em Parintins, no Amazonas.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "brasil-007",
@@ -95,7 +95,7 @@
     ],
     "correctIndex": 1,
     "explanation": "Brasília foi inaugurada em 21 de abril de 1960, no governo de Juscelino Kubitschek.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "brasil-008",
@@ -109,7 +109,7 @@
     ],
     "correctIndex": 0,
     "explanation": "Segundo a lenda, a Iara atrai os pescadores com seu canto.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "brasil-009",
@@ -123,7 +123,7 @@
     ],
     "correctIndex": 2,
     "explanation": "São 26 estados e o Distrito Federal, totalizando 27 unidades federativas.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "brasil-010",
@@ -137,7 +137,7 @@
     ],
     "correctIndex": 0,
     "explanation": "O ofício das baianas de acarajé é patrimônio imaterial registrado pelo Iphan.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "brasil-011",
@@ -151,7 +151,7 @@
     ],
     "correctIndex": 0,
     "explanation": "O marechal Deodoro proclamou a República em 1889 e governou até 1891.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "brasil-012",
@@ -165,7 +165,7 @@
     ],
     "correctIndex": 0,
     "explanation": "A princesa Isabel assinou a Lei Áurea em 13 de maio de 1888.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "brasil-013",
@@ -179,7 +179,7 @@
     ],
     "correctIndex": 1,
     "explanation": "Niemeyer projetou o Congresso, o Palácio da Alvorada e a Catedral. Lúcio Costa fez o plano urbanístico da cidade.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "brasil-014",
@@ -193,7 +193,7 @@
     ],
     "correctIndex": 1,
     "explanation": "A Amazônia ocupa cerca de 49% do território nacional; o Cerrado é o segundo maior.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "brasil-015",
@@ -207,7 +207,7 @@
     ],
     "correctIndex": 0,
     "explanation": "A Chapada Diamantina fica no centro da Bahia e é famosa por cachoeiras e grutas.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "brasil-016",
@@ -221,7 +221,7 @@
     ],
     "correctIndex": 2,
     "explanation": "A Constituição de 1891 criou o sistema federativo. A de 1824 era do Império.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "brasil-017",
@@ -235,7 +235,7 @@
     ],
     "correctIndex": 0,
     "explanation": "Canudos foi retratada por Euclides da Cunha no livro \"Os Sertões\".",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "brasil-018",
@@ -249,7 +249,7 @@
     ],
     "correctIndex": 0,
     "explanation": "O Monte Caburaí, em Roraima, fica mais ao norte que o Oiapoque. A expressão \"do Oiapoque ao Chuí\" é anterior a essa medição.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "brasil-019",
@@ -263,7 +263,7 @@
     ],
     "correctIndex": 0,
     "explanation": "Machado de Assis presidiu a ABL desde a fundação, em 1897, até morrer, em 1908.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "brasil-020",
@@ -277,6 +277,6 @@
     ],
     "correctIndex": 1,
     "explanation": "A capital foi transferida de Salvador para o Rio em 1763 e do Rio para Brasília em 1960.",
-    "reviewed": false
+    "reviewed": true
   }
 ]

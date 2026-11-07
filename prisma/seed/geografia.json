@@ -11,7 +11,7 @@
     ],
     "correctIndex": 0,
     "explanation": "Buenos Aires é a capital e a maior cidade da Argentina.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "geografia-002",
@@ -25,7 +25,7 @@
     ],
     "correctIndex": 2,
     "explanation": "O Pacífico cobre cerca de um terço da superfície da Terra.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "geografia-003",
@@ -39,7 +39,7 @@
     ],
     "correctIndex": 1,
     "explanation": "O Egito fica no nordeste da África; só a península do Sinai está na Ásia.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "geografia-004",
@@ -53,7 +53,7 @@
     ],
     "correctIndex": 3,
     "explanation": "O Brasil tem mais de 200 milhões de habitantes, cerca de metade da população sul-americana.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "geografia-005",
@@ -67,7 +67,7 @@
     ],
     "correctIndex": 1,
     "explanation": "Paris é a capital francesa. Bruxelas é a capital da Bélgica.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "geografia-006",
@@ -81,7 +81,7 @@
     ],
     "correctIndex": 0,
     "explanation": "O São Francisco nasce em Minas Gerais e deságua entre Alagoas e Sergipe. O Amazonas nasce no Peru e o Paraná segue para a Argentina.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "geografia-007",
@@ -95,7 +95,7 @@
     ],
     "correctIndex": 2,
     "explanation": "Camberra foi planejada para ser a capital, como meio-termo entre Sydney e Melbourne.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "geografia-008",
@@ -109,7 +109,7 @@
     ],
     "correctIndex": 1,
     "explanation": "O Vaticano tem cerca de 0,44 km² e fica dentro de Roma.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "geografia-009",
@@ -123,7 +123,7 @@
     ],
     "correctIndex": 2,
     "explanation": "Os Montes Urais atravessam a Rússia de norte a sul e marcam a divisão convencional entre os continentes.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "geografia-010",
@@ -137,7 +137,7 @@
     ],
     "correctIndex": 1,
     "explanation": "O Saara ocupa boa parte do norte da África. Os desertos polares são maiores, mas são frios.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "geografia-011",
@@ -151,7 +151,7 @@
     ],
     "correctIndex": 1,
     "explanation": "Ancara é a capital desde 1923. Istambul é a maior cidade do país.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "geografia-012",
@@ -165,7 +165,7 @@
     ],
     "correctIndex": 0,
     "explanation": "O Baikal, na Sibéria, passa de 1.600 metros de profundidade.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "geografia-013",
@@ -179,7 +179,7 @@
     ],
     "correctIndex": 2,
     "explanation": "O Atacama fica no norte do Chile e é um dos lugares mais secos do planeta.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "geografia-014",
@@ -193,7 +193,7 @@
     ],
     "correctIndex": 2,
     "explanation": "Com territórios espalhados pelo mundo, a França usa 12 fusos horários.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "geografia-015",
@@ -207,7 +207,7 @@
     ],
     "correctIndex": 1,
     "explanation": "O Pico da Neblina, no Amazonas, tem cerca de 2.995 metros.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "geografia-016",
@@ -221,7 +221,7 @@
     ],
     "correctIndex": 1,
     "explanation": "Astana é a capital desde 1997; antes era Almaty. Bishkek e Tashkent são capitais do Quirguistão e do Uzbequistão.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "geografia-017",
@@ -235,7 +235,7 @@
     ],
     "correctIndex": 1,
     "explanation": "O Cazaquistão tem cerca de 2,7 milhões de km². O Mar Cáspio, em sua fronteira, é um lago fechado.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "geografia-018",
@@ -249,7 +249,7 @@
     ],
     "correctIndex": 0,
     "explanation": "O Danúbio passa por 10 países, da Alemanha até o Mar Negro.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "geografia-019",
@@ -263,7 +263,7 @@
     ],
     "correctIndex": 0,
     "explanation": "Ulan Bator concentra quase metade da população da Mongólia. Timphu e Katmandu são capitais do Butão e do Nepal.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "geografia-020",
@@ -277,6 +277,6 @@
     ],
     "correctIndex": 1,
     "explanation": "O Sudão, antiga Núbia, tem mais de 200 pirâmides, mais do que o Egito, embora menores.",
-    "reviewed": false
+    "reviewed": true
   }
 ]

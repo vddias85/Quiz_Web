@@ -11,7 +11,7 @@
     ],
     "correctIndex": 2,
     "explanation": "São 11 jogadores por equipe, contando o goleiro.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "esportes-002",
@@ -25,7 +25,7 @@
     ],
     "correctIndex": 2,
     "explanation": "O Brasil venceu em 1958, 1962, 1970, 1994 e 2002.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "esportes-003",
@@ -39,7 +39,7 @@
     ],
     "correctIndex": 1,
     "explanation": "No badminton, a peteca (volante) é feita de penas ou de material sintético.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "esportes-004",
@@ -53,7 +53,7 @@
     ],
     "correctIndex": 1,
     "explanation": "Senna morreu no GP de San Marino, em Ímola. Piquet também foi tricampeão, mas está vivo.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "esportes-005",
@@ -67,7 +67,7 @@
     ],
     "correctIndex": 1,
     "explanation": "Os cinco anéis entrelaçados representam a união dos continentes.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "esportes-006",
@@ -81,7 +81,7 @@
     ],
     "correctIndex": 1,
     "explanation": "Pelé venceu três Copas do Mundo (1958, 1962 e 1970).",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "esportes-007",
@@ -95,7 +95,7 @@
     ],
     "correctIndex": 2,
     "explanation": "Cestas de dentro do garrafão ou da área valem 2; lances livres valem 1.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "esportes-008",
@@ -109,7 +109,7 @@
     ],
     "correctIndex": 1,
     "explanation": "Atenas sediou os primeiros Jogos modernos, em homenagem à origem grega das Olimpíadas.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "esportes-009",
@@ -123,7 +123,7 @@
     ],
     "correctIndex": 1,
     "explanation": "As partidas são em melhor de cinco sets; vence quem fizer três.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "esportes-010",
@@ -137,7 +137,7 @@
     ],
     "correctIndex": 1,
     "explanation": "Foram os primeiros Jogos Olímpicos realizados na América do Sul.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "esportes-011",
@@ -151,7 +151,7 @@
     ],
     "correctIndex": 1,
     "explanation": "A distância foi padronizada a partir dos Jogos de Londres de 1908. 21,097 km é a meia maratona.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "esportes-012",
@@ -165,7 +165,7 @@
     ],
     "correctIndex": 1,
     "explanation": "A Alemanha venceu a Argentina por 1 a 0 na final, no Maracanã.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "esportes-013",
@@ -179,7 +179,7 @@
     ],
     "correctIndex": 0,
     "explanation": "Guga foi tricampeão de Roland Garros e terminou o ano 2000 como número 1.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "esportes-014",
@@ -193,7 +193,7 @@
     ],
     "correctIndex": 1,
     "explanation": "Cada bispo fica sempre nas casas da mesma cor em que começou.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "esportes-015",
@@ -207,7 +207,7 @@
     ],
     "correctIndex": 1,
     "explanation": "O Uruguai sediou e venceu a primeira Copa, derrotando a Argentina na final.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "esportes-016",
@@ -221,7 +221,7 @@
     ],
     "correctIndex": 1,
     "explanation": "Rebeca Andrade somou seis medalhas olímpicas em Tóquio 2020 e Paris 2024.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "esportes-017",
@@ -235,7 +235,7 @@
     ],
     "correctIndex": 0,
     "explanation": "Pelé, Gérson, Jairzinho e Carlos Alberto marcaram para o Brasil, no Estádio Azteca.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "esportes-018",
@@ -249,7 +249,7 @@
     ],
     "correctIndex": 1,
     "explanation": "Em 1950 o Uruguai venceu o Brasil no Maracanã, no episódio conhecido como Maracanaço.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "esportes-019",
@@ -263,7 +263,7 @@
     ],
     "correctIndex": 0,
     "explanation": "Emerson Fittipaldi foi campeão em 1972 e em 1974.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "esportes-020",
@@ -277,6 +277,6 @@
     ],
     "correctIndex": 1,
     "explanation": "Birdie é um golpe abaixo do par; albatross, três abaixo; bogey, um acima.",
-    "reviewed": false
+    "reviewed": true
   }
 ]

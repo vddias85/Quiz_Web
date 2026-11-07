@@ -11,7 +11,7 @@
     ],
     "correctIndex": 1,
     "explanation": "Dom Pedro proclamou a independência em 7 de setembro de 1822.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "historia-002",
@@ -25,7 +25,7 @@
     ],
     "correctIndex": 2,
     "explanation": "George Washington governou de 1789 a 1797.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "historia-003",
@@ -39,7 +39,7 @@
     ],
     "correctIndex": 1,
     "explanation": "As pirâmides de Gizé foram construídas pelos antigos egípcios há cerca de 4.500 anos.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "historia-004",
@@ -53,7 +53,7 @@
     ],
     "correctIndex": 2,
     "explanation": "A guerra terminou em 1945, com a rendição da Alemanha em maio e do Japão em setembro.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "historia-005",
@@ -67,7 +67,7 @@
     ],
     "correctIndex": 1,
     "explanation": "A esquadra de Pedro Álvares Cabral chegou ao litoral da Bahia em abril de 1500.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "historia-006",
@@ -81,7 +81,7 @@
     ],
     "correctIndex": 0,
     "explanation": "O Muro de Berlim dividia a cidade em lado ocidental e oriental desde 1961.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "historia-007",
@@ -95,7 +95,7 @@
     ],
     "correctIndex": 1,
     "explanation": "Depois de Waterloo, Napoleão foi exilado na ilha de Santa Helena.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "historia-008",
@@ -109,7 +109,7 @@
     ],
     "correctIndex": 0,
     "explanation": "Em 476, o último imperador do Ocidente, Rômulo Augusto, foi deposto. 1453 é a queda do Império do Oriente.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "historia-009",
@@ -123,7 +123,7 @@
     ],
     "correctIndex": 2,
     "explanation": "A Revolução Francesa derrubou o absolutismo e espalhou os ideais de liberdade, igualdade e fraternidade.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "historia-010",
@@ -137,7 +137,7 @@
     ],
     "correctIndex": 1,
     "explanation": "Gandhi liderou campanhas de desobediência civil contra o domínio britânico; a Índia ficou independente em 1947.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "historia-011",
@@ -151,7 +151,7 @@
     ],
     "correctIndex": 0,
     "explanation": "Tordesilhas traçou uma linha imaginária a 370 léguas de Cabo Verde.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "historia-012",
@@ -165,7 +165,7 @@
     ],
     "correctIndex": 1,
     "explanation": "Salvador foi fundada em 1549 como sede do Governo-Geral e foi capital até 1763.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "historia-013",
@@ -179,7 +179,7 @@
     ],
     "correctIndex": 1,
     "explanation": "Neil Armstrong e Buzz Aldrin pousaram com a Apollo 11 em julho de 1969.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "historia-014",
@@ -193,7 +193,7 @@
     ],
     "correctIndex": 0,
     "explanation": "Houve muralhas desde a dinastia Qin, mas os trechos mais conhecidos são da dinastia Ming (1368–1644).",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "historia-015",
@@ -207,7 +207,7 @@
     ],
     "correctIndex": 1,
     "explanation": "O herdeiro do trono austro-húngaro foi morto em Sarajevo em junho de 1914. A invasão da Polônia iniciou a Segunda Guerra.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "historia-016",
@@ -221,7 +221,7 @@
     ],
     "correctIndex": 0,
     "explanation": "O sultão Maomé II conquistou Constantinopla, que depois passou a se chamar Istambul.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "historia-017",
@@ -235,7 +235,7 @@
     ],
     "correctIndex": 1,
     "explanation": "O túmulo de Tutancâmon, no Vale dos Reis, guardava milhares de objetos, como a famosa máscara de ouro.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "historia-018",
@@ -249,7 +249,7 @@
     ],
     "correctIndex": 0,
     "explanation": "Diocleciano criou a tetrarquia em 293 para administrar melhor o vasto império.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "historia-019",
@@ -263,7 +263,7 @@
     ],
     "correctIndex": 1,
     "explanation": "A Magna Carta, de 1215, limitou o poder do rei e é um marco do direito constitucional.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "historia-020",
@@ -277,6 +277,6 @@
     ],
     "correctIndex": 1,
     "explanation": "Os mexicas fundaram Tenochtitlán por volta de 1325, sobre uma ilha no lago Texcoco.",
-    "reviewed": false
+    "reviewed": true
   }
 ]

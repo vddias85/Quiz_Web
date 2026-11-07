@@ -11,7 +11,7 @@
     ],
     "correctIndex": 1,
     "explanation": "O violão padrão tem 6 cordas; existe também o violão de 7 cordas, muito usado no choro.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "musica-002",
@@ -25,7 +25,7 @@
     ],
     "correctIndex": 1,
     "explanation": "Michael Jackson lançou Thriller (1982), um dos álbuns mais vendidos da história. Elvis é o \"Rei do Rock\".",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "musica-003",
@@ -39,7 +39,7 @@
     ],
     "correctIndex": 1,
     "explanation": "Os Beatles surgiram em Liverpool e se separaram em 1970.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "musica-004",
@@ -53,7 +53,7 @@
     ],
     "correctIndex": 0,
     "explanation": "As teclas pretas do piano tocam os sustenidos e bemóis.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "musica-005",
@@ -67,7 +67,7 @@
     ],
     "correctIndex": 0,
     "explanation": "Roberto Carlos ganhou o apelido na época da Jovem Guarda, nos anos 1960.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "musica-006",
@@ -81,7 +81,7 @@
     ],
     "correctIndex": 1,
     "explanation": "\"Chega de Saudade\" (1958), na voz de João Gilberto, é considerada o marco inicial da bossa nova.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "musica-007",
@@ -95,7 +95,7 @@
     ],
     "correctIndex": 1,
     "explanation": "Beethoven compôs a Nona já praticamente surdo; ela estreou em 1824.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "musica-008",
@@ -109,7 +109,7 @@
     ],
     "correctIndex": 0,
     "explanation": "Freddie Mercury compôs \"Bohemian Rhapsody\". Brian May era o guitarrista.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "musica-009",
@@ -123,7 +123,7 @@
     ],
     "correctIndex": 1,
     "explanation": "O título é o ano de nascimento de Taylor Swift. O álbum saiu em 2014.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "musica-010",
@@ -137,7 +137,7 @@
     ],
     "correctIndex": 0,
     "explanation": "O surdo é o \"coração\" da bateria e sustenta o ritmo do samba.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "musica-011",
@@ -151,7 +151,7 @@
     ],
     "correctIndex": 0,
     "explanation": "Villa-Lobos uniu a música de Bach a elementos da música brasileira em nove suítes.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "musica-012",
@@ -165,7 +165,7 @@
     ],
     "correctIndex": 1,
     "explanation": "São 52 teclas brancas e 36 pretas.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "musica-013",
@@ -179,7 +179,7 @@
     ],
     "correctIndex": 2,
     "explanation": "A Tropicália misturou MPB, rock e vanguarda; o disco-manifesto é de 1968.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "musica-014",
@@ -193,7 +193,7 @@
     ],
     "correctIndex": 0,
     "explanation": "Mozart estreou A Flauta Mágica em Viena em 1791, poucos meses antes de morrer.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "musica-015",
@@ -207,7 +207,7 @@
     ],
     "correctIndex": 2,
     "explanation": "Sgt. Pepper's é considerado um dos primeiros álbuns conceituais do rock.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "musica-016",
@@ -221,7 +221,7 @@
     ],
     "correctIndex": 0,
     "explanation": "Baseada no romance de José de Alencar, a ópera estreou no Teatro alla Scala, em Milão.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "musica-017",
@@ -235,7 +235,7 @@
     ],
     "correctIndex": 0,
     "explanation": "Pixinguinha compôs a melodia por volta de 1917; a letra de João de Barro veio em 1937.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "musica-018",
@@ -249,7 +249,7 @@
     ],
     "correctIndex": 2,
     "explanation": "Beethoven completou nove sinfonias; a Nona é a mais famosa.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "musica-019",
@@ -263,7 +263,7 @@
     ],
     "correctIndex": 1,
     "explanation": "O álbum ficou mais de 900 semanas na parada da Billboard.",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "key": "musica-020",
@@ -277,6 +277,6 @@
     ],
     "correctIndex": 1,
     "explanation": "O apelido teria sido dado por Vinicius de Moraes, por causa do temperamento forte de Elis.",
-    "reviewed": false
+    "reviewed": true
   }
 ]
