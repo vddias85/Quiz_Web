@@ -35,6 +35,8 @@
   --color-secondary: var(--secondary);
   --color-primary-foreground: var(--primary-foreground);
   --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-highlight: var(--highlight);
   --color-popover-foreground: var(--popover-foreground);
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
@@ -56,8 +58,12 @@
   --card-foreground: #1e293b;
   --popover: #ffffff;
   --popover-foreground: #1e293b;
-  --primary: #0284c7; /* azul primário: destaques e botões */
+  /* Fundo dos botões: #0369a1 dá 5,9:1 com texto branco (WCAG AA pede 4,5:1). */
+  --primary: #0369a1;
+  --primary-hover: #075985; /* mais escuro no hover, para não perder contraste */
   --primary-foreground: #ffffff;
+  /* Destaques sem texto por cima (bordas, barra de progresso, cronômetro, foco). */
+  --highlight: #0284c7;
   --secondary: #e0f2fe;
   --secondary-foreground: #0c4a6e;
   --muted: #eef2f7;
@@ -93,6 +99,8 @@
   --popover-foreground: oklch(0.985 0 0);
   --primary: oklch(0.922 0 0);
   --primary-foreground: oklch(0.205 0 0);
+  --primary-hover: oklch(0.85 0 0);
+  --highlight: oklch(0.922 0 0);
   --secondary: oklch(0.269 0 0);
   --secondary-foreground: oklch(0.985 0 0);
   --muted: oklch(0.269 0 0);

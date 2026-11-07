@@ -45,7 +45,7 @@ export function QuestionCard({
                 className={cn(
                   "flex w-full items-center gap-3 rounded-xl border-2 px-4 py-3 text-left text-base transition-colors",
                   "focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50",
-                  !reveal && "border-border bg-card hover:border-primary/40 hover:bg-muted disabled:opacity-60",
+                  !reveal && "border-border bg-card hover:border-highlight/40 hover:bg-muted disabled:opacity-60",
                   reveal && !isCorrect && !isWrongChoice && "border-border bg-card opacity-60",
                   isCorrect && "border-emerald-500 bg-emerald-50 dark:bg-emerald-950/50",
                   isWrongChoice && "border-red-500 bg-red-50 dark:bg-red-950/50",

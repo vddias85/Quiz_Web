@@ -112,7 +112,7 @@ export function StartForm({ categories }: { categories: CategoryDto[] }) {
                 className={cn(
                   "flex items-center gap-2 rounded-xl border-2 px-3 py-2.5 text-left text-sm font-medium transition-colors",
                   "focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50",
-                  categoryId === c.id ? "border-primary bg-primary/5" : "border-border hover:bg-muted",
+                  categoryId === c.id ? "border-highlight bg-highlight/5" : "border-border hover:bg-muted",
                 )}
               >
                 <span aria-hidden className="text-lg">
@@ -168,7 +168,7 @@ function ModeCard(props: { selected: boolean; onSelect: () => void; icon: string
       className={cn(
         "rounded-xl border-2 p-4 text-left transition-colors",
         "focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50",
-        props.selected ? "border-primary bg-primary/5" : "border-border hover:bg-muted",
+        props.selected ? "border-highlight bg-highlight/5" : "border-border hover:bg-muted",
       )}
     >
       <div className="text-2xl" aria-hidden>

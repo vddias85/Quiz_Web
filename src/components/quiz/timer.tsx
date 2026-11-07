@@ -47,7 +47,7 @@ export function Timer({
     <div className="flex items-center gap-3" role="timer" aria-label={`${seconds} segundos restantes`}>
       <div className="h-2 flex-1 overflow-hidden rounded-full bg-muted">
         <div
-          className={cn("h-full rounded-full transition-[width] duration-200 ease-linear", warning ? "bg-red-500" : "bg-primary")}
+          className={cn("h-full rounded-full transition-[width] duration-200 ease-linear", warning ? "bg-red-500" : "bg-highlight")}
           style={{ width: `${(left / TOTAL_MS) * 100}%` }}
         />
       </div>

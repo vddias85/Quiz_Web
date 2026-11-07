@@ -46,7 +46,7 @@ export function SavedGames({ games, justSaved }: { games: SavedGameView[]; justS
         💾 Jogo salvo
       </h2>
       {games.map((g) => (
-        <div key={g.sessionId} className="flex flex-wrap items-center justify-between gap-3 rounded-xl border-2 border-primary/30 bg-primary/5 p-4">
+        <div key={g.sessionId} className="flex flex-wrap items-center justify-between gap-3 rounded-xl border-2 border-highlight/30 bg-highlight/5 p-4">
           <div className="text-sm">
             <div className="font-semibold">
               {g.nickname} · {describeMode(g)}

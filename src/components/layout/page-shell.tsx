@@ -10,7 +10,7 @@ export function BrandLogo({ size, linkHome }: { size: "small" | "large"; linkHom
   const img = (
     <Image
       src={src}
-      alt="Quiz online"
+      alt="Quiz Web"
       width={width}
       height={Math.round((width * 976) / 1088)}
       priority
@@ -19,7 +19,7 @@ export function BrandLogo({ size, linkHome }: { size: "small" | "large"; linkHom
     />
   );
   return linkHome ? (
-    <Link href="/" aria-label="Quiz online — página inicial" className="rounded-2xl focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50">
+    <Link href="/" aria-label="Quiz Web — página inicial" className="rounded-2xl focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50">
       {img}
     </Link>
   ) : (

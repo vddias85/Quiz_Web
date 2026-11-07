@@ -2,7 +2,7 @@
 
 | Campo | Valor |
 |---|---|
-| Versão | 1.5 |
+| Versão | 1.6 |
 | Data | 07/11/2026 |
 | Status | ✅ Aprovado em 07/11/2026 |
 
@@ -17,6 +17,7 @@
 | 1.3 | Detalhes da Fase 2: o cookie guarda até 10 apelidos por navegador (computador compartilhado); começar uma partida encerra a anterior que estiver em andamento |
 | 1.4 | Nova função: **salvar o jogo e continuar depois** (seção 2.2). Só entre perguntas, válido por 24 h, um jogo salvo por apelido, entra no ranking; os 15 min passam a contar só o tempo de jogo ativo |
 | 1.5 | Identidade visual (seção 10.1): logo "Quiz online" em todas as páginas e Tema Azul / Minimalista |
+| 1.6 | Novo logo "Quiz Web". Contraste (WCAG AA): botões passam a usar `#0369A1` (5,9:1 com texto branco); `#0284C7` (4,1:1) fica só nos destaques sem texto |
 
 ---
 
@@ -291,7 +292,7 @@ Quiz_Web/
 - **Idioma:** português do Brasil.
 
 ### 10.1 Identidade visual
-- **Logo:** "Quiz online" (arquivo original em `logo/logo.jpg`). Aparece no topo de todas as páginas; também é o ícone da aba e do atalho no celular.
+- **Logo:** "Quiz Web" (arquivo original em `logo/logo.jpg`). Aparece no topo de todas as páginas; também é o ícone da aba e do atalho no celular. Ao trocar o arquivo, rode `npm run logo:build` para gerar as versões do site.
 - **Tema Azul / Minimalista** (o azul transmite confiança e foco):
 
 | Elemento | Cor |
@@ -299,7 +300,10 @@ Quiz_Web/
 | Fundo da página | Azul gelo `#F0F4F8` |
 | Cartão do quiz | Branco `#FFFFFF` |
 | Texto | Azul-marinho escuro `#1E293B` |
-| Destaques e botões | Azul primário `#0284C7` |
+| Destaques (bordas, barra de progresso, cronômetro, foco) | Azul primário `#0284C7` |
+| Fundo dos botões (texto branco) | Azul escuro `#0369A1` (hover `#075985`) |
+
+- **Contraste:** texto branco sobre `#0284C7` dá só 4,1:1, abaixo dos 4,5:1 do WCAG AA; por isso os botões usam `#0369A1` (5,9:1).
 
 - As cores ficam como variáveis em `src/app/globals.css`. O tema escuro (S6) será definido na Fase 4.
 - **Anti-fraude:** correção e controle do tempo no servidor, limite de requisições por IP, sessão expira após 15 min de jogo ativo (jogo salvo: 24 h), uma resposta por pergunta, RLS no Supabase.

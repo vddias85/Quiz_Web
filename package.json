@@ -19,7 +19,8 @@
     "db:seed:dev": "dotenv -e .env.local -v SEED_ALLOW_UNREVIEWED=1 -- tsx prisma/seed.ts",
     "db:studio": "npm run db:check && dotenv -e .env.local -- prisma studio",
     "db:verify": "dotenv -e .env.local -- tsx scripts/verify-db.ts",
-    "test:integration": "vitest run -c vitest.integration.config.mts"
+    "test:integration": "vitest run -c vitest.integration.config.mts",
+    "logo:build": "node scripts/generate-logo-assets.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.9.0",

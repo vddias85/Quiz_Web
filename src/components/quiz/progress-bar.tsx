@@ -10,7 +10,7 @@ export function ProgressBar({ position, total }: { position: number; total: numb
         aria-valuenow={done}
         className="h-2 flex-1 overflow-hidden rounded-full bg-muted"
       >
-        <div className="h-full rounded-full bg-primary transition-[width] duration-300" style={{ width: `${(done / total) * 100}%` }} />
+        <div className="h-full rounded-full bg-highlight transition-[width] duration-300" style={{ width: `${(done / total) * 100}%` }} />
       </div>
       <span className="text-sm font-medium tabular-nums text-muted-foreground">
         {position}/{total}

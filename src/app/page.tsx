@@ -30,7 +30,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ s
       linkHome={false}
       intro={
         <>
-          <h1 className="sr-only">Quiz online</h1>
+          <h1 className="sr-only">Quiz Web</h1>
           <p className="text-muted-foreground">Teste seus conhecimentos gerais e entre no ranking.</p>
         </>
       }
