@@ -278,5 +278,565 @@
     "correctIndex": 1,
     "explanation": "Os mexicas fundaram Tenochtitlán por volta de 1325, sobre uma ilha no lago Texcoco.",
     "reviewed": true
+  },
+  {
+    "key": "historia-021",
+    "level": 1,
+    "statement": "Qual civilização antiga construiu o Coliseu?",
+    "options": [
+      "Grega",
+      "Romana",
+      "Egípcia",
+      "Persa"
+    ],
+    "correctIndex": 1,
+    "explanation": "O Coliseu, em Roma, foi inaugurado no ano 80 e recebia lutas de gladiadores.",
+    "reviewed": true
+  },
+  {
+    "key": "historia-022",
+    "level": 1,
+    "statement": "Em que ano Cristóvão Colombo chegou à América?",
+    "options": [
+      "1492",
+      "1500",
+      "1498",
+      "1517"
+    ],
+    "correctIndex": 0,
+    "explanation": "Colombo navegava a serviço da Espanha e acreditava ter chegado às Índias.",
+    "reviewed": true
+  },
+  {
+    "key": "historia-023",
+    "level": 1,
+    "statement": "Qual país lançou bombas atômicas sobre Hiroshima e Nagasaki?",
+    "options": [
+      "União Soviética",
+      "Reino Unido",
+      "Estados Unidos",
+      "Alemanha"
+    ],
+    "correctIndex": 2,
+    "explanation": "Os ataques, em agosto, levaram à rendição do Japão dias depois.",
+    "reviewed": true
+  },
+  {
+    "key": "historia-024",
+    "level": 1,
+    "statement": "Quem comandava a Alemanha nazista?",
+    "options": [
+      "Benito Mussolini",
+      "Josef Stalin",
+      "Francisco Franco",
+      "Adolf Hitler"
+    ],
+    "correctIndex": 3,
+    "explanation": "Hitler chegou ao poder em 1933 e governou com o Partido Nazista.",
+    "reviewed": true
+  },
+  {
+    "key": "historia-025",
+    "level": 1,
+    "statement": "Os filósofos Sócrates, Platão e Aristóteles pertenciam a qual civilização?",
+    "options": [
+      "Romana",
+      "Grega",
+      "Egípcia",
+      "Mesopotâmica"
+    ],
+    "correctIndex": 1,
+    "explanation": "Os três viveram na Grécia Antiga; Platão foi aluno de Sócrates, e Aristóteles, de Platão.",
+    "reviewed": true
+  },
+  {
+    "key": "historia-026",
+    "level": 1,
+    "statement": "Quem foi o primeiro ser humano a viajar ao espaço?",
+    "options": [
+      "Neil Armstrong",
+      "Buzz Aldrin",
+      "Yuri Gagarin",
+      "John Glenn"
+    ],
+    "correctIndex": 2,
+    "explanation": "O soviético Yuri Gagarin deu uma volta ao redor da Terra em 1961, a bordo da Vostok 1.",
+    "reviewed": true
+  },
+  {
+    "key": "historia-027",
+    "level": 1,
+    "statement": "Qual líder sul-africano, preso por 27 anos, tornou-se presidente do país em 1994?",
+    "options": [
+      "Nelson Mandela",
+      "Desmond Tutu",
+      "Steve Biko",
+      "Thabo Mbeki"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mandela foi o primeiro presidente negro da África do Sul, após o fim do apartheid.",
+    "reviewed": true
+  },
+  {
+    "key": "historia-028",
+    "level": 1,
+    "statement": "Qual rainha governou o Reino Unido por mais de 70 anos, até 2022?",
+    "options": [
+      "Rainha Vitória",
+      "Elizabeth I",
+      "Elizabeth II",
+      "Rainha Ana"
+    ],
+    "correctIndex": 2,
+    "explanation": "Elizabeth II reinou de 1952 a 2022, o reinado mais longo da história britânica.",
+    "reviewed": true
+  },
+  {
+    "key": "historia-029",
+    "level": 1,
+    "statement": "Qual pastor americano fez o discurso \"Eu tenho um sonho\", em 1963?",
+    "options": [
+      "Malcolm X",
+      "Martin Luther King Jr.",
+      "Jesse Jackson",
+      "Barack Obama"
+    ],
+    "correctIndex": 1,
+    "explanation": "O discurso, em Washington, virou símbolo da luta pelos direitos civis dos negros nos EUA.",
+    "reviewed": true
+  },
+  {
+    "key": "historia-030",
+    "level": 1,
+    "statement": "Qual rainha do Egito antigo se aliou a Júlio César e depois a Marco Antônio?",
+    "options": [
+      "Nefertiti",
+      "Hatshepsut",
+      "Nefertari",
+      "Cleópatra"
+    ],
+    "correctIndex": 3,
+    "explanation": "Cleópatra VII foi a última governante do Egito antes da conquista romana.",
+    "reviewed": true
+  },
+  {
+    "key": "historia-031",
+    "level": 2,
+    "statement": "De qual região da Europa vieram os vikings?",
+    "options": [
+      "Escandinávia",
+      "Península Ibérica",
+      "Bálcãs",
+      "Península Itálica"
+    ],
+    "correctIndex": 0,
+    "explanation": "Os vikings vinham das terras que hoje são a Noruega, a Suécia e a Dinamarca.",
+    "reviewed": true
+  },
+  {
+    "key": "historia-032",
+    "level": 2,
+    "statement": "Qual império foi fundado por Gêngis Khan, no século XIII?",
+    "options": [
+      "Império Otomano",
+      "Império Persa",
+      "Império Mongol",
+      "Império Chinês"
+    ],
+    "correctIndex": 2,
+    "explanation": "O Império Mongol se tornou o maior império de terras contínuas da história.",
+    "reviewed": true
+  },
+  {
+    "key": "historia-033",
+    "level": 2,
+    "statement": "Qual civilização construiu a cidade de Machu Picchu, nos Andes?",
+    "options": [
+      "Asteca",
+      "Maia",
+      "Olmeca",
+      "Inca"
+    ],
+    "correctIndex": 3,
+    "explanation": "Machu Picchu foi construída no século XV, no atual Peru, e redescoberta para o mundo em 1911.",
+    "reviewed": true
+  },
+  {
+    "key": "historia-034",
+    "level": 2,
+    "statement": "Qual revolução de 1917 levou os bolcheviques ao poder?",
+    "options": [
+      "Revolução Gloriosa",
+      "Revolução Russa",
+      "Revolução Industrial",
+      "Primavera dos Povos"
+    ],
+    "correctIndex": 1,
+    "explanation": "Liderados por Lênin, os bolcheviques criaram o primeiro Estado socialista, que deu origem à União Soviética.",
+    "reviewed": true
+  },
+  {
+    "key": "historia-035",
+    "level": 2,
+    "statement": "Em qual país começou a Revolução Industrial, no século XVIII?",
+    "options": [
+      "Inglaterra",
+      "França",
+      "Alemanha",
+      "Estados Unidos"
+    ],
+    "correctIndex": 0,
+    "explanation": "A máquina a vapor e a indústria têxtil transformaram a economia inglesa e depois a do mundo.",
+    "reviewed": true
+  },
+  {
+    "key": "historia-036",
+    "level": 2,
+    "statement": "Quem publicou as 95 teses que deram início à Reforma Protestante, em 1517?",
+    "options": [
+      "João Calvino",
+      "Henrique VIII",
+      "Martinho Lutero",
+      "Erasmo de Roterdã"
+    ],
+    "correctIndex": 2,
+    "explanation": "Lutero criticou a venda de indulgências pela Igreja Católica.",
+    "reviewed": true
+  },
+  {
+    "key": "historia-037",
+    "level": 2,
+    "statement": "Qual general romano foi assassinado nos Idos de Março, em 44 a.C.?",
+    "options": [
+      "Júlio César",
+      "Marco Antônio",
+      "Pompeu",
+      "Nero"
+    ],
+    "correctIndex": 0,
+    "explanation": "César foi morto por senadores, entre eles Brutus, em 15 de março de 44 a.C.",
+    "reviewed": true
+  },
+  {
+    "key": "historia-038",
+    "level": 2,
+    "statement": "Qual navegador português chegou às Índias por mar, em 1498?",
+    "options": [
+      "Bartolomeu Dias",
+      "Vasco da Gama",
+      "Fernão de Magalhães",
+      "Gil Eanes"
+    ],
+    "correctIndex": 1,
+    "explanation": "Vasco da Gama contornou a África e chegou a Calicute, abrindo a rota marítima para o Oriente.",
+    "reviewed": true
+  },
+  {
+    "key": "historia-039",
+    "level": 2,
+    "statement": "Qual crise econômica começou com a quebra da Bolsa de Nova York, em 1929?",
+    "options": [
+      "Crise do Petróleo",
+      "Grande Depressão",
+      "Crise de 2008",
+      "Bolha das pontocom"
+    ],
+    "correctIndex": 1,
+    "explanation": "A Grande Depressão espalhou desemprego e falências pelo mundo nos anos 1930.",
+    "reviewed": true
+  },
+  {
+    "key": "historia-040",
+    "level": 2,
+    "statement": "Qual epidemia matou cerca de um terço da população da Europa no século XIV?",
+    "options": [
+      "Gripe Espanhola",
+      "Varíola",
+      "Cólera",
+      "Peste Negra"
+    ],
+    "correctIndex": 3,
+    "explanation": "A Peste Negra, causada por uma bactéria transmitida por pulgas de ratos, atingiu o auge entre 1347 e 1351.",
+    "reviewed": true
+  },
+  {
+    "key": "historia-041",
+    "level": 3,
+    "statement": "Qual foi o primeiro país a garantir o voto feminino nas eleições nacionais, em 1893?",
+    "options": [
+      "Reino Unido",
+      "Estados Unidos",
+      "Finlândia",
+      "Nova Zelândia"
+    ],
+    "correctIndex": 3,
+    "explanation": "A Nova Zelândia aprovou o voto feminino em 1893, graças ao movimento liderado por Kate Sheppard.",
+    "reviewed": true
+  },
+  {
+    "key": "historia-042",
+    "level": 3,
+    "statement": "Qual guerra, travada entre 1337 e 1453, opôs a Inglaterra e a França?",
+    "options": [
+      "Guerra dos Cem Anos",
+      "Guerra dos Trinta Anos",
+      "Guerra das Rosas",
+      "Guerra dos Sete Anos"
+    ],
+    "correctIndex": 0,
+    "explanation": "Apesar do nome, durou 116 anos; foi nela que se destacou Joana d'Arc.",
+    "reviewed": true
+  },
+  {
+    "key": "historia-043",
+    "level": 3,
+    "statement": "Qual conferência de 1884–1885 dividiu a África entre as potências europeias?",
+    "options": [
+      "Congresso de Viena",
+      "Conferência de Yalta",
+      "Conferência de Berlim",
+      "Conferência de Paris"
+    ],
+    "correctIndex": 2,
+    "explanation": "Os africanos não foram consultados; as fronteiras traçadas ali marcam o continente até hoje.",
+    "reviewed": true
+  },
+  {
+    "key": "historia-044",
+    "level": 3,
+    "statement": "Qual tratado, assinado em 1919, impôs pesadas punições à Alemanha após a Primeira Guerra?",
+    "options": [
+      "Tratado de Versalhes",
+      "Tratado de Utrecht",
+      "Tratado de Vestfália",
+      "Tratado de Tordesilhas"
+    ],
+    "correctIndex": 0,
+    "explanation": "As duras condições de Versalhes alimentaram ressentimentos que ajudaram a ascensão do nazismo.",
+    "reviewed": true
+  },
+  {
+    "key": "historia-045",
+    "level": 3,
+    "statement": "Qual foi o nome da operação de desembarque aliado na Normandia, em 6 de junho de 1944?",
+    "options": [
+      "Operação Barbarossa",
+      "Operação Market Garden",
+      "Operação Overlord",
+      "Operação Tocha"
+    ],
+    "correctIndex": 2,
+    "explanation": "O Dia D abriu uma nova frente contra a Alemanha; Barbarossa foi a invasão alemã da União Soviética.",
+    "reviewed": true
+  },
+  {
+    "key": "historia-046",
+    "level": 3,
+    "statement": "Qual crise de 1962 quase levou EUA e União Soviética a uma guerra nuclear?",
+    "options": [
+      "Bloqueio de Berlim",
+      "Guerra da Coreia",
+      "Invasão da Baía dos Porcos",
+      "Crise dos Mísseis de Cuba"
+    ],
+    "correctIndex": 3,
+    "explanation": "Os EUA descobriram mísseis soviéticos em Cuba; após 13 dias de tensão, eles foram retirados.",
+    "reviewed": true
+  },
+  {
+    "key": "historia-047",
+    "level": 3,
+    "statement": "Qual país foi governado pelo ditador Francisco Franco até 1975?",
+    "options": [
+      "Portugal",
+      "Espanha",
+      "Itália",
+      "Grécia"
+    ],
+    "correctIndex": 1,
+    "explanation": "Franco assumiu o poder após a Guerra Civil Espanhola (1936–1939); em Portugal, o ditador foi Salazar.",
+    "reviewed": true
+  },
+  {
+    "key": "historia-048",
+    "level": 3,
+    "statement": "Qual código de leis da Babilônia ficou famoso pelo princípio \"olho por olho, dente por dente\"?",
+    "options": [
+      "Lei das Doze Tábuas",
+      "Código de Hamurábi",
+      "Código de Justiniano",
+      "Código Napoleônico"
+    ],
+    "correctIndex": 1,
+    "explanation": "Gravado numa estela de pedra por volta de 1750 a.C., é um dos códigos escritos mais antigos.",
+    "reviewed": true
+  },
+  {
+    "key": "historia-049",
+    "level": 3,
+    "statement": "Qual região entre os rios Tigre e Eufrates é chamada de \"berço da civilização\"?",
+    "options": [
+      "Mesopotâmia",
+      "Anatólia",
+      "Levante",
+      "Pérsia"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lá surgiram as primeiras cidades e a escrita cuneiforme, criada pelos sumérios.",
+    "reviewed": true
+  },
+  {
+    "key": "historia-050",
+    "level": 3,
+    "statement": "Quem foi o primeiro imperador de Roma?",
+    "options": [
+      "Júlio César",
+      "Nero",
+      "Augusto",
+      "Calígula"
+    ],
+    "correctIndex": 2,
+    "explanation": "Otávio recebeu o título de Augusto em 27 a.C.; Júlio César nunca foi imperador.",
+    "reviewed": true
+  },
+  {
+    "key": "historia-051",
+    "level": 4,
+    "statement": "Qual rei dos francos foi coroado imperador pelo papa no Natal do ano 800?",
+    "options": [
+      "Clóvis",
+      "Pepino, o Breve",
+      "Carlos Magno",
+      "Oto I"
+    ],
+    "correctIndex": 2,
+    "explanation": "Carlos Magno foi coroado pelo papa Leão III, em Roma.",
+    "reviewed": true
+  },
+  {
+    "key": "historia-052",
+    "level": 4,
+    "statement": "Qual batalha naval de 1571 marcou a vitória da Liga Santa sobre a frota otomana?",
+    "options": [
+      "Batalha de Trafalgar",
+      "Batalha de Lepanto",
+      "Batalha de Mohács",
+      "Cerco de Viena"
+    ],
+    "correctIndex": 1,
+    "explanation": "O escritor espanhol Miguel de Cervantes lutou e foi ferido nessa batalha.",
+    "reviewed": true
+  },
+  {
+    "key": "historia-053",
+    "level": 4,
+    "statement": "Qual guerra, travada entre 1618 e 1648, terminou com a Paz de Vestfália?",
+    "options": [
+      "Guerra dos Sete Anos",
+      "Guerra dos Trinta Anos",
+      "Guerra dos Cem Anos",
+      "Guerra da Sucessão Espanhola"
+    ],
+    "correctIndex": 1,
+    "explanation": "A Paz de Vestfália é considerada o marco inicial do sistema moderno de Estados soberanos.",
+    "reviewed": true
+  },
+  {
+    "key": "historia-054",
+    "level": 4,
+    "statement": "Qual imperador indiano se converteu ao budismo após a sangrenta Guerra de Kalinga?",
+    "options": [
+      "Chandragupta",
+      "Akbar",
+      "Shah Jahan",
+      "Ashoka"
+    ],
+    "correctIndex": 3,
+    "explanation": "Ashoka, do Império Máuria, governou no século III a.C. e ajudou a espalhar o budismo pela Ásia.",
+    "reviewed": true
+  },
+  {
+    "key": "historia-055",
+    "level": 4,
+    "statement": "Qual rei inglês foi decapitado em 1649, durante a Guerra Civil Inglesa?",
+    "options": [
+      "Carlos I",
+      "Jaime II",
+      "Henrique VIII",
+      "Guilherme III"
+    ],
+    "correctIndex": 0,
+    "explanation": "Após sua execução, a Inglaterra viveu um período republicano liderado por Oliver Cromwell.",
+    "reviewed": true
+  },
+  {
+    "key": "historia-056",
+    "level": 4,
+    "statement": "Qual foi a última dinastia imperial da China, que caiu em 1912?",
+    "options": [
+      "Ming",
+      "Han",
+      "Tang",
+      "Qing"
+    ],
+    "correctIndex": 3,
+    "explanation": "O último imperador, Puyi, abdicou ainda criança, e a China virou república.",
+    "reviewed": true
+  },
+  {
+    "key": "historia-057",
+    "level": 4,
+    "statement": "Quem concluiu, em 1522, a primeira volta ao mundo, depois da morte de Fernão de Magalhães?",
+    "options": [
+      "Juan Sebastián Elcano",
+      "Francis Drake",
+      "Américo Vespúcio",
+      "Vasco da Gama"
+    ],
+    "correctIndex": 0,
+    "explanation": "Magalhães morreu nas Filipinas, em 1521; Elcano trouxe o último navio de volta à Espanha.",
+    "reviewed": true
+  },
+  {
+    "key": "historia-058",
+    "level": 4,
+    "statement": "Qual império da África Ocidental foi governado por Mansa Musa, no século XIV?",
+    "options": [
+      "Império Songai",
+      "Império de Gana",
+      "Império do Mali",
+      "Reino de Axum"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mansa Musa é lembrado como um dos homens mais ricos da história, graças ao ouro do Mali.",
+    "reviewed": true
+  },
+  {
+    "key": "historia-059",
+    "level": 4,
+    "statement": "Qual imperador bizantino mandou construir a Basílica de Santa Sofia, no século VI?",
+    "options": [
+      "Constantino",
+      "Justiniano",
+      "Teodósio",
+      "Basílio II"
+    ],
+    "correctIndex": 1,
+    "explanation": "Concluída em 537, a Santa Sofia foi por quase mil anos a maior catedral do mundo.",
+    "reviewed": true
+  },
+  {
+    "key": "historia-060",
+    "level": 4,
+    "statement": "Qual revolução de 1974 derrubou a ditadura do Estado Novo em Portugal?",
+    "options": [
+      "Revolução Liberal do Porto",
+      "Implantação da República",
+      "Revolução dos Cravos",
+      "Restauração"
+    ],
+    "correctIndex": 2,
+    "explanation": "Em 25 de abril de 1974, militares derrubaram o regime quase sem violência; a população pôs cravos nos fuzis.",
+    "reviewed": true
   }
 ]
