@@ -278,5 +278,565 @@
     "correctIndex": 0,
     "explanation": "Marie Curie ganhou o Nobel de Física em 1903 e o de Química em 1911.",
     "reviewed": true
+  },
+  {
+    "key": "ciencias-021",
+    "level": 1,
+    "statement": "Como se chama a galáxia onde fica o Sistema Solar?",
+    "options": [
+      "Andrômeda",
+      "Via Láctea",
+      "Sombrero",
+      "Nuvem de Magalhães"
+    ],
+    "correctIndex": 1,
+    "explanation": "A Via Láctea é uma galáxia espiral com centenas de bilhões de estrelas.",
+    "reviewed": true
+  },
+  {
+    "key": "ciencias-022",
+    "level": 1,
+    "statement": "Quantos planetas tem o Sistema Solar?",
+    "options": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "correctIndex": 1,
+    "explanation": "Desde 2006, Plutão é classificado como planeta-anão, e o Sistema Solar passou a ter 8 planetas.",
+    "reviewed": true
+  },
+  {
+    "key": "ciencias-023",
+    "level": 1,
+    "statement": "Em qual estado físico a água se encontra no gelo?",
+    "options": [
+      "Líquido",
+      "Gasoso",
+      "Sólido",
+      "Plasma"
+    ],
+    "correctIndex": 2,
+    "explanation": "Abaixo de 0 °C, ao nível do mar, a água passa do estado líquido para o sólido.",
+    "reviewed": true
+  },
+  {
+    "key": "ciencias-024",
+    "level": 1,
+    "statement": "A que temperatura a água ferve ao nível do mar?",
+    "options": [
+      "80 °C",
+      "90 °C",
+      "100 °C",
+      "120 °C"
+    ],
+    "correctIndex": 2,
+    "explanation": "Em lugares altos, onde a pressão do ar é menor, a água ferve abaixo de 100 °C.",
+    "reviewed": true
+  },
+  {
+    "key": "ciencias-025",
+    "level": 1,
+    "statement": "Quais órgãos fazem a troca de gases na respiração humana?",
+    "options": [
+      "Pulmões",
+      "Rins",
+      "Fígado",
+      "Estômago"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nos alvéolos pulmonares, o sangue recebe oxigênio e libera gás carbônico.",
+    "reviewed": true
+  },
+  {
+    "key": "ciencias-026",
+    "level": 1,
+    "statement": "Qual é o maior animal do mundo?",
+    "options": [
+      "Elefante-africano",
+      "Tubarão-baleia",
+      "Baleia-azul",
+      "Girafa"
+    ],
+    "correctIndex": 2,
+    "explanation": "A baleia-azul pode passar de 30 m de comprimento; o tubarão-baleia é o maior peixe.",
+    "reviewed": true
+  },
+  {
+    "key": "ciencias-027",
+    "level": 1,
+    "statement": "Qual força nos mantém presos ao chão?",
+    "options": [
+      "Magnetismo",
+      "Gravidade",
+      "Atrito",
+      "Eletricidade"
+    ],
+    "correctIndex": 1,
+    "explanation": "A gravidade atrai os corpos para o centro da Terra; na Lua ela é cerca de seis vezes menor.",
+    "reviewed": true
+  },
+  {
+    "key": "ciencias-028",
+    "level": 1,
+    "statement": "Como se chamam os animais que se alimentam apenas de plantas?",
+    "options": [
+      "Carnívoros",
+      "Onívoros",
+      "Herbívoros",
+      "Decompositores"
+    ],
+    "correctIndex": 2,
+    "explanation": "Bois, cavalos e coelhos são herbívoros; o ser humano é onívoro.",
+    "reviewed": true
+  },
+  {
+    "key": "ciencias-029",
+    "level": 1,
+    "statement": "Qual parte da planta absorve a água do solo?",
+    "options": [
+      "Folha",
+      "Raiz",
+      "Flor",
+      "Fruto"
+    ],
+    "correctIndex": 1,
+    "explanation": "A raiz absorve água e sais minerais e também fixa a planta no solo.",
+    "reviewed": true
+  },
+  {
+    "key": "ciencias-030",
+    "level": 1,
+    "statement": "Quantas patas tem um inseto?",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "10"
+    ],
+    "correctIndex": 1,
+    "explanation": "Os insetos têm 6 patas; aranhas, que não são insetos, têm 8.",
+    "reviewed": true
+  },
+  {
+    "key": "ciencias-031",
+    "level": 2,
+    "statement": "Qual planeta tem os anéis mais visíveis do Sistema Solar?",
+    "options": [
+      "Júpiter",
+      "Urano",
+      "Saturno",
+      "Netuno"
+    ],
+    "correctIndex": 2,
+    "explanation": "Os quatro planetas gigantes têm anéis, mas os de Saturno, feitos de gelo e rocha, são os mais brilhantes.",
+    "reviewed": true
+  },
+  {
+    "key": "ciencias-032",
+    "level": 2,
+    "statement": "Qual vitamina o corpo produz quando a pele é exposta ao sol?",
+    "options": [
+      "Vitamina A",
+      "Vitamina C",
+      "Vitamina D",
+      "Vitamina B12"
+    ],
+    "correctIndex": 2,
+    "explanation": "A vitamina D ajuda o corpo a absorver o cálcio e fortalece os ossos.",
+    "reviewed": true
+  },
+  {
+    "key": "ciencias-033",
+    "level": 2,
+    "statement": "Qual é o símbolo químico do ferro?",
+    "options": [
+      "F",
+      "Fe",
+      "Fr",
+      "Ir"
+    ],
+    "correctIndex": 1,
+    "explanation": "Fe vem do latim ferrum. F é o símbolo do flúor.",
+    "reviewed": true
+  },
+  {
+    "key": "ciencias-034",
+    "level": 2,
+    "statement": "Qual cientista propôs a teoria da evolução por seleção natural?",
+    "options": [
+      "Jean-Baptiste Lamarck",
+      "Gregor Mendel",
+      "Charles Darwin",
+      "Louis Pasteur"
+    ],
+    "correctIndex": 2,
+    "explanation": "Darwin publicou \"A Origem das Espécies\" em 1859.",
+    "reviewed": true
+  },
+  {
+    "key": "ciencias-035",
+    "level": 2,
+    "statement": "Qual tipo sanguíneo é conhecido como doador universal?",
+    "options": [
+      "AB positivo",
+      "O negativo",
+      "A negativo",
+      "B positivo"
+    ],
+    "correctIndex": 1,
+    "explanation": "O sangue O negativo pode ser doado a todos os tipos; o AB positivo é o receptor universal.",
+    "reviewed": true
+  },
+  {
+    "key": "ciencias-036",
+    "level": 2,
+    "statement": "Qual é a unidade de medida da corrente elétrica?",
+    "options": [
+      "Volt",
+      "Watt",
+      "Ohm",
+      "Ampère"
+    ],
+    "correctIndex": 3,
+    "explanation": "O volt mede a tensão, o ohm mede a resistência e o watt mede a potência.",
+    "reviewed": true
+  },
+  {
+    "key": "ciencias-037",
+    "level": 2,
+    "statement": "Qual cientista formulou a teoria da relatividade?",
+    "options": [
+      "Albert Einstein",
+      "Niels Bohr",
+      "Galileu Galilei",
+      "Stephen Hawking"
+    ],
+    "correctIndex": 0,
+    "explanation": "Einstein publicou a relatividade restrita em 1905 e a geral em 1915.",
+    "reviewed": true
+  },
+  {
+    "key": "ciencias-038",
+    "level": 2,
+    "statement": "Qual metal é líquido à temperatura ambiente?",
+    "options": [
+      "Chumbo",
+      "Mercúrio",
+      "Estanho",
+      "Alumínio"
+    ],
+    "correctIndex": 1,
+    "explanation": "O mercúrio era usado em termômetros, mas é tóxico e vem sendo substituído.",
+    "reviewed": true
+  },
+  {
+    "key": "ciencias-039",
+    "level": 2,
+    "statement": "Qual parte do olho dá cor aos olhos?",
+    "options": [
+      "Retina",
+      "Córnea",
+      "Íris",
+      "Pupila"
+    ],
+    "correctIndex": 2,
+    "explanation": "A íris controla o tamanho da pupila, regulando a entrada de luz no olho.",
+    "reviewed": true
+  },
+  {
+    "key": "ciencias-040",
+    "level": 2,
+    "statement": "Qual é o único mamífero capaz de voar de verdade?",
+    "options": [
+      "Morcego",
+      "Esquilo-voador",
+      "Colugo",
+      "Ornitorrinco"
+    ],
+    "correctIndex": 0,
+    "explanation": "O esquilo-voador e o colugo apenas planam; o morcego bate as asas e voa.",
+    "reviewed": true
+  },
+  {
+    "key": "ciencias-041",
+    "level": 3,
+    "statement": "Qual é o planeta mais quente do Sistema Solar?",
+    "options": [
+      "Mercúrio",
+      "Vênus",
+      "Marte",
+      "Júpiter"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mesmo mais longe do Sol que Mercúrio, Vênus passa de 460 °C por causa do forte efeito estufa.",
+    "reviewed": true
+  },
+  {
+    "key": "ciencias-042",
+    "level": 3,
+    "statement": "Em qual camada da atmosfera fica a camada de ozônio?",
+    "options": [
+      "Troposfera",
+      "Estratosfera",
+      "Mesosfera",
+      "Termosfera"
+    ],
+    "correctIndex": 1,
+    "explanation": "A camada de ozônio filtra boa parte da radiação ultravioleta do Sol.",
+    "reviewed": true
+  },
+  {
+    "key": "ciencias-043",
+    "level": 3,
+    "statement": "Qual cientista é considerado o pai da genética, por seus experimentos com ervilhas?",
+    "options": [
+      "Charles Darwin",
+      "Gregor Mendel",
+      "James Watson",
+      "Jean-Baptiste Lamarck"
+    ],
+    "correctIndex": 1,
+    "explanation": "O monge Gregor Mendel descreveu as leis da hereditariedade em 1866.",
+    "reviewed": true
+  },
+  {
+    "key": "ciencias-044",
+    "level": 3,
+    "statement": "Qual é o osso mais longo do corpo humano?",
+    "options": [
+      "Tíbia",
+      "Úmero",
+      "Fêmur",
+      "Fíbula"
+    ],
+    "correctIndex": 2,
+    "explanation": "O fêmur, na coxa, também é o osso mais resistente do corpo.",
+    "reviewed": true
+  },
+  {
+    "key": "ciencias-045",
+    "level": 4,
+    "statement": "Qual é a fórmula química do sal de cozinha?",
+    "options": [
+      "KCl",
+      "NaCl",
+      "NaOH",
+      "CaCO₃"
+    ],
+    "correctIndex": 1,
+    "explanation": "O cloreto de sódio é formado por sódio (Na) e cloro (Cl).",
+    "reviewed": true
+  },
+  {
+    "key": "ciencias-046",
+    "level": 3,
+    "statement": "Qual cientista francês desenvolveu a vacina contra a raiva, em 1885?",
+    "options": [
+      "Edward Jenner",
+      "Robert Koch",
+      "Oswaldo Cruz",
+      "Louis Pasteur"
+    ],
+    "correctIndex": 3,
+    "explanation": "Pasteur também criou a pasteurização; Jenner fez a primeira vacina, contra a varíola.",
+    "reviewed": true
+  },
+  {
+    "key": "ciencias-047",
+    "level": 3,
+    "statement": "Que tipo de rocha se forma pelo resfriamento do magma?",
+    "options": [
+      "Sedimentar",
+      "Metamórfica",
+      "Ígnea",
+      "Calcária"
+    ],
+    "correctIndex": 2,
+    "explanation": "Rochas ígneas, ou magmáticas, como o granito e o basalto, nascem do magma solidificado.",
+    "reviewed": true
+  },
+  {
+    "key": "ciencias-048",
+    "level": 3,
+    "statement": "Qual estrutura do DNA foi descrita por Watson e Crick, em 1953?",
+    "options": [
+      "Dupla hélice",
+      "Tripla hélice",
+      "Folha dobrada",
+      "Anel circular"
+    ],
+    "correctIndex": 0,
+    "explanation": "As imagens de raios X feitas por Rosalind Franklin foram essenciais para a descoberta.",
+    "reviewed": true
+  },
+  {
+    "key": "ciencias-049",
+    "level": 4,
+    "statement": "Qual é o gás mais abundante na atmosfera da Terra?",
+    "options": [
+      "Oxigênio",
+      "Gás carbônico",
+      "Nitrogênio",
+      "Argônio"
+    ],
+    "correctIndex": 2,
+    "explanation": "O nitrogênio forma cerca de 78% do ar; o oxigênio, cerca de 21%.",
+    "reviewed": true
+  },
+  {
+    "key": "ciencias-050",
+    "level": 3,
+    "statement": "Qual órgão produz a insulina?",
+    "options": [
+      "Fígado",
+      "Pâncreas",
+      "Tireoide",
+      "Hipófise"
+    ],
+    "correctIndex": 1,
+    "explanation": "A insulina controla o açúcar no sangue; sua falta ou mau funcionamento causa o diabetes.",
+    "reviewed": true
+  },
+  {
+    "key": "ciencias-051",
+    "level": 4,
+    "statement": "Qual partícula do núcleo atômico não tem carga elétrica?",
+    "options": [
+      "Próton",
+      "Elétron",
+      "Nêutron",
+      "Pósitron"
+    ],
+    "correctIndex": 2,
+    "explanation": "O nêutron foi descoberto por James Chadwick em 1932.",
+    "reviewed": true
+  },
+  {
+    "key": "ciencias-052",
+    "level": 4,
+    "statement": "Quanto vale o zero absoluto em graus Celsius?",
+    "options": [
+      "-100 °C",
+      "-273,15 °C",
+      "-459,67 °C",
+      "-180 °C"
+    ],
+    "correctIndex": 1,
+    "explanation": "É a menor temperatura possível, o 0 da escala Kelvin; -459,67 é o valor em Fahrenheit.",
+    "reviewed": true
+  },
+  {
+    "key": "ciencias-053",
+    "level": 4,
+    "statement": "Qual cientista resumiu a conservação da massa na frase \"Na natureza nada se cria, nada se perde, tudo se transforma\"?",
+    "options": [
+      "Antoine Lavoisier",
+      "Joseph Proust",
+      "John Dalton",
+      "Robert Boyle"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lavoisier, considerado o pai da química moderna, foi guilhotinado na Revolução Francesa.",
+    "reviewed": true
+  },
+  {
+    "key": "ciencias-054",
+    "level": 4,
+    "statement": "Qual tipo de divisão celular forma os gametas?",
+    "options": [
+      "Mitose",
+      "Meiose",
+      "Fissão binária",
+      "Brotamento"
+    ],
+    "correctIndex": 1,
+    "explanation": "Na meiose, o número de cromossomos cai pela metade; a mitose gera células iguais à original.",
+    "reviewed": true
+  },
+  {
+    "key": "ciencias-055",
+    "level": 4,
+    "statement": "Qual planeta gira \"deitado\", com o eixo de rotação inclinado cerca de 98°?",
+    "options": [
+      "Netuno",
+      "Saturno",
+      "Urano",
+      "Vênus"
+    ],
+    "correctIndex": 2,
+    "explanation": "A inclinação de Urano provavelmente veio de uma grande colisão no passado.",
+    "reviewed": true
+  },
+  {
+    "key": "ciencias-056",
+    "level": 4,
+    "statement": "Qual cientista descobriu os raios X, em 1895?",
+    "options": [
+      "Henri Becquerel",
+      "Wilhelm Röntgen",
+      "Nikola Tesla",
+      "Ernest Rutherford"
+    ],
+    "correctIndex": 1,
+    "explanation": "Röntgen recebeu o primeiro Prêmio Nobel de Física, em 1901.",
+    "reviewed": true
+  },
+  {
+    "key": "ciencias-057",
+    "level": 3,
+    "statement": "Qual é o metal mais abundante na crosta terrestre?",
+    "options": [
+      "Ferro",
+      "Alumínio",
+      "Cálcio",
+      "Magnésio"
+    ],
+    "correctIndex": 1,
+    "explanation": "O alumínio forma cerca de 8% da crosta; é extraído principalmente da bauxita.",
+    "reviewed": true
+  },
+  {
+    "key": "ciencias-058",
+    "level": 3,
+    "statement": "Qual escala, criada em 1935, mede a magnitude dos terremotos?",
+    "options": [
+      "Escala Mercalli",
+      "Escala de Mohs",
+      "Escala Richter",
+      "Escala Beaufort"
+    ],
+    "correctIndex": 2,
+    "explanation": "A Mercalli mede a intensidade dos efeitos, a de Mohs mede a dureza dos minerais e a Beaufort, os ventos.",
+    "reviewed": true
+  },
+  {
+    "key": "ciencias-059",
+    "level": 4,
+    "statement": "Como se chama a ligação química em que os átomos compartilham pares de elétrons?",
+    "options": [
+      "Iônica",
+      "Metálica",
+      "Covalente",
+      "Ponte de hidrogênio"
+    ],
+    "correctIndex": 2,
+    "explanation": "Na ligação iônica, um átomo cede elétrons a outro, em vez de compartilhar.",
+    "reviewed": true
+  },
+  {
+    "key": "ciencias-060",
+    "level": 4,
+    "statement": "Qual é a grande galáxia espiral mais próxima da Via Láctea?",
+    "options": [
+      "Andrômeda",
+      "Galáxia do Triângulo",
+      "Grande Nuvem de Magalhães",
+      "Galáxia do Rodamoinho"
+    ],
+    "correctIndex": 0,
+    "explanation": "Andrômeda está a cerca de 2,5 milhões de anos-luz e deve colidir com a Via Láctea em alguns bilhões de anos.",
+    "reviewed": true
   }
 ]
