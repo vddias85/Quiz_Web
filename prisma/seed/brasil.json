@@ -278,5 +278,565 @@
     "correctIndex": 1,
     "explanation": "A capital foi transferida de Salvador para o Rio em 1763 e do Rio para Brasília em 1960.",
     "reviewed": true
+  },
+  {
+    "key": "brasil-021",
+    "level": 1,
+    "statement": "Qual é a moeda oficial do Brasil?",
+    "options": [
+      "Real",
+      "Cruzeiro",
+      "Peso",
+      "Escudo"
+    ],
+    "correctIndex": 0,
+    "explanation": "O real foi criado pelo Plano Real e substituiu o cruzeiro real.",
+    "reviewed": true
+  },
+  {
+    "key": "brasil-022",
+    "level": 1,
+    "statement": "Qual é o idioma oficial do Brasil?",
+    "options": [
+      "Português",
+      "Espanhol",
+      "Tupi",
+      "Inglês"
+    ],
+    "correctIndex": 0,
+    "explanation": "O português é a língua oficial; o Brasil é o país com mais falantes de português no mundo.",
+    "reviewed": true
+  },
+  {
+    "key": "brasil-023",
+    "level": 1,
+    "statement": "Qual festa popular de junho tem quadrilha, fogueira e comidas de milho?",
+    "options": [
+      "Carnaval",
+      "Festa Junina",
+      "Círio de Nazaré",
+      "Oktoberfest"
+    ],
+    "correctIndex": 1,
+    "explanation": "As festas juninas homenageiam santos como Santo Antônio, São João e São Pedro.",
+    "reviewed": true
+  },
+  {
+    "key": "brasil-024",
+    "level": 1,
+    "statement": "Qual árvore deu nome ao Brasil?",
+    "options": [
+      "Ipê",
+      "Araucária",
+      "Pau-brasil",
+      "Jequitibá"
+    ],
+    "correctIndex": 2,
+    "explanation": "A madeira avermelhada, cor de brasa, era usada para tingir tecidos na Europa.",
+    "reviewed": true
+  },
+  {
+    "key": "brasil-025",
+    "level": 1,
+    "statement": "Qual monumento no alto do Morro do Corcovado é símbolo do Rio de Janeiro?",
+    "options": [
+      "Arcos da Lapa",
+      "Cristo Redentor",
+      "Escadaria Selarón",
+      "Theatro Municipal"
+    ],
+    "correctIndex": 1,
+    "explanation": "Inaugurado em 1931, foi eleito uma das Sete Maravilhas do Mundo Moderno em 2007.",
+    "reviewed": true
+  },
+  {
+    "key": "brasil-026",
+    "level": 1,
+    "statement": "Qual personagem do folclore é um menino de pés virados para trás que protege as matas?",
+    "options": [
+      "Saci",
+      "Boto",
+      "Curupira",
+      "Mula sem cabeça"
+    ],
+    "correctIndex": 2,
+    "explanation": "Com os pés virados, o Curupira deixa pegadas que confundem caçadores.",
+    "reviewed": true
+  },
+  {
+    "key": "brasil-027",
+    "level": 1,
+    "statement": "Qual bebida é feita com cachaça, limão, açúcar e gelo?",
+    "options": [
+      "Caipirinha",
+      "Quentão",
+      "Chimarrão",
+      "Batida de coco"
+    ],
+    "correctIndex": 0,
+    "explanation": "A caipirinha é a bebida brasileira mais conhecida no exterior.",
+    "reviewed": true
+  },
+  {
+    "key": "brasil-028",
+    "level": 1,
+    "statement": "Qual é o maior felino das Américas, encontrado no Pantanal e na Amazônia?",
+    "options": [
+      "Jaguatirica",
+      "Puma",
+      "Gato-do-mato",
+      "Onça-pintada"
+    ],
+    "correctIndex": 3,
+    "explanation": "A onça-pintada é o maior felino das Américas e o terceiro maior do mundo.",
+    "reviewed": true
+  },
+  {
+    "key": "brasil-029",
+    "level": 1,
+    "statement": "Em quantas grandes regiões o IBGE divide o Brasil?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correctIndex": 1,
+    "explanation": "Norte, Nordeste, Centro-Oeste, Sudeste e Sul.",
+    "reviewed": true
+  },
+  {
+    "key": "brasil-030",
+    "level": 1,
+    "statement": "Qual doce é feito com leite condensado, chocolate e manteiga, coberto com granulado?",
+    "options": [
+      "Beijinho",
+      "Quindim",
+      "Brigadeiro",
+      "Cocada"
+    ],
+    "correctIndex": 2,
+    "explanation": "O brigadeiro é presença garantida nas festas de aniversário brasileiras.",
+    "reviewed": true
+  },
+  {
+    "key": "brasil-031",
+    "level": 2,
+    "statement": "Qual é a capital do estado do Amazonas?",
+    "options": [
+      "Belém",
+      "Manaus",
+      "Porto Velho",
+      "Boa Vista"
+    ],
+    "correctIndex": 1,
+    "explanation": "Manaus fica às margens do Rio Negro, perto do encontro com o Rio Solimões.",
+    "reviewed": true
+  },
+  {
+    "key": "brasil-032",
+    "level": 2,
+    "statement": "Qual cidade realiza o Círio de Nazaré, uma das maiores procissões católicas do mundo?",
+    "options": [
+      "São Luís",
+      "Santarém",
+      "Belém",
+      "Manaus"
+    ],
+    "correctIndex": 2,
+    "explanation": "O Círio acontece em Belém (PA) no segundo domingo de outubro.",
+    "reviewed": true
+  },
+  {
+    "key": "brasil-033",
+    "level": 2,
+    "statement": "Em qual estado ficam os Lençóis Maranhenses?",
+    "options": [
+      "Piauí",
+      "Ceará",
+      "Bahia",
+      "Maranhão"
+    ],
+    "correctIndex": 3,
+    "explanation": "As dunas brancas com lagoas de água da chuva ficam no litoral do Maranhão.",
+    "reviewed": true
+  },
+  {
+    "key": "brasil-034",
+    "level": 2,
+    "statement": "Qual expressão afro-brasileira mistura luta, dança e música e é acompanhada pelo berimbau?",
+    "options": [
+      "Capoeira",
+      "Maculelê",
+      "Frevo",
+      "Jongo"
+    ],
+    "correctIndex": 0,
+    "explanation": "A roda de capoeira é Patrimônio Cultural Imaterial da Humanidade desde 2014.",
+    "reviewed": true
+  },
+  {
+    "key": "brasil-035",
+    "level": 2,
+    "statement": "Qual ritmo pernambucano, dançado com sombrinhas coloridas, é patrimônio imaterial da humanidade?",
+    "options": [
+      "Maracatu",
+      "Frevo",
+      "Xote",
+      "Axé"
+    ],
+    "correctIndex": 1,
+    "explanation": "O frevo, típico do Carnaval de Recife e Olinda, foi reconhecido pela UNESCO em 2012.",
+    "reviewed": true
+  },
+  {
+    "key": "brasil-036",
+    "level": 2,
+    "statement": "\"Ouviram do Ipiranga as margens plácidas\" é o primeiro verso de qual hino?",
+    "options": [
+      "Hino da Independência",
+      "Hino da Bandeira",
+      "Hino Nacional Brasileiro",
+      "Hino da Proclamação da República"
+    ],
+    "correctIndex": 2,
+    "explanation": "A letra é de Joaquim Osório Duque Estrada e a música, de Francisco Manuel da Silva.",
+    "reviewed": true
+  },
+  {
+    "key": "brasil-037",
+    "level": 2,
+    "statement": "Qual é o lema escrito na bandeira do Brasil?",
+    "options": [
+      "Independência ou Morte",
+      "Ordem e Progresso",
+      "Liberdade e União",
+      "Paz e Trabalho"
+    ],
+    "correctIndex": 1,
+    "explanation": "O lema foi inspirado no positivismo do filósofo francês Auguste Comte.",
+    "reviewed": true
+  },
+  {
+    "key": "brasil-038",
+    "level": 2,
+    "statement": "Qual é o estado brasileiro mais populoso?",
+    "options": [
+      "Minas Gerais",
+      "Rio de Janeiro",
+      "Bahia",
+      "São Paulo"
+    ],
+    "correctIndex": 3,
+    "explanation": "São Paulo tem mais de 40 milhões de habitantes, cerca de um quinto da população do país.",
+    "reviewed": true
+  },
+  {
+    "key": "brasil-039",
+    "level": 2,
+    "statement": "Qual é a capital de Santa Catarina?",
+    "options": [
+      "Joinville",
+      "Florianópolis",
+      "Blumenau",
+      "Chapecó"
+    ],
+    "correctIndex": 1,
+    "explanation": "Florianópolis fica em grande parte na Ilha de Santa Catarina.",
+    "reviewed": true
+  },
+  {
+    "key": "brasil-040",
+    "level": 2,
+    "statement": "Em qual estado brasileiro ficam as Cataratas do Iguaçu?",
+    "options": [
+      "Paraná",
+      "Santa Catarina",
+      "Mato Grosso do Sul",
+      "Rio Grande do Sul"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ficam em Foz do Iguaçu (PR), na fronteira com a Argentina.",
+    "reviewed": true
+  },
+  {
+    "key": "brasil-041",
+    "level": 3,
+    "statement": "Quem foi o primeiro imperador do Brasil?",
+    "options": [
+      "Dom João VI",
+      "Dom Pedro II",
+      "Dom Pedro I",
+      "Dom Miguel"
+    ],
+    "correctIndex": 2,
+    "explanation": "Dom Pedro I governou de 1822 até abdicar, em 1831, em favor do filho.",
+    "reviewed": true
+  },
+  {
+    "key": "brasil-042",
+    "level": 3,
+    "statement": "Em que ano entrou em circulação a moeda real?",
+    "options": [
+      "1986",
+      "1990",
+      "1994",
+      "1998"
+    ],
+    "correctIndex": 2,
+    "explanation": "O real começou a circular em 1º de julho de 1994 e ajudou a controlar a hiperinflação.",
+    "reviewed": true
+  },
+  {
+    "key": "brasil-043",
+    "level": 3,
+    "statement": "Qual era o nome verdadeiro de Tiradentes?",
+    "options": [
+      "José Bonifácio de Andrada",
+      "Joaquim José da Silva Xavier",
+      "Cláudio Manuel da Costa",
+      "Tomás Antônio Gonzaga"
+    ],
+    "correctIndex": 1,
+    "explanation": "Líder da Inconfidência Mineira, foi executado em 21 de abril de 1792, data hoje feriado nacional.",
+    "reviewed": true
+  },
+  {
+    "key": "brasil-044",
+    "level": 3,
+    "statement": "Qual foi a primeira vila fundada no Brasil, em 1532, por Martim Afonso de Sousa?",
+    "options": [
+      "Olinda",
+      "Porto Seguro",
+      "Salvador",
+      "São Vicente"
+    ],
+    "correctIndex": 3,
+    "explanation": "São Vicente, no litoral de São Paulo, é considerada a primeira vila do Brasil.",
+    "reviewed": true
+  },
+  {
+    "key": "brasil-045",
+    "level": 3,
+    "statement": "Qual presidente criou a CLT (Consolidação das Leis do Trabalho), em 1943?",
+    "options": [
+      "Getúlio Vargas",
+      "Juscelino Kubitschek",
+      "Eurico Gaspar Dutra",
+      "Washington Luís"
+    ],
+    "correctIndex": 0,
+    "explanation": "A CLT foi assinada por Getúlio Vargas em 1º de maio de 1943, Dia do Trabalhador.",
+    "reviewed": true
+  },
+  {
+    "key": "brasil-046",
+    "level": 3,
+    "statement": "Qual é a capital do Tocantins, cidade planejada fundada em 1989?",
+    "options": [
+      "Araguaína",
+      "Gurupi",
+      "Palmas",
+      "Porto Nacional"
+    ],
+    "correctIndex": 2,
+    "explanation": "O Tocantins foi criado pela Constituição de 1988 e Palmas foi planejada para ser sua capital.",
+    "reviewed": true
+  },
+  {
+    "key": "brasil-047",
+    "level": 3,
+    "statement": "O arquipélago de Fernando de Noronha pertence a qual estado?",
+    "options": [
+      "Rio Grande do Norte",
+      "Pernambuco",
+      "Paraíba",
+      "Ceará"
+    ],
+    "correctIndex": 1,
+    "explanation": "Desde a Constituição de 1988, Fernando de Noronha é um distrito estadual de Pernambuco, embora fique mais perto do litoral do Rio Grande do Norte.",
+    "reviewed": true
+  },
+  {
+    "key": "brasil-048",
+    "level": 3,
+    "statement": "Qual parque nacional no Piauí guarda uma das maiores concentrações de pinturas rupestres das Américas?",
+    "options": [
+      "Serra da Capivara",
+      "Chapada dos Veadeiros",
+      "Jalapão",
+      "Serra dos Órgãos"
+    ],
+    "correctIndex": 0,
+    "explanation": "O Parque Nacional da Serra da Capivara é Patrimônio Mundial da UNESCO desde 1991.",
+    "reviewed": true
+  },
+  {
+    "key": "brasil-049",
+    "level": 3,
+    "statement": "Qual bioma é o único exclusivamente brasileiro?",
+    "options": [
+      "Cerrado",
+      "Pampa",
+      "Pantanal",
+      "Caatinga"
+    ],
+    "correctIndex": 3,
+    "explanation": "A Caatinga, do semiárido nordestino, só existe no Brasil.",
+    "reviewed": true
+  },
+  {
+    "key": "brasil-050",
+    "level": 3,
+    "statement": "Qual cidade, antes chamada Vila Rica, foi a capital de Minas Gerais até 1897?",
+    "options": [
+      "Mariana",
+      "Ouro Preto",
+      "Diamantina",
+      "São João del-Rei"
+    ],
+    "correctIndex": 1,
+    "explanation": "Em 1897 a capital mudou para Belo Horizonte, planejada para essa função.",
+    "reviewed": true
+  },
+  {
+    "key": "brasil-051",
+    "level": 4,
+    "statement": "Qual foi a primeira província brasileira a abolir a escravidão, em 1884?",
+    "options": [
+      "Amazonas",
+      "Bahia",
+      "Ceará",
+      "Pernambuco"
+    ],
+    "correctIndex": 2,
+    "explanation": "O Ceará aboliu a escravidão em 25 de março de 1884, quatro anos antes da Lei Áurea.",
+    "reviewed": true
+  },
+  {
+    "key": "brasil-052",
+    "level": 4,
+    "statement": "Qual revolta de marinheiros, em 1910, protestou contra os castigos físicos na Marinha?",
+    "options": [
+      "Revolta da Vacina",
+      "Revolta da Armada",
+      "Revolta da Chibata",
+      "Sabinada"
+    ],
+    "correctIndex": 2,
+    "explanation": "Liderada por João Cândido, o \"Almirante Negro\", aconteceu no Rio de Janeiro.",
+    "reviewed": true
+  },
+  {
+    "key": "brasil-053",
+    "level": 4,
+    "statement": "Qual apelido recebeu a Constituição de 1937, outorgada por Getúlio Vargas?",
+    "options": [
+      "Cidadã",
+      "Polaca",
+      "Imperial",
+      "Liberal"
+    ],
+    "correctIndex": 1,
+    "explanation": "Foi chamada de \"Polaca\" por ter se inspirado na Constituição autoritária da Polônia de 1935.",
+    "reviewed": true
+  },
+  {
+    "key": "brasil-054",
+    "level": 4,
+    "statement": "Em que ano começou a Revolução Farroupilha, no Rio Grande do Sul?",
+    "options": [
+      "1824",
+      "1835",
+      "1842",
+      "1889"
+    ],
+    "correctIndex": 1,
+    "explanation": "A Guerra dos Farrapos durou de 1835 a 1845, a mais longa revolta do período imperial.",
+    "reviewed": true
+  },
+  {
+    "key": "brasil-055",
+    "level": 4,
+    "statement": "Qual é o ponto extremo mais a leste do Brasil continental?",
+    "options": [
+      "Cabo de São Roque",
+      "Arroio Chuí",
+      "Ponta do Seixas",
+      "Monte Caburaí"
+    ],
+    "correctIndex": 2,
+    "explanation": "A Ponta do Seixas, em João Pessoa (PB), é o ponto mais oriental das Américas no continente.",
+    "reviewed": true
+  },
+  {
+    "key": "brasil-056",
+    "level": 4,
+    "statement": "Qual imperatriz presidiu a sessão do Conselho de Estado que decidiu pela Independência, em 1822?",
+    "options": [
+      "Teresa Cristina",
+      "Amélia de Leuchtenberg",
+      "Carlota Joaquina",
+      "Maria Leopoldina"
+    ],
+    "correctIndex": 3,
+    "explanation": "Como regente, Leopoldina assinou o decreto em 2 de setembro de 1822, dias antes do Grito do Ipiranga.",
+    "reviewed": true
+  },
+  {
+    "key": "brasil-057",
+    "level": 4,
+    "statement": "Qual cientista brasileiro descreveu, em 1909, a doença causada pelo Trypanosoma cruzi?",
+    "options": [
+      "Oswaldo Cruz",
+      "Carlos Chagas",
+      "Vital Brazil",
+      "Adolfo Lutz"
+    ],
+    "correctIndex": 1,
+    "explanation": "Carlos Chagas descobriu o parasita, o inseto transmissor (o barbeiro) e a doença, que leva seu nome.",
+    "reviewed": true
+  },
+  {
+    "key": "brasil-058",
+    "level": 4,
+    "statement": "Qual foi o primeiro nome dado pelos portugueses à terra encontrada em 1500?",
+    "options": [
+      "Terra de Santa Cruz",
+      "Ilha de Vera Cruz",
+      "Terra dos Papagaios",
+      "Nova Lusitânia"
+    ],
+    "correctIndex": 1,
+    "explanation": "Primeiro foi Ilha de Vera Cruz; depois, Terra de Santa Cruz; e por fim, Brasil.",
+    "reviewed": true
+  },
+  {
+    "key": "brasil-059",
+    "level": 4,
+    "statement": "Em que ano o Código Eleitoral garantiu o voto feminino em todo o Brasil?",
+    "options": [
+      "1889",
+      "1919",
+      "1932",
+      "1946"
+    ],
+    "correctIndex": 2,
+    "explanation": "O Código Eleitoral de 1932, no governo Vargas, garantiu o direito de voto às mulheres.",
+    "reviewed": true
+  },
+  {
+    "key": "brasil-060",
+    "level": 4,
+    "statement": "Qual tratado de 1903 incorporou o Acre ao território brasileiro?",
+    "options": [
+      "Tratado de Madri",
+      "Tratado de Santo Ildefonso",
+      "Tratado de Tordesilhas",
+      "Tratado de Petrópolis"
+    ],
+    "correctIndex": 3,
+    "explanation": "Negociado pelo Barão do Rio Branco com a Bolívia, o Brasil pagou indenização pelo território.",
+    "reviewed": true
   }
 ]

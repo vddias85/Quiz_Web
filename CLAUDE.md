@@ -18,7 +18,9 @@ Quiz web de conhecimentos gerais. **A fonte da verdade é o [PRD.md](PRD.md) (v1
 - **Fase 5 concluída (08/11/2026):** site no ar em **https://quiz-web-beta-nine.vercel.app** (Vercel `gru1`, banco **prod** com as 4 migrações e as 200 perguntas revisadas). RLS conferido pela API pública (`check:rls:prod`), smoke test 8/8, teste manual ok, primeiro backup feito (`db:prod:backup`). Critérios de aceite do PRD §13 todos marcados. Comandos de prod usam o `.env.prod.local` (modelo `.env.prod.example`); passo a passo em [PUBLICACAO.md](PUBLICACAO.md).
 - Vercel: variáveis `DATABASE_URL`, `DIRECT_URL` e `SESSION_SECRET` em Production (prod) e Preview (dev). A `DATABASE_URL` precisa terminar exatamente em `?pgbouncer=true&connection_limit=1` (o Supabase já entrega com `?pgbouncer=true`). A senha do banco prod foi trocada em 08/11/2026.
 - Para conferir valores dos arquivos `.env`, use scripts que mostram só o formato; nunca peça para o usuário selecionar ou colar linhas desses arquivos (a seleção no editor chega ao chat).
-- Próximo: **Fase 6** (conteúdo: 15 perguntas por nível por categoria, 600 no total, em lotes revisados pelo usuário). Prioridade: hoje cada categoria tem só 5 por nível, então no modo Por Categoria todos recebem as mesmas 20 perguntas. Só comece cada fase quando o usuário pedir.
+- **Fase 6 em andamento** (conteúdo: 15 perguntas por nível por categoria, 600 no total). Fluxo por categoria: rascunho com `reviewed: false` → `db:seed:dev` → revisão do usuário no chat → `reviewed: true` → testes → commit → usuário roda `npm run db:prod:seed`. Evitar temas já presentes em outras categorias (checar com busca nos JSON).
+  - **Brasil:** 60 perguntas (15 por nível), lote 021–060 revisado em 08/11/2026.
+  - Faltam: Geografia, História, Ciências, Cinema e TV, Música, Esportes, Artes e Literatura, Tecnologia, Matemática e Lógica (ainda com 5 por nível; no modo Por Categoria todos recebem as mesmas 20 perguntas).
 
 ## Regras de negócio (não negociáveis sem aprovação)
 - 20 perguntas por sessão, 4 alternativas, 1 correta, alternativas embaralhadas.
