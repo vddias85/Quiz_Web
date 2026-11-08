@@ -370,18 +370,20 @@ Decididas na v1.0:
 
 ## 13. Critérios de aceite (v1)
 
-- [ ] Usuário escolhe entre “Temas Variados” e “Por Categoria”.
-- [ ] Toda sessão tem exatamente 20 perguntas, 5 de cada nível, na ordem fácil → avançado.
-- [ ] Cada pergunta mostra 4 alternativas embaralhadas, apenas 1 correta.
-- [ ] Cada pergunta tem 30 s; ao esgotar, conta como erro e avança (validado também no servidor).
-- [ ] Nota final entre 0,0 e 10,0, com uma casa decimal, calculada no servidor com pesos por nível (0,3 / 0,4 / 0,6 / 0,7).
-- [ ] Resultado aparece no ranking correspondente, com filtros de período.
-- [ ] Funciona em celular e desktop.
-- [ ] Feedback com explicação após cada resposta e revisão completa ao final.
-- [x] Tema claro/escuro, animações leves e sons opcionais (desligados por padrão).
-- [ ] Botão “reportar pergunta” grava o aviso no banco.
-- [ ] Jogo pode ser salvo entre perguntas e retomado em até 24 h, voltando numa pergunta inédita.
-- [ ] Publicado na Vercel usando o banco Supabase de produção.
+Todos verificados em 08/11/2026: site publicado em https://quiz-web-beta-nine.vercel.app (Vercel `gru1` + Supabase prod), smoke test com 8/8 ✔ e partidas manuais no celular e no computador. Fonte de cada verificação entre parênteses.
+
+- [x] Usuário escolhe entre “Temas Variados” e “Por Categoria”. (E2E: partida completa nos dois modos)
+- [x] Toda sessão tem exatamente 20 perguntas, 5 de cada nível, na ordem fácil → avançado. (unidade: 1000 sorteios; integração)
+- [x] Cada pergunta mostra 4 alternativas embaralhadas, apenas 1 correta. (unidade; `db:prod:verify`: 0 perguntas com problema)
+- [x] Cada pergunta tem 30 s; ao esgotar, conta como erro e avança (validado também no servidor). (E2E com relógio controlado; integração: resposta após 33 s)
+- [x] Nota final entre 0,0 e 10,0, com uma casa decimal, calculada no servidor com pesos por nível (0,3 / 0,4 / 0,6 / 0,7). (unidade: pontuação; integração)
+- [x] Resultado aparece no ranking correspondente, com filtros de período. (E2E: ranking Geral e por categoria; integração: períodos e desempates)
+- [x] Funciona em celular e desktop. (E2E Pixel 7 sem rolagem lateral; teste manual em produção)
+- [x] Feedback com explicação após cada resposta e revisão completa ao final. (E2E: revisão com as 20 perguntas)
+- [x] Tema claro/escuro, animações leves e sons opcionais (desligados por padrão). (E2E; axe WCAG AA nos dois temas)
+- [x] Botão “reportar pergunta” grava o aviso no banco. (integração)
+- [x] Jogo pode ser salvo entre perguntas e retomado em até 24 h, voltando numa pergunta inédita. (integração: salvar, retomar e expirar)
+- [x] Publicado na Vercel usando o banco Supabase de produção. (smoke test: região `gru1`, 10 categorias do prod; `check:rls:prod` ✔)
 
 ---
 

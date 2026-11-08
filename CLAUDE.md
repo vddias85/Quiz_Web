@@ -4,7 +4,7 @@ Quiz web de conhecimentos gerais. **A fonte da verdade é o [PRD.md](PRD.md) (v1
 
 ## Status atual
 - PRD aprovado (v1.7). Fase 0 concluída (Supabase dev/prod em São Paulo, GitHub, Vercel).
-- **Fase 1 concluída (07/11/2026):** Next.js 15 + shadcn, Prisma 6 (schema + migrações com CHECKs e RLS sem políticas), 200 perguntas no Supabase **dev** (todas revisadas pelo usuário em 07/11/2026, `reviewed: true`), `prod-guard`, Vitest, `vercel.json` (gru1). O prod segue vazio, sem migrações.
+- **Fase 1 concluída (07/11/2026):** Next.js 15 + shadcn, Prisma 6 (schema + migrações com CHECKs e RLS sem políticas), 200 perguntas no Supabase **dev** (todas revisadas pelo usuário em 07/11/2026, `reviewed: true`), `prod-guard`, Vitest, `vercel.json` (gru1). (O prod recebeu migrações e seed na Fase 5.)
 - O npm 11 exige aprovar scripts de instalação (`allowScripts` no `package.json`); ao atualizar Prisma/esbuild, rode `npm install-scripts approve <pkg>`.
 - O Prisma CLI não lê `.env.local` sozinho: use sempre os scripts `npm run db:*` (usam `dotenv-cli`).
 - Plano de desenvolvimento aprovado em 07/11/2026: ver [PLANO.md](PLANO.md) (fases 1–6, arquivos, verificação).
@@ -15,9 +15,10 @@ Quiz web de conhecimentos gerais. **A fonte da verdade é o [PRD.md](PRD.md) (v1
 - **Fase 3 concluída (07/11/2026):** períodos do ranking em `src/lib/ranking.ts` (puro, fuso de São Paulo) e consulta SQL em `src/server/ranking.ts` (`DISTINCT ON` + `ROW_NUMBER`, Top 50 + apelidos do navegador fora dele); `GET /api/ranking`; páginas `/ranking` (filtros na URL: `?categoria=<slug>&periodo=hoje|semana|mes`), `/resultado/[id]` (posição em Sempre e Hoje) e `/revisao/[id]` (com "Reportar pergunta"). 100 testes de unidade + 27 de integração.
 - **Fase 4 concluída (07/11/2026):** tema escuro com `next-themes` (paleta no `.dark` de `globals.css`; token `link` para texto azul), sons em `src/lib/sound.ts` (Web Audio, desligados por padrão), animações `animate-enter/pop/shake` (desligadas com "reduzir movimento"), botões de tema e som no `PageShell`, foco no enunciado e anúncios para leitores de tela. **Playwright** em `tests/e2e/` (`npm run test:e2e`, sobe `next dev` na porta 3200, banco dev): 11 testes, inclusive axe WCAG AA nos dois temas e celular (Pixel 7). Apelidos de teste usam o prefixo `e2e_` e são apagados no início e no fim.
 - Se a limpeza do E2E ou do banco dev travar: procure conexões `idle in transaction` em `pg_stat_activity` (o pooler pode deixá-las quando o servidor é encerrado no meio de uma requisição).
-- **Fase 5 em andamento (07/11/2026):** preparação concluída e testada no dev: migração `idle_transaction_timeout`, `.env.prod.local` (modelo `.env.prod.example`), comandos `db:prod:*` (conferem o alvo com `scripts/assert-prod.ts`), backup e restauração em JSON (`scripts/backup.ts`/`restore.ts`, pasta `backups/` fora do Git), `check:rls[:prod]` e `smoke`. **Falta o usuário executar o [PUBLICACAO.md](PUBLICACAO.md)** (variáveis na Vercel, migrações e seed no prod, RLS, smoke, backup); depois, marcar o checklist do PRD §13.
-- Só comece cada fase quando o usuário pedir.
-- A Vercel ainda não tem variáveis de ambiente (vêm na Fase 5): lá a página inicial mostra "indisponível".
+- **Fase 5 concluída (08/11/2026):** site no ar em **https://quiz-web-beta-nine.vercel.app** (Vercel `gru1`, banco **prod** com as 4 migrações e as 200 perguntas revisadas). RLS conferido pela API pública (`check:rls:prod`), smoke test 8/8, teste manual ok, primeiro backup feito (`db:prod:backup`). Critérios de aceite do PRD §13 todos marcados. Comandos de prod usam o `.env.prod.local` (modelo `.env.prod.example`); passo a passo em [PUBLICACAO.md](PUBLICACAO.md).
+- Vercel: variáveis `DATABASE_URL`, `DIRECT_URL` e `SESSION_SECRET` em Production (prod) e Preview (dev). A `DATABASE_URL` precisa terminar exatamente em `?pgbouncer=true&connection_limit=1` (o Supabase já entrega com `?pgbouncer=true`). A senha do banco prod foi trocada em 08/11/2026.
+- Para conferir valores dos arquivos `.env`, use scripts que mostram só o formato; nunca peça para o usuário selecionar ou colar linhas desses arquivos (a seleção no editor chega ao chat).
+- Próximo: **Fase 6** (conteúdo: 15 perguntas por nível por categoria, 600 no total, em lotes revisados pelo usuário). Prioridade: hoje cada categoria tem só 5 por nível, então no modo Por Categoria todos recebem as mesmas 20 perguntas. Só comece cada fase quando o usuário pedir.
 
 ## Regras de negócio (não negociáveis sem aprovação)
 - 20 perguntas por sessão, 4 alternativas, 1 correta, alternativas embaralhadas.
