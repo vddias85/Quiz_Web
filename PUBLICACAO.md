@@ -8,7 +8,7 @@ Passos que **você** executa, porque envolvem segredos e o banco de produção. 
 
 ## 1. Arquivo `.env.prod.local`
 1. Copie `.env.prod.example` para `.env.prod.local`. Ele fica fora do Git, como o `.env.local`.
-2. Preencha com os valores do projeto **quiz-web-prod**, seguindo as instruções do próprio arquivo: `DATABASE_URL`, `DIRECT_URL`, `PROD_PROJECT_REF`, `SUPABASE_URL` e `SUPABASE_ANON_KEY` (a chave **pública**, nunca a `service_role`).
+2. Preencha com os valores do projeto **quiz-web-prod**, seguindo as instruções do próprio arquivo: `DATABASE_URL`, `DIRECT_URL`, `PROD_PROJECT_REF` e `SUPABASE_ANON_KEY` (a chave **pública**, nunca a `service_role`). O `SUPABASE_URL` pode ficar em branco.
 3. Confira:
    ```
    npm run db:prod:check

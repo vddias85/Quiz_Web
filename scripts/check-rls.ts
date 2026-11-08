@@ -2,14 +2,40 @@
 // pode ler nem gravar nas tabelas pela API REST. O navegador só fala com a API do Next.js.
 //   npm run check:rls:prod   → projeto prod (.env.prod.local)
 //   npm run check:rls        → projeto dev (.env.local)
-// Precisa de SUPABASE_URL e SUPABASE_ANON_KEY no arquivo .env correspondente.
+// Precisa de SUPABASE_ANON_KEY no arquivo .env correspondente. O SUPABASE_URL é opcional: sem ele,
+// o endereço é montado a partir do project ref que aparece nas variáveis de conexão do mesmo arquivo.
 
 const TABLES = ["Category", "Question", "Option", "Player", "Session", "SessionItem", "QuestionReport", "RateLimit"];
 
+/** Project ref do banco deste arquivo .env: host "db.<ref>.supabase.co" ou usuário "postgres.<ref>". */
+function projectRefFromConnection(): string | null {
+  for (const url of [process.env.DIRECT_URL, process.env.DATABASE_URL]) {
+    const m = url && /(?:db\.|postgres\.)([a-z0-9]{20})(?=[.:@])/i.exec(url);
+    if (m) return m[1].toLowerCase();
+  }
+  return null;
+}
+
+function resolveBaseUrl(): string {
+  const ref = projectRefFromConnection();
+  const given = process.env.SUPABASE_URL?.trim().replace(/\/+$/, "");
+  if (!given) {
+    if (!ref) throw new Error("Defina SUPABASE_URL (ex.: https://<project-ref>.supabase.co).");
+    return `https://${ref}.supabase.co`;
+  }
+  if (ref && !given.toLowerCase().includes(ref)) {
+    throw new Error(
+      "O SUPABASE_URL não é do mesmo projeto das variáveis de conexão (o project ref não aparece nele). " +
+        "Corrija para https://<project-ref>.supabase.co ou deixe a linha SUPABASE_URL= em branco, que o endereço é montado sozinho.",
+    );
+  }
+  return given;
+}
+
 async function main() {
-  const base = process.env.SUPABASE_URL?.replace(/\/+$/, "");
+  const base = resolveBaseUrl();
   const key = process.env.SUPABASE_ANON_KEY?.trim();
-  if (!base || !key) throw new Error("Defina SUPABASE_URL e SUPABASE_ANON_KEY (Supabase → Project Settings → API).");
+  if (!key) throw new Error("Defina SUPABASE_ANON_KEY (Supabase → Project Settings → API Keys: a chave pública).");
   if (/service_role|sb_secret_/.test(key) || key.includes("c2VydmljZV9yb2xl")) {
     throw new Error("Essa parece ser a chave SECRETA (service_role). Use a chave pública (anon / publishable).");
   }
@@ -65,7 +91,12 @@ async function main() {
 }
 
 main().catch((e) => {
-  console.error("✖", e instanceof Error ? e.message : e);
+  const cause = (e as { cause?: { code?: string } }).cause?.code;
+  if (cause === "ENOTFOUND") {
+    console.error("✖ Endereço do Supabase não encontrado (ENOTFOUND): confira o SUPABASE_URL ou deixe-o em branco.");
+  } else {
+    console.error("✖", e instanceof Error ? e.message : e, cause ? `(${cause})` : "");
+  }
   process.exit(1);
 });
 
