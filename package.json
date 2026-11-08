@@ -21,7 +21,17 @@
     "db:verify": "dotenv -e .env.local -- tsx scripts/verify-db.ts",
     "test:integration": "vitest run -c vitest.integration.config.mts",
     "logo:build": "node scripts/generate-logo-assets.mjs",
-    "test:e2e": "npm run db:check && playwright test"
+    "test:e2e": "npm run db:check && playwright test",
+    "db:prod:check": "dotenv -e .env.prod.local -- tsx scripts/assert-prod.ts",
+    "db:prod:status": "npm run db:prod:check && dotenv -e .env.prod.local -- prisma migrate status",
+    "db:prod:migrate": "npm run db:prod:check && dotenv -e .env.prod.local -- prisma migrate deploy",
+    "db:prod:seed": "npm run db:prod:check && dotenv -e .env.prod.local -v SEED_ALLOW_PROD=1 -- tsx prisma/seed.ts",
+    "db:prod:verify": "npm run db:prod:check && dotenv -e .env.prod.local -v DB_ALLOW_PROD=1 -- tsx scripts/verify-db.ts",
+    "db:backup": "dotenv -e .env.local -- tsx scripts/backup.ts",
+    "db:prod:backup": "npm run db:prod:check && dotenv -e .env.prod.local -v DB_ALLOW_PROD=1 -- tsx scripts/backup.ts",
+    "check:rls": "dotenv -e .env.local -- tsx scripts/check-rls.ts",
+    "check:rls:prod": "dotenv -e .env.prod.local -- tsx scripts/check-rls.ts",
+    "smoke": "tsx scripts/smoke.ts"
   },
   "dependencies": {
     "@base-ui/react": "^1.9.0",

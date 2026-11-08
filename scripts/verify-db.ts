@@ -1,9 +1,10 @@
 // Verificação do banco (somente leitura, exceto o teste de CHECK, que é desfeito).
+// No prod: npm run db:prod:verify (DB_ALLOW_PROD=1 libera, já que nada é gravado).
 import { PrismaClient } from "@prisma/client";
 import { checkNotProd } from "../src/lib/prod-guard";
 
 async function main() {
-  const guard = checkNotProd(process.env);
+  const guard = checkNotProd(process.env, { allowProd: process.env.DB_ALLOW_PROD === "1" });
   if (!guard.ok) throw new Error(guard.reason);
   const prisma = new PrismaClient({ datasourceUrl: process.env.DIRECT_URL });
   try {
@@ -41,6 +42,12 @@ async function main() {
       checkOk = String(e).includes("Question_level_check");
     }
     console.log("CHECK de nível bloqueia valor inválido:", checkOk);
+
+    const timeout = await prisma.$queryRaw<{ t: string }[]>`
+      SELECT coalesce((SELECT option_value FROM pg_options_to_table(r.rolconfig)
+        WHERE option_name = 'idle_in_transaction_session_timeout'), 'não definido') AS t
+      FROM pg_roles r WHERE r.rolname = current_user`;
+    console.log("Limite para conexões presas (idle in transaction):", timeout[0]?.t);
   } finally {
     await prisma.$disconnect();
   }

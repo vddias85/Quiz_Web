@@ -97,8 +97,9 @@ O PRD v1.1 está aprovado e ainda não há código; a pasta tem só `PRD.md` e `
 1. **Você** coloca `DATABASE_URL`, `DIRECT_URL` e `SESSION_SECRET` de **prod** nas variáveis da Vercel (ambiente Production) e configura o Preview com as do **dev**.
 2. Rodar `prisma migrate deploy` contra prod. Eu passo o comando e você roda localmente com as variáveis de prod. Depois, o seed só com perguntas revisadas.
 3. Deploy, smoke test manual e conferência do RLS: com a chave anon, uma consulta via REST precisa retornar vazio ou negar acesso.
-4. Rotina de backup: script `scripts/backup.ps1` com `pg_dump` (você executa).
-5. Proteção contra conexões presas pelo pooler: definir `idle_in_transaction_session_timeout` (ex.: 60 s) no banco de prod. Na Fase 4 uma conexão ficou `idle in transaction` após o servidor ser encerrado no meio de uma requisição.
+4. Rotina de backup: `npm run db:prod:backup` (você executa). **Mudança:** o `pg_dump` não está instalado, então o backup é feito em Node com o Prisma (`scripts/backup.ts`, JSON por tabela + manifest), com restauração em `scripts/restore.ts`. A ida e volta foi testada num schema temporário do dev.
+5. Proteção contra conexões presas pelo pooler: migração `idle_transaction_timeout` (`idle_in_transaction_session_timeout = 60s` no papel do banco). Na Fase 4 uma conexão ficou `idle in transaction` depois de o servidor ser encerrado no meio de uma requisição.
+6. Comandos de prod (`db:prod:*`, `check:rls:prod`) usam o `.env.prod.local`, e o `smoke` testa o site publicado. O passo a passo está em [PUBLICACAO.md](PUBLICACAO.md).
 
 ## Fase 6 — Conteúdo
 - Ampliar até 15 perguntas por nível por categoria (600 no total), em lotes por categoria.

@@ -33,6 +33,7 @@ yarn-error.log*
 # env files — segredos nunca vão para o Git; só o modelo .env.example
 .env*
 !.env.example
+!.env.prod.example
 
 # vercel
 .vercel
@@ -50,3 +51,6 @@ next-env.d.ts
 # backups do banco
 *.dump
 *.sql.gz
+
+# Backups do banco (dados de jogadores): nunca vão para o Git
+/backups/
