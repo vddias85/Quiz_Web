@@ -278,5 +278,565 @@
     "correctIndex": 1,
     "explanation": "O Sudão, antiga Núbia, tem mais de 200 pirâmides, mais do que o Egito, embora menores.",
     "reviewed": true
+  },
+  {
+    "key": "geografia-021",
+    "level": 1,
+    "statement": "Qual é o maior continente do mundo em área?",
+    "options": [
+      "África",
+      "Ásia",
+      "América",
+      "Europa"
+    ],
+    "correctIndex": 1,
+    "explanation": "A Ásia ocupa cerca de 30% das terras emersas do planeta.",
+    "reviewed": true
+  },
+  {
+    "key": "geografia-022",
+    "level": 1,
+    "statement": "Qual é a capital do Japão?",
+    "options": [
+      "Quioto",
+      "Osaka",
+      "Tóquio",
+      "Pequim"
+    ],
+    "correctIndex": 2,
+    "explanation": "Tóquio forma, com as cidades vizinhas, a maior região metropolitana do mundo.",
+    "reviewed": true
+  },
+  {
+    "key": "geografia-023",
+    "level": 1,
+    "statement": "Qual é a montanha mais alta do mundo?",
+    "options": [
+      "K2",
+      "Aconcágua",
+      "Kilimanjaro",
+      "Monte Everest"
+    ],
+    "correctIndex": 3,
+    "explanation": "O Everest, na fronteira entre o Nepal e a China, tem cerca de 8.849 m de altitude.",
+    "reviewed": true
+  },
+  {
+    "key": "geografia-024",
+    "level": 1,
+    "statement": "Qual país europeu tem o formato de uma bota?",
+    "options": [
+      "Itália",
+      "Grécia",
+      "Espanha",
+      "Portugal"
+    ],
+    "correctIndex": 0,
+    "explanation": "A Península Itálica lembra uma bota avançando sobre o Mar Mediterrâneo.",
+    "reviewed": true
+  },
+  {
+    "key": "geografia-025",
+    "level": 1,
+    "statement": "Qual é a capital da Espanha?",
+    "options": [
+      "Barcelona",
+      "Madri",
+      "Sevilha",
+      "Lisboa"
+    ],
+    "correctIndex": 1,
+    "explanation": "Madri fica no centro da Península Ibérica.",
+    "reviewed": true
+  },
+  {
+    "key": "geografia-026",
+    "level": 1,
+    "statement": "Qual oceano separa a América da Europa e da África?",
+    "options": [
+      "Pacífico",
+      "Índico",
+      "Atlântico",
+      "Ártico"
+    ],
+    "correctIndex": 2,
+    "explanation": "O Atlântico é o segundo maior oceano, atrás do Pacífico.",
+    "reviewed": true
+  },
+  {
+    "key": "geografia-027",
+    "level": 1,
+    "statement": "Qual linha imaginária divide a Terra nos hemisférios Norte e Sul?",
+    "options": [
+      "Linha do Equador",
+      "Meridiano de Greenwich",
+      "Trópico de Câncer",
+      "Trópico de Capricórnio"
+    ],
+    "correctIndex": 0,
+    "explanation": "O Meridiano de Greenwich, por sua vez, divide os hemisférios Leste e Oeste.",
+    "reviewed": true
+  },
+  {
+    "key": "geografia-028",
+    "level": 1,
+    "statement": "Qual é o maior país do mundo em área?",
+    "options": [
+      "Canadá",
+      "China",
+      "Estados Unidos",
+      "Rússia"
+    ],
+    "correctIndex": 3,
+    "explanation": "A Rússia tem mais de 17 milhões de km², quase o dobro do Brasil.",
+    "reviewed": true
+  },
+  {
+    "key": "geografia-029",
+    "level": 1,
+    "statement": "Qual é a capital de Portugal?",
+    "options": [
+      "Porto",
+      "Coimbra",
+      "Lisboa",
+      "Braga"
+    ],
+    "correctIndex": 2,
+    "explanation": "Lisboa fica na foz do Rio Tejo.",
+    "reviewed": true
+  },
+  {
+    "key": "geografia-030",
+    "level": 1,
+    "statement": "Em qual cidade fica a Estátua da Liberdade?",
+    "options": [
+      "Nova York",
+      "Washington",
+      "Boston",
+      "Chicago"
+    ],
+    "correctIndex": 0,
+    "explanation": "Presente da França aos Estados Unidos, foi inaugurada em 1886.",
+    "reviewed": true
+  },
+  {
+    "key": "geografia-031",
+    "level": 2,
+    "statement": "Qual é a capital do Canadá?",
+    "options": [
+      "Toronto",
+      "Vancouver",
+      "Montreal",
+      "Ottawa"
+    ],
+    "correctIndex": 3,
+    "explanation": "Ottawa fica na província de Ontário, na divisa com Quebec.",
+    "reviewed": true
+  },
+  {
+    "key": "geografia-032",
+    "level": 2,
+    "statement": "Qual é o maior país da África em área?",
+    "options": [
+      "Argélia",
+      "República Democrática do Congo",
+      "Sudão",
+      "Líbia"
+    ],
+    "correctIndex": 0,
+    "explanation": "A Argélia passou a ser o maior país africano em 2011, quando o Sudão do Sul se separou do Sudão.",
+    "reviewed": true
+  },
+  {
+    "key": "geografia-033",
+    "level": 2,
+    "statement": "Qual estreito separa a Europa da África?",
+    "options": [
+      "Bósforo",
+      "Gibraltar",
+      "Magalhães",
+      "Dardanelos"
+    ],
+    "correctIndex": 1,
+    "explanation": "Em seu ponto mais estreito, o Estreito de Gibraltar tem cerca de 14 km.",
+    "reviewed": true
+  },
+  {
+    "key": "geografia-034",
+    "level": 2,
+    "statement": "Qual canal liga os oceanos Atlântico e Pacífico, na América Central?",
+    "options": [
+      "Canal de Suez",
+      "Canal de Kiel",
+      "Canal do Panamá",
+      "Canal de Corinto"
+    ],
+    "correctIndex": 2,
+    "explanation": "Inaugurado em 1914, evita a longa viagem pelo extremo sul da América do Sul.",
+    "reviewed": true
+  },
+  {
+    "key": "geografia-035",
+    "level": 2,
+    "statement": "Qual é a capital da Alemanha?",
+    "options": [
+      "Munique",
+      "Frankfurt",
+      "Hamburgo",
+      "Berlim"
+    ],
+    "correctIndex": 3,
+    "explanation": "Berlim voltou a ser a capital após a reunificação alemã, em 1990.",
+    "reviewed": true
+  },
+  {
+    "key": "geografia-036",
+    "level": 2,
+    "statement": "Em qual cordilheira fica o Aconcágua, o ponto mais alto das Américas?",
+    "options": [
+      "Andes",
+      "Montanhas Rochosas",
+      "Alpes",
+      "Himalaia"
+    ],
+    "correctIndex": 0,
+    "explanation": "O Aconcágua, na Argentina, tem cerca de 6.961 m de altitude.",
+    "reviewed": true
+  },
+  {
+    "key": "geografia-037",
+    "level": 2,
+    "statement": "Qual é o país mais populoso do mundo?",
+    "options": [
+      "China",
+      "Índia",
+      "Estados Unidos",
+      "Indonésia"
+    ],
+    "correctIndex": 1,
+    "explanation": "Segundo a ONU, a Índia ultrapassou a China em população em 2023.",
+    "reviewed": true
+  },
+  {
+    "key": "geografia-038",
+    "level": 2,
+    "statement": "Qual oceano banha o leste da África e o sul da Ásia?",
+    "options": [
+      "Pacífico",
+      "Atlântico",
+      "Índico",
+      "Antártico"
+    ],
+    "correctIndex": 2,
+    "explanation": "O Oceano Índico é o terceiro maior do planeta.",
+    "reviewed": true
+  },
+  {
+    "key": "geografia-039",
+    "level": 2,
+    "statement": "Qual é a capital da Rússia?",
+    "options": [
+      "São Petersburgo",
+      "Moscou",
+      "Kiev",
+      "Minsk"
+    ],
+    "correctIndex": 1,
+    "explanation": "São Petersburgo foi a capital do Império Russo até 1918, quando Moscou voltou a ser a capital.",
+    "reviewed": true
+  },
+  {
+    "key": "geografia-040",
+    "level": 2,
+    "statement": "Depois do Brasil, qual é o maior país da América do Sul em área?",
+    "options": [
+      "Peru",
+      "Colômbia",
+      "Argentina",
+      "Bolívia"
+    ],
+    "correctIndex": 2,
+    "explanation": "A Argentina tem cerca de 2,8 milhões de km² e é o 8º maior país do mundo.",
+    "reviewed": true
+  },
+  {
+    "key": "geografia-041",
+    "level": 3,
+    "statement": "Qual é a capital da Nova Zelândia?",
+    "options": [
+      "Auckland",
+      "Wellington",
+      "Christchurch",
+      "Queenstown"
+    ],
+    "correctIndex": 1,
+    "explanation": "Auckland é a maior cidade, mas a capital é Wellington, no sul da Ilha Norte.",
+    "reviewed": true
+  },
+  {
+    "key": "geografia-042",
+    "level": 3,
+    "statement": "Qual é o rio mais longo da Europa?",
+    "options": [
+      "Danúbio",
+      "Reno",
+      "Volga",
+      "Dniepre"
+    ],
+    "correctIndex": 2,
+    "explanation": "O Volga, na Rússia, tem cerca de 3.530 km e deságua no Mar Cáspio.",
+    "reviewed": true
+  },
+  {
+    "key": "geografia-043",
+    "level": 3,
+    "statement": "Qual é o ponto mais baixo da superfície terrestre em terra firme?",
+    "options": [
+      "Vale da Morte",
+      "Margens do Mar Morto",
+      "Depressão de Qattara",
+      "Lago Assal"
+    ],
+    "correctIndex": 1,
+    "explanation": "As margens do Mar Morto ficam a mais de 400 m abaixo do nível do mar.",
+    "reviewed": true
+  },
+  {
+    "key": "geografia-044",
+    "level": 3,
+    "statement": "Qual é a capital da Suíça?",
+    "options": [
+      "Zurique",
+      "Genebra",
+      "Basileia",
+      "Berna"
+    ],
+    "correctIndex": 3,
+    "explanation": "Berna é a sede do governo federal; Zurique é a maior cidade do país.",
+    "reviewed": true
+  },
+  {
+    "key": "geografia-045",
+    "level": 3,
+    "statement": "Qual é a maior ilha do mundo, sem contar os continentes?",
+    "options": [
+      "Groenlândia",
+      "Nova Guiné",
+      "Bornéu",
+      "Madagascar"
+    ],
+    "correctIndex": 0,
+    "explanation": "A Groenlândia, território autônomo da Dinamarca, tem mais de 2 milhões de km².",
+    "reviewed": true
+  },
+  {
+    "key": "geografia-046",
+    "level": 3,
+    "statement": "Qual país tem o litoral mais extenso do mundo?",
+    "options": [
+      "Rússia",
+      "Indonésia",
+      "Austrália",
+      "Canadá"
+    ],
+    "correctIndex": 3,
+    "explanation": "Com milhares de ilhas no Ártico, o Canadá tem mais de 200 mil km de litoral.",
+    "reviewed": true
+  },
+  {
+    "key": "geografia-047",
+    "level": 3,
+    "statement": "Qual mar da Ásia Central secou em grande parte por causa da irrigação de plantações?",
+    "options": [
+      "Mar de Aral",
+      "Mar Cáspio",
+      "Mar Morto",
+      "Mar Negro"
+    ],
+    "correctIndex": 0,
+    "explanation": "Os rios que o abasteciam foram desviados para irrigar algodão na antiga União Soviética.",
+    "reviewed": true
+  },
+  {
+    "key": "geografia-048",
+    "level": 3,
+    "statement": "Qual é o maior lago do mundo em área, apesar de ser chamado de mar?",
+    "options": [
+      "Mar Morto",
+      "Mar de Aral",
+      "Mar Cáspio",
+      "Mar da Galileia"
+    ],
+    "correctIndex": 2,
+    "explanation": "O Mar Cáspio tem cerca de 370 mil km² e é cercado por cinco países.",
+    "reviewed": true
+  },
+  {
+    "key": "geografia-049",
+    "level": 3,
+    "statement": "Qual é a capital da Índia?",
+    "options": [
+      "Mumbai",
+      "Nova Délhi",
+      "Calcutá",
+      "Bangalore"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mumbai é o maior centro financeiro, mas a capital é Nova Délhi.",
+    "reviewed": true
+  },
+  {
+    "key": "geografia-050",
+    "level": 3,
+    "statement": "Qual rio atravessa a cidade de Londres?",
+    "options": [
+      "Sena",
+      "Reno",
+      "Tâmisa",
+      "Tejo"
+    ],
+    "correctIndex": 2,
+    "explanation": "O Tâmisa corta o sul da Inglaterra até desaguar no Mar do Norte.",
+    "reviewed": true
+  },
+  {
+    "key": "geografia-051",
+    "level": 4,
+    "statement": "Qual é a capital do Butão?",
+    "options": [
+      "Katmandu",
+      "Thimphu",
+      "Daca",
+      "Paro"
+    ],
+    "correctIndex": 1,
+    "explanation": "Thimphu fica no Himalaia; Katmandu é a capital do vizinho Nepal.",
+    "reviewed": true
+  },
+  {
+    "key": "geografia-052",
+    "level": 4,
+    "statement": "Qual é o único país com território nos quatro hemisférios (Norte, Sul, Leste e Oeste)?",
+    "options": [
+      "Equador",
+      "Indonésia",
+      "Kiribati",
+      "Gabão"
+    ],
+    "correctIndex": 2,
+    "explanation": "As ilhas de Kiribati, no Pacífico, ficam dos dois lados da Linha do Equador e do meridiano de 180°.",
+    "reviewed": true
+  },
+  {
+    "key": "geografia-053",
+    "level": 4,
+    "statement": "Qual é a capital constitucional da Bolívia?",
+    "options": [
+      "La Paz",
+      "Sucre",
+      "Cochabamba",
+      "Santa Cruz de la Sierra"
+    ],
+    "correctIndex": 1,
+    "explanation": "Sucre é a capital constitucional; La Paz é a sede do governo.",
+    "reviewed": true
+  },
+  {
+    "key": "geografia-054",
+    "level": 4,
+    "statement": "Qual é o rio mais longo da Ásia?",
+    "options": [
+      "Mekong",
+      "Ganges",
+      "Rio Amarelo",
+      "Yangtzé"
+    ],
+    "correctIndex": 3,
+    "explanation": "O Yangtzé, na China, tem cerca de 6.300 km; é o terceiro mais longo do mundo.",
+    "reviewed": true
+  },
+  {
+    "key": "geografia-055",
+    "level": 4,
+    "statement": "Em qual fossa oceânica fica o ponto mais profundo dos oceanos?",
+    "options": [
+      "Fossa das Marianas",
+      "Fossa de Porto Rico",
+      "Fossa de Tonga",
+      "Fossa do Japão"
+    ],
+    "correctIndex": 0,
+    "explanation": "No Abismo Challenger, a profundidade passa de 10.900 m, no Oceano Pacífico.",
+    "reviewed": true
+  },
+  {
+    "key": "geografia-056",
+    "level": 4,
+    "statement": "Qual país é totalmente cercado pelo território da África do Sul?",
+    "options": [
+      "Essuatíni",
+      "Botsuana",
+      "Lesoto",
+      "Namíbia"
+    ],
+    "correctIndex": 2,
+    "explanation": "O Lesoto é um enclave; Essuatíni também faz fronteira com Moçambique.",
+    "reviewed": true
+  },
+  {
+    "key": "geografia-057",
+    "level": 4,
+    "statement": "Qual é a capital do Vietnã?",
+    "options": [
+      "Ho Chi Minh",
+      "Hanói",
+      "Hué",
+      "Da Nang"
+    ],
+    "correctIndex": 1,
+    "explanation": "Hanói fica no norte; Ho Chi Minh (antiga Saigon) é a maior cidade do país.",
+    "reviewed": true
+  },
+  {
+    "key": "geografia-058",
+    "level": 4,
+    "statement": "Em qual cordilheira fica o K2, a segunda montanha mais alta do mundo?",
+    "options": [
+      "Himalaia",
+      "Hindu Kush",
+      "Pamir",
+      "Caracórum"
+    ],
+    "correctIndex": 3,
+    "explanation": "O K2 fica no Caracórum, na fronteira entre o Paquistão e a China.",
+    "reviewed": true
+  },
+  {
+    "key": "geografia-059",
+    "level": 4,
+    "statement": "Qual deserto ocupa grande parte da Mongólia e do norte da China?",
+    "options": [
+      "Gobi",
+      "Taklamakan",
+      "Kalahari",
+      "Thar"
+    ],
+    "correctIndex": 0,
+    "explanation": "O Gobi é um deserto frio, com invernos que passam de -30 °C.",
+    "reviewed": true
+  },
+  {
+    "key": "geografia-060",
+    "level": 4,
+    "statement": "Em qual país nasce o Nilo Azul, principal formador do Rio Nilo?",
+    "options": [
+      "Uganda",
+      "Sudão",
+      "Quênia",
+      "Etiópia"
+    ],
+    "correctIndex": 3,
+    "explanation": "O Nilo Azul nasce no Lago Tana, na Etiópia, e encontra o Nilo Branco em Cartum, no Sudão.",
+    "reviewed": true
   }
 ]

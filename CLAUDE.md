@@ -19,8 +19,9 @@ Quiz web de conhecimentos gerais. **A fonte da verdade é o [PRD.md](PRD.md) (v1
 - Vercel: variáveis `DATABASE_URL`, `DIRECT_URL` e `SESSION_SECRET` em Production (prod) e Preview (dev). A `DATABASE_URL` precisa terminar exatamente em `?pgbouncer=true&connection_limit=1` (o Supabase já entrega com `?pgbouncer=true`). A senha do banco prod foi trocada em 08/11/2026.
 - Para conferir valores dos arquivos `.env`, use scripts que mostram só o formato; nunca peça para o usuário selecionar ou colar linhas desses arquivos (a seleção no editor chega ao chat).
 - **Fase 6 em andamento** (conteúdo: 15 perguntas por nível por categoria, 600 no total). Fluxo por categoria: rascunho com `reviewed: false` → `db:seed:dev` → revisão do usuário no chat → `reviewed: true` → testes → commit → usuário roda `npm run db:prod:seed`. Evitar temas já presentes em outras categorias (checar com busca nos JSON).
-  - **Brasil:** 60 perguntas (15 por nível), lote 021–060 revisado em 08/11/2026.
-  - Faltam: Geografia, História, Ciências, Cinema e TV, Música, Esportes, Artes e Literatura, Tecnologia, Matemática e Lógica (ainda com 5 por nível; no modo Por Categoria todos recebem as mesmas 20 perguntas).
+  - **Brasil:** 60 perguntas (15 por nível), lote 021–060 revisado em 08/11/2026; publicado no prod.
+  - **Geografia:** 60 perguntas (15 por nível, foco em geografia mundial; a do Brasil fica na categoria Brasil), lote 021–060 revisado em 08/11/2026.
+  - Faltam: História, Ciências, Cinema e TV, Música, Esportes, Artes e Literatura, Tecnologia, Matemática e Lógica (ainda com 5 por nível; no modo Por Categoria todos recebem as mesmas 20 perguntas).
 
 ## Regras de negócio (não negociáveis sem aprovação)
 - 20 perguntas por sessão, 4 alternativas, 1 correta, alternativas embaralhadas.
