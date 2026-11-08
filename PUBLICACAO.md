@@ -47,7 +47,7 @@ Abra Vercel → projeto → **Settings → Environment Variables**.
 
 | Variável | Production (prod) | Preview (dev) |
 |---|---|---|
-| `DATABASE_URL` | pooler do **prod** (porta 6543), com `?pgbouncer=true&connection_limit=1` | a mesma do `.env.local` |
+| `DATABASE_URL` | pooler do **prod** (porta 6543), terminando exatamente em `?pgbouncer=true&connection_limit=1` (sem repetir o `?pgbouncer=true`) | a mesma do `.env.local` |
 | `DIRECT_URL` | conexão direta do **prod** | a mesma do `.env.local` |
 | `SESSION_SECRET` | um texto **novo**, diferente do dev (veja abaixo) | o mesmo do `.env.local` |
 
