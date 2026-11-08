@@ -29,7 +29,7 @@
   },
   {
     "key": "esportes-003",
-    "level": 1,
+    "level": 2,
     "statement": "Em qual esporte se usam raquete e peteca?",
     "options": [
       "Tênis",
@@ -71,7 +71,7 @@
   },
   {
     "key": "esportes-006",
-    "level": 2,
+    "level": 1,
     "statement": "Qual jogador brasileiro é conhecido como \"Rei do Futebol\"?",
     "options": [
       "Zico",
@@ -197,7 +197,7 @@
   },
   {
     "key": "esportes-015",
-    "level": 3,
+    "level": 4,
     "statement": "Em qual país foi disputada a primeira Copa do Mundo de futebol, em 1930?",
     "options": [
       "Brasil",
@@ -211,7 +211,7 @@
   },
   {
     "key": "esportes-016",
-    "level": 4,
+    "level": 3,
     "statement": "Qual ginasta é a maior medalhista olímpica da história do Brasil?",
     "options": [
       "Daiane dos Santos",
@@ -277,6 +277,566 @@
     ],
     "correctIndex": 1,
     "explanation": "Birdie é um golpe abaixo do par; albatross, três abaixo; bogey, um acima.",
+    "reviewed": true
+  },
+  {
+    "key": "esportes-021",
+    "level": 2,
+    "statement": "Quantos jogadores cada time tem em quadra no vôlei?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "11"
+    ],
+    "correctIndex": 1,
+    "explanation": "São 6 jogadores por time, que fazem um rodízio de posições a cada saque conquistado.",
+    "reviewed": true
+  },
+  {
+    "key": "esportes-022",
+    "level": 1,
+    "statement": "Qual esporte é disputado numa piscina, com dois times tentando marcar gols?",
+    "options": [
+      "Nado artístico",
+      "Handebol",
+      "Polo aquático",
+      "Hóquei"
+    ],
+    "correctIndex": 2,
+    "explanation": "No polo aquático, cada time tem 7 jogadores na água, incluindo o goleiro.",
+    "reviewed": true
+  },
+  {
+    "key": "esportes-023",
+    "level": 1,
+    "statement": "Qual cartão o árbitro mostra para expulsar um jogador no futebol?",
+    "options": [
+      "Amarelo",
+      "Azul",
+      "Verde",
+      "Vermelho"
+    ],
+    "correctIndex": 3,
+    "explanation": "O amarelo é advertência; dois amarelos na mesma partida viram vermelho.",
+    "reviewed": true
+  },
+  {
+    "key": "esportes-024",
+    "level": 1,
+    "statement": "Quantos jogadores cada time tem em quadra no basquete?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "São 5 jogadores por time em quadra, com substituições ilimitadas.",
+    "reviewed": true
+  },
+  {
+    "key": "esportes-025",
+    "level": 1,
+    "statement": "Em qual esporte os atletas usam luvas acolchoadas e lutam num ringue?",
+    "options": [
+      "Judô",
+      "Boxe",
+      "Esgrima",
+      "Caratê"
+    ],
+    "correctIndex": 1,
+    "explanation": "O boxe está nos Jogos Olímpicos modernos desde 1904.",
+    "reviewed": true
+  },
+  {
+    "key": "esportes-026",
+    "level": 1,
+    "statement": "Quanto tempo dura uma partida de futebol, sem acréscimos nem prorrogação?",
+    "options": [
+      "80 minutos",
+      "90 minutos",
+      "100 minutos",
+      "120 minutos"
+    ],
+    "correctIndex": 1,
+    "explanation": "São dois tempos de 45 minutos, com intervalo de 15 minutos.",
+    "reviewed": true
+  },
+  {
+    "key": "esportes-027",
+    "level": 1,
+    "statement": "Em qual esporte se disputa o famoso torneio de Wimbledon?",
+    "options": [
+      "Golfe",
+      "Críquete",
+      "Tênis",
+      "Badminton"
+    ],
+    "correctIndex": 2,
+    "explanation": "Disputado em Londres desde 1877, é o torneio de tênis mais antigo do mundo.",
+    "reviewed": true
+  },
+  {
+    "key": "esportes-028",
+    "level": 1,
+    "statement": "Qual esporte consiste em deslizar sobre as ondas em pé numa prancha?",
+    "options": [
+      "Surfe",
+      "Skate",
+      "Wakeboard",
+      "Remo"
+    ],
+    "correctIndex": 0,
+    "explanation": "O surfe estreou nos Jogos de Tóquio, com ouro do brasileiro Italo Ferreira.",
+    "reviewed": true
+  },
+  {
+    "key": "esportes-029",
+    "level": 1,
+    "statement": "De quantos em quantos anos acontecem os Jogos Olímpicos de Verão?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correctIndex": 2,
+    "explanation": "A única exceção recente foram os Jogos de Tóquio, adiados de 2020 para 2021 pela pandemia.",
+    "reviewed": true
+  },
+  {
+    "key": "esportes-030",
+    "level": 1,
+    "statement": "Em qual esporte Michael Jordan se tornou uma lenda?",
+    "options": [
+      "Futebol americano",
+      "Tênis",
+      "Golfe",
+      "Basquete"
+    ],
+    "correctIndex": 3,
+    "explanation": "Jordan foi seis vezes campeão da NBA com o Chicago Bulls.",
+    "reviewed": true
+  },
+  {
+    "key": "esportes-031",
+    "level": 4,
+    "statement": "Em qual esporte, jogado com bola oval, se marca o ponto chamado \"try\"?",
+    "options": [
+      "Futebol americano",
+      "Rúgbi",
+      "Handebol",
+      "Beisebol"
+    ],
+    "correctIndex": 1,
+    "explanation": "O try, que vale 5 pontos no rúgbi union, é marcado ao apoiar a bola na área de meta do adversário.",
+    "reviewed": true
+  },
+  {
+    "key": "esportes-032",
+    "level": 2,
+    "statement": "Em qual país surgiu o judô?",
+    "options": [
+      "China",
+      "Coreia do Sul",
+      "Japão",
+      "Tailândia"
+    ],
+    "correctIndex": 2,
+    "explanation": "O judô foi criado por Jigoro Kano, em 1882, a partir do jiu-jítsu.",
+    "reviewed": true
+  },
+  {
+    "key": "esportes-033",
+    "level": 4,
+    "statement": "Quanto dura cada tempo de uma partida de handebol?",
+    "options": [
+      "20 minutos",
+      "25 minutos",
+      "30 minutos",
+      "45 minutos"
+    ],
+    "correctIndex": 2,
+    "explanation": "São dois tempos de 30 minutos, com 7 jogadores por time em quadra.",
+    "reviewed": true
+  },
+  {
+    "key": "esportes-034",
+    "level": 2,
+    "statement": "Qual é o principal torneio de futebol entre clubes da América do Sul?",
+    "options": [
+      "Copa América",
+      "Copa Libertadores",
+      "Copa Sul-Americana",
+      "Recopa Sul-Americana"
+    ],
+    "correctIndex": 1,
+    "explanation": "A Libertadores é disputada desde 1960; a Copa América é entre seleções.",
+    "reviewed": true
+  },
+  {
+    "key": "esportes-035",
+    "level": 2,
+    "statement": "Qual atleta jamaicano tem o recorde mundial dos 100 metros rasos?",
+    "options": [
+      "Yohan Blake",
+      "Asafa Powell",
+      "Usain Bolt",
+      "Carl Lewis"
+    ],
+    "correctIndex": 2,
+    "explanation": "Bolt correu os 100 m em 9,58 s no Mundial de Berlim, em 2009.",
+    "reviewed": true
+  },
+  {
+    "key": "esportes-036",
+    "level": 3,
+    "statement": "No tênis, como se chama o empate em 40 a 40 dentro de um game?",
+    "options": [
+      "Deuce (iguais)",
+      "Love",
+      "Set point",
+      "Tie-break"
+    ],
+    "correctIndex": 0,
+    "explanation": "Depois do deuce, é preciso vencer dois pontos seguidos. \"Love\" significa zero.",
+    "reviewed": true
+  },
+  {
+    "key": "esportes-037",
+    "level": 2,
+    "statement": "Qual nadador é o maior medalhista da história dos Jogos Olímpicos?",
+    "options": [
+      "Mark Spitz",
+      "Michael Phelps",
+      "Ian Thorpe",
+      "Ryan Lochte"
+    ],
+    "correctIndex": 1,
+    "explanation": "Phelps conquistou 28 medalhas olímpicas, 23 delas de ouro.",
+    "reviewed": true
+  },
+  {
+    "key": "esportes-038",
+    "level": 2,
+    "statement": "No futebol, a que distância do gol fica a marca do pênalti?",
+    "options": [
+      "9 metros",
+      "11 metros",
+      "12 metros",
+      "16,5 metros"
+    ],
+    "correctIndex": 1,
+    "explanation": "A marca fica a 11 metros da linha do gol, dentro da grande área.",
+    "reviewed": true
+  },
+  {
+    "key": "esportes-039",
+    "level": 3,
+    "statement": "Qual cidade sediou os Jogos Olímpicos de 2012?",
+    "options": [
+      "Pequim",
+      "Atenas",
+      "Sydney",
+      "Londres"
+    ],
+    "correctIndex": 3,
+    "explanation": "Londres foi a primeira cidade a sediar os Jogos de Verão três vezes: 1908, 1948 e 2012.",
+    "reviewed": true
+  },
+  {
+    "key": "esportes-040",
+    "level": 4,
+    "statement": "Em qual país o vôlei foi inventado, em 1895?",
+    "options": [
+      "Estados Unidos",
+      "Brasil",
+      "Japão",
+      "Itália"
+    ],
+    "correctIndex": 0,
+    "explanation": "William G. Morgan criou o jogo numa ACM em Massachusetts, como alternativa mais leve ao basquete.",
+    "reviewed": true
+  },
+  {
+    "key": "esportes-041",
+    "level": 2,
+    "statement": "Qual seleção venceu a Copa do Mundo de 2022, no Catar?",
+    "options": [
+      "França",
+      "Croácia",
+      "Argentina",
+      "Marrocos"
+    ],
+    "correctIndex": 2,
+    "explanation": "A Argentina de Messi venceu a França nos pênaltis, após empate em 3 a 3.",
+    "reviewed": true
+  },
+  {
+    "key": "esportes-042",
+    "level": 3,
+    "statement": "Qual brasileiro foi eleito o melhor jogador do mundo pela FIFA em 2007?",
+    "options": [
+      "Ronaldinho Gaúcho",
+      "Ronaldo",
+      "Kaká",
+      "Neymar"
+    ],
+    "correctIndex": 2,
+    "explanation": "Kaká, então no Milan, recebeu o prêmio de Melhor Jogador do Mundo da FIFA em 2007.",
+    "reviewed": true
+  },
+  {
+    "key": "esportes-043",
+    "level": 2,
+    "statement": "Qual jogadora brasileira foi eleita seis vezes a melhor do mundo pela FIFA?",
+    "options": [
+      "Formiga",
+      "Cristiane",
+      "Marta",
+      "Debinha"
+    ],
+    "correctIndex": 2,
+    "explanation": "Marta venceu de 2006 a 2010 e de novo em 2018.",
+    "reviewed": true
+  },
+  {
+    "key": "esportes-044",
+    "level": 3,
+    "statement": "Qual seleção venceu a Copa do Mundo de 2010, na África do Sul?",
+    "options": [
+      "Holanda",
+      "Espanha",
+      "Alemanha",
+      "Itália"
+    ],
+    "correctIndex": 1,
+    "explanation": "A Espanha venceu a Holanda por 1 a 0 na prorrogação e conquistou seu primeiro título mundial.",
+    "reviewed": true
+  },
+  {
+    "key": "esportes-045",
+    "level": 3,
+    "statement": "No vôlei, qual jogador especialista em defesa usa uniforme de cor diferente dos colegas?",
+    "options": [
+      "Levantador",
+      "Oposto",
+      "Ponteiro",
+      "Líbero"
+    ],
+    "correctIndex": 3,
+    "explanation": "O líbero não pode sacar, bloquear nem atacar com a bola acima da altura da rede.",
+    "reviewed": true
+  },
+  {
+    "key": "esportes-046",
+    "level": 3,
+    "statement": "Qual autódromo de São Paulo recebe o Grande Prêmio de Fórmula 1 no Brasil?",
+    "options": [
+      "Interlagos",
+      "Jacarepaguá",
+      "Velocitta",
+      "Autódromo de Goiânia"
+    ],
+    "correctIndex": 0,
+    "explanation": "O nome oficial é Autódromo José Carlos Pace, em homenagem ao piloto brasileiro.",
+    "reviewed": true
+  },
+  {
+    "key": "esportes-047",
+    "level": 3,
+    "statement": "No xadrez, qual é o único lance em que duas peças se movem ao mesmo tempo?",
+    "options": [
+      "En passant",
+      "Promoção",
+      "Roque",
+      "Xeque-mate"
+    ],
+    "correctIndex": 2,
+    "explanation": "No roque, o rei e uma torre se movem juntos, numa única jogada.",
+    "reviewed": true
+  },
+  {
+    "key": "esportes-048",
+    "level": 4,
+    "statement": "Qual país sediou a primeira Copa do Mundo de futebol feminino, em 1991?",
+    "options": [
+      "Estados Unidos",
+      "Suécia",
+      "Alemanha",
+      "China"
+    ],
+    "correctIndex": 3,
+    "explanation": "Os Estados Unidos venceram a Noruega na final, disputada em Guangzhou.",
+    "reviewed": true
+  },
+  {
+    "key": "esportes-049",
+    "level": 3,
+    "statement": "Qual tenista suíço venceu Wimbledon oito vezes?",
+    "options": [
+      "Stan Wawrinka",
+      "Roger Federer",
+      "Rafael Nadal",
+      "Novak Djokovic"
+    ],
+    "correctIndex": 1,
+    "explanation": "Federer tem o recorde masculino de títulos em Wimbledon: o último foi em 2017.",
+    "reviewed": true
+  },
+  {
+    "key": "esportes-050",
+    "level": 2,
+    "statement": "Qual jogador marcou com a mão o gol chamado \"La Mano de Dios\", na Copa de 1986?",
+    "options": [
+      "Lionel Messi",
+      "Mario Kempes",
+      "Gabriel Batistuta",
+      "Diego Maradona"
+    ],
+    "correctIndex": 3,
+    "explanation": "O gol foi contra a Inglaterra, nas quartas de final; a Argentina foi campeã naquela Copa.",
+    "reviewed": true
+  },
+  {
+    "key": "esportes-051",
+    "level": 4,
+    "statement": "Quem conquistou a primeira medalha de ouro olímpica do Brasil, em 1920?",
+    "options": [
+      "Adhemar Ferreira da Silva",
+      "Guilherme Paraense",
+      "Afrânio da Costa",
+      "João do Pulo"
+    ],
+    "correctIndex": 1,
+    "explanation": "Guilherme Paraense venceu no tiro com pistola, nos Jogos da Antuérpia, na Bélgica.",
+    "reviewed": true
+  },
+  {
+    "key": "esportes-052",
+    "level": 4,
+    "statement": "Em qual prova Adhemar Ferreira da Silva foi bicampeão olímpico, em 1952 e 1956?",
+    "options": [
+      "Salto em distância",
+      "Salto em altura",
+      "Salto triplo",
+      "400 m com barreiras"
+    ],
+    "correctIndex": 2,
+    "explanation": "Adhemar também quebrou o recorde mundial do salto triplo cinco vezes.",
+    "reviewed": true
+  },
+  {
+    "key": "esportes-053",
+    "level": 4,
+    "statement": "Quantos jogadores cada time tem em campo no rúgbi union, a versão mais tradicional?",
+    "options": [
+      "11",
+      "13",
+      "15",
+      "7"
+    ],
+    "correctIndex": 2,
+    "explanation": "O rúgbi league tem 13 jogadores, e o rúgbi de sete, disputado nas Olimpíadas, tem 7.",
+    "reviewed": true
+  },
+  {
+    "key": "esportes-054",
+    "level": 1,
+    "statement": "Qual foi o placar de Alemanha × Brasil na semifinal da Copa de 2014?",
+    "options": [
+      "5 × 0",
+      "6 × 1",
+      "7 × 1",
+      "4 × 0"
+    ],
+    "correctIndex": 2,
+    "explanation": "A partida foi disputada no Mineirão, em Belo Horizonte, em 8 de julho de 2014.",
+    "reviewed": true
+  },
+  {
+    "key": "esportes-055",
+    "level": 2,
+    "statement": "Qual seleção venceu o Brasil na final da Copa do Mundo de 1998?",
+    "options": [
+      "Itália",
+      "Holanda",
+      "Argentina",
+      "França"
+    ],
+    "correctIndex": 3,
+    "explanation": "A França venceu por 3 a 0 no Stade de France, em Saint-Denis, com dois gols de Zinedine Zidane.",
+    "reviewed": true
+  },
+  {
+    "key": "esportes-056",
+    "level": 3,
+    "statement": "Em quais Jogos Olímpicos o futebol masculino do Brasil ganhou seu primeiro ouro?",
+    "options": [
+      "Atlanta 1996",
+      "Pequim 2008",
+      "Londres 2012",
+      "Rio 2016"
+    ],
+    "correctIndex": 3,
+    "explanation": "O Brasil venceu a Alemanha nos pênaltis, no Maracanã; Neymar converteu a última cobrança.",
+    "reviewed": true
+  },
+  {
+    "key": "esportes-057",
+    "level": 4,
+    "statement": "Quanto dura cada quarto de uma partida da NBA?",
+    "options": [
+      "10 minutos",
+      "12 minutos",
+      "15 minutos",
+      "20 minutos"
+    ],
+    "correctIndex": 1,
+    "explanation": "Na NBA são quatro quartos de 12 minutos; nas regras da FIBA, de 10 minutos.",
+    "reviewed": true
+  },
+  {
+    "key": "esportes-058",
+    "level": 4,
+    "statement": "Em que ano a seleção masculina de vôlei do Brasil ganhou seu primeiro ouro olímpico?",
+    "options": [
+      "1984",
+      "1992",
+      "2004",
+      "2016"
+    ],
+    "correctIndex": 1,
+    "explanation": "O título veio em Barcelona 1992; o Brasil voltou a ser campeão em 2004 e em 2016.",
+    "reviewed": true
+  },
+  {
+    "key": "esportes-059",
+    "level": 4,
+    "statement": "Qual é a altura oficial do aro da cesta de basquete em relação ao chão?",
+    "options": [
+      "2,90 m",
+      "3,05 m",
+      "3,20 m",
+      "2,75 m"
+    ],
+    "correctIndex": 1,
+    "explanation": "A medida, 10 pés, vem do jogo original de James Naismith, em 1891.",
+    "reviewed": true
+  },
+  {
+    "key": "esportes-060",
+    "level": 3,
+    "statement": "Qual brasileiro ganhou o ouro no salto com vara nos Jogos do Rio, em 2016?",
+    "options": [
+      "Thiago Braz",
+      "Augusto Dutra",
+      "Caio Bonfim",
+      "Arthur Zanetti"
+    ],
+    "correctIndex": 0,
+    "explanation": "Thiago Braz saltou 6,03 m e bateu o recorde olímpico da prova.",
     "reviewed": true
   }
 ]

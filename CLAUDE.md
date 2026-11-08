@@ -20,8 +20,10 @@ Quiz web de conhecimentos gerais. **A fonte da verdade é o [PRD.md](PRD.md) (v1
 - Para conferir valores dos arquivos `.env`, use scripts que mostram só o formato; nunca peça para o usuário selecionar ou colar linhas desses arquivos (a seleção no editor chega ao chat).
 - **Fase 6 em andamento** (conteúdo: 15 perguntas por nível por categoria, 600 no total). Fluxo por categoria: rascunho com `reviewed: false` → `db:seed:dev` → revisão do usuário no chat → `reviewed: true` → testes → commit → usuário roda `npm run db:prod:seed`. Evitar temas já presentes em outras categorias (checar com busca nos JSON).
   - **Brasil:** 60 perguntas (15 por nível), lote 021–060 revisado em 08/11/2026; publicado no prod.
-  - **Geografia:** 60 perguntas (15 por nível, foco em geografia mundial; a do Brasil fica na categoria Brasil), lote 021–060 revisado em 08/11/2026.
-  - Faltam: História, Ciências, Cinema e TV, Música, Esportes, Artes e Literatura, Tecnologia, Matemática e Lógica (ainda com 5 por nível; no modo Por Categoria todos recebem as mesmas 20 perguntas).
+  - **Geografia:** 60 perguntas (15 por nível, foco em geografia mundial; a do Brasil fica na categoria Brasil), lote 021–060 revisado em 08/11/2026; publicado no prod.
+  - **Esportes:** 60 perguntas (15 por nível), lote 021–060 revisado em 08/11/2026, com níveis reajustados a pedido do usuário (inclusive 003, 006, 015 e 016). Dica: conferir se a explicação de uma pergunta existente entrega a resposta de uma nova.
+  - Faltam: História, Ciências, Cinema e TV, Música, Artes e Literatura, Tecnologia, Matemática e Lógica (ainda com 5 por nível; no modo Por Categoria todos recebem as mesmas 20 perguntas).
+- **Ideia aprovada para depois da Fase 6 (08/11/2026):** terceiro modo de jogo, **por nível de dificuldade** (além de Temas Variados e Por Categoria). Antes de implementar, decidir com o usuário e registrar no PRD: formato (20 perguntas do mesmo nível?), nota (os pesos 0,3–0,7 não servem; ex.: 0,5 por acerto), ranking próprio por nível ou fora do ranking, e se vale a regra de não repetir tema seguido.
 
 ## Regras de negócio (não negociáveis sem aprovação)
 - 20 perguntas por sessão, 4 alternativas, 1 correta, alternativas embaralhadas.
