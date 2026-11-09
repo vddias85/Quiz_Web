@@ -278,5 +278,565 @@
     "correctIndex": 1,
     "explanation": "O ponteiro dos minutos está no 3 (90°), mas o das horas já andou um quarto do caminho até o 4: 90° + 7,5° = 97,5°. A diferença é 7,5°.",
     "reviewed": true
+  },
+  {
+    "key": "matematica-e-logica-021",
+    "level": 1,
+    "statement": "Quanto é 9 × 6?",
+    "options": [
+      "48",
+      "54",
+      "56",
+      "63"
+    ],
+    "correctIndex": 1,
+    "explanation": "9 × 6 = 54. Dica: 10 × 6 = 60, menos 6 dá 54.",
+    "reviewed": true
+  },
+  {
+    "key": "matematica-e-logica-022",
+    "level": 1,
+    "statement": "Quantos minutos há em 2 horas e meia?",
+    "options": [
+      "120",
+      "130",
+      "150",
+      "250"
+    ],
+    "correctIndex": 2,
+    "explanation": "2 horas = 120 minutos; meia hora = 30 minutos; total: 150.",
+    "reviewed": true
+  },
+  {
+    "key": "matematica-e-logica-023",
+    "level": 1,
+    "statement": "Quantos centímetros tem 1 metro?",
+    "options": [
+      "10",
+      "100",
+      "1.000",
+      "50"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"Centi\" significa centésimo: 1 cm é a centésima parte do metro.",
+    "reviewed": true
+  },
+  {
+    "key": "matematica-e-logica-024",
+    "level": 1,
+    "statement": "Qual é o próximo número da sequência 5, 10, 15, 20, …?",
+    "options": [
+      "22",
+      "25",
+      "30",
+      "40"
+    ],
+    "correctIndex": 1,
+    "explanation": "A sequência soma 5 a cada termo: 20 + 5 = 25.",
+    "reviewed": true
+  },
+  {
+    "key": "matematica-e-logica-025",
+    "level": 1,
+    "statement": "Quanto é um quarto de 80?",
+    "options": [
+      "16",
+      "20",
+      "25",
+      "40"
+    ],
+    "correctIndex": 1,
+    "explanation": "80 ÷ 4 = 20.",
+    "reviewed": true
+  },
+  {
+    "key": "matematica-e-logica-026",
+    "level": 1,
+    "statement": "Quantos dias tem um ano bissexto?",
+    "options": [
+      "360",
+      "364",
+      "365",
+      "366"
+    ],
+    "correctIndex": 3,
+    "explanation": "No ano bissexto, fevereiro ganha o dia 29.",
+    "reviewed": true
+  },
+  {
+    "key": "matematica-e-logica-027",
+    "level": 1,
+    "statement": "Qual algarismo romano representa o número 10?",
+    "options": [
+      "V",
+      "X",
+      "L",
+      "C"
+    ],
+    "correctIndex": 1,
+    "explanation": "Na numeração romana, I vale 1, V vale 5 e X vale 10.",
+    "reviewed": true
+  },
+  {
+    "key": "matematica-e-logica-028",
+    "level": 1,
+    "statement": "Se hoje é segunda-feira, que dia da semana será daqui a 3 dias?",
+    "options": [
+      "Terça-feira",
+      "Quarta-feira",
+      "Quinta-feira",
+      "Sexta-feira"
+    ],
+    "correctIndex": 2,
+    "explanation": "Segunda → terça (1) → quarta (2) → quinta (3).",
+    "reviewed": true
+  },
+  {
+    "key": "matematica-e-logica-029",
+    "level": 1,
+    "statement": "Quanto é 1.000 − 375?",
+    "options": [
+      "625",
+      "635",
+      "675",
+      "725"
+    ],
+    "correctIndex": 0,
+    "explanation": "375 + 625 = 1.000.",
+    "reviewed": true
+  },
+  {
+    "key": "matematica-e-logica-030",
+    "level": 1,
+    "statement": "Quantas faces tem um cubo?",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "correctIndex": 1,
+    "explanation": "O cubo tem 6 faces quadradas, como um dado.",
+    "reviewed": true
+  },
+  {
+    "key": "matematica-e-logica-031",
+    "level": 2,
+    "statement": "Quantas arestas tem um cubo?",
+    "options": [
+      "6",
+      "8",
+      "10",
+      "12"
+    ],
+    "correctIndex": 3,
+    "explanation": "São 4 arestas em cima, 4 embaixo e 4 verticais: 12. O cubo tem 8 vértices.",
+    "reviewed": true
+  },
+  {
+    "key": "matematica-e-logica-032",
+    "level": 2,
+    "statement": "Quanto é 3 elevado ao cubo (3³)?",
+    "options": [
+      "9",
+      "18",
+      "27",
+      "81"
+    ],
+    "correctIndex": 2,
+    "explanation": "3³ = 3 × 3 × 3 = 27.",
+    "reviewed": true
+  },
+  {
+    "key": "matematica-e-logica-033",
+    "level": 2,
+    "statement": "Qual algarismo romano representa o número 50?",
+    "options": [
+      "L",
+      "C",
+      "D",
+      "XL"
+    ],
+    "correctIndex": 0,
+    "explanation": "C vale 100, D vale 500 e XL vale 40 (50 − 10).",
+    "reviewed": true
+  },
+  {
+    "key": "matematica-e-logica-034",
+    "level": 2,
+    "statement": "Qual é o mínimo múltiplo comum (MMC) de 4 e 6?",
+    "options": [
+      "2",
+      "10",
+      "12",
+      "24"
+    ],
+    "correctIndex": 2,
+    "explanation": "Múltiplos de 4: 4, 8, 12…; de 6: 6, 12…; o primeiro em comum é 12.",
+    "reviewed": true
+  },
+  {
+    "key": "matematica-e-logica-035",
+    "level": 2,
+    "statement": "Quanto é 0,5 + 0,25?",
+    "options": [
+      "0,30",
+      "0,525",
+      "0,75",
+      "0,8"
+    ],
+    "correctIndex": 2,
+    "explanation": "Meio mais um quarto dá três quartos: 0,75.",
+    "reviewed": true
+  },
+  {
+    "key": "matematica-e-logica-036",
+    "level": 2,
+    "statement": "Se 4 cadernos custam R$ 18,00, quanto custam 6 cadernos iguais?",
+    "options": [
+      "R$ 24,00",
+      "R$ 27,00",
+      "R$ 30,00",
+      "R$ 36,00"
+    ],
+    "correctIndex": 1,
+    "explanation": "Cada caderno custa 18 ÷ 4 = R$ 4,50; 6 × 4,50 = R$ 27,00.",
+    "reviewed": true
+  },
+  {
+    "key": "matematica-e-logica-037",
+    "level": 2,
+    "statement": "Qual é a área de um retângulo de 8 cm por 5 cm?",
+    "options": [
+      "13 cm²",
+      "26 cm²",
+      "40 cm²",
+      "45 cm²"
+    ],
+    "correctIndex": 2,
+    "explanation": "Área = base × altura = 8 × 5 = 40 cm². O perímetro seria 26 cm.",
+    "reviewed": true
+  },
+  {
+    "key": "matematica-e-logica-038",
+    "level": 2,
+    "statement": "Ana é mais alta que Bia, e Bia é mais alta que Carla. Quem é a mais baixa?",
+    "options": [
+      "Ana",
+      "Bia",
+      "Carla",
+      "Não dá para saber"
+    ],
+    "correctIndex": 2,
+    "explanation": "A ordem, da mais alta para a mais baixa, é Ana, Bia e Carla.",
+    "reviewed": true
+  },
+  {
+    "key": "matematica-e-logica-039",
+    "level": 2,
+    "statement": "Qual é o próximo número da sequência 1, 4, 9, 16, 25, …?",
+    "options": [
+      "30",
+      "35",
+      "36",
+      "49"
+    ],
+    "correctIndex": 2,
+    "explanation": "São os quadrados perfeitos: 1², 2², 3², 4², 5²… O próximo é 6² = 36.",
+    "reviewed": true
+  },
+  {
+    "key": "matematica-e-logica-040",
+    "level": 2,
+    "statement": "Um salário de R$ 2.000,00 recebe aumento de 10%. Qual é o novo valor?",
+    "options": [
+      "R$ 2.010,00",
+      "R$ 2.020,00",
+      "R$ 2.100,00",
+      "R$ 2.200,00"
+    ],
+    "correctIndex": 3,
+    "explanation": "10% de 2.000 é 200; 2.000 + 200 = 2.200.",
+    "reviewed": true
+  },
+  {
+    "key": "matematica-e-logica-041",
+    "level": 3,
+    "statement": "Qual número, somado ao seu dobro, dá 36?",
+    "options": [
+      "9",
+      "12",
+      "18",
+      "24"
+    ],
+    "correctIndex": 1,
+    "explanation": "x + 2x = 36, então 3x = 36 e x = 12. Conferindo: 12 + 24 = 36.",
+    "reviewed": true
+  },
+  {
+    "key": "matematica-e-logica-042",
+    "level": 3,
+    "statement": "Um carro faz 12 km por litro. Quantos litros gasta para percorrer 300 km?",
+    "options": [
+      "24",
+      "25",
+      "30",
+      "36"
+    ],
+    "correctIndex": 1,
+    "explanation": "300 ÷ 12 = 25 litros.",
+    "reviewed": true
+  },
+  {
+    "key": "matematica-e-logica-043",
+    "level": 3,
+    "statement": "Quanto é (−3) × (−4)?",
+    "options": [
+      "−12",
+      "−7",
+      "7",
+      "12"
+    ],
+    "correctIndex": 3,
+    "explanation": "Menos vezes menos dá mais: (−3) × (−4) = 12.",
+    "reviewed": true
+  },
+  {
+    "key": "matematica-e-logica-044",
+    "level": 3,
+    "statement": "Se 2x − 7 = 11, quanto vale x?",
+    "options": [
+      "2",
+      "8",
+      "9",
+      "18"
+    ],
+    "correctIndex": 2,
+    "explanation": "2x = 11 + 7 = 18, então x = 9.",
+    "reviewed": true
+  },
+  {
+    "key": "matematica-e-logica-045",
+    "level": 3,
+    "statement": "Às 9h em ponto, qual é o menor ângulo entre os ponteiros do relógio?",
+    "options": [
+      "45°",
+      "90°",
+      "180°",
+      "270°"
+    ],
+    "correctIndex": 1,
+    "explanation": "Cada número do relógio vale 30°; do 9 ao 12 são 3 números: 3 × 30° = 90°.",
+    "reviewed": true
+  },
+  {
+    "key": "matematica-e-logica-046",
+    "level": 3,
+    "statement": "Qual é a média aritmética de 6, 8 e 13?",
+    "options": [
+      "8",
+      "9",
+      "9,5",
+      "10"
+    ],
+    "correctIndex": 1,
+    "explanation": "(6 + 8 + 13) ÷ 3 = 27 ÷ 3 = 9.",
+    "reviewed": true
+  },
+  {
+    "key": "matematica-e-logica-047",
+    "level": 3,
+    "statement": "Numa sala com 30 alunos, 40% são meninos. Quantas são as meninas?",
+    "options": [
+      "12",
+      "16",
+      "18",
+      "20"
+    ],
+    "correctIndex": 2,
+    "explanation": "40% de 30 são 12 meninos; 30 − 12 = 18 meninas (60%).",
+    "reviewed": true
+  },
+  {
+    "key": "matematica-e-logica-048",
+    "level": 3,
+    "statement": "Qual é o perímetro de um quadrado com área de 49 m²?",
+    "options": [
+      "14 m",
+      "21 m",
+      "28 m",
+      "49 m"
+    ],
+    "correctIndex": 2,
+    "explanation": "O lado é a raiz de 49, ou seja, 7 m; o perímetro é 4 × 7 = 28 m.",
+    "reviewed": true
+  },
+  {
+    "key": "matematica-e-logica-049",
+    "level": 3,
+    "statement": "Quantos segundos tem um dia?",
+    "options": [
+      "3.600",
+      "8.640",
+      "86.400",
+      "864.000"
+    ],
+    "correctIndex": 2,
+    "explanation": "24 horas × 60 minutos × 60 segundos = 86.400.",
+    "reviewed": true
+  },
+  {
+    "key": "matematica-e-logica-050",
+    "level": 3,
+    "statement": "Se todo A é B e nenhum B é C, qual conclusão é certa?",
+    "options": [
+      "Nenhum A é C",
+      "Todo C é A",
+      "Algum A é C",
+      "Todo B é A"
+    ],
+    "correctIndex": 0,
+    "explanation": "Todos os A estão dentro de B, e B não tem nada em comum com C; logo, nenhum A é C.",
+    "reviewed": true
+  },
+  {
+    "key": "matematica-e-logica-051",
+    "level": 4,
+    "statement": "Qual é o próximo número da sequência 1, 3, 7, 15, 31, …?",
+    "options": [
+      "47",
+      "62",
+      "63",
+      "64"
+    ],
+    "correctIndex": 2,
+    "explanation": "Cada termo é o dobro do anterior mais 1: 31 × 2 + 1 = 63.",
+    "reviewed": true
+  },
+  {
+    "key": "matematica-e-logica-052",
+    "level": 4,
+    "statement": "Um time tem 5 jogadores. Quantas duplas diferentes podem ser formadas?",
+    "options": [
+      "5",
+      "10",
+      "20",
+      "25"
+    ],
+    "correctIndex": 1,
+    "explanation": "Cada jogador forma par com 4 outros (5 × 4 = 20), mas cada dupla foi contada duas vezes: 20 ÷ 2 = 10.",
+    "reviewed": true
+  },
+  {
+    "key": "matematica-e-logica-053",
+    "level": 4,
+    "statement": "Qual é a probabilidade de tirar \"cara\" duas vezes seguidas numa moeda honesta?",
+    "options": [
+      "1/2",
+      "1/3",
+      "1/4",
+      "1/8"
+    ],
+    "correctIndex": 2,
+    "explanation": "1/2 × 1/2 = 1/4. Os resultados possíveis são: cara-cara, cara-coroa, coroa-cara e coroa-coroa.",
+    "reviewed": true
+  },
+  {
+    "key": "matematica-e-logica-054",
+    "level": 4,
+    "statement": "Quanto é o logaritmo de 1.000 na base 10?",
+    "options": [
+      "3",
+      "10",
+      "30",
+      "100"
+    ],
+    "correctIndex": 0,
+    "explanation": "10³ = 1.000, então log₁₀ 1.000 = 3.",
+    "reviewed": true
+  },
+  {
+    "key": "matematica-e-logica-055",
+    "level": 4,
+    "statement": "R$ 1.000,00 rendem 10% ao ano, com juros compostos. Quanto haverá após 2 anos?",
+    "options": [
+      "R$ 1.100,00",
+      "R$ 1.200,00",
+      "R$ 1.210,00",
+      "R$ 1.221,00"
+    ],
+    "correctIndex": 2,
+    "explanation": "1º ano: 1.000 + 100 = 1.100; 2º ano: 1.100 + 110 = 1.210. Com juros simples seriam R$ 1.200,00.",
+    "reviewed": true
+  },
+  {
+    "key": "matematica-e-logica-056",
+    "level": 4,
+    "statement": "Num triângulo retângulo com catetos de 6 e 8, quanto mede a hipotenusa?",
+    "options": [
+      "9,5",
+      "10",
+      "12",
+      "14"
+    ],
+    "correctIndex": 1,
+    "explanation": "Pelo Teorema de Pitágoras: 6² + 8² = 36 + 64 = 100, e a raiz de 100 é 10.",
+    "reviewed": true
+  },
+  {
+    "key": "matematica-e-logica-057",
+    "level": 4,
+    "statement": "Quanto vale a soma dos ângulos internos de um hexágono?",
+    "options": [
+      "360°",
+      "540°",
+      "720°",
+      "1.080°"
+    ],
+    "correctIndex": 2,
+    "explanation": "A soma é (n − 2) × 180°; para n = 6: 4 × 180° = 720°.",
+    "reviewed": true
+  },
+  {
+    "key": "matematica-e-logica-058",
+    "level": 4,
+    "statement": "Uma torneira enche um tanque em 3 horas, e outra, em 6 horas. Juntas, em quanto tempo enchem o tanque?",
+    "options": [
+      "1,5 hora",
+      "2 horas",
+      "4,5 horas",
+      "9 horas"
+    ],
+    "correctIndex": 1,
+    "explanation": "Por hora, uma enche 1/3 e a outra 1/6 do tanque: juntas, 1/3 + 1/6 = 1/2 por hora. Logo, 2 horas.",
+    "reviewed": true
+  },
+  {
+    "key": "matematica-e-logica-059",
+    "level": 4,
+    "statement": "Rui, Léo e Davi têm, cada um, um animal: gato, cão ou peixe. Rui não tem o gato nem o cão; Léo não tem o gato. Quem tem o gato?",
+    "options": [
+      "Rui",
+      "Léo",
+      "Davi",
+      "Não dá para saber"
+    ],
+    "correctIndex": 2,
+    "explanation": "Rui tem o peixe; como Léo não tem o gato, fica com o cão; sobra o gato para Davi.",
+    "reviewed": true
+  },
+  {
+    "key": "matematica-e-logica-060",
+    "level": 4,
+    "statement": "Quantos zeros tem o resultado de 25 × 40 × 50?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correctIndex": 1,
+    "explanation": "25 × 40 = 1.000; 1.000 × 50 = 50.000, com 4 zeros.",
+    "reviewed": true
   }
 ]
