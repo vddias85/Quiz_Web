@@ -278,5 +278,565 @@
     "correctIndex": 1,
     "explanation": "John Williams também compôs as trilhas de Tubarão, E.T. e Jurassic Park.",
     "reviewed": true
+  },
+  {
+    "key": "cinema-e-tv-021",
+    "level": 1,
+    "statement": "Qual é o nome do camundongo mais famoso da Disney?",
+    "options": [
+      "Jerry",
+      "Mickey Mouse",
+      "Remy",
+      "Stuart Little"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mickey estreou em 1928, no curta \"O Vapor Willie\" (Steamboat Willie).",
+    "reviewed": true
+  },
+  {
+    "key": "cinema-e-tv-022",
+    "level": 1,
+    "statement": "Em \"O Rei Leão\", qual é o nome do leãozinho protagonista?",
+    "options": [
+      "Mufasa",
+      "Scar",
+      "Simba",
+      "Nala"
+    ],
+    "correctIndex": 2,
+    "explanation": "Simba é filho do rei Mufasa; Scar é o tio vilão, e Nala, sua amiga de infância.",
+    "reviewed": true
+  },
+  {
+    "key": "cinema-e-tv-023",
+    "level": 1,
+    "statement": "Qual super-herói da Marvel solta teias e é chamado de \"amigo da vizinhança\"?",
+    "options": [
+      "Homem de Ferro",
+      "Capitão América",
+      "Hulk",
+      "Homem-Aranha"
+    ],
+    "correctIndex": 3,
+    "explanation": "Peter Parker ganhou seus poderes após ser picado por uma aranha radioativa.",
+    "reviewed": true
+  },
+  {
+    "key": "cinema-e-tv-024",
+    "level": 1,
+    "statement": "Qual é o nome do pirata interpretado por Johnny Depp em \"Piratas do Caribe\"?",
+    "options": [
+      "Jack Sparrow",
+      "Will Turner",
+      "Barbossa",
+      "Davy Jones"
+    ],
+    "correctIndex": 0,
+    "explanation": "O primeiro filme da série, \"A Maldição do Pérola Negra\", é de 2003.",
+    "reviewed": true
+  },
+  {
+    "key": "cinema-e-tv-025",
+    "level": 1,
+    "statement": "Qual programa infantil da TV Globo tornou Xuxa famosa no Brasil, nos anos 1980?",
+    "options": [
+      "TV Colosso",
+      "Xou da Xuxa",
+      "Castelo Rá-Tim-Bum",
+      "Bom Dia & Cia"
+    ],
+    "correctIndex": 1,
+    "explanation": "O Xou da Xuxa ficou no ar de 1986 a 1992; o Castelo Rá-Tim-Bum era da TV Cultura.",
+    "reviewed": true
+  },
+  {
+    "key": "cinema-e-tv-026",
+    "level": 1,
+    "statement": "Qual peixe-palhaço se perde do pai na animação da Pixar de 2003?",
+    "options": [
+      "Dory",
+      "Marlin",
+      "Nemo",
+      "Gill"
+    ],
+    "correctIndex": 2,
+    "explanation": "Marlin, o pai, atravessa o oceano com a esquecida Dory para encontrar Nemo.",
+    "reviewed": true
+  },
+  {
+    "key": "cinema-e-tv-027",
+    "level": 1,
+    "statement": "Qual personagem do seriado \"Chaves\" costuma se esconder dentro de um barril?",
+    "options": [
+      "Quico",
+      "Seu Madruga",
+      "Chiquinha",
+      "Chaves"
+    ],
+    "correctIndex": 3,
+    "explanation": "O seriado mexicano, criado por Roberto Gómez Bolaños, é exibido no Brasil pelo SBT desde 1984.",
+    "reviewed": true
+  },
+  {
+    "key": "cinema-e-tv-028",
+    "level": 1,
+    "statement": "Em qual saga de filmes aparece o vilão Darth Vader?",
+    "options": [
+      "Star Wars",
+      "Star Trek",
+      "Matrix",
+      "Duna"
+    ],
+    "correctIndex": 0,
+    "explanation": "Darth Vader é o pai de Luke Skywalker, revelação famosa de \"O Império Contra-Ataca\" (1980).",
+    "reviewed": true
+  },
+  {
+    "key": "cinema-e-tv-029",
+    "level": 1,
+    "statement": "Qual personagem de \"Os Simpsons\" costuma exclamar \"D'oh!\"?",
+    "options": [
+      "Bart",
+      "Homer",
+      "Marge",
+      "Moe"
+    ],
+    "correctIndex": 1,
+    "explanation": "A expressão de Homer Simpson chegou a entrar no dicionário Oxford da língua inglesa.",
+    "reviewed": true
+  },
+  {
+    "key": "cinema-e-tv-030",
+    "level": 2,
+    "statement": "Qual animação da Pixar mostra emoções como Alegria e Tristeza dentro da cabeça de uma menina?",
+    "options": [
+      "Up",
+      "Soul",
+      "Divertida Mente",
+      "Viva"
+    ],
+    "correctIndex": 2,
+    "explanation": "Divertida Mente (2015) venceu o Oscar de Melhor Animação.",
+    "reviewed": true
+  },
+  {
+    "key": "cinema-e-tv-031",
+    "level": 3,
+    "statement": "Qual ator interpretou o Homem de Ferro nos filmes da Marvel?",
+    "options": [
+      "Chris Evans",
+      "Chris Hemsworth",
+      "Mark Ruffalo",
+      "Robert Downey Jr."
+    ],
+    "correctIndex": 3,
+    "explanation": "Downey Jr. viveu Tony Stark de \"Homem de Ferro\" (2008) até \"Vingadores: Ultimato\" (2019).",
+    "reviewed": true
+  },
+  {
+    "key": "cinema-e-tv-032",
+    "level": 1,
+    "statement": "Em qual emissora é exibido o \"Jornal Nacional\"?",
+    "options": [
+      "TV Globo",
+      "SBT",
+      "Record",
+      "Band"
+    ],
+    "correctIndex": 0,
+    "explanation": "O Jornal Nacional estreou em 1969 e foi o primeiro telejornal transmitido em rede nacional no Brasil.",
+    "reviewed": true
+  },
+  {
+    "key": "cinema-e-tv-033",
+    "level": 2,
+    "statement": "Qual vilão do Batman é conhecido como o \"Palhaço do Crime\"?",
+    "options": [
+      "Pinguim",
+      "Charada",
+      "Coringa",
+      "Duas-Caras"
+    ],
+    "correctIndex": 2,
+    "explanation": "O Coringa é o principal inimigo do Batman nos quadrinhos e no cinema.",
+    "reviewed": true
+  },
+  {
+    "key": "cinema-e-tv-034",
+    "level": 2,
+    "statement": "Em qual filme de 1999 o hacker Neo escolhe a pílula vermelha?",
+    "options": [
+      "Matrix",
+      "A Origem",
+      "Blade Runner",
+      "O Exterminador do Futuro"
+    ],
+    "correctIndex": 0,
+    "explanation": "Matrix, das irmãs Wachowski, popularizou o efeito \"bullet time\" de câmera lenta.",
+    "reviewed": true
+  },
+  {
+    "key": "cinema-e-tv-035",
+    "level": 2,
+    "statement": "Qual série acompanha Walter White, um professor de química que passa a fabricar drogas?",
+    "options": [
+      "Ozark",
+      "Narcos",
+      "Breaking Bad",
+      "Better Call Saul"
+    ],
+    "correctIndex": 2,
+    "explanation": "Breaking Bad foi exibida de 2008 a 2013; Better Call Saul é sua série derivada.",
+    "reviewed": true
+  },
+  {
+    "key": "cinema-e-tv-036",
+    "level": 2,
+    "statement": "Qual atriz interpretou Hermione Granger nos filmes de Harry Potter?",
+    "options": [
+      "Emma Watson",
+      "Emma Stone",
+      "Keira Knightley",
+      "Natalie Portman"
+    ],
+    "correctIndex": 0,
+    "explanation": "Emma Watson tinha 9 anos quando foi escalada para o primeiro filme.",
+    "reviewed": true
+  },
+  {
+    "key": "cinema-e-tv-037",
+    "level": 2,
+    "statement": "Qual é o nome do robozinho da Pixar que limpa a Terra abandonada, no filme de 2008?",
+    "options": [
+      "EVE",
+      "Baymax",
+      "WALL-E",
+      "R2-D2"
+    ],
+    "correctIndex": 2,
+    "explanation": "WALL-E se apaixona pela robô EVE e venceu o Oscar de Melhor Animação.",
+    "reviewed": true
+  },
+  {
+    "key": "cinema-e-tv-038",
+    "level": 2,
+    "statement": "Qual série espanhola mostra um assalto à Casa da Moeda, com ladrões usando máscaras de Dalí?",
+    "options": [
+      "Elite",
+      "La Casa de Papel",
+      "Dark",
+      "Narcos"
+    ],
+    "correctIndex": 1,
+    "explanation": "Os assaltantes usam nomes de cidades, como Tóquio, Berlim e Rio.",
+    "reviewed": true
+  },
+  {
+    "key": "cinema-e-tv-039",
+    "level": 2,
+    "statement": "Em \"Friends\", como se chama o café onde os amigos se encontram?",
+    "options": [
+      "Monk's",
+      "MacLaren's",
+      "Central Perk",
+      "Luke's"
+    ],
+    "correctIndex": 2,
+    "explanation": "Friends foi exibida de 1994 a 2004, em 10 temporadas.",
+    "reviewed": true
+  },
+  {
+    "key": "cinema-e-tv-040",
+    "level": 2,
+    "statement": "Como se chama o comandante do BOPE protagonista do filme \"Tropa de Elite\" (2007)?",
+    "options": [
+      "Capitão Nascimento",
+      "Coronel Fábio",
+      "Aspirante Matias",
+      "Baiano"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tropa de Elite, de José Padilha, venceu o Urso de Ouro no Festival de Berlim em 2008.",
+    "reviewed": true
+  },
+  {
+    "key": "cinema-e-tv-041",
+    "level": 3,
+    "statement": "Qual diretor fez \"A Origem\" (2010) e \"Oppenheimer\" (2023)?",
+    "options": [
+      "Denis Villeneuve",
+      "Christopher Nolan",
+      "David Fincher",
+      "Ridley Scott"
+    ],
+    "correctIndex": 1,
+    "explanation": "Oppenheimer deu a Nolan os Oscars de Melhor Filme e Melhor Direção.",
+    "reviewed": true
+  },
+  {
+    "key": "cinema-e-tv-042",
+    "level": 3,
+    "statement": "Qual estúdio japonês produziu \"Meu Amigo Totoro\" e \"A Viagem de Chihiro\"?",
+    "options": [
+      "Toei Animation",
+      "Studio Ghibli",
+      "Pixar",
+      "DreamWorks"
+    ],
+    "correctIndex": 1,
+    "explanation": "Fundado por Hayao Miyazaki e Isao Takahata, o estúdio venceu o Oscar de Melhor Animação com Chihiro.",
+    "reviewed": true
+  },
+  {
+    "key": "cinema-e-tv-043",
+    "level": 3,
+    "statement": "Qual ator brasileiro interpretou Pablo Escobar na série \"Narcos\"?",
+    "options": [
+      "Rodrigo Santoro",
+      "Selton Mello",
+      "Wagner Moura",
+      "Lázaro Ramos"
+    ],
+    "correctIndex": 2,
+    "explanation": "Wagner Moura aprendeu espanhol para o papel e foi indicado ao Globo de Ouro.",
+    "reviewed": true
+  },
+  {
+    "key": "cinema-e-tv-044",
+    "level": 3,
+    "statement": "Qual filme de suspense de Hitchcock, de 1960, tem a famosa cena do chuveiro?",
+    "options": [
+      "Os Pássaros",
+      "Psicose",
+      "Um Corpo que Cai",
+      "Janela Indiscreta"
+    ],
+    "correctIndex": 1,
+    "explanation": "A cena levou cerca de uma semana para ser filmada, com dezenas de ângulos de câmera.",
+    "reviewed": true
+  },
+  {
+    "key": "cinema-e-tv-045",
+    "level": 2,
+    "statement": "Em qual cidade fictícia vive a família Simpson?",
+    "options": [
+      "Quahog",
+      "Shelbyville",
+      "South Park",
+      "Springfield"
+    ],
+    "correctIndex": 3,
+    "explanation": "O criador, Matt Groening, escolheu o nome porque existem várias Springfields nos Estados Unidos.",
+    "reviewed": true
+  },
+  {
+    "key": "cinema-e-tv-046",
+    "level": 3,
+    "statement": "Qual novela da Globo parou o Brasil com a pergunta \"Quem matou Odete Roitman?\"?",
+    "options": [
+      "Roque Santeiro",
+      "Avenida Brasil",
+      "Vale Tudo",
+      "Tieta"
+    ],
+    "correctIndex": 2,
+    "explanation": "Vale Tudo foi exibida em 1988 e ganhou uma nova versão em 2025.",
+    "reviewed": true
+  },
+  {
+    "key": "cinema-e-tv-047",
+    "level": 3,
+    "statement": "Qual ator ganhou o Oscar por interpretar o Coringa no filme de 2019?",
+    "options": [
+      "Heath Ledger",
+      "Joaquin Phoenix",
+      "Jared Leto",
+      "Jack Nicholson"
+    ],
+    "correctIndex": 1,
+    "explanation": "Heath Ledger também ganhou um Oscar como Coringa, em \"O Cavaleiro das Trevas\" (2008).",
+    "reviewed": true
+  },
+  {
+    "key": "cinema-e-tv-048",
+    "level": 3,
+    "statement": "Qual filme de 1994 tem a frase \"A vida é como uma caixa de chocolates\"?",
+    "options": [
+      "Um Sonho de Liberdade",
+      "Forrest Gump",
+      "O Rei Leão",
+      "Pulp Fiction"
+    ],
+    "correctIndex": 1,
+    "explanation": "Forrest Gump venceu 6 Oscars, incluindo Melhor Filme e Melhor Ator para Tom Hanks.",
+    "reviewed": true
+  },
+  {
+    "key": "cinema-e-tv-049",
+    "level": 3,
+    "statement": "Qual série, estreada em 2016, conta o reinado de Elizabeth II?",
+    "options": [
+      "Downton Abbey",
+      "Bridgerton",
+      "The Crown",
+      "Victoria"
+    ],
+    "correctIndex": 2,
+    "explanation": "The Crown teve seis temporadas, com atrizes diferentes vivendo a rainha em cada fase da vida.",
+    "reviewed": true
+  },
+  {
+    "key": "cinema-e-tv-050",
+    "level": 3,
+    "statement": "Qual filme de Francis Ford Coppola, de 1972, conta a história da família Corleone?",
+    "options": [
+      "O Poderoso Chefão",
+      "Os Bons Companheiros",
+      "Scarface",
+      "Era uma Vez na América"
+    ],
+    "correctIndex": 0,
+    "explanation": "Marlon Brando ganhou o Oscar como Don Vito Corleone, mas recusou a estatueta.",
+    "reviewed": true
+  },
+  {
+    "key": "cinema-e-tv-051",
+    "level": 4,
+    "statement": "Qual animação brasileira de Alê Abreu foi indicada ao Oscar em 2016?",
+    "options": [
+      "O Menino e o Mundo",
+      "Uma História de Amor e Fúria",
+      "Bob Cuspe",
+      "Até que a Sbórnia nos Separe"
+    ],
+    "correctIndex": 0,
+    "explanation": "Foi a primeira animação brasileira indicada ao Oscar de Melhor Animação.",
+    "reviewed": true
+  },
+  {
+    "key": "cinema-e-tv-052",
+    "level": 4,
+    "statement": "Qual foi o primeiro longa-metragem com falas sincronizadas, lançado em 1927?",
+    "options": [
+      "Metrópolis",
+      "Asas",
+      "O Cantor de Jazz",
+      "Luzes da Cidade"
+    ],
+    "correctIndex": 2,
+    "explanation": "O Cantor de Jazz marcou o início do cinema falado e o declínio do cinema mudo.",
+    "reviewed": true
+  },
+  {
+    "key": "cinema-e-tv-053",
+    "level": 4,
+    "statement": "Qual líder do Cinema Novo dirigiu \"Deus e o Diabo na Terra do Sol\" (1964)?",
+    "options": [
+      "Nelson Pereira dos Santos",
+      "Cacá Diegues",
+      "Glauber Rocha",
+      "Ruy Guerra"
+    ],
+    "correctIndex": 2,
+    "explanation": "Glauber resumiu o Cinema Novo na frase \"uma câmera na mão e uma ideia na cabeça\".",
+    "reviewed": true
+  },
+  {
+    "key": "cinema-e-tv-054",
+    "level": 4,
+    "statement": "Qual ator tem o recorde de três Oscars de Melhor Ator?",
+    "options": [
+      "Jack Nicholson",
+      "Marlon Brando",
+      "Tom Hanks",
+      "Daniel Day-Lewis"
+    ],
+    "correctIndex": 3,
+    "explanation": "Day-Lewis venceu por \"Meu Pé Esquerdo\", \"Sangue Negro\" e \"Lincoln\".",
+    "reviewed": true
+  },
+  {
+    "key": "cinema-e-tv-055",
+    "level": 4,
+    "statement": "Quem dirigiu \"2001: Uma Odisseia no Espaço\" (1968)?",
+    "options": [
+      "George Lucas",
+      "Stanley Kubrick",
+      "Ridley Scott",
+      "Andrei Tarkovski"
+    ],
+    "correctIndex": 1,
+    "explanation": "O filme apresentou o computador HAL 9000 e foi escrito com Arthur C. Clarke.",
+    "reviewed": true
+  },
+  {
+    "key": "cinema-e-tv-056",
+    "level": 4,
+    "statement": "Qual atriz tem o recorde de quatro Oscars de Melhor Atriz?",
+    "options": [
+      "Meryl Streep",
+      "Katharine Hepburn",
+      "Frances McDormand",
+      "Ingrid Bergman"
+    ],
+    "correctIndex": 1,
+    "explanation": "Katharine Hepburn venceu em 1934, 1968, 1969 e 1982.",
+    "reviewed": true
+  },
+  {
+    "key": "cinema-e-tv-057",
+    "level": 4,
+    "statement": "Qual foi a primeira telenovela diária da TV brasileira, exibida em 1963?",
+    "options": [
+      "O Direito de Nascer",
+      "2-5499 Ocupado",
+      "Beto Rockfeller",
+      "Irmãos Coragem"
+    ],
+    "correctIndex": 1,
+    "explanation": "Foi exibida pela TV Excelsior, com Tarcísio Meira e Glória Menezes.",
+    "reviewed": true
+  },
+  {
+    "key": "cinema-e-tv-058",
+    "level": 4,
+    "statement": "Em que ano foi inaugurada a televisão no Brasil, com a TV Tupi?",
+    "options": [
+      "1939",
+      "1950",
+      "1956",
+      "1962"
+    ],
+    "correctIndex": 1,
+    "explanation": "A TV Tupi, de Assis Chateaubriand, entrou no ar em São Paulo em 18 de setembro de 1950.",
+    "reviewed": true
+  },
+  {
+    "key": "cinema-e-tv-059",
+    "level": 4,
+    "statement": "Qual filme de Federico Fellini, de 1960, tem a famosa cena na Fontana di Trevi?",
+    "options": [
+      "8½",
+      "Amarcord",
+      "A Doce Vida",
+      "Roma"
+    ],
+    "correctIndex": 2,
+    "explanation": "A cena de Anita Ekberg na fonte, em Roma, virou um dos símbolos do cinema italiano.",
+    "reviewed": true
+  },
+  {
+    "key": "cinema-e-tv-060",
+    "level": 4,
+    "statement": "Qual diretor japonês dirigiu \"Os Sete Samurais\" (1954)?",
+    "options": [
+      "Hayao Miyazaki",
+      "Yasujiro Ozu",
+      "Takeshi Kitano",
+      "Akira Kurosawa"
+    ],
+    "correctIndex": 3,
+    "explanation": "O filme inspirou o faroeste americano \"Sete Homens e um Destino\" (1960).",
+    "reviewed": true
   }
 ]
