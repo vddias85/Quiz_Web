@@ -278,5 +278,565 @@
     "correctIndex": 1,
     "explanation": "O apelido teria sido dado por Vinicius de Moraes, por causa do temperamento forte de Elis.",
     "reviewed": true
+  },
+  {
+    "key": "musica-021",
+    "level": 1,
+    "statement": "Qual instrumento de cordas é tocado com arco e apoiado no ombro?",
+    "options": [
+      "Violoncelo",
+      "Violino",
+      "Harpa",
+      "Trompete"
+    ],
+    "correctIndex": 1,
+    "explanation": "O violoncelo também usa arco, mas é tocado apoiado no chão, entre as pernas.",
+    "reviewed": true
+  },
+  {
+    "key": "musica-022",
+    "level": 1,
+    "statement": "Quantas notas tem a escala musical tradicional (dó, ré, mi, fá, sol, lá, si)?",
+    "options": [
+      "5",
+      "7",
+      "8",
+      "12"
+    ],
+    "correctIndex": 1,
+    "explanation": "São sete notas; contando os sustenidos e bemóis, a escala cromática tem 12 sons.",
+    "reviewed": true
+  },
+  {
+    "key": "musica-023",
+    "level": 1,
+    "statement": "Qual cantora americana é conhecida como a \"Rainha do Pop\"?",
+    "options": [
+      "Madonna",
+      "Beyoncé",
+      "Lady Gaga",
+      "Britney Spears"
+    ],
+    "correctIndex": 0,
+    "explanation": "Madonna é uma das artistas que mais venderam discos na história.",
+    "reviewed": true
+  },
+  {
+    "key": "musica-024",
+    "level": 1,
+    "statement": "Qual instrumento reúne tambores, pratos e bumbo e é tocado com baquetas?",
+    "options": [
+      "Piano",
+      "Bateria",
+      "Saxofone",
+      "Harpa"
+    ],
+    "correctIndex": 1,
+    "explanation": "A bateria marca o ritmo na maioria das bandas de rock e pop.",
+    "reviewed": true
+  },
+  {
+    "key": "musica-025",
+    "level": 1,
+    "statement": "Qual dupla sertaneja fez sucesso com \"É o Amor\", em 1991?",
+    "options": [
+      "Chitãozinho & Xororó",
+      "Leandro & Leonardo",
+      "Zezé Di Camargo & Luciano",
+      "Bruno & Marrone"
+    ],
+    "correctIndex": 2,
+    "explanation": "A música, composta por Zezé, virou um dos maiores clássicos do sertanejo.",
+    "reviewed": true
+  },
+  {
+    "key": "musica-026",
+    "level": 1,
+    "statement": "Qual cantor jamaicano é o maior nome do reggae?",
+    "options": [
+      "Jimmy Cliff",
+      "Peter Tosh",
+      "Shaggy",
+      "Bob Marley"
+    ],
+    "correctIndex": 3,
+    "explanation": "Bob Marley, com a banda The Wailers, levou o reggae ao mundo; morreu em 1981.",
+    "reviewed": true
+  },
+  {
+    "key": "musica-027",
+    "level": 1,
+    "statement": "Qual pequeno instrumento de 4 cordas é típico do samba e do pagode?",
+    "options": [
+      "Cavaquinho",
+      "Bandolim",
+      "Viola caipira",
+      "Banjo"
+    ],
+    "correctIndex": 0,
+    "explanation": "O cavaquinho veio de Portugal e se tornou essencial no samba e no choro.",
+    "reviewed": true
+  },
+  {
+    "key": "musica-028",
+    "level": 1,
+    "statement": "Qual cantora brasileira fez sucesso com \"Show das Poderosas\" e \"Envolver\"?",
+    "options": [
+      "Ludmilla",
+      "Anitta",
+      "Pabllo Vittar",
+      "IZA"
+    ],
+    "correctIndex": 1,
+    "explanation": "Com \"Envolver\", Anitta chegou ao 1º lugar global do Spotify em 2022.",
+    "reviewed": true
+  },
+  {
+    "key": "musica-029",
+    "level": 1,
+    "statement": "Qual cantor brasileiro lançou \"Ai Se Eu Te Pego\", sucesso mundial em 2011?",
+    "options": [
+      "Gusttavo Lima",
+      "Luan Santana",
+      "Michel Teló",
+      "Lucas Lucco"
+    ],
+    "correctIndex": 2,
+    "explanation": "A música ficou em 1º lugar nas paradas de vários países da Europa e da América Latina.",
+    "reviewed": true
+  },
+  {
+    "key": "musica-030",
+    "level": 1,
+    "statement": "Qual festival de música começou no Rio de Janeiro em 1985?",
+    "options": [
+      "Lollapalooza",
+      "Rock in Rio",
+      "Tomorrowland",
+      "Coachella"
+    ],
+    "correctIndex": 1,
+    "explanation": "O Rock in Rio também já teve edições em Lisboa, Madri e Las Vegas.",
+    "reviewed": true
+  },
+  {
+    "key": "musica-031",
+    "level": 2,
+    "statement": "Qual cantor e sanfoneiro pernambucano é chamado de \"Rei do Baião\"?",
+    "options": [
+      "Dominguinhos",
+      "Jackson do Pandeiro",
+      "Luiz Gonzaga",
+      "Alceu Valença"
+    ],
+    "correctIndex": 2,
+    "explanation": "Luiz Gonzaga eternizou o sertão nordestino em músicas como \"Asa Branca\" (1947).",
+    "reviewed": true
+  },
+  {
+    "key": "musica-032",
+    "level": 2,
+    "statement": "Qual banda irlandesa tem Bono como vocalista?",
+    "options": [
+      "U2",
+      "Coldplay",
+      "Oasis",
+      "The Cranberries"
+    ],
+    "correctIndex": 0,
+    "explanation": "O U2 foi formado em Dublin em 1976; The Cranberries também é irlandesa, mas tinha Dolores O'Riordan.",
+    "reviewed": true
+  },
+  {
+    "key": "musica-033",
+    "level": 2,
+    "statement": "Qual instrumento o jazzista Louis Armstrong tocava?",
+    "options": [
+      "Saxofone",
+      "Trombone",
+      "Clarinete",
+      "Trompete"
+    ],
+    "correctIndex": 3,
+    "explanation": "Armstrong também era cantor e gravou \"What a Wonderful World\" (1967).",
+    "reviewed": true
+  },
+  {
+    "key": "musica-034",
+    "level": 2,
+    "statement": "Qual banda de rock brasileira gravou \"Que País É Este\"?",
+    "options": [
+      "Titãs",
+      "Os Paralamas do Sucesso",
+      "Legião Urbana",
+      "Barão Vermelho"
+    ],
+    "correctIndex": 2,
+    "explanation": "A Legião Urbana, de Brasília, era liderada por Renato Russo.",
+    "reviewed": true
+  },
+  {
+    "key": "musica-035",
+    "level": 2,
+    "statement": "Qual rapper americano gravou \"Lose Yourself\", do filme \"8 Mile\"?",
+    "options": [
+      "Jay-Z",
+      "Eminem",
+      "50 Cent",
+      "Dr. Dre"
+    ],
+    "correctIndex": 1,
+    "explanation": "Foi o primeiro rap a ganhar o Oscar de Melhor Canção Original, em 2003.",
+    "reviewed": true
+  },
+  {
+    "key": "musica-036",
+    "level": 2,
+    "statement": "Qual banda britânica lançou a canção \"Yellow\", em 2000?",
+    "options": [
+      "Radiohead",
+      "Oasis",
+      "Keane",
+      "Coldplay"
+    ],
+    "correctIndex": 3,
+    "explanation": "O Coldplay, liderado por Chris Martin, surgiu em Londres no fim dos anos 1990.",
+    "reviewed": true
+  },
+  {
+    "key": "musica-037",
+    "level": 2,
+    "statement": "Qual cantora fez parte do grupo Destiny's Child e lançou \"Single Ladies\"?",
+    "options": [
+      "Rihanna",
+      "Alicia Keys",
+      "Beyoncé",
+      "Kelly Rowland"
+    ],
+    "correctIndex": 2,
+    "explanation": "Kelly Rowland também era do Destiny's Child, mas \"Single Ladies\" é de Beyoncé.",
+    "reviewed": true
+  },
+  {
+    "key": "musica-038",
+    "level": 2,
+    "statement": "Qual compositor brasileiro escreveu \"Construção\" e \"A Banda\"?",
+    "options": [
+      "Chico Buarque",
+      "Caetano Veloso",
+      "Gilberto Gil",
+      "Milton Nascimento"
+    ],
+    "correctIndex": 0,
+    "explanation": "Chico Buarque também é escritor e ganhou o Prêmio Camões em 2019.",
+    "reviewed": true
+  },
+  {
+    "key": "musica-039",
+    "level": 2,
+    "statement": "Em qual país nasceu o tango?",
+    "options": [
+      "Espanha",
+      "Argentina",
+      "Cuba",
+      "México"
+    ],
+    "correctIndex": 1,
+    "explanation": "O tango surgiu na região do Rio da Prata, em Buenos Aires e Montevidéu, no fim do século XIX.",
+    "reviewed": true
+  },
+  {
+    "key": "musica-040",
+    "level": 2,
+    "statement": "Qual gênero nordestino é tocado com sanfona, zabumba e triângulo?",
+    "options": [
+      "Frevo",
+      "Maracatu",
+      "Axé",
+      "Forró"
+    ],
+    "correctIndex": 3,
+    "explanation": "Esse trio de instrumentos forma o tradicional forró \"pé de serra\".",
+    "reviewed": true
+  },
+  {
+    "key": "musica-041",
+    "level": 3,
+    "statement": "Qual banda britânica lançou \"Stairway to Heaven\", em 1971?",
+    "options": [
+      "Deep Purple",
+      "Black Sabbath",
+      "Led Zeppelin",
+      "The Who"
+    ],
+    "correctIndex": 2,
+    "explanation": "A banda tinha Robert Plant nos vocais e Jimmy Page na guitarra.",
+    "reviewed": true
+  },
+  {
+    "key": "musica-042",
+    "level": 3,
+    "statement": "Qual cantor mineiro compôs \"Travessia\" e \"Maria, Maria\"?",
+    "options": [
+      "Lô Borges",
+      "Milton Nascimento",
+      "Beto Guedes",
+      "Toninho Horta"
+    ],
+    "correctIndex": 1,
+    "explanation": "Milton Nascimento é uma das vozes mais admiradas da MPB, inclusive por músicos estrangeiros.",
+    "reviewed": true
+  },
+  {
+    "key": "musica-043",
+    "level": 4,
+    "statement": "Quantas linhas tem a pauta musical, onde se escrevem as notas?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correctIndex": 1,
+    "explanation": "A pauta, ou pentagrama, tem 5 linhas e 4 espaços.",
+    "reviewed": true
+  },
+  {
+    "key": "musica-044",
+    "level": 3,
+    "statement": "Qual compositor russo escreveu o balé \"O Lago dos Cisnes\"?",
+    "options": [
+      "Stravinsky",
+      "Rachmaninoff",
+      "Tchaikovsky",
+      "Prokofiev"
+    ],
+    "correctIndex": 2,
+    "explanation": "Tchaikovsky também compôs os balés \"O Quebra-Nozes\" e \"A Bela Adormecida\".",
+    "reviewed": true
+  },
+  {
+    "key": "musica-045",
+    "level": 3,
+    "statement": "Qual banda de Seattle, liderada por Kurt Cobain, popularizou o grunge?",
+    "options": [
+      "Pearl Jam",
+      "Nirvana",
+      "Soundgarden",
+      "Alice in Chains"
+    ],
+    "correctIndex": 1,
+    "explanation": "O álbum \"Nevermind\" (1991), com \"Smells Like Teen Spirit\", levou o grunge ao mundo.",
+    "reviewed": true
+  },
+  {
+    "key": "musica-046",
+    "level": 3,
+    "statement": "Qual compositor italiano escreveu \"As Quatro Estações\"?",
+    "options": [
+      "Antonio Vivaldi",
+      "Arcangelo Corelli",
+      "Giuseppe Verdi",
+      "Giacomo Puccini"
+    ],
+    "correctIndex": 0,
+    "explanation": "Vivaldi compôs os quatro concertos para violino por volta de 1720, no período barroco.",
+    "reviewed": true
+  },
+  {
+    "key": "musica-047",
+    "level": 3,
+    "statement": "Em qual festival de 1969 Jimi Hendrix tocou o hino americano na guitarra?",
+    "options": [
+      "Monterey",
+      "Isle of Wight",
+      "Woodstock",
+      "Altamont"
+    ],
+    "correctIndex": 2,
+    "explanation": "Woodstock reuniu cerca de 400 mil pessoas numa fazenda do estado de Nova York.",
+    "reviewed": true
+  },
+  {
+    "key": "musica-048",
+    "level": 3,
+    "statement": "Qual cantora luso-brasileira, chamada de \"a Pequena Notável\", fez sucesso em Hollywood?",
+    "options": [
+      "Aracy de Almeida",
+      "Carmen Miranda",
+      "Dalva de Oliveira",
+      "Ângela Maria"
+    ],
+    "correctIndex": 1,
+    "explanation": "Nascida em Portugal, Carmen Miranda ficou famosa pelos turbantes de frutas.",
+    "reviewed": true
+  },
+  {
+    "key": "musica-049",
+    "level": 3,
+    "statement": "Qual sambista, fundador da Mangueira, compôs \"As Rosas Não Falam\"?",
+    "options": [
+      "Nelson Cavaquinho",
+      "Noel Rosa",
+      "Adoniran Barbosa",
+      "Cartola"
+    ],
+    "correctIndex": 3,
+    "explanation": "Cartola, nome artístico de Angenor de Oliveira, só gravou seu primeiro disco aos 66 anos.",
+    "reviewed": true
+  },
+  {
+    "key": "musica-050",
+    "level": 3,
+    "statement": "Qual banda de rock brasileira dos anos 1980 teve Cazuza como vocalista?",
+    "options": [
+      "Barão Vermelho",
+      "Ultraje a Rigor",
+      "Kid Abelha",
+      "Capital Inicial"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cazuza deixou o Barão Vermelho em 1985 e seguiu carreira solo.",
+    "reviewed": true
+  },
+  {
+    "key": "musica-051",
+    "level": 4,
+    "statement": "Qual cantora de jazz era chamada de \"Lady Day\"?",
+    "options": [
+      "Ella Fitzgerald",
+      "Nina Simone",
+      "Billie Holiday",
+      "Sarah Vaughan"
+    ],
+    "correctIndex": 2,
+    "explanation": "Billie Holiday gravou \"Strange Fruit\" (1939), um protesto contra o racismo nos EUA.",
+    "reviewed": true
+  },
+  {
+    "key": "musica-052",
+    "level": 4,
+    "statement": "Qual música de Donga é considerada o primeiro samba gravado, em 1917?",
+    "options": [
+      "Pelo Telefone",
+      "Carinhoso",
+      "Aquarela do Brasil",
+      "Ai, Que Saudades da Amélia"
+    ],
+    "correctIndex": 0,
+    "explanation": "Antes da gravação, Donga registrou a música na Biblioteca Nacional, em 1916.",
+    "reviewed": true
+  },
+  {
+    "key": "musica-053",
+    "level": 3,
+    "statement": "Quem compôs \"Aquarela do Brasil\" (1939)?",
+    "options": [
+      "Dorival Caymmi",
+      "Noel Rosa",
+      "Lamartine Babo",
+      "Ary Barroso"
+    ],
+    "correctIndex": 3,
+    "explanation": "A canção inaugurou o chamado samba-exaltação e ficou famosa no exterior com a Disney.",
+    "reviewed": true
+  },
+  {
+    "key": "musica-054",
+    "level": 4,
+    "statement": "Qual compositor francês escreveu o \"Bolero\" (1928)?",
+    "options": [
+      "Claude Debussy",
+      "Erik Satie",
+      "Maurice Ravel",
+      "Georges Bizet"
+    ],
+    "correctIndex": 2,
+    "explanation": "O Bolero repete a mesma melodia do começo ao fim, com um crescendo constante.",
+    "reviewed": true
+  },
+  {
+    "key": "musica-055",
+    "level": 4,
+    "statement": "Qual compositor alemão escreveu o ciclo de óperas \"O Anel do Nibelungo\"?",
+    "options": [
+      "Richard Wagner",
+      "Johannes Brahms",
+      "Franz Schubert",
+      "Gustav Mahler"
+    ],
+    "correctIndex": 0,
+    "explanation": "O ciclo tem quatro óperas e leva cerca de 15 horas para ser apresentado.",
+    "reviewed": true
+  },
+  {
+    "key": "musica-056",
+    "level": 4,
+    "statement": "Qual instrumento de teclado, antecessor do piano, tem cordas pinçadas?",
+    "options": [
+      "Órgão",
+      "Cravo",
+      "Clavicórdio",
+      "Harmônio"
+    ],
+    "correctIndex": 1,
+    "explanation": "No cravo as cordas são pinçadas; no piano, elas são percutidas por martelos.",
+    "reviewed": true
+  },
+  {
+    "key": "musica-057",
+    "level": 4,
+    "statement": "Qual é o nome do intervalo entre duas notas em que uma tem o dobro da frequência da outra?",
+    "options": [
+      "Quinta",
+      "Terça",
+      "Oitava",
+      "Sétima"
+    ],
+    "correctIndex": 2,
+    "explanation": "Um lá de 440 Hz e um lá de 880 Hz estão separados por uma oitava.",
+    "reviewed": true
+  },
+  {
+    "key": "musica-058",
+    "level": 4,
+    "statement": "Qual instrumento de cordas indiano foi popularizado no Ocidente por Ravi Shankar?",
+    "options": [
+      "Tabla",
+      "Sarod",
+      "Harmônio",
+      "Cítara"
+    ],
+    "correctIndex": 3,
+    "explanation": "A cítara indiana tem cordas extras que vibram por simpatia, dando seu som característico.",
+    "reviewed": true
+  },
+  {
+    "key": "musica-059",
+    "level": 4,
+    "statement": "Qual escala de cinco notas é muito usada no blues e no rock?",
+    "options": [
+      "Pentatônica",
+      "Cromática",
+      "Diatônica",
+      "Hexafônica"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Penta\" significa cinco; a escala também é comum na música tradicional do Oriente.",
+    "reviewed": true
+  },
+  {
+    "key": "musica-060",
+    "level": 4,
+    "statement": "Qual compositor austríaco criou o dodecafonismo, técnica com as 12 notas da escala cromática?",
+    "options": [
+      "Gustav Mahler",
+      "Alban Berg",
+      "Arnold Schoenberg",
+      "Anton Webern"
+    ],
+    "correctIndex": 2,
+    "explanation": "Berg e Webern foram alunos de Schoenberg e também usaram a técnica.",
+    "reviewed": true
   }
 ]
