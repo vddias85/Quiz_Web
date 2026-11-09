@@ -278,5 +278,565 @@
     "correctIndex": 0,
     "explanation": "O poema \"No Meio do Caminho\" foi publicado em 1928 e causou polêmica na época.",
     "reviewed": true
+  },
+  {
+    "key": "artes-e-literatura-021",
+    "level": 1,
+    "statement": "Quem escreveu \"O Pequeno Príncipe\"?",
+    "options": [
+      "Júlio Verne",
+      "Victor Hugo",
+      "Antoine de Saint-Exupéry",
+      "Hans Christian Andersen"
+    ],
+    "correctIndex": 2,
+    "explanation": "O autor, um aviador francês, publicou o livro em 1943 com ilustrações próprias.",
+    "reviewed": true
+  },
+  {
+    "key": "artes-e-literatura-022",
+    "level": 1,
+    "statement": "Quem criou a Turma da Mônica?",
+    "options": [
+      "Monteiro Lobato",
+      "Mauricio de Sousa",
+      "Henfil",
+      "Angeli"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mauricio de Sousa criou primeiro o cãozinho Bidu, em 1959; a Mônica surgiu em 1963.",
+    "reviewed": true
+  },
+  {
+    "key": "artes-e-literatura-023",
+    "level": 1,
+    "statement": "Qual personagem de Ziraldo usa uma panela na cabeça?",
+    "options": [
+      "Menino Maluquinho",
+      "Pererê",
+      "Chico Bento",
+      "Cebolinha"
+    ],
+    "correctIndex": 0,
+    "explanation": "O livro \"O Menino Maluquinho\" foi lançado em 1980 e virou filme e série.",
+    "reviewed": true
+  },
+  {
+    "key": "artes-e-literatura-024",
+    "level": 1,
+    "statement": "Qual boneco de madeira tem o nariz que cresce quando mente?",
+    "options": [
+      "Gepeto",
+      "Pinóquio",
+      "Pequeno Polegar",
+      "João de Ferro"
+    ],
+    "correctIndex": 1,
+    "explanation": "Pinóquio foi criado pelo italiano Carlo Collodi em 1883; Gepeto é o carpinteiro que o fez.",
+    "reviewed": true
+  },
+  {
+    "key": "artes-e-literatura-025",
+    "level": 1,
+    "statement": "Qual monumento de Paris foi construído para a Exposição Universal de 1889?",
+    "options": [
+      "Arco do Triunfo",
+      "Torre Eiffel",
+      "Catedral de Notre-Dame",
+      "Panteão"
+    ],
+    "correctIndex": 1,
+    "explanation": "A Torre Eiffel, de ferro, deveria ser temporária, mas virou o símbolo de Paris.",
+    "reviewed": true
+  },
+  {
+    "key": "artes-e-literatura-026",
+    "level": 1,
+    "statement": "Qual personagem dos contos de fadas encontra o lobo a caminho da casa da avó?",
+    "options": [
+      "Branca de Neve",
+      "Cinderela",
+      "Chapeuzinho Vermelho",
+      "Rapunzel"
+    ],
+    "correctIndex": 2,
+    "explanation": "A história ficou famosa nas versões de Charles Perrault e dos irmãos Grimm.",
+    "reviewed": true
+  },
+  {
+    "key": "artes-e-literatura-027",
+    "level": 1,
+    "statement": "Na pintura tradicional, quais são as três cores primárias?",
+    "options": [
+      "Vermelho, amarelo e azul",
+      "Verde, laranja e roxo",
+      "Preto, branco e cinza",
+      "Rosa, marrom e bege"
+    ],
+    "correctIndex": 0,
+    "explanation": "Misturando as primárias, obtêm-se as secundárias: verde, laranja e roxo.",
+    "reviewed": true
+  },
+  {
+    "key": "artes-e-literatura-028",
+    "level": 1,
+    "statement": "Qual escritor brasileiro escreveu \"O Alquimista\"?",
+    "options": [
+      "Jorge Amado",
+      "Paulo Coelho",
+      "Rubem Fonseca",
+      "Fernando Sabino"
+    ],
+    "correctIndex": 1,
+    "explanation": "Lançado em 1988, é um dos livros mais traduzidos do mundo.",
+    "reviewed": true
+  },
+  {
+    "key": "artes-e-literatura-029",
+    "level": 1,
+    "statement": "Qual monumento do Egito tem corpo de leão e cabeça humana?",
+    "options": [
+      "Obelisco de Luxor",
+      "Esfinge de Gizé",
+      "Templo de Karnak",
+      "Colosso de Rodes"
+    ],
+    "correctIndex": 1,
+    "explanation": "A Grande Esfinge foi esculpida na rocha há cerca de 4.500 anos.",
+    "reviewed": true
+  },
+  {
+    "key": "artes-e-literatura-030",
+    "level": 1,
+    "statement": "Quem escreveu o diário mais famoso da Segunda Guerra, enquanto se escondia dos nazistas em Amsterdã?",
+    "options": [
+      "Anne Frank",
+      "Irena Sendler",
+      "Sophie Scholl",
+      "Etty Hillesum"
+    ],
+    "correctIndex": 0,
+    "explanation": "Anne Frank escreveu o diário dos 13 aos 15 anos; ele foi publicado pelo pai, Otto Frank, em 1947.",
+    "reviewed": true
+  },
+  {
+    "key": "artes-e-literatura-031",
+    "level": 2,
+    "statement": "Qual escritor britânico criou o detetive Sherlock Holmes?",
+    "options": [
+      "Agatha Christie",
+      "Charles Dickens",
+      "Arthur Conan Doyle",
+      "Edgar Allan Poe"
+    ],
+    "correctIndex": 2,
+    "explanation": "Conan Doyle, que era escocês e médico, publicou a primeira história de Holmes em 1887.",
+    "reviewed": true
+  },
+  {
+    "key": "artes-e-literatura-032",
+    "level": 2,
+    "statement": "Quem escreveu \"O Auto da Compadecida\", com João Grilo e Chicó?",
+    "options": [
+      "Ariano Suassuna",
+      "Nelson Rodrigues",
+      "Dias Gomes",
+      "Jorge Amado"
+    ],
+    "correctIndex": 0,
+    "explanation": "A peça de 1955 virou minissérie e filme em 2000, e ganhou continuação no cinema em 2024.",
+    "reviewed": true
+  },
+  {
+    "key": "artes-e-literatura-033",
+    "level": 2,
+    "statement": "Qual estilo arquitetônico tem catedrais com arcos pontudos e vitrais coloridos, como a de Notre-Dame?",
+    "options": [
+      "Barroco",
+      "Gótico",
+      "Românico",
+      "Neoclássico"
+    ],
+    "correctIndex": 1,
+    "explanation": "O gótico surgiu na França no século XII; os arcos ogivais permitiam paredes mais altas e janelas maiores.",
+    "reviewed": true
+  },
+  {
+    "key": "artes-e-literatura-034",
+    "level": 2,
+    "statement": "Qual escritor baiano escreveu \"Capitães da Areia\" e \"Gabriela, Cravo e Canela\"?",
+    "options": [
+      "Jorge Amado",
+      "Graciliano Ramos",
+      "José Lins do Rego",
+      "Érico Veríssimo"
+    ],
+    "correctIndex": 0,
+    "explanation": "Jorge Amado é um dos autores brasileiros mais traduzidos no mundo.",
+    "reviewed": true
+  },
+  {
+    "key": "artes-e-literatura-035",
+    "level": 2,
+    "statement": "Qual escritor inglês escreveu \"1984\" e \"A Revolução dos Bichos\"?",
+    "options": [
+      "Aldous Huxley",
+      "H. G. Wells",
+      "Ray Bradbury",
+      "George Orwell"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"1984\" criou a figura do Grande Irmão, que vigia todos o tempo todo.",
+    "reviewed": true
+  },
+  {
+    "key": "artes-e-literatura-036",
+    "level": 2,
+    "statement": "Qual escritora inglesa criou o detetive belga Hercule Poirot?",
+    "options": [
+      "Agatha Christie",
+      "Jane Austen",
+      "Virginia Woolf",
+      "Mary Shelley"
+    ],
+    "correctIndex": 0,
+    "explanation": "Agatha Christie é a romancista de ficção que mais vendeu livros na história.",
+    "reviewed": true
+  },
+  {
+    "key": "artes-e-literatura-037",
+    "level": 2,
+    "statement": "Qual poeta brasileiro escreveu \"Minha terra tem palmeiras, onde canta o sabiá\"?",
+    "options": [
+      "Castro Alves",
+      "Gonçalves Dias",
+      "Olavo Bilac",
+      "Álvares de Azevedo"
+    ],
+    "correctIndex": 1,
+    "explanation": "Os versos são da \"Canção do Exílio\" (1843), escrita quando o poeta estudava em Portugal.",
+    "reviewed": true
+  },
+  {
+    "key": "artes-e-literatura-038",
+    "level": 2,
+    "statement": "Qual pintor norueguês pintou \"O Grito\" (1893)?",
+    "options": [
+      "Gustav Klimt",
+      "Paul Gauguin",
+      "Edvard Munch",
+      "Vincent van Gogh"
+    ],
+    "correctIndex": 2,
+    "explanation": "Munch fez várias versões de \"O Grito\", em pintura e em gravura.",
+    "reviewed": true
+  },
+  {
+    "key": "artes-e-literatura-039",
+    "level": 2,
+    "statement": "Em qual peça de Shakespeare aparece a frase \"Ser ou não ser, eis a questão\"?",
+    "options": [
+      "Macbeth",
+      "Otelo",
+      "Rei Lear",
+      "Hamlet"
+    ],
+    "correctIndex": 3,
+    "explanation": "A frase é dita pelo príncipe Hamlet, da Dinamarca, num monólogo sobre a vida e a morte.",
+    "reviewed": true
+  },
+  {
+    "key": "artes-e-literatura-040",
+    "level": 2,
+    "statement": "Qual escritor francês escreveu \"Os Miseráveis\" (1862)?",
+    "options": [
+      "Victor Hugo",
+      "Alexandre Dumas",
+      "Gustave Flaubert",
+      "Émile Zola"
+    ],
+    "correctIndex": 0,
+    "explanation": "O romance acompanha o ex-prisioneiro Jean Valjean e virou um musical de sucesso.",
+    "reviewed": true
+  },
+  {
+    "key": "artes-e-literatura-041",
+    "level": 3,
+    "statement": "Qual escultor francês criou \"O Pensador\"?",
+    "options": [
+      "Auguste Rodin",
+      "Camille Claudel",
+      "Edgar Degas",
+      "Antonio Canova"
+    ],
+    "correctIndex": 0,
+    "explanation": "A escultura fazia parte do projeto \"A Porta do Inferno\", inspirado na Divina Comédia.",
+    "reviewed": true
+  },
+  {
+    "key": "artes-e-literatura-042",
+    "level": 3,
+    "statement": "Qual escritor russo escreveu \"Crime e Castigo\"?",
+    "options": [
+      "Liev Tolstói",
+      "Fiódor Dostoiévski",
+      "Anton Tchekhov",
+      "Nikolai Gógol"
+    ],
+    "correctIndex": 1,
+    "explanation": "O romance de 1866 acompanha o estudante Raskólnikov depois de cometer um assassinato.",
+    "reviewed": true
+  },
+  {
+    "key": "artes-e-literatura-043",
+    "level": 3,
+    "statement": "Quem escreveu \"Vidas Secas\" (1938), sobre uma família de retirantes no sertão?",
+    "options": [
+      "Rachel de Queiroz",
+      "José Lins do Rego",
+      "Graciliano Ramos",
+      "Jorge Amado"
+    ],
+    "correctIndex": 2,
+    "explanation": "A cachorra Baleia é uma das personagens mais marcantes do livro.",
+    "reviewed": true
+  },
+  {
+    "key": "artes-e-literatura-044",
+    "level": 3,
+    "statement": "Qual poeta português criou heterônimos como Alberto Caeiro e Álvaro de Campos?",
+    "options": [
+      "Luís de Camões",
+      "Fernando Pessoa",
+      "Eça de Queirós",
+      "Florbela Espanca"
+    ],
+    "correctIndex": 1,
+    "explanation": "Pessoa assinava com vários \"heterônimos\", cada um com biografia e estilo próprios.",
+    "reviewed": true
+  },
+  {
+    "key": "artes-e-literatura-045",
+    "level": 3,
+    "statement": "Qual escritora mineira publicou \"Quarto de Despejo\" (1960), diário de sua vida na favela do Canindé, em São Paulo?",
+    "options": [
+      "Conceição Evaristo",
+      "Carolina Maria de Jesus",
+      "Cora Coralina",
+      "Adélia Prado"
+    ],
+    "correctIndex": 1,
+    "explanation": "Catadora de papel, Carolina vendeu dezenas de milhares de cópias no lançamento e foi traduzida para vários idiomas.",
+    "reviewed": true
+  },
+  {
+    "key": "artes-e-literatura-046",
+    "level": 3,
+    "statement": "Qual pintor brasileiro pintou \"Retirantes\" (1944) e os painéis \"Guerra e Paz\", na sede da ONU?",
+    "options": [
+      "Di Cavalcanti",
+      "Candido Portinari",
+      "Anita Malfatti",
+      "Lasar Segall"
+    ],
+    "correctIndex": 1,
+    "explanation": "Os painéis \"Guerra e Paz\" ficam no prédio da ONU, em Nova York, desde 1957.",
+    "reviewed": true
+  },
+  {
+    "key": "artes-e-literatura-047",
+    "level": 3,
+    "statement": "Qual pintor holandês pintou \"Moça com Brinco de Pérola\"?",
+    "options": [
+      "Rembrandt",
+      "Frans Hals",
+      "Johannes Vermeer",
+      "Pieter Bruegel"
+    ],
+    "correctIndex": 2,
+    "explanation": "Vermeer viveu em Delft, no século XVII, e deixou poucas obras: cerca de 35 quadros.",
+    "reviewed": true
+  },
+  {
+    "key": "artes-e-literatura-048",
+    "level": 3,
+    "statement": "Qual poeta baiano escreveu \"O Navio Negreiro\" e ficou conhecido como \"Poeta dos Escravos\"?",
+    "options": [
+      "Gonçalves Dias",
+      "Castro Alves",
+      "Álvares de Azevedo",
+      "Olavo Bilac"
+    ],
+    "correctIndex": 1,
+    "explanation": "Castro Alves usou a poesia para denunciar a escravidão; morreu aos 24 anos.",
+    "reviewed": true
+  },
+  {
+    "key": "artes-e-literatura-049",
+    "level": 3,
+    "statement": "Qual escritora inglesa escreveu \"Orgulho e Preconceito\" (1813)?",
+    "options": [
+      "Charlotte Brontë",
+      "Jane Austen",
+      "Virginia Woolf",
+      "Mary Shelley"
+    ],
+    "correctIndex": 1,
+    "explanation": "O romance acompanha Elizabeth Bennet e o orgulhoso Sr. Darcy.",
+    "reviewed": true
+  },
+  {
+    "key": "artes-e-literatura-050",
+    "level": 3,
+    "statement": "Qual poeta italiano escreveu \"A Divina Comédia\"?",
+    "options": [
+      "Petrarca",
+      "Giovanni Boccaccio",
+      "Dante Alighieri",
+      "Nicolau Maquiavel"
+    ],
+    "correctIndex": 2,
+    "explanation": "O poema narra uma viagem pelo Inferno, pelo Purgatório e pelo Paraíso.",
+    "reviewed": true
+  },
+  {
+    "key": "artes-e-literatura-051",
+    "level": 4,
+    "statement": "Qual escritor argentino escreveu \"O Aleph\" e \"Ficções\"?",
+    "options": [
+      "Julio Cortázar",
+      "Ernesto Sabato",
+      "Adolfo Bioy Casares",
+      "Jorge Luis Borges"
+    ],
+    "correctIndex": 3,
+    "explanation": "Borges ficou famoso por contos com labirintos, espelhos e bibliotecas infinitas.",
+    "reviewed": true
+  },
+  {
+    "key": "artes-e-literatura-052",
+    "level": 4,
+    "statement": "Qual pintor holandês pintou \"A Ronda Noturna\" (1642)?",
+    "options": [
+      "Rembrandt",
+      "Johannes Vermeer",
+      "Frans Hals",
+      "Hieronymus Bosch"
+    ],
+    "correctIndex": 0,
+    "explanation": "O quadro, com mais de 4 metros de largura, está no Rijksmuseum, em Amsterdã.",
+    "reviewed": true
+  },
+  {
+    "key": "artes-e-literatura-053",
+    "level": 4,
+    "statement": "Qual arquiteta projetou o prédio do MASP, com seu famoso vão livre na Avenida Paulista?",
+    "options": [
+      "Lina Bo Bardi",
+      "Zaha Hadid",
+      "Tomie Ohtake",
+      "Lygia Clark"
+    ],
+    "correctIndex": 0,
+    "explanation": "Inaugurado em 1968, o prédio tem um vão livre de 74 metros sem colunas no meio.",
+    "reviewed": true
+  },
+  {
+    "key": "artes-e-literatura-054",
+    "level": 4,
+    "statement": "Qual técnica de pintura aplica pigmentos sobre o reboco ainda úmido da parede?",
+    "options": [
+      "Têmpera",
+      "Afresco",
+      "Aquarela",
+      "Guache"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ao secar, o reboco fixa os pigmentos, e a pintura se torna parte da parede.",
+    "reviewed": true
+  },
+  {
+    "key": "artes-e-literatura-055",
+    "level": 4,
+    "statement": "Qual escritor irlandês escreveu \"Ulisses\" (1922), romance que se passa num único dia em Dublin?",
+    "options": [
+      "Samuel Beckett",
+      "Oscar Wilde",
+      "James Joyce",
+      "W. B. Yeats"
+    ],
+    "correctIndex": 2,
+    "explanation": "O livro se passa em 16 de junho de 1904, data celebrada como \"Bloomsday\".",
+    "reviewed": true
+  },
+  {
+    "key": "artes-e-literatura-056",
+    "level": 4,
+    "statement": "Qual foi a primeira mulher eleita para a Academia Brasileira de Letras, em 1977?",
+    "options": [
+      "Cecília Meireles",
+      "Rachel de Queiroz",
+      "Clarice Lispector",
+      "Lygia Fagundes Telles"
+    ],
+    "correctIndex": 1,
+    "explanation": "Rachel de Queiroz, autora de \"O Quinze\" (1930), também foi a primeira mulher a ganhar o Prêmio Camões.",
+    "reviewed": true
+  },
+  {
+    "key": "artes-e-literatura-057",
+    "level": 4,
+    "statement": "Qual pintor espanhol pintou \"As Meninas\" (1656)?",
+    "options": [
+      "Francisco de Goya",
+      "El Greco",
+      "Diego Velázquez",
+      "Bartolomé Murillo"
+    ],
+    "correctIndex": 2,
+    "explanation": "Velázquez aparece no próprio quadro, pintando, ao lado da infanta Margarida.",
+    "reviewed": true
+  },
+  {
+    "key": "artes-e-literatura-058",
+    "level": 4,
+    "statement": "Qual escritor alemão escreveu \"Fausto\", sobre um homem que faz um pacto com o diabo?",
+    "options": [
+      "Friedrich Schiller",
+      "Thomas Mann",
+      "Franz Kafka",
+      "Johann Wolfgang von Goethe"
+    ],
+    "correctIndex": 3,
+    "explanation": "Goethe trabalhou na obra por cerca de 60 anos; a segunda parte saiu após sua morte, em 1832.",
+    "reviewed": true
+  },
+  {
+    "key": "artes-e-literatura-059",
+    "level": 4,
+    "statement": "A qual movimento artístico pertence \"A Fonte\" (1917), um urinol assinado por Marcel Duchamp?",
+    "options": [
+      "Cubismo",
+      "Futurismo",
+      "Dadaísmo",
+      "Surrealismo"
+    ],
+    "correctIndex": 2,
+    "explanation": "O Dadaísmo questionava o que é arte; Duchamp chamou esses objetos de \"ready-mades\".",
+    "reviewed": true
+  },
+  {
+    "key": "artes-e-literatura-060",
+    "level": 4,
+    "statement": "Qual romance de Aluísio Azevedo (1890) retrata a vida numa habitação coletiva do Rio de Janeiro?",
+    "options": [
+      "O Ateneu",
+      "O Cortiço",
+      "Senhora",
+      "Memórias de um Sargento de Milícias"
+    ],
+    "correctIndex": 1,
+    "explanation": "O Cortiço é o principal romance do Naturalismo brasileiro.",
+    "reviewed": true
   }
 ]
