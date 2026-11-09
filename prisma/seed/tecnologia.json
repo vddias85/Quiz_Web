@@ -278,5 +278,565 @@
     "correctIndex": 1,
     "explanation": "O IPv4 permite cerca de 4,3 bilhões de endereços. O IPv6 usa 128 bits.",
     "reviewed": true
+  },
+  {
+    "key": "tecnologia-021",
+    "level": 1,
+    "statement": "Qual aplicativo de mensagens tem como símbolo um telefone dentro de um balão verde?",
+    "options": [
+      "Telegram",
+      "WhatsApp",
+      "Signal",
+      "Messenger"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criado em 2009, o WhatsApp é o aplicativo de mensagens mais usado no Brasil.",
+    "reviewed": true
+  },
+  {
+    "key": "tecnologia-022",
+    "level": 1,
+    "statement": "Qual tecla apaga o caractere à esquerda do cursor?",
+    "options": [
+      "Delete",
+      "Enter",
+      "Backspace",
+      "Esc"
+    ],
+    "correctIndex": 2,
+    "explanation": "A tecla Delete apaga o caractere à direita do cursor.",
+    "reviewed": true
+  },
+  {
+    "key": "tecnologia-023",
+    "level": 1,
+    "statement": "Qual rede social é focada em fotos e vídeos, com recursos como Stories e Reels?",
+    "options": [
+      "LinkedIn",
+      "Pinterest",
+      "Instagram",
+      "Reddit"
+    ],
+    "correctIndex": 2,
+    "explanation": "O Instagram foi lançado em 2010, inicialmente só para iPhone.",
+    "reviewed": true
+  },
+  {
+    "key": "tecnologia-024",
+    "level": 1,
+    "statement": "Qual é o sistema de pagamento instantâneo criado pelo Banco Central do Brasil em 2020?",
+    "options": [
+      "Pix",
+      "TED",
+      "DOC",
+      "Boleto"
+    ],
+    "correctIndex": 0,
+    "explanation": "O Pix funciona 24 horas por dia, todos os dias, e a transferência cai em segundos.",
+    "reviewed": true
+  },
+  {
+    "key": "tecnologia-025",
+    "level": 1,
+    "statement": "Qual destes programas é um navegador de internet?",
+    "options": [
+      "Microsoft Word",
+      "Google Chrome",
+      "Excel",
+      "Photoshop"
+    ],
+    "correctIndex": 1,
+    "explanation": "Outros navegadores populares são o Firefox, o Safari e o Edge.",
+    "reviewed": true
+  },
+  {
+    "key": "tecnologia-026",
+    "level": 1,
+    "statement": "Qual empresa criou o videogame PlayStation?",
+    "options": [
+      "Nintendo",
+      "Microsoft",
+      "Sega",
+      "Sony"
+    ],
+    "correctIndex": 3,
+    "explanation": "O primeiro PlayStation foi lançado no Japão em 1994.",
+    "reviewed": true
+  },
+  {
+    "key": "tecnologia-027",
+    "level": 1,
+    "statement": "Qual símbolo separa o nome do usuário do domínio num endereço de e-mail?",
+    "options": [
+      "#",
+      "&",
+      "@",
+      "%"
+    ],
+    "correctIndex": 2,
+    "explanation": "O @ (arroba) foi escolhido para o e-mail em 1971 por Ray Tomlinson.",
+    "reviewed": true
+  },
+  {
+    "key": "tecnologia-028",
+    "level": 1,
+    "statement": "Qual encanador de boné vermelho é o mascote da Nintendo?",
+    "options": [
+      "Luigi",
+      "Mario",
+      "Sonic",
+      "Link"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mario apareceu pela primeira vez em \"Donkey Kong\" (1981); Sonic é o mascote da Sega.",
+    "reviewed": true
+  },
+  {
+    "key": "tecnologia-029",
+    "level": 1,
+    "statement": "Qual tecnologia sem fio conecta fones de ouvido ao celular a curta distância?",
+    "options": [
+      "Bluetooth",
+      "Wi-Fi",
+      "4G",
+      "GPS"
+    ],
+    "correctIndex": 0,
+    "explanation": "O nome homenageia Harald \"Dente Azul\", um rei viking que uniu a Dinamarca e a Noruega.",
+    "reviewed": true
+  },
+  {
+    "key": "tecnologia-030",
+    "level": 1,
+    "statement": "Qual é o site de vídeos mais acessado do mundo, criado em 2005?",
+    "options": [
+      "Vimeo",
+      "TikTok",
+      "Twitch",
+      "YouTube"
+    ],
+    "correctIndex": 3,
+    "explanation": "O primeiro vídeo publicado, \"Me at the zoo\", tem só 19 segundos.",
+    "reviewed": true
+  },
+  {
+    "key": "tecnologia-031",
+    "level": 2,
+    "statement": "Qual empresa de Mark Zuckerberg controla o Facebook, o Instagram e o WhatsApp?",
+    "options": [
+      "Alphabet",
+      "Meta",
+      "ByteDance",
+      "Microsoft"
+    ],
+    "correctIndex": 1,
+    "explanation": "O Facebook Inc. mudou o nome para Meta em 2021; a Alphabet é a dona do Google.",
+    "reviewed": true
+  },
+  {
+    "key": "tecnologia-032",
+    "level": 2,
+    "statement": "Qual empresa fabrica os processadores da linha Core i5 e Core i7?",
+    "options": [
+      "AMD",
+      "Nvidia",
+      "Intel",
+      "Qualcomm"
+    ],
+    "correctIndex": 2,
+    "explanation": "A Intel foi fundada em 1968, no Vale do Silício.",
+    "reviewed": true
+  },
+  {
+    "key": "tecnologia-033",
+    "level": 2,
+    "statement": "Qual é o nome do assistente de voz da Apple?",
+    "options": [
+      "Alexa",
+      "Siri",
+      "Cortana",
+      "Bixby"
+    ],
+    "correctIndex": 1,
+    "explanation": "A Siri estreou em 2011; Alexa é da Amazon e Cortana, da Microsoft.",
+    "reviewed": true
+  },
+  {
+    "key": "tecnologia-034",
+    "level": 2,
+    "statement": "Qual formato de arquivo, criado pela Adobe, mantém a formatação do documento em qualquer computador?",
+    "options": [
+      "DOCX",
+      "PDF",
+      "TXT",
+      "XLSX"
+    ],
+    "correctIndex": 1,
+    "explanation": "PDF significa Portable Document Format (formato de documento portátil).",
+    "reviewed": true
+  },
+  {
+    "key": "tecnologia-035",
+    "level": 2,
+    "statement": "Quem fundou a Apple junto com Steve Wozniak, em 1976?",
+    "options": [
+      "Bill Gates",
+      "Tim Cook",
+      "Steve Jobs",
+      "Larry Page"
+    ],
+    "correctIndex": 2,
+    "explanation": "A empresa começou na garagem da casa dos pais de Jobs, na Califórnia.",
+    "reviewed": true
+  },
+  {
+    "key": "tecnologia-036",
+    "level": 2,
+    "statement": "Qual empresa criou o ChatGPT, lançado em 2022?",
+    "options": [
+      "OpenAI",
+      "Google",
+      "Meta",
+      "Microsoft"
+    ],
+    "correctIndex": 0,
+    "explanation": "O ChatGPT chegou a 100 milhões de usuários em cerca de dois meses.",
+    "reviewed": true
+  },
+  {
+    "key": "tecnologia-037",
+    "level": 2,
+    "statement": "Como se chama o endereço de uma página na internet, como https://exemplo.com?",
+    "options": [
+      "IP",
+      "URL",
+      "DNS",
+      "HTML"
+    ],
+    "correctIndex": 1,
+    "explanation": "URL vem do inglês Uniform Resource Locator, o localizador de um recurso na web.",
+    "reviewed": true
+  },
+  {
+    "key": "tecnologia-038",
+    "level": 2,
+    "statement": "Qual é o sistema operacional dos computadores Mac, da Apple?",
+    "options": [
+      "Windows",
+      "Linux",
+      "Chrome OS",
+      "macOS"
+    ],
+    "correctIndex": 3,
+    "explanation": "O sistema dos iPhones é o iOS; o dos Macs, o macOS.",
+    "reviewed": true
+  },
+  {
+    "key": "tecnologia-039",
+    "level": 2,
+    "statement": "Como se chama o golpe em que criminosos enviam mensagens falsas para roubar senhas e dados?",
+    "options": [
+      "Phishing",
+      "Spam",
+      "Backup",
+      "Firewall"
+    ],
+    "correctIndex": 0,
+    "explanation": "O nome vem de \"fishing\" (pescar): o golpista joga a isca e espera a vítima morder.",
+    "reviewed": true
+  },
+  {
+    "key": "tecnologia-040",
+    "level": 2,
+    "statement": "Qual memória do computador guarda temporariamente os dados dos programas abertos e se apaga ao desligar?",
+    "options": [
+      "ROM",
+      "HD",
+      "RAM",
+      "SSD"
+    ],
+    "correctIndex": 2,
+    "explanation": "RAM significa Random Access Memory (memória de acesso aleatório).",
+    "reviewed": true
+  },
+  {
+    "key": "tecnologia-041",
+    "level": 3,
+    "statement": "Qual linguagem de programação, muito usada em ciência de dados, tem o nome inspirado num grupo de comédia?",
+    "options": [
+      "Java",
+      "Ruby",
+      "Rust",
+      "Python"
+    ],
+    "correctIndex": 3,
+    "explanation": "Guido van Rossum batizou a linguagem em homenagem ao grupo britânico Monty Python, não à cobra.",
+    "reviewed": true
+  },
+  {
+    "key": "tecnologia-042",
+    "level": 3,
+    "statement": "Qual empresa Jeff Bezos fundou em 1994, começando como uma livraria online?",
+    "options": [
+      "eBay",
+      "Amazon",
+      "Alibaba",
+      "Mercado Livre"
+    ],
+    "correctIndex": 1,
+    "explanation": "A Amazon hoje também é líder mundial em computação em nuvem, com a AWS.",
+    "reviewed": true
+  },
+  {
+    "key": "tecnologia-043",
+    "level": 3,
+    "statement": "Num endereço que começa com \"https\", o que indica o \"S\" final?",
+    "options": [
+      "Site oficial do governo",
+      "Conexão segura, criptografada",
+      "Servidor mais rápido",
+      "Site de compras"
+    ],
+    "correctIndex": 1,
+    "explanation": "O S vem de \"secure\": os dados trocados com o site são criptografados.",
+    "reviewed": true
+  },
+  {
+    "key": "tecnologia-044",
+    "level": 4,
+    "statement": "Qual lei diz que o número de transistores num chip dobra mais ou menos a cada dois anos?",
+    "options": [
+      "Lei de Murphy",
+      "Lei de Moore",
+      "Lei de Metcalfe",
+      "Lei de Ohm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Gordon Moore, um dos fundadores da Intel, fez a previsão em 1965.",
+    "reviewed": true
+  },
+  {
+    "key": "tecnologia-045",
+    "level": 3,
+    "statement": "Qual foi a primeira rede social a passar de 1 bilhão de usuários ativos, em 2012?",
+    "options": [
+      "Orkut",
+      "MySpace",
+      "Twitter",
+      "Facebook"
+    ],
+    "correctIndex": 3,
+    "explanation": "O Facebook foi criado em 2004 por Mark Zuckerberg e colegas de Harvard.",
+    "reviewed": true
+  },
+  {
+    "key": "tecnologia-046",
+    "level": 3,
+    "statement": "Qual rede social fez enorme sucesso no Brasil nos anos 2000, com \"scraps\" e comunidades, e foi encerrada em 2014?",
+    "options": [
+      "Orkut",
+      "MySpace",
+      "Fotolog",
+      "Google+"
+    ],
+    "correctIndex": 0,
+    "explanation": "O nome vem do criador, o engenheiro turco Orkut Büyükkökten; a maioria dos usuários era brasileira.",
+    "reviewed": true
+  },
+  {
+    "key": "tecnologia-047",
+    "level": 3,
+    "statement": "Qual sigla identifica o processador da placa de vídeo, também muito usado para treinar inteligência artificial?",
+    "options": [
+      "CPU",
+      "GPU",
+      "RAM",
+      "SSD"
+    ],
+    "correctIndex": 1,
+    "explanation": "A GPU faz milhares de cálculos simples ao mesmo tempo, ideal para imagens e para IA.",
+    "reviewed": true
+  },
+  {
+    "key": "tecnologia-048",
+    "level": 3,
+    "statement": "Qual criptomoeda foi criada em 2009 por alguém sob o pseudônimo Satoshi Nakamoto?",
+    "options": [
+      "Ethereum",
+      "Dogecoin",
+      "Bitcoin",
+      "Litecoin"
+    ],
+    "correctIndex": 2,
+    "explanation": "A verdadeira identidade de Satoshi Nakamoto continua desconhecida.",
+    "reviewed": true
+  },
+  {
+    "key": "tecnologia-049",
+    "level": 4,
+    "statement": "Qual sistema numérico de base 16 é usado para representar cores como #FF0000?",
+    "options": [
+      "Binário",
+      "Octal",
+      "Decimal",
+      "Hexadecimal"
+    ],
+    "correctIndex": 3,
+    "explanation": "Usa os dígitos de 0 a 9 e as letras de A a F; #FF0000 é o vermelho puro.",
+    "reviewed": true
+  },
+  {
+    "key": "tecnologia-050",
+    "level": 3,
+    "statement": "Qual sistema operacional da Microsoft, em linha de comando, dominava os PCs antes do Windows?",
+    "options": [
+      "Unix",
+      "MS-DOS",
+      "CP/M",
+      "OS/2"
+    ],
+    "correctIndex": 1,
+    "explanation": "O MS-DOS foi lançado em 1981, junto com o IBM PC.",
+    "reviewed": true
+  },
+  {
+    "key": "tecnologia-051",
+    "level": 3,
+    "statement": "Em que ano a urna eletrônica foi usada pela primeira vez em eleições no Brasil?",
+    "options": [
+      "1989",
+      "1996",
+      "2000",
+      "2002"
+    ],
+    "correctIndex": 1,
+    "explanation": "Em 1996 ela foi usada nas eleições municipais de algumas cidades; em 2000, em todo o país.",
+    "reviewed": true
+  },
+  {
+    "key": "tecnologia-052",
+    "level": 4,
+    "statement": "Qual rede militar americana, criada em 1969, deu origem à internet?",
+    "options": [
+      "NSFNET",
+      "Usenet",
+      "ARPANET",
+      "Ethernet"
+    ],
+    "correctIndex": 2,
+    "explanation": "A primeira mensagem da ARPANET, entre duas universidades da Califórnia, travou depois de duas letras.",
+    "reviewed": true
+  },
+  {
+    "key": "tecnologia-053",
+    "level": 4,
+    "statement": "Qual programa traduz o código escrito pelo programador para linguagem de máquina antes da execução?",
+    "options": [
+      "Compilador",
+      "Depurador",
+      "Editor de texto",
+      "Navegador"
+    ],
+    "correctIndex": 0,
+    "explanation": "O depurador (debugger) serve para encontrar erros no programa.",
+    "reviewed": true
+  },
+  {
+    "key": "tecnologia-054",
+    "level": 4,
+    "statement": "Qual linguagem de programação foi criada por Dennis Ritchie no início dos anos 1970?",
+    "options": [
+      "Pascal",
+      "Fortran",
+      "COBOL",
+      "C"
+    ],
+    "correctIndex": 3,
+    "explanation": "A linguagem C foi usada para reescrever o sistema Unix e influenciou C++, Java e muitas outras.",
+    "reviewed": true
+  },
+  {
+    "key": "tecnologia-055",
+    "level": 4,
+    "statement": "Como se chama o teste, proposto em 1950, para avaliar se uma máquina consegue se passar por um ser humano numa conversa?",
+    "options": [
+      "Teste de Turing",
+      "Teste de Rorschach",
+      "Teste de Lovelace",
+      "Teste de Babbage"
+    ],
+    "correctIndex": 0,
+    "explanation": "No artigo original, o teste era chamado de \"jogo da imitação\".",
+    "reviewed": true
+  },
+  {
+    "key": "tecnologia-056",
+    "level": 4,
+    "statement": "O que significa a sigla SQL, linguagem usada em bancos de dados?",
+    "options": [
+      "Simple Question Language",
+      "Structured Query Language",
+      "System Quality Level",
+      "Sequential Query Logic"
+    ],
+    "correctIndex": 1,
+    "explanation": "SQL significa \"linguagem de consulta estruturada\" e foi criada na IBM nos anos 1970.",
+    "reviewed": true
+  },
+  {
+    "key": "tecnologia-057",
+    "level": 4,
+    "statement": "Qual foi o primeiro microprocessador comercial, lançado pela Intel em 1971?",
+    "options": [
+      "Intel 8086",
+      "Zilog Z80",
+      "MOS 6502",
+      "Intel 4004"
+    ],
+    "correctIndex": 3,
+    "explanation": "O 4004 foi criado para uma calculadora japonesa e tinha cerca de 2.300 transistores.",
+    "reviewed": true
+  },
+  {
+    "key": "tecnologia-058",
+    "level": 3,
+    "statement": "Qual é a lei brasileira de proteção de dados pessoais, em vigor desde 2020?",
+    "options": [
+      "Marco Civil da Internet",
+      "LGPD",
+      "Lei Carolina Dieckmann",
+      "Código de Defesa do Consumidor"
+    ],
+    "correctIndex": 1,
+    "explanation": "A Lei Geral de Proteção de Dados (Lei 13.709/2018) foi inspirada no regulamento europeu, o GDPR.",
+    "reviewed": true
+  },
+  {
+    "key": "tecnologia-059",
+    "level": 4,
+    "statement": "Qual é a porta padrão do protocolo HTTP, sem criptografia?",
+    "options": [
+      "21",
+      "80",
+      "443",
+      "8080"
+    ],
+    "correctIndex": 1,
+    "explanation": "O HTTPS usa a porta 443, e o FTP, a 21.",
+    "reviewed": true
+  },
+  {
+    "key": "tecnologia-060",
+    "level": 4,
+    "statement": "Qual algoritmo de Larry Page e Sergey Brin classificava as páginas da web pelos links que recebiam?",
+    "options": [
+      "PageRank",
+      "LinkScore",
+      "WebIndex",
+      "SiteRank"
+    ],
+    "correctIndex": 0,
+    "explanation": "O PageRank foi a base do buscador que os dois fundaram em 1998.",
+    "reviewed": true
   }
 ]

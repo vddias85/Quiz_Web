@@ -26,8 +26,9 @@ Quiz web de conhecimentos gerais. **A fonte da verdade é o [PRD.md](PRD.md) (v1
   - **Ciências:** 60 perguntas (15 por nível), lote 021–060 revisado em 08/11/2026 (045 e 049 subiram para avançado; 057 e 058 desceram para difícil); publicado no prod.
   - **Cinema e TV:** 60 perguntas (15 por nível, cinema mundial + TV e cinema brasileiros), lote 021–060 revisado em 08/11/2026 (trocas de nível: 032↔030 e 045↔031); publicado no prod.
   - **Música:** 60 perguntas (15 por nível, brasileira e internacional + teoria), lote 021–060 revisado em 08/11/2026 (troca de nível: 043↔053); publicado no prod.
-  - **Artes e Literatura:** 60 perguntas (15 por nível: literatura brasileira, portuguesa e mundial, pintura, escultura, arquitetura e quadrinhos), lote 021–060 revisado em 08/11/2026.
-  - Faltam: Tecnologia, Matemática e Lógica (ainda com 5 por nível; no modo Por Categoria todos recebem as mesmas 20 perguntas).
+  - **Artes e Literatura:** 60 perguntas (15 por nível: literatura brasileira, portuguesa e mundial, pintura, escultura, arquitetura e quadrinhos), lote 021–060 revisado em 08/11/2026; publicado no prod.
+  - **Tecnologia:** 60 perguntas (15 por nível: dia a dia, empresas, internet, história e fundamentos da computação), lote 021–060 revisado em 08/11/2026 (044 e 049 subiram; 051 e 058 desceram).
+  - Faltam: Matemática e Lógica (ainda com 5 por nível; no modo Por Categoria todos recebem as mesmas 20 perguntas).
 - **Ideia aprovada para depois da Fase 6 (08/11/2026):** terceiro modo de jogo, **por nível de dificuldade** (além de Temas Variados e Por Categoria). Antes de implementar, decidir com o usuário e registrar no PRD: formato (20 perguntas do mesmo nível?), nota (os pesos 0,3–0,7 não servem; ex.: 0,5 por acerto), ranking próprio por nível ou fora do ranking, e se vale a regra de não repetir tema seguido.
 
 ## Regras de negócio (não negociáveis sem aprovação)
