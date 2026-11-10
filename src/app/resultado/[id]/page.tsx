@@ -6,6 +6,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { PageShell } from "@/components/layout/page-shell";
 import { LevelBadge } from "@/components/quiz/level-badge";
 import { formatDuration } from "@/lib/format";
+import { modeLabel, rankingFilter, rankingName as rankingNameOf } from "@/lib/modes";
 import { rankingHref } from "@/lib/ranking";
 import { formatScore } from "@/lib/scoring";
 import { ApiError } from "@/server/errors";
@@ -33,23 +34,20 @@ export default async function ResultPage({ params }: { params: Promise<{ id: str
     console.error("[resultado] falha ao calcular a posição no ranking:", err);
     return null;
   });
-  const rankingName = result.mode === "MIXED" ? "ranking Geral" : `ranking de ${result.category?.name ?? "categoria"}`;
-  const rankingLink = rankingHref(result.mode === "CATEGORY" ? (result.category?.slug ?? null) : null);
+  const rankingName = rankingNameOf(result);
+  const rankingLink = rankingHref(rankingFilter(result));
 
   return (
     <PageShell>
       <div className="space-y-8">
         <header className="space-y-2 text-center">
           <p className="text-sm text-muted-foreground">
-            {result.mode === "MIXED"
-              ? "🎲 Temas Variados"
-              : `${result.category?.icon ?? ""} ${result.category?.name ?? ""}`}{" "}
-            · {result.nickname}
+            {modeLabel(result)} · {result.nickname}
           </p>
           <h1 className="text-lg font-medium">Sua nota</h1>
           <p className="animate-pop text-7xl font-extrabold tabular-nums">{result.score}</p>
           <p className="text-muted-foreground">
-            {result.correctCount} de 20 acertos · {formatDuration(result.totalTimeMs)}
+            {result.correctCount} de {result.total} acertos · {formatDuration(result.totalTimeMs)}
           </p>
         </header>
 

@@ -3,7 +3,7 @@
 import { Prisma } from "@prisma/client";
 import { prisma } from "@/lib/db";
 import { periodStart, RANKING_TOP, type Period, type RankingScope } from "@/lib/ranking";
-import { formatScore } from "@/lib/scoring";
+import { formatScore, isLevel } from "@/lib/scoring";
 
 export interface RankingRowDto {
   position: number;
@@ -48,7 +48,9 @@ async function rankedRows(params: {
   const scopeFilter =
     scope.mode === "CATEGORY"
       ? Prisma.sql`s."mode" = 'CATEGORY'::"Mode" AND s."categoryId" = ${scope.categoryId}`
-      : Prisma.sql`s."mode" = 'MIXED'::"Mode"`;
+      : scope.mode === "LEVEL"
+        ? Prisma.sql`s."mode" = 'LEVEL'::"Mode" AND s."level" = ${scope.level}`
+        : Prisma.sql`s."mode" = 'MIXED'::"Mode"`;
   const periodFilter = since ? Prisma.sql`AND s."finishedAt" >= ${since}` : Prisma.empty;
   const mine = playerIds.length > 0 ? Prisma.sql`OR r."playerId" IN (${Prisma.join([...playerIds])})` : Prisma.empty;
 
@@ -165,13 +167,15 @@ export async function getSessionStandings(
       playerId: { in: [...ownedIds] },
       status: "FINISHED",
     },
-    select: { playerId: true, mode: true, categoryId: true },
+    select: { playerId: true, mode: true, categoryId: true, level: true },
   });
   if (!session) return null;
   const scope: RankingScope =
     session.mode === "CATEGORY" && session.categoryId
       ? { mode: "CATEGORY", categoryId: session.categoryId }
-      : { mode: "MIXED" };
+      : session.mode === "LEVEL" && isLevel(session.level)
+        ? { mode: "LEVEL", level: session.level }
+        : { mode: "MIXED" };
   const [all, today] = await Promise.all(
     (["all", "today"] as const).map((period) =>
       getPlayerStanding({

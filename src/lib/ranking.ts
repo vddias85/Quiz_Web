@@ -1,5 +1,6 @@
 // Regras puras do ranking (PRD §7 e §8.7): períodos no fuso de São Paulo e filtros.
 // A consulta ao banco fica em src/server/ranking.ts.
+import type { Level } from "./scoring";
 
 export const RANKING_TIME_ZONE = "America/Sao_Paulo";
 export const RANKING_TOP = 50;
@@ -14,8 +15,9 @@ export const PERIOD_LABELS: Record<Period, string> = {
   all: "Sempre",
 };
 
-/** Escopo do ranking: Geral (modo Temas Variados) ou uma categoria. */
-export type RankingScope = { mode: "MIXED" } | { mode: "CATEGORY"; categoryId: number };
+/** Escopo do ranking: Geral (Temas Variados), uma categoria ou um nível (modo Por Nível). */
+export type RankingScope =
+  { mode: "MIXED" } | { mode: "CATEGORY"; categoryId: number } | { mode: "LEVEL"; level: Level };
 
 const WEEKDAYS: Record<string, number> = {
   Mon: 0,
@@ -92,10 +94,23 @@ export function periodFromSlug(slug: string | undefined): Period {
   return found ?? "all";
 }
 
-/** URL da página de ranking: /ranking?categoria=geografia&periodo=semana (sem categoria = Geral). */
-export function rankingHref(categorySlug: string | null, period: Period = "all"): string {
+// Níveis nas URLs da página (/ranking?nivel=dificil).
+export const LEVEL_SLUGS: Record<Level, string> = { 1: "facil", 2: "medio", 3: "dificil", 4: "avancado" };
+
+export function levelFromSlug(slug: string | undefined): Level | null {
+  const found = (Object.entries(LEVEL_SLUGS) as [string, string][]).find(([, value]) => value === slug);
+  return found ? (Number(found[0]) as Level) : null;
+}
+
+/** Escopo da página de ranking: Geral (sem filtro), uma categoria (slug) ou um nível. */
+export type RankingFilter = { categoria?: string | null; nivel?: Level | null };
+
+/** URL da página de ranking: /ranking?categoria=geografia&periodo=semana ou /ranking?nivel=dificil. */
+export function rankingHref(filter: RankingFilter | string | null, period: Period = "all"): string {
+  const f: RankingFilter = typeof filter === "string" || filter === null ? { categoria: filter } : filter;
   const params = new URLSearchParams();
-  if (categorySlug) params.set("categoria", categorySlug);
+  if (f.nivel) params.set("nivel", LEVEL_SLUGS[f.nivel]);
+  else if (f.categoria) params.set("categoria", f.categoria);
   if (period !== "all") params.set("periodo", PERIOD_SLUGS[period]);
   const qs = params.toString();
   return qs ? `/ranking?${qs}` : "/ranking";

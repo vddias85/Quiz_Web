@@ -44,6 +44,26 @@ test("Por Categoria: a partida entra no ranking da categoria, não no Geral", as
   await expect(page.getByRole("row").filter({ hasText: nickname })).toHaveCount(0);
 });
 
+test("Por Nível: 10 perguntas do mesmo nível, nota de 1,0 por acerto e ranking do nível", async ({ page }) => {
+  const nickname = newNickname();
+  await startGame(page, nickname, { level: "Difícil" });
+  await expect(page.getByText("1/10", { exact: true })).toBeVisible();
+  await expect(page.getByText("Difícil").first()).toBeVisible();
+  await playAllQuestions(page, 10);
+
+  await expect(page.getByText(/📶 Nível Difícil/)).toBeVisible();
+  await expect(page.getByText(/de 10 acertos/)).toBeVisible();
+  await expect(page.getByText(/no ranking do nível Difícil/)).toBeVisible();
+  // A nota é um número inteiro de acertos: X,0
+  await expect(page.locator("p.text-7xl")).toHaveText(/^\d{1,2},0$/);
+
+  await page.getByRole("link", { name: "Ver ranking" }).click();
+  await expect(page).toHaveURL(/nivel=dificil/);
+  await expect(page.getByRole("row").filter({ hasText: nickname })).toBeVisible();
+  await page.getByRole("link", { name: "Fácil" }).click();
+  await expect(page.getByRole("row").filter({ hasText: nickname })).toHaveCount(0);
+});
+
 test("tempo esgotado conta como erro e avança", async ({ page }) => {
   // Relógio controlado do Playwright: os 30 s passam sem esperar de verdade.
   await page.clock.install();

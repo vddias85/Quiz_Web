@@ -4,7 +4,16 @@ import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
 import { PageShell } from "@/components/layout/page-shell";
 import { RankingTable } from "@/components/ranking/ranking-table";
-import { PERIOD_LABELS, PERIODS, periodFromSlug, RANKING_TOP, rankingHref } from "@/lib/ranking";
+import {
+  levelFromSlug,
+  PERIOD_LABELS,
+  PERIODS,
+  periodFromSlug,
+  RANKING_TOP,
+  rankingHref,
+  type RankingFilter,
+} from "@/lib/ranking";
+import { LEVEL_LABELS, LEVELS } from "@/lib/scoring";
 import { cn } from "@/lib/utils";
 import { readOwnedPlayerIds } from "@/server/http";
 import { listPlayableCategories, type CategoryDto } from "@/server/quiz";
@@ -13,7 +22,7 @@ import { getRanking, type RankingDto } from "@/server/ranking";
 export const dynamic = "force-dynamic";
 export const metadata: Metadata = { title: "Quiz Web — Ranking" };
 
-type SearchParams = { categoria?: string; periodo?: string };
+type SearchParams = { categoria?: string; nivel?: string; periodo?: string };
 
 const focusRing = "focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50";
 
@@ -40,11 +49,17 @@ export default async function RankingPage({ searchParams }: { searchParams: Prom
   let categories: CategoryDto[] = [];
   let category: CategoryDto | null = null;
   let ranking: RankingDto | null = null;
+  // ?nivel= tem prioridade sobre ?categoria=; sem nenhum dos dois, é o ranking Geral.
+  const level = levelFromSlug(sp.nivel);
   try {
     categories = await listPlayableCategories();
-    category = sp.categoria ? (categories.find((c) => c.slug === sp.categoria) ?? null) : null;
+    category = !level && sp.categoria ? (categories.find((c) => c.slug === sp.categoria) ?? null) : null;
     ranking = await getRanking({
-      scope: category ? { mode: "CATEGORY", categoryId: category.id } : { mode: "MIXED" },
+      scope: level
+        ? { mode: "LEVEL", level }
+        : category
+          ? { mode: "CATEGORY", categoryId: category.id }
+          : { mode: "MIXED" },
       period,
       playerIds: await readOwnedPlayerIds(),
     });
@@ -52,8 +67,12 @@ export default async function RankingPage({ searchParams }: { searchParams: Prom
     console.error("[ranking] falha ao carregar:", err);
   }
 
-  const slug = category?.slug ?? null;
-  const scopeTitle = category ? `${category.icon} ${category.name}` : "🎲 Geral (Temas Variados)";
+  const filter: RankingFilter = level ? { nivel: level } : { categoria: category?.slug ?? null };
+  const scopeTitle = level
+    ? `📶 Nível ${LEVEL_LABELS[level]}`
+    : category
+      ? `${category.icon} ${category.name}`
+      : "🎲 Geral (Temas Variados)";
 
   return (
     <PageShell width="2xl">
@@ -67,13 +86,25 @@ export default async function RankingPage({ searchParams }: { searchParams: Prom
 
         <nav aria-label="Escopo do ranking" className="space-y-3">
           <div className="flex justify-center gap-2">
-            <Chip href={rankingHref(null, period)} active={!category}>
+            <Chip href={rankingHref(null, period)} active={!category && !level}>
               🎲 Geral
             </Chip>
             <Chip href={rankingHref(category?.slug ?? categories[0]?.slug ?? null, period)} active={!!category}>
               🎯 Por categoria
             </Chip>
+            <Chip href={rankingHref({ nivel: level ?? 1 }, period)} active={!!level}>
+              📶 Por nível
+            </Chip>
           </div>
+          {level && (
+            <div className="flex flex-wrap justify-center gap-2">
+              {LEVELS.map((l) => (
+                <Chip key={l} href={rankingHref({ nivel: l }, period)} active={l === level}>
+                  {LEVEL_LABELS[l]}
+                </Chip>
+              ))}
+            </div>
+          )}
           {category && (
             <div className="flex flex-wrap justify-center gap-2">
               {categories.map((c) => (
@@ -90,7 +121,7 @@ export default async function RankingPage({ searchParams }: { searchParams: Prom
             {PERIODS.map((p) => (
               <Link
                 key={p}
-                href={rankingHref(slug, p)}
+                href={rankingHref(filter, p)}
                 aria-current={p === period ? "page" : undefined}
                 className={cn(
                   "rounded-md px-3 py-1.5 text-sm font-medium transition-colors",

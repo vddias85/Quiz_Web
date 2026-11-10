@@ -2,7 +2,7 @@
 
 | Campo | Valor |
 |---|---|
-| Versão | 1.7 |
+| Versão | 1.8 |
 | Data | 07/11/2026 |
 | Status | ✅ Aprovado em 07/11/2026 |
 
@@ -17,6 +17,7 @@
 | 1.3 | Detalhes da Fase 2: o cookie guarda até 10 apelidos por navegador (computador compartilhado); começar uma partida encerra a anterior que estiver em andamento |
 | 1.4 | Nova função: **salvar o jogo e continuar depois** (seção 2.2). Só entre perguntas, válido por 24 h, um jogo salvo por apelido, entra no ranking; os 15 min passam a contar só o tempo de jogo ativo |
 | 1.5 | Identidade visual (seção 10.1): logo "Quiz online" em todas as páginas e Tema Azul / Minimalista |
+| 1.8 | Novo modo **Por Nível** (seções 3, 6.4 e 7): 10 perguntas de um único nível, de todas as categorias, sem 2 seguidas do mesmo tema; 1,0 por acerto (nota de 0,0 a 10,0); ranking próprio para cada nível |
 | 1.7 | Tema escuro (paleta azul-marinho, segue o sistema até o jogador escolher), sons sintetizados e animações leves que respeitam "reduzir movimento" (seção 10.1) |
 | 1.6 | Novo logo "Quiz Web". Contraste (WCAG AA): botões passam a usar `#0369A1` (5,9:1 com texto branco); `#0284C7` (4,1:1) fica só nos destaques sem texto |
 
@@ -84,6 +85,9 @@ Resultado
 |---|---|---|
 | **Temas Variados** | Mistura de todas as categorias | Em cada nível, as perguntas são distribuídas entre categorias diferentes, evitando 2 seguidas do mesmo tema |
 | **Por Categoria** | Usuário escolhe um tema | Todas as 20 perguntas da categoria escolhida |
+| **Por Nível** (v1.8) | Usuário escolhe um nível de dificuldade | **10 perguntas** do nível escolhido, de todas as categorias, nunca 2 seguidas do mesmo tema (com 10 categorias, cada pergunta é de um tema diferente) |
+
+- Nos três modos valem as mesmas regras de 30 s por pergunta, feedback com explicação, salvar e continuar depois, revisão ao final e "reportar pergunta".
 
 ---
 
@@ -140,6 +144,11 @@ Perguntas mais difíceis valem mais, somando 10,0 no total:
 - Exemplo: acertar todas as fáceis e médias (1,5 + 2,0) e errar o resto = **3,5**; acertar só as 5 avançadas = **3,5**.
 - A tela de resultado mostra os pontos obtidos em cada nível.
 
+### 6.4 Pontuação do modo Por Nível (v1.8)
+- Cada acerto vale **1,0**; 10 acertos = **10,0**. Erro ou tempo esgotado = 0.
+- Como todas as perguntas são do mesmo nível, não há peso: a nota é o número de acertos.
+- No código, 1,0 = 10 décimos, mantendo a mesma escala (0 a 100 décimos) dos outros modos.
+
 ### 6.2 Alternativa não adotada: 0,5 fixo por acerto
 Mantida só como referência: cada acerto valeria 0,5, independentemente do nível.
 
@@ -152,6 +161,7 @@ Mantida só como referência: cada acerto valeria 0,5, independentemente do nív
 
 - **Ranking Geral** (modo Temas Variados).
 - **Ranking por Categoria** (um para cada tema).
+- **Ranking por Nível** (v1.8): um para cada nível (Fácil, Médio, Difícil e Avançado), só com partidas do modo Por Nível.
 - **Filtros de período:** Hoje · Semana · Mês · Sempre.
 - Exibe Top 50 com posição, apelido, nota, tempo e data; destaca a posição do jogador atual mesmo fora do Top 50.
 - Só a **melhor nota** de cada jogador entra em cada ranking/período (evita poluir com repetições).

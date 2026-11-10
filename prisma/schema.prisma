@@ -14,6 +14,7 @@ datasource db {
 enum Mode {
   MIXED
   CATEGORY
+  LEVEL // 10 perguntas de um único nível, de todas as categorias (PRD v1.8)
 }
 
 enum SessionStatus {
@@ -89,6 +90,7 @@ model Session {
   mode           Mode
   categoryId     Int?
   category       Category?        @relation(fields: [categoryId], references: [id])
+  level          Int? // só no modo LEVEL: 1 fácil … 4 avançado (CHECK no SQL)
   status         SessionStatus    @default(IN_PROGRESS)
   startedAt      DateTime         @default(now())
   // Tempo de jogo ativo (limite de 15 min): soma dos trechos já jogados + trecho atual.
@@ -103,6 +105,7 @@ model Session {
   reports        QuestionReport[]
 
   @@index([mode, categoryId, status, finishedAt]) // ranking
+  @@index([mode, level, status, finishedAt]) // ranking por nível
   @@index([playerId, startedAt]) // últimas sessões do jogador (evitar repetição)
   @@index([playerId, status]) // jogo salvo do jogador
 }

@@ -8,6 +8,7 @@ import { PageShell } from "@/components/layout/page-shell";
 import { LevelBadge } from "@/components/quiz/level-badge";
 import { ReviewReport } from "@/components/review/review-report";
 import { formatDuration } from "@/lib/format";
+import { modeLabel } from "@/lib/modes";
 import { cn } from "@/lib/utils";
 import { ApiError } from "@/server/errors";
 import { readOwnedPlayerIds, SESSION_ID_PATTERN } from "@/server/http";
@@ -31,12 +32,14 @@ function Outcome({ item }: { item: ReviewItem }) {
   );
 }
 
-function ReviewQuestion({ item, sessionId }: { item: ReviewItem; sessionId: string }) {
+function ReviewQuestion({ item, sessionId, total }: { item: ReviewItem; sessionId: string; total: number }) {
   return (
     <li className="space-y-3 rounded-xl border p-4 sm:p-5" aria-labelledby={`q${item.position}`}>
       <div className="flex flex-wrap items-center justify-between gap-2">
         <div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
-          <span className="font-semibold text-foreground">{item.position}/20</span>
+          <span className="font-semibold text-foreground">
+            {item.position}/{total}
+          </span>
           <LevelBadge level={item.level} />
           <span>
             <span aria-hidden>{item.category.icon}</span> {item.category.name}
@@ -119,13 +122,13 @@ export default async function ReviewPage({ params }: { params: Promise<{ id: str
         <header className="space-y-1 text-center">
           <h1 className="text-2xl font-bold">Revisão das respostas</h1>
           <p className="text-sm text-muted-foreground">
-            Nota {result.score} · {result.correctCount} de 20 acertos
+            {modeLabel(result)} · Nota {result.score} · {result.correctCount} de {result.total} acertos
           </p>
         </header>
 
         <ol className="space-y-4">
           {result.review.map((item) => (
-            <ReviewQuestion key={item.position} item={item} sessionId={result.sessionId} />
+            <ReviewQuestion key={item.position} item={item} sessionId={result.sessionId} total={result.total} />
           ))}
         </ol>
 

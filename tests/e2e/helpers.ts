@@ -4,24 +4,30 @@ import { E2E_PREFIX } from "./db";
 
 export const newNickname = () => `${E2E_PREFIX}${randomBytes(4).toString("hex")}`;
 
-/** Preenche a tela inicial e começa a partida. Sem categoria = Temas Variados. */
-export async function startGame(page: Page, nickname: string, category?: string) {
+/**
+ * Preenche a tela inicial e começa a partida. Sem escolha = Temas Variados;
+ * `category` = Por Categoria; `{ level: "Difícil" }` = Por Nível.
+ */
+export async function startGame(page: Page, nickname: string, choice?: string | { level: string }) {
   await page.goto("/");
   await page.getByLabel("Seu apelido").fill(nickname);
-  if (category) {
+  if (typeof choice === "string") {
     await page.getByRole("button", { name: /Por Categoria/i }).click();
-    await page.getByRole("button", { name: category }).click();
+    await page.getByRole("button", { name: choice }).click();
+  } else if (choice) {
+    await page.getByRole("button", { name: /Por Nível/i }).click();
+    await page.getByRole("button", { name: new RegExp(choice.level) }).click();
   }
   await page.getByRole("button", { name: "Começar" }).click();
   await page.waitForURL(/\/quiz\//);
 }
 
-/** Responde as 20 perguntas com o atalho de teclado (alternativa 1) e vai para o resultado. */
-export async function playAllQuestions(page: Page) {
-  for (let position = 1; position <= 20; position++) {
-    await expect(page.getByText(`${position}/20`, { exact: true })).toBeVisible();
+/** Responde todas as perguntas com o atalho de teclado (alternativa 1) e vai para o resultado. */
+export async function playAllQuestions(page: Page, total = 20) {
+  for (let position = 1; position <= total; position++) {
+    await expect(page.getByText(`${position}/${total}`, { exact: true })).toBeVisible();
     await page.keyboard.press("1");
-    const next = page.getByRole("button", { name: position === 20 ? "Ver resultado" : "Próxima pergunta" });
+    const next = page.getByRole("button", { name: position === total ? "Ver resultado" : "Próxima pergunta" });
     await expect(next).toBeVisible();
     await next.click();
   }

@@ -9,13 +9,15 @@ import type { Rng } from "@/lib/random";
 import {
   breakdownByLevel,
   formatScore,
+  isLevel,
   LEVEL_LABELS,
   LEVELS,
-  levelForPosition,
+  levelOfItem,
   QUESTIONS_PER_LEVEL,
-  QUESTIONS_PER_SESSION,
+  questionsInSession,
   scoreTenths,
   type Level,
+  type SessionShape,
 } from "@/lib/scoring";
 import {
   activeMs,
@@ -95,6 +97,7 @@ export async function createSession(params: {
   playerId: string;
   mode: Mode;
   categoryId?: number;
+  level?: number; // obrigatório no modo LEVEL
   discardSaved?: boolean; // descarta o jogo salvo do jogador, se houver
   rng?: Rng;
   now?: Date;
@@ -102,6 +105,7 @@ export async function createSession(params: {
   const { playerId, mode, rng } = params;
   const now = params.now ?? new Date();
   const categoryId = mode === "CATEGORY" ? params.categoryId : undefined;
+  const level = mode === "LEVEL" ? params.level : undefined;
 
   // Um jogo salvo por apelido: começar outro exige descartá-lo de forma explícita.
   if (!params.discardSaved) {
@@ -119,6 +123,9 @@ export async function createSession(params: {
     const exists = await prisma.category.findUnique({ where: { id: categoryId }, select: { id: true } });
     if (!exists) throw new ApiError(400, "invalid_category", "Categoria não encontrada.");
   }
+  if (mode === "LEVEL" && !isLevel(level)) {
+    throw new ApiError(400, "invalid_level", "Escolha um nível de dificuldade.");
+  }
 
   const [recentSessions, questions] = await Promise.all([
     prisma.session.findMany({
@@ -128,7 +135,7 @@ export async function createSession(params: {
       select: { items: { select: { questionId: true } } },
     }),
     prisma.question.findMany({
-      where: { active: true, ...(categoryId ? { categoryId } : {}) },
+      where: { active: true, ...(categoryId ? { categoryId } : {}), ...(level ? { level } : {}) },
       select: { id: true, categoryId: true, level: true, options: { select: { id: true }, orderBy: { position: "asc" } } },
     }),
   ]);
@@ -146,7 +153,9 @@ export async function createSession(params: {
     drawn =
       mode === "CATEGORY"
         ? drawSession({ mode, categoryId: categoryId!, pool, recentIds, rng })
-        : drawSession({ mode, pool, recentIds, rng });
+        : mode === "LEVEL"
+          ? drawSession({ mode, level: level as Level, pool, recentIds, rng })
+          : drawSession({ mode, pool, recentIds, rng });
   } catch (err) {
     if (err instanceof InsufficientQuestionsError) {
       throw new ApiError(409, "insufficient_questions", "Ainda não há perguntas suficientes para este modo.");
@@ -165,6 +174,7 @@ export async function createSession(params: {
         playerId,
         mode,
         categoryId: categoryId ?? null,
+        level: level ?? null,
         startedAt: now,
         activeSince: now,
         items: {
@@ -185,7 +195,16 @@ async function loadOwnedSession(sessionId: string, ownedIds: readonly string[]) 
   if (ownedIds.length === 0) throw notFound();
   const session = await prisma.session.findFirst({
     where: { id: sessionId, playerId: { in: [...ownedIds] } },
-    select: { id: true, status: true, playerId: true, activeSince: true, activeMsBefore: true, savedAt: true },
+    select: {
+      id: true,
+      status: true,
+      playerId: true,
+      mode: true,
+      level: true,
+      activeSince: true,
+      activeMsBefore: true,
+      savedAt: true,
+    },
   });
   if (!session) throw notFound(); // não revela se a sessão existe para outro jogador
   return session;
@@ -213,18 +232,18 @@ async function checkExpiry(session: OwnedSession, now: Date): Promise<OwnedSessi
 }
 
 /** Fecha a sessão: calcula nota, acertos e tempo total. Idempotente. */
-async function finalizeSession(sessionId: string, now: Date) {
+async function finalizeSession(sessionId: string, shape: SessionShape, now: Date) {
   const items = await prisma.sessionItem.findMany({
     where: { sessionId },
     select: { position: true, isCorrect: true, timeMs: true },
   });
-  const scored = items.map((i) => ({ level: levelForPosition(i.position), isCorrect: i.isCorrect }));
+  const scored = items.map((i) => ({ level: levelOfItem(shape, i.position), isCorrect: i.isCorrect }));
   await prisma.session.updateMany({
     where: { id: sessionId, status: "IN_PROGRESS" },
     data: {
       status: "FINISHED",
       finishedAt: now,
-      scoreTenths: scoreTenths(scored),
+      scoreTenths: scoreTenths(scored, shape),
       correctCount: items.filter((i) => i.isCorrect).length,
       totalTimeMs: items.reduce((sum, i) => sum + (i.timeMs ?? QUESTION_TIME_MS), 0),
     },
@@ -260,7 +279,8 @@ export async function getCurrentQuestion(
   if (status === "EXPIRED") return { status: "expired" };
   if (status === "SAVED") return { status: "saved" }; // é preciso retomar antes
 
-  for (let guard = 0; guard <= QUESTIONS_PER_SESSION; guard++) {
+  const total = questionsInSession(session);
+  for (let guard = 0; guard <= total; guard++) {
     const item = await prisma.sessionItem.findFirst({
       where: { sessionId, answeredAt: null },
       orderBy: { position: "asc" },
@@ -279,7 +299,7 @@ export async function getCurrentQuestion(
       },
     });
     if (!item) {
-      await finalizeSession(sessionId, now);
+      await finalizeSession(sessionId, session, now);
       return { status: "finished" };
     }
 
@@ -309,11 +329,11 @@ export async function getCurrentQuestion(
     }
 
     const textById = new Map(item.question.options.map((o) => [o.id, o.text]));
-    const level = levelForPosition(item.position);
+    const level = levelOfItem(session, item.position);
     return {
       status: "in_progress",
       position: item.position,
-      total: QUESTIONS_PER_SESSION,
+      total,
       level,
       levelLabel: LEVEL_LABELS[level],
       category: item.question.category,
@@ -390,9 +410,9 @@ export async function submitAnswer(
   if (saved.count === 0) throw new ApiError(409, "already_answered", "Esta pergunta já foi respondida.");
 
   // As perguntas são entregues em ordem (só a 1ª não respondida recebe shownAt),
-  // então responder a 20ª significa que todas foram respondidas.
-  const finished = answer.position === QUESTIONS_PER_SESSION;
-  if (finished) await finalizeSession(sessionId, now);
+  // então responder a última significa que todas foram respondidas.
+  const finished = answer.position === questionsInSession(session);
+  if (finished) await finalizeSession(sessionId, session, now);
 
   return {
     correct,
@@ -467,7 +487,9 @@ export interface SavedGameDto {
   nickname: string;
   mode: Mode;
   category: { name: string; icon: string } | null;
+  level: number | null;
   answered: number;
+  total: number;
   savedAt: string;
   expiresAt: string;
 }
@@ -486,6 +508,7 @@ export async function listSavedGames(ownedIds: readonly string[], now = new Date
     select: {
       id: true,
       mode: true,
+      level: true,
       savedAt: true,
       player: { select: { nickname: true } },
       category: { select: { name: true, icon: true } },
@@ -497,7 +520,9 @@ export async function listSavedGames(ownedIds: readonly string[], now = new Date
     nickname: s.player.nickname,
     mode: s.mode,
     category: s.category,
+    level: s.level,
     answered: s._count.items,
+    total: questionsInSession(s),
     savedAt: s.savedAt!.toISOString(),
     expiresAt: new Date(s.savedAt!.getTime() + SAVED_GAME_TTL_MS).toISOString(),
   }));
@@ -517,6 +542,7 @@ export async function getSessionResult(sessionId: string, ownedIds: readonly str
     select: {
       id: true,
       mode: true,
+      level: true,
       scoreTenths: true,
       correctCount: true,
       totalTimeMs: true,
@@ -545,10 +571,12 @@ export async function getSessionResult(sessionId: string, ownedIds: readonly str
     },
   });
 
-  const scored = session.items.map((i) => ({ level: levelForPosition(i.position), isCorrect: i.isCorrect }));
+  const scored = session.items.map((i) => ({ level: levelOfItem(session, i.position), isCorrect: i.isCorrect }));
   return {
     sessionId: session.id,
     mode: session.mode,
+    level: session.level,
+    total: questionsInSession(session),
     category: session.category,
     nickname: session.player.nickname,
     scoreTenths: session.scoreTenths ?? 0,
@@ -556,12 +584,12 @@ export async function getSessionResult(sessionId: string, ownedIds: readonly str
     correctCount: session.correctCount ?? 0,
     totalTimeMs: session.totalTimeMs ?? 0,
     finishedAt: session.finishedAt,
-    levels: breakdownByLevel(scored),
+    levels: breakdownByLevel(scored, session),
     review: session.items.map((i) => {
       const byId = new Map(i.question.options.map((o) => [o.id, o]));
       return {
         position: i.position,
-        level: levelForPosition(i.position),
+        level: levelOfItem(session, i.position),
         category: i.question.category,
         statement: i.question.statement,
         explanation: i.question.explanation,

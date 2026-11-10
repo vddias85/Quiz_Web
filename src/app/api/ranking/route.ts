@@ -1,7 +1,8 @@
-// GET /api/ranking?scope=mixed|category&categoryId=&period=today|week|month|all (PRD §8.4)
+// GET /api/ranking?scope=mixed|category|level&categoryId=&level=1..4&period=today|week|month|all (PRD §8.4)
 import { z } from "zod";
 import { PERIODS, type RankingScope } from "@/lib/ranking";
 import { RATE_LIMITS } from "@/lib/rate-limit";
+import type { Level } from "@/lib/scoring";
 import { ApiError } from "@/server/errors";
 import { enforceRateLimit, handle, json, readOwnedPlayerIds } from "@/server/http";
 import { getRanking } from "@/server/ranking";
@@ -18,6 +19,11 @@ const querySchema = z.discriminatedUnion("scope", [
     categoryId: z.coerce.number().int().positive(),
     period: z.enum(PERIODS).default("all"),
   }),
+  z.object({
+    scope: z.literal("level"),
+    level: z.coerce.number().int().min(1).max(4),
+    period: z.enum(PERIODS).default("all"),
+  }),
 ]);
 
 export async function GET(req: Request) {
@@ -29,7 +35,11 @@ export async function GET(req: Request) {
 
     const q = parsed.data;
     const scope: RankingScope =
-      q.scope === "category" ? { mode: "CATEGORY", categoryId: q.categoryId } : { mode: "MIXED" };
+      q.scope === "category"
+        ? { mode: "CATEGORY", categoryId: q.categoryId }
+        : q.scope === "level"
+          ? { mode: "LEVEL", level: q.level as Level }
+          : { mode: "MIXED" };
     return json(
       await getRanking({
         scope,

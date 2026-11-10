@@ -6,18 +6,29 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { api, ClientApiError } from "@/lib/api-client";
+import { LEVEL_LABELS, LEVELS, type Level } from "@/lib/scoring";
 import { cn } from "@/lib/utils";
 import type { CategoryDto } from "@/server/quiz";
 
 const NICKNAME_STORAGE_KEY = "qw_nickname";
 
-type Mode = "MIXED" | "CATEGORY";
+type Mode = "MIXED" | "CATEGORY" | "LEVEL";
+
+const LEVEL_DOTS: Record<Level, string> = { 1: "🟢", 2: "🟡", 3: "🟠", 4: "🔴" };
+
+const LEVEL_HINTS: Record<Level, string> = {
+  1: "Para aquecer",
+  2: "Um pouco de desafio",
+  3: "Para quem manda bem",
+  4: "Só para especialistas",
+};
 
 export function StartForm({ categories }: { categories: CategoryDto[] }) {
   const router = useRouter();
   const [nickname, setNickname] = useState("");
   const [mode, setMode] = useState<Mode>("MIXED");
   const [categoryId, setCategoryId] = useState<number | null>(null);
+  const [level, setLevel] = useState<Level | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
   // O apelido tem um jogo salvo: pede confirmação antes de descartá-lo.
@@ -39,12 +50,17 @@ export function StartForm({ categories }: { categories: CategoryDto[] }) {
       setError("Escolha uma categoria.");
       return;
     }
+    if (mode === "LEVEL" && !level) {
+      setError("Escolha um nível de dificuldade.");
+      return;
+    }
     setSubmitting(true);
     try {
       const { sessionId, nickname: saved } = await api.startSession({
         nickname: nickname.trim(),
         mode,
         categoryId: mode === "CATEGORY" ? categoryId! : undefined,
+        level: mode === "LEVEL" ? level! : undefined,
         discardSaved,
       });
       try {
@@ -81,20 +97,27 @@ export function StartForm({ categories }: { categories: CategoryDto[] }) {
 
       <fieldset className="space-y-3">
         <legend className="mb-3 text-sm font-medium">Modo de jogo</legend>
-        <div className="grid gap-3 sm:grid-cols-2">
+        <div className="grid gap-3 sm:grid-cols-3">
           <ModeCard
             selected={mode === "MIXED"}
             onSelect={() => setMode("MIXED")}
             icon="🎲"
             title="Temas Variados"
-            text="Perguntas de todas as categorias, misturadas."
+            text="20 perguntas de todos os temas, do fácil ao avançado."
           />
           <ModeCard
             selected={mode === "CATEGORY"}
             onSelect={() => setMode("CATEGORY")}
             icon="🎯"
             title="Por Categoria"
-            text="Todas as 20 perguntas de um tema só."
+            text="20 perguntas de um tema só, do fácil ao avançado."
+          />
+          <ModeCard
+            selected={mode === "LEVEL"}
+            onSelect={() => setMode("LEVEL")}
+            icon="📶"
+            title="Por Nível"
+            text="10 perguntas de um só nível, de vários temas."
           />
         </div>
       </fieldset>
@@ -125,6 +148,33 @@ export function StartForm({ categories }: { categories: CategoryDto[] }) {
         </fieldset>
       )}
 
+      {mode === "LEVEL" && (
+        <fieldset>
+          <legend className="mb-3 text-sm font-medium">Nível de dificuldade</legend>
+          <div className="grid grid-cols-2 gap-2">
+            {LEVELS.map((l) => (
+              <button
+                key={l}
+                type="button"
+                aria-pressed={level === l}
+                onClick={() => setLevel(l)}
+                className={cn(
+                  "rounded-xl border-2 px-3 py-2.5 text-left transition-colors",
+                  "focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50",
+                  level === l ? "border-highlight bg-highlight/5" : "border-border hover:bg-muted",
+                )}
+              >
+                <span className="block font-semibold">
+                  <span aria-hidden>{LEVEL_DOTS[l]} </span>
+                  {LEVEL_LABELS[l]}
+                </span>
+                <span className="block text-xs text-muted-foreground">{LEVEL_HINTS[l]}</span>
+              </button>
+            ))}
+          </div>
+        </fieldset>
+      )}
+
       {error && (
         <p className="rounded-lg bg-destructive/10 px-3 py-2 text-sm text-destructive" role="alert">
           {error}
@@ -132,10 +182,13 @@ export function StartForm({ categories }: { categories: CategoryDto[] }) {
       )}
 
       {savedConflict && (
-        <div className="space-y-3 rounded-xl border-2 border-amber-400 bg-amber-50 p-4 text-sm dark:bg-amber-950/40" role="alert">
+        <div
+          className="space-y-3 rounded-xl border-2 border-amber-400 bg-amber-50 p-4 text-sm dark:bg-amber-950/40"
+          role="alert"
+        >
           <p>
-            <strong>Você tem um jogo salvo com este apelido.</strong> Para retomá-lo, use o botão
-            &quot;Continuar&quot; no alto da página. Começar um jogo novo descarta o salvo.
+            <strong>Você tem um jogo salvo com este apelido.</strong> Para retomá-lo, use o botão &quot;Continuar&quot;
+            no alto da página. Começar um jogo novo descarta o salvo.
           </p>
           <div className="flex flex-wrap gap-2">
             <Button type="button" variant="destructive" onClick={() => void start(undefined, true)}>
@@ -153,7 +206,9 @@ export function StartForm({ categories }: { categories: CategoryDto[] }) {
       </Button>
 
       <p className="text-center text-xs text-muted-foreground">
-        20 perguntas · 30 s cada · do fácil ao avançado · nota de 0 a 10
+        {mode === "LEVEL"
+          ? "10 perguntas · 30 s cada · 1 ponto por acerto · nota de 0 a 10"
+          : "20 perguntas · 30 s cada · do fácil ao avançado · nota de 0 a 10"}
       </p>
     </form>
   );
@@ -166,7 +221,7 @@ function ModeCard(props: { selected: boolean; onSelect: () => void; icon: string
       aria-pressed={props.selected}
       onClick={props.onSelect}
       className={cn(
-        "rounded-xl border-2 p-4 text-left transition-colors",
+        "flex flex-col items-start justify-start rounded-xl border-2 p-4 text-left transition-colors",
         "focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50",
         props.selected ? "border-highlight bg-highlight/5" : "border-border hover:bg-muted",
       )}

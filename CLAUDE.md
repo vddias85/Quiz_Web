@@ -1,9 +1,9 @@
 # CLAUDE.md — Quiz Web
 
-Quiz web de conhecimentos gerais. **A fonte da verdade é o [PRD.md](PRD.md) (v1.7, aprovado).** Leia-o antes de qualquer implementação e não contrarie decisões dele sem perguntar ao usuário.
+Quiz web de conhecimentos gerais. **A fonte da verdade é o [PRD.md](PRD.md) (v1.8, aprovado).** Leia-o antes de qualquer implementação e não contrarie decisões dele sem perguntar ao usuário.
 
 ## Status atual
-- PRD aprovado (v1.7). Fase 0 concluída (Supabase dev/prod em São Paulo, GitHub, Vercel).
+- PRD aprovado (v1.8). Fase 0 concluída (Supabase dev/prod em São Paulo, GitHub, Vercel).
 - **Fase 1 concluída (07/11/2026):** Next.js 15 + shadcn, Prisma 6 (schema + migrações com CHECKs e RLS sem políticas), 200 perguntas no Supabase **dev** (todas revisadas pelo usuário em 07/11/2026, `reviewed: true`), `prod-guard`, Vitest, `vercel.json` (gru1). (O prod recebeu migrações e seed na Fase 5.)
 - O npm 11 exige aprovar scripts de instalação (`allowScripts` no `package.json`); ao atualizar Prisma/esbuild, rode `npm install-scripts approve <pkg>`.
 - O Prisma CLI não lê `.env.local` sozinho: use sempre os scripts `npm run db:*` (usam `dotenv-cli`).
@@ -29,16 +29,17 @@ Quiz web de conhecimentos gerais. **A fonte da verdade é o [PRD.md](PRD.md) (v1
   - **Artes e Literatura:** 60 perguntas (15 por nível: literatura brasileira, portuguesa e mundial, pintura, escultura, arquitetura e quadrinhos), lote 021–060 revisado em 08/11/2026; publicado no prod.
   - **Tecnologia:** 60 perguntas (15 por nível: dia a dia, empresas, internet, história e fundamentos da computação), lote 021–060 revisado em 08/11/2026 (044 e 049 subiram; 051 e 058 desceram); publicado no prod.
   - **Matemática e Lógica:** 60 perguntas (15 por nível: contas, porcentagem, geometria, sequências, probabilidade, juros e lógica), lote 021–060 revisado em 08/11/2026.
-- **Próximo (ideia aprovada em 08/11/2026):** terceiro modo de jogo, **por nível de dificuldade** (além de Temas Variados e Por Categoria). Antes de implementar, decidir com o usuário e registrar no PRD: formato (20 perguntas do mesmo nível?), nota (os pesos 0,3–0,7 não servem; ex.: 0,5 por acerto), ranking próprio por nível ou fora do ranking, e se vale a regra de não repetir tema seguido.
+- **Modo Por Nível (PRD v1.8) implementado em 09/11/2026:** `Mode.LEVEL` + `Session.level` (migrações `level_mode` e `level_mode_check_null`; CHECK `Session_mode_scope_check`). Regras do formato em `src/lib/scoring.ts` (`questionsInSession`, `levelOfItem`, `pointsPerCorrect`), sorteio em `src/lib/draw.ts` (`drawLevelSession`), nomes em `src/lib/modes.ts`, ranking `?nivel=facil|medio|dificil|avancado`. **Ordem de publicação:** rodar `db:prod:migrate` ANTES do push (o código novo lê a coluna `level`; a migração é compatível com o código antigo).
+- Cuidado com CHECKs no Postgres: expressão que resulta em NULL é aceita; use `IS NOT NULL` explícito.
 
 ## Regras de negócio (não negociáveis sem aprovação)
-- 20 perguntas por sessão, 4 alternativas, 1 correta, alternativas embaralhadas.
+- 20 perguntas por sessão (10 no modo Por Nível), 4 alternativas, 1 correta, alternativas embaralhadas.
 - Dificuldade crescente: 1–5 fácil, 6–10 médio, 11–15 difícil, 16–20 avançado (5 de cada).
-- Dois modos: **Temas Variados** (sem 2 perguntas seguidas do mesmo tema) e **Por Categoria**.
+- Três modos: **Temas Variados** (sem 2 perguntas seguidas do mesmo tema), **Por Categoria** e **Por Nível** (PRD v1.8: 10 perguntas de um nível, de todas as categorias, sem 2 seguidas do mesmo tema).
 - 10 categorias: Geografia, História, Ciências, Cinema e TV, Música, Esportes, Artes e Literatura, Tecnologia, Matemática e Lógica, Brasil.
-- **Pontuação ponderada:** 0,3 / 0,4 / 0,6 / 0,7 por acerto (fácil → avançado) = 10,0 no máximo. Calcular em décimos inteiros (3, 4, 6, 7) e dividir por 10 só na exibição. Uma casa decimal.
+- **Pontuação ponderada:** 0,3 / 0,4 / 0,6 / 0,7 por acerto (fácil → avançado) = 10,0 no máximo. No modo Por Nível, 1,0 por acerto (10 acertos = 10,0). Calcular em décimos inteiros (3, 4, 6, 7) e dividir por 10 só na exibição. Uma casa decimal.
 - **Timer de 30 s** por pergunta em todos os níveis; tempo esgotado = erro. Validar no servidor a partir de `shownAt`, com 2 s de tolerância.
-- Ranking: geral e por categoria; períodos hoje/semana/mês/sempre; só a melhor nota por jogador; desempate por menor tempo total e depois por quem terminou primeiro.
+- Ranking: geral, por categoria e por nível; períodos hoje/semana/mês/sempre; só a melhor nota por jogador; desempate por menor tempo total e depois por quem terminou primeiro.
 - Identificação só por apelido (sem senha), com filtro de palavrões.
 - **Salvar jogo:** só entre perguntas (nunca com pergunta aberta), vale 24 h, um por apelido, entra no ranking. Sessão expira após 15 min de jogo **ativo** (tempo salvo não conta).
 

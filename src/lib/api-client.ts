@@ -34,7 +34,13 @@ async function request<T>(url: string, init?: RequestInit): Promise<T> {
 }
 
 export const api = {
-  startSession: (body: { nickname: string; mode: "MIXED" | "CATEGORY"; categoryId?: number; discardSaved?: boolean }) =>
+  startSession: (body: {
+    nickname: string;
+    mode: "MIXED" | "CATEGORY" | "LEVEL";
+    categoryId?: number;
+    level?: number;
+    discardSaved?: boolean;
+  }) =>
     request<{ sessionId: string; nickname: string }>("/api/sessions", { method: "POST", body: JSON.stringify(body) }),
 
   current: (sessionId: string) => request<CurrentQuestionDto>(`/api/sessions/${sessionId}/current`),

@@ -7,8 +7,9 @@ export const dynamic = "force-dynamic";
 
 const Body = z.object({
   nickname: z.string().max(100),
-  mode: z.enum(["MIXED", "CATEGORY"]),
+  mode: z.enum(["MIXED", "CATEGORY", "LEVEL"]),
   categoryId: z.number().int().positive().optional(),
+  level: z.number().int().min(1).max(4).optional(),
   discardSaved: z.boolean().optional(),
 });
 
@@ -21,6 +22,7 @@ export async function POST(req: Request) {
       playerId: player.id,
       mode: body.mode,
       categoryId: body.categoryId,
+      level: body.level,
       discardSaved: body.discardSaved,
     });
     await writeOwnedPlayerIds(ownedIds);
