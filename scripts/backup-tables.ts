@@ -21,54 +21,61 @@ export interface TableSpec {
   idOf: (row: Row) => string | number;
 }
 
-// Cada tabela é lida em páginas ordenadas pelo id (memória constante mesmo com muitas sessões).
-const page = <T>(cursor: T | undefined, take: number) => ({
-  take,
-  ...(cursor !== undefined ? { skip: 1, cursor: { id: cursor } } : {}),
-  orderBy: { id: "asc" as const },
-});
+/**
+ * Lê uma página da tabela com SQL direto, ordenada pelo id (memória constante mesmo com muitas
+ * sessões). SQL direto, e não o cliente do Prisma, porque o cliente segue o schema do código:
+ * se o código já tiver uma coluna nova que o banco ainda não tem (backup ANTES de uma migração),
+ * o Prisma falharia. Com SELECT *, o backup copia exatamente as colunas que existem no banco.
+ * O nome da tabela vem só da lista fixa abaixo, nunca de entrada externa.
+ */
+function readPage(table: string) {
+  return (db: PrismaClient, cursor: string | number | undefined, take: number): Promise<Row[]> =>
+    cursor === undefined
+      ? db.$queryRawUnsafe<Row[]>(`SELECT * FROM "${table}" ORDER BY "id" LIMIT ${Number(take)}`)
+      : db.$queryRawUnsafe<Row[]>(`SELECT * FROM "${table}" WHERE "id" > $1 ORDER BY "id" LIMIT ${Number(take)}`, cursor);
+}
 
 /* eslint-disable @typescript-eslint/no-explicit-any -- as linhas vêm do próprio banco, no mesmo formato */
 export const TABLES: TableSpec[] = [
   {
     name: "Category",
-    read: (db, c, t) => db.category.findMany(page(c as number | undefined, t)),
+    read: readPage("Category"),
     write: (db, rows) => db.category.createMany({ data: rows as any }),
     idOf: (r) => r.id as number,
   },
   {
     name: "Question",
-    read: (db, c, t) => db.question.findMany(page(c as string | undefined, t)),
+    read: readPage("Question"),
     write: (db, rows) => db.question.createMany({ data: rows as any }),
     idOf: (r) => r.id as string,
   },
   {
     name: "Option",
-    read: (db, c, t) => db.option.findMany(page(c as string | undefined, t)),
+    read: readPage("Option"),
     write: (db, rows) => db.option.createMany({ data: rows as any }),
     idOf: (r) => r.id as string,
   },
   {
     name: "Player",
-    read: (db, c, t) => db.player.findMany(page(c as string | undefined, t)),
+    read: readPage("Player"),
     write: (db, rows) => db.player.createMany({ data: rows as any }),
     idOf: (r) => r.id as string,
   },
   {
     name: "Session",
-    read: (db, c, t) => db.session.findMany(page(c as string | undefined, t)),
+    read: readPage("Session"),
     write: (db, rows) => db.session.createMany({ data: rows as any }),
     idOf: (r) => r.id as string,
   },
   {
     name: "SessionItem",
-    read: (db, c, t) => db.sessionItem.findMany(page(c as string | undefined, t)),
+    read: readPage("SessionItem"),
     write: (db, rows) => db.sessionItem.createMany({ data: rows as any }),
     idOf: (r) => r.id as string,
   },
   {
     name: "QuestionReport",
-    read: (db, c, t) => db.questionReport.findMany(page(c as string | undefined, t)),
+    read: readPage("QuestionReport"),
     write: (db, rows) => db.questionReport.createMany({ data: rows as any }),
     idOf: (r) => r.id as string,
   },
